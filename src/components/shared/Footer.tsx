@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -174,6 +176,4 @@ function NewsletterForm() {
       >
         Đăng ký nhận insight →
       </button>
-    </form>
-  );
-}
+    
