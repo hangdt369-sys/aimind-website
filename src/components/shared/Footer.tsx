@@ -48,7 +48,7 @@ export default function Footer() {
                 }}
               >
                 MIND
-      2       </span>
+              </span>
             </div>
             <p style={{ color: "#9B96C0", fontSize: "14px", lineHeight: 1.7, marginBottom: "1.5rem" }}>
               Awareness Intelligence Mind.<br />
@@ -78,7 +78,7 @@ export default function Footer() {
               Khám Phá
             </h4>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.625rem" }}>
-        2     <FooterLink href="/kham-pha/ban-do-noi-tam">Bài Test Nội Tâm</FooterLink>
+              <FooterLink href="/kham-pha/ban-do-noi-tam">Bài Test Nội Tâm</FooterLink>
               <FooterLink href="/kien-thuc/bai-viet">Bài Viết</FooterLink>
               <FooterLink href="/hanh-trinh/khoa-hoc">Khóa Học</FooterLink>
               <FooterLink href="/dong-hanh">Coaching 1-1</FooterLink>
@@ -176,5 +176,4 @@ function NewsletterForm() {
       </button>
     </form>
   );
-{
 }

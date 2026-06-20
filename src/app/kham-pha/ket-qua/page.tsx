@@ -164,7 +164,7 @@ function ResultsContent() {
                   color: "#9B96C0",
                 }}
               >
-                <span>Mô thủc phụ:</span>
+                <span>Mô thức phụ:</span>
                 <span style={{ color: "white", fontWeight: 600 }}>
                   {secondaryArchetype.icon} {secondaryArchetype.name}
                 </span>
@@ -356,7 +356,7 @@ function ResultsContent() {
                   marginBottom: "1.5rem",
                 }}
               >
-                📊 Bản đồ mô thủc của bạn
+                📊 Bản đồ mô thức của bạn
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {archetypeOrder.map((key) => {
@@ -556,7 +556,7 @@ function ResultsContent() {
                 fontSize: "1rem",
               }}
             >
-              Nhận phân tích chuyên sâu về mô thủc {archetype.name}
+              Nhận phân tích chuyên sâu về mô thức {archetype.name}
             </h4>
             <p style={{ color: "#6B678F", fontSize: "13px", marginBottom: "1rem", lineHeight: 1.6 }}>
               Gửi kết quả và hướng dẫn thực hành đến email — để bạn có thể quay lại đọc khi cần.

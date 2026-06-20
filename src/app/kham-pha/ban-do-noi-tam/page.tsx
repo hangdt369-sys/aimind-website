@@ -281,7 +281,7 @@ export default function TestPage() {
                 border: "none",
                 fontSize: "15px",
                 fontWeight: 700,
-    0           cursor: selectedOption !== null ? "pointer" : "not-allowed",
+                cursor: selectedOption !== null ? "pointer" : "not-allowed",
                 fontFamily: "'Be Vietnam Pro', sans-serif",
                 transition: "all 0.2s ease",
               }}

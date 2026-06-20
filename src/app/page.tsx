@@ -118,7 +118,20 @@ function HeroSection() {
 
 function RecognitionSection() {
   const patterns = [
-    { emoji: "1", title: "Ban luon lo lang du moi thu dang on", desc: "Kh
+    { emoji: "1", title: "Ban luon lo lang du moi thu dang on", desc: "Khong the thu gian. Luon co mot moi lo mo ho nao do bam theo." },
+    { emoji: "2", title: "Ban ne tranh nhung cuoc noi chuyen kho", desc: "Tha im lang chiu dung con hon doi mat voi xung dot." },
+    { emoji: "3", title: "Ban can kiem soat moi thu xung quanh", desc: "Khi mat kiem soat, ban cam thay bat an va lo lang sau sac." },
+    { emoji: "4", title: "Ban cho di mai ma khong biet nhan lai", desc: "Noi khong voi nguoi khac khien ban cam thay co loi." },
+    { emoji: "5", title: "Ban cu lap lai cung mot van de", desc: "Hieu ro van de nhung van khong the thay doi cach phan ung." },
+    { emoji: "6", title: "Ban tu phe binh ban than qua muc", desc: "Tieu chuan cao voi minh nhung khong bao gio cam thay du." },
+  ];
+  return (
+    <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
+      <div className="container-main">
+        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+          <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+            Ban co nhan ra minh khong?
+          </p>
           <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, maxWidth: "600px", margin: "0 auto", lineHeight: 1.3 }}>
             Nhung mo thuc nay khong phai tinh cach - chung la nhung gi ban da hoc de song sot
           </h2>

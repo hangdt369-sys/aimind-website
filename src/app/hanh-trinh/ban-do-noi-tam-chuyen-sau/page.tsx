@@ -32,7 +32,7 @@ export default function KhoaHocPage() {
     },
     {
       number: "05",
-      title: "Cài đặt mô thức mớk",
+      title: "Cài đặt mô thức mới",
       desc: "Xây dựng hành vi mới từ bên trong — dựa trên hiểu biết sâu sắc về chính mình, không phải ý chí.",
       duration: "3 bài học · 55 phút",
     },
