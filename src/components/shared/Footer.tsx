@@ -176,4 +176,6 @@ function NewsletterForm() {
       >
         Đăng ký nhận insight →
       </button>
-    
+        </form>
+  );
+}

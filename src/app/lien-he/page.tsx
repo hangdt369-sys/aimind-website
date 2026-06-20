@@ -113,3 +113,6 @@ export default function LienHePage() {
         </section>
       </main>
       <Footer />
+    </>
+  );
+}
