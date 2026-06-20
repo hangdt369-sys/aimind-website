@@ -256,4 +256,19 @@ function CtaSection() {
   return (
     <section style={{ padding: "6rem 0", background: "linear-gradient(135deg, #2D2A5E 0%, #1C1A3E 100%)", textAlign: "center" }}>
       <div className="container-main">
-        <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 800, marginBottom: "1rem", line
+        <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.25 }}>
+          Mô thức nào đang điều khiển bạn?
+        </h2>
+        <p style={{ color: "#C4C0E0", marginBottom: "2.5rem", fontSize: "16px", lineHeight: 1.75 }}>
+          Bài test miễn phí. 15 phút. Kết quả thay đổi cách bạn nhìn chính mình.
+        </p>
+        <Link
+          href="/kham-pha/ban-do-noi-tam"
+          style={{ display: "inline-block", background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)", color: "white", padding: "18px 44px", borderRadius: "999px", fontSize: "18px", fontWeight: 700, textDecoration: "none", fontFamily: "'Be Vietnam Pro', sans-serif", boxShadow: "0 8px 32px rgba(124,111,247,0.4)" }}
+        >
+          Làm bài test ngay — Miễn phí
+        </Link>
+      </div>
+    </section>
+  );
+}
