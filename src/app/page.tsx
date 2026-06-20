@@ -66,7 +66,7 @@ function HeroSection() {
             margin: "0 auto 1.5rem",
           }}
         >
-          Ban da bao gio tu hoi tai sao minh lai nhu vay?
+          Bạn đã bao giờ tự hỏi tại sao mình lại như vậy?
         </h1>
         <p
           style={{
@@ -77,7 +77,7 @@ function HeroSection() {
             margin: "0 auto 2.5rem",
           }}
         >
-          Khong phai vi ban khong du tot. Ma vi ban chua tung co ban do de nhin thay chinh minh.
+          Không phải vì bạn không đủ tốt. Mà vì bạn chưa từng có bản đồ để nhìn thấy chính mình.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
           <Link
@@ -95,15 +95,15 @@ function HeroSection() {
               boxShadow: "0 8px 32px rgba(124,111,247,0.35)",
             }}
           >
-            Kham pha ban do noi tam
+            Khám phá bản đồ nội tâm
           </Link>
-          <p style={{ color: "#9B96C0", fontSize: "13px" }}>Mien phi - 15 phut - Khong can dang ky</p>
+          <p style={{ color: "#9B96C0", fontSize: "13px" }}>Miễn phí · 15 phút · Không cần đăng ký</p>
         </div>
         <div style={{ marginTop: "4rem", display: "flex", justifyContent: "center", gap: "3rem", flexWrap: "wrap" }}>
           {[
-            { number: "12,000+", label: "nguoi da kham pha" },
-            { number: "6", label: "mo thuc noi tam" },
-            { number: "94%", label: "cam thay dung voi minh" },
+            { number: "12,000+", label: "người đã khám phá" },
+            { number: "6", label: "mô thức nội tâm" },
+            { number: "94%", label: "cảm thấy đúng với mình" },
           ].map((stat) => (
             <div key={stat.label} style={{ textAlign: "center" }}>
               <div style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.8rem", fontWeight: 800 }}>{stat.number}</div>
@@ -118,22 +118,22 @@ function HeroSection() {
 
 function RecognitionSection() {
   const patterns = [
-    { emoji: "1", title: "Ban luon lo lang du moi thu dang on", desc: "Khong the thu gian. Luon co mot moi lo mo ho nao do bam theo." },
-    { emoji: "2", title: "Ban ne tranh nhung cuoc noi chuyen kho", desc: "Tha im lang chiu dung con hon doi mat voi xung dot." },
-    { emoji: "3", title: "Ban can kiem soat moi thu xung quanh", desc: "Khi mat kiem soat, ban cam thay bat an va lo lang sau sac." },
-    { emoji: "4", title: "Ban cho di mai ma khong biet nhan lai", desc: "Noi khong voi nguoi khac khien ban cam thay co loi." },
-    { emoji: "5", title: "Ban cu lap lai cung mot van de", desc: "Hieu ro van de nhung van khong the thay doi cach phan ung." },
-    { emoji: "6", title: "Ban tu phe binh ban than qua muc", desc: "Tieu chuan cao voi minh nhung khong bao gio cam thay du." },
+    { emoji: "1", title: "Bạn luôn lo lắng dù mọi thứ đang ổn", desc: "Không thể thư giãn. Luôn có một mối lo mơ hồ nào đó bám theo." },
+    { emoji: "2", title: "Bạn né tránh những cuộc nói chuyện khó", desc: "Thà im lặng chịu đựng còn hơn đối mặt với xung đột." },
+    { emoji: "3", title: "Bạn cần kiểm soát mọi thứ xung quanh", desc: "Khi mất kiểm soát, bạn cảm thấy bất an và lo lắng sâu sắc." },
+    { emoji: "4", title: "Bạn cho đi mãi mà không biết nhận lại", desc: "Nói không với người khác khiến bạn cảm thấy có lỗi." },
+    { emoji: "5", title: "Bạn cứ lặp lại cùng một vấn đề", desc: "Hiểu rõ vấn đề nhưng vẫn không thể thay đổi cách phản ứng." },
+    { emoji: "6", title: "Bạn tự phê bình bản thân quá mức", desc: "Tiêu chuẩn cao với mình nhưng không bao giờ cảm thấy đủ." },
   ];
   return (
     <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
       <div className="container-main">
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-            Ban co nhan ra minh khong?
+            Bạn có nhận ra mình không?
           </p>
           <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, maxWidth: "600px", margin: "0 auto", lineHeight: 1.3 }}>
-            Nhung mo thuc nay khong phai tinh cach - chung la nhung gi ban da hoc de song sot
+            Những mô thức này không phải tính cách — chúng là những gì bạn đã học để sống sót
           </h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
@@ -152,22 +152,22 @@ function RecognitionSection() {
 
 function TestPreviewSection() {
   const archetypes = [
-    { key: "lo-au", name: "Lo Au", color: "#7C6FF7", desc: "Luon san sang cho dieu te nhat" },
-    { key: "ne-tranh", name: "Ne Tranh", color: "#18B5B0", desc: "Tranh xung dot bang moi gia" },
-    { key: "kiem-soat", name: "Kiem Soat", color: "#5B4FD4", desc: "Can chac chan moi thu" },
-    { key: "hy-sinh", name: "Hy Sinh", color: "#B8B3FA", desc: "Dat nguoi khac len truoc" },
-    { key: "tu-huy", name: "Tu Huy", color: "#FF6B6B", desc: "Pha hoai nhung dieu tot dep" },
-    { key: "can-bang", name: "Can Bang", color: "#4CAF50", desc: "Dang tren hanh trinh tich hop" },
+    { key: "lo-au", name: "Lo Âu", color: "#7C6FF7", desc: "Luôn sẵn sàng cho điều tệ nhất" },
+    { key: "ne-tranh", name: "Né Tránh", color: "#18B5B0", desc: "Tránh xung đột bằng mọi giá" },
+    { key: "kiem-soat", name: "Kiểm Soát", color: "#5B4FD4", desc: "Cần chắc chắn mọi thứ" },
+    { key: "hy-sinh", name: "Hy Sinh", color: "#B8B3FA", desc: "Đặt người khác lên trước" },
+    { key: "tu-huy", name: "Tự Hủy", color: "#FF6B6B", desc: "Phá hoại những điều tốt đẹp" },
+    { key: "can-bang", name: "Cân Bằng", color: "#4CAF50", desc: "Đang trên hành trình tích hợp" },
   ];
   return (
     <section style={{ padding: "5rem 0", background: "linear-gradient(180deg, #1C1A3E 0%, #2D2A5E 100%)" }}>
       <div className="container-main" style={{ textAlign: "center" }}>
-        <p style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Bai test mien phi</p>
+        <p style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Bài test miễn phí</p>
         <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.3 }}>
-          Ban Do Noi Tam - 6 mo thuc cot loi
+          Bản Đồ Nội Tâm — 6 mô thức cốt lõi
         </h2>
         <p style={{ color: "#C4C0E0", maxWidth: "500px", margin: "0 auto 3rem", lineHeight: 1.75 }}>
-          20 cau hoi. 15 phut. Ket qua giup ban nhin thay mo thuc vo thuc dang dieu khien cuoc doi minh.
+          20 câu hỏi. 15 phút. Kết quả giúp bạn nhìn thấy mô thức vô thức đang điều khiển cuộc đời mình.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "1rem", maxWidth: "720px", margin: "0 auto 3rem" }}>
           {archetypes.map((a) => (
@@ -181,7 +181,7 @@ function TestPreviewSection() {
           ))}
         </div>
         <Link href="/kham-pha/ban-do-noi-tam" style={{ display: "inline-block", background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)", color: "white", padding: "16px 36px", borderRadius: "999px", fontSize: "16px", fontWeight: 700, textDecoration: "none", fontFamily: "'Be Vietnam Pro', sans-serif" }}>
-          Bat dau kham pha
+          Bắt đầu khám phá
         </Link>
       </div>
     </section>
@@ -190,17 +190,17 @@ function TestPreviewSection() {
 
 function JourneySection() {
   const steps = [
-    { number: "01", title: "Kham pha mo thuc", desc: "Lam bai test Ban Do Noi Tam. Nhan ket qua mien phi ve mo thuc cot loi cua ban.", cta: "Lam bai test", href: "/kham-pha/ban-do-noi-tam", color: "#7C6FF7" },
-    { number: "02", title: "Di sau vao hieu", desc: "Khoa hoc Ban Do Noi Tam Chuyen Sau - tai sao mo thuc hinh thanh va cach thay doi tu goc re.", cta: "Xem khoa hoc", href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", color: "#18B5B0" },
-    { number: "03", title: "Dong hanh chuyen hoa", desc: "Coaching 1-1 voi Hanna - khong phai tu van, ma la dong hanh thuc su trong qua trinh thay doi.", cta: "Tim hieu them", href: "/lien-he", color: "#5B4FD4" },
+    { number: "01", title: "Khám phá mô thức", desc: "Làm bài test Bản Đồ Nội Tâm. Nhận kết quả miễn phí về mô thức cốt lõi của bạn.", cta: "Làm bài test", href: "/kham-pha/ban-do-noi-tam", color: "#7C6FF7" },
+    { number: "02", title: "Đi sâu vào hiểu", desc: "Khóa học Bản Đồ Nội Tâm Chuyên Sâu — tại sao mô thức hình thành và cách thay đổi từ gốc rễ.", cta: "Xem khóa học", href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", color: "#18B5B0" },
+    { number: "03", title: "Đồng hành chuyển hóa", desc: "Coaching 1-1 với Hanna — không phải tư vấn, mà là đồng hành thực sự trong quá trình thay đổi.", cta: "Tìm hiểu thêm", href: "/lien-he", color: "#5B4FD4" },
   ];
   return (
     <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
       <div className="container-main">
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Hanh trinh chuyen hoa</p>
+          <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Hành trình chuyển hóa</p>
           <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, maxWidth: "560px", margin: "0 auto", lineHeight: 1.3 }}>
-            Khong phai mot bai test. Day la bat dau cua mot hanh trinh.
+            Không phải một bài test. Đây là bắt đầu của một hành trình.
           </h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
@@ -220,16 +220,16 @@ function JourneySection() {
 
 function TestimonialsSection() {
   const testimonials = [
-    { quote: "Toi da doc nhieu sach tam ly nhung khong co gi giup toi nhin thay ban than ro nhu bai test nay.", name: "Minh Trang", role: "Quan ly marketing, 32 tuoi", archetype: "Mo thuc: Ne Tranh", color: "#18B5B0" },
-    { quote: "Ket qua khong chi mo ta toi - no giai thich tai sao toi lai nhu vay. Phan vet thuong cot loi khien toi bat khoc.", name: "Hoang Nam", role: "Giam doc dieu hanh, 38 tuoi", archetype: "Mo thuc: Kiem Soat", color: "#5B4FD4" },
-    { quote: "Sau 3 thang coaching voi Hanna, toi khong con tu pha hoai nhung dieu tot dep trong cuoc song nua.", name: "Thu Ha", role: "Chuyen gia tu van, 35 tuoi", archetype: "Mo thuc: Tu Huy", color: "#FF6B6B" },
+    { quote: "Tôi đã đọc nhiều sách tâm lý nhưng không có gì giúp tôi nhìn thấy bản thân rõ như bài test này.", name: "Minh Trang", role: "Quản lý marketing, 32 tuổi", archetype: "Mô thức: Né Tránh", color: "#18B5B0" },
+    { quote: "Kết quả không chỉ mô tả tôi — nó giải thích tại sao tôi lại như vậy. Phần vết thương cốt lõi khiến tôi bật khóc.", name: "Hoàng Nam", role: "Giám đốc điều hành, 38 tuổi", archetype: "Mô thức: Kiểm Soát", color: "#5B4FD4" },
+    { quote: "Sau 3 tháng coaching với Hanna, tôi không còn tự phá hoại những điều tốt đẹp trong cuộc sống nữa.", name: "Thu Hà", role: "Chuyên gia tư vấn, 35 tuổi", archetype: "Mô thức: Tự Hủy", color: "#FF6B6B" },
   ];
   return (
     <section style={{ padding: "5rem 0", backgroundColor: "#1C1A3E" }}>
       <div className="container-main">
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.2rem)", fontWeight: 800, lineHeight: 1.3 }}>
-            Ho da nhin thay dieu minh chua tung thay
+            Họ đã nhìn thấy điều mình chưa từng thấy
           </h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
@@ -256,19 +256,4 @@ function CtaSection() {
   return (
     <section style={{ padding: "6rem 0", background: "linear-gradient(135deg, #2D2A5E 0%, #1C1A3E 100%)", textAlign: "center" }}>
       <div className="container-main">
-        <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.25 }}>
-          Mo thuc nao dang dieu khien ban?
-        </h2>
-        <p style={{ color: "#C4C0E0", marginBottom: "2.5rem", fontSize: "16px", lineHeight: 1.75 }}>
-          Bai test mien phi. 15 phut. Ket qua thay doi cach ban nhin chinh minh.
-        </p>
-        <Link
-          href="/kham-pha/ban-do-noi-tam"
-          style={{ display: "inline-block", background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)", color: "white", padding: "18px 44px", borderRadius: "999px", fontSize: "18px", fontWeight: 700, textDecoration: "none", fontFamily: "'Be Vietnam Pro', sans-serif", boxShadow: "0 8px 32px rgba(124,111,247,0.4)" }}
-        >
-          Lam bai test ngay - Mien phi
-        </Link>
-      </div>
-    </section>
-  );
-}
+        <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 800, marginBottom: "1rem", line
