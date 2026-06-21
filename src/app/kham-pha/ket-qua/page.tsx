@@ -70,15 +70,25 @@ function ResultsContent() {
     setSubmitting(true);
 
     try {
-      await fetch("/api/submit-email", {
+      // Gửi thông báo cho Hanna qua Web3Forms (client-side, public key)
+      await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email,
-          phone,
-          archetypeKey: dominantKey,
-          archetypeName: archetype.name,
-          source: "test-result",
+          access_key: "a2a56719-5d1d-42f9-a557-aa72281749ce",
+          subject: `[AIMIND] Khách mới: ${archetype.name} — ${email}`,
+          from_name: "AIMIND Website",
+          message: [
+            "📬 Khách hàng mới vừa hoàn thành bài test Bản Đồ Nội Tâm",
+            "",
+            `📧 Email: ${email}`,
+            `📱 Số điện thoại: ${phone || "Chưa cung cấp"}`,
+            `🎭 Bản dạng: ${archetype.name} (${dominantKey})`,
+            "",
+            "👉 Hành động tiếp theo:",
+            "- Gửi app thực hành cho khách qua Zalo/Email",
+            "- Follow up coaching nếu phù hợp",
+          ].join("\n"),
         }),
       });
     } catch {
