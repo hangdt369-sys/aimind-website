@@ -12,6 +12,7 @@ export default function HomePage() {
         <RecognitionSection />
         <TestPreviewSection />
         <JourneySection />
+        <WhatYouGetSection />
         <TestimonialsSection />
         <CtaSection />
       </main>
@@ -354,6 +355,148 @@ function JourneySection() {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+
+function WhatYouGetSection() {
+  return (
+    <section style={{ padding: "5rem 0", background: "linear-gradient(180deg, #F8F4EE 0%, white 100%)" }}>
+      <div className="container-main" style={{ maxWidth: "900px" }}>
+
+        {/* Header */}
+        <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+          <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.75rem" }}>
+            Bạn sẽ nhận được gì
+          </p>
+          <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.3rem)", fontWeight: 800, lineHeight: 1.3, marginBottom: "1rem" }}>
+            Trước và sau — nhìn từ góc độ người đã đi qua
+          </h2>
+          <p style={{ color: "#6B678F", fontSize: "16px", lineHeight: 1.8, maxWidth: "580px", margin: "0 auto" }}>
+            Không phải danh sách tính năng. Đây là những điều người dùng thật sự mô tả sau khi hoàn thành bài test và khóa học.
+          </p>
+        </div>
+
+        {/* After Test */}
+        <div style={{ marginBottom: "3rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1.5rem" }}>
+            <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "linear-gradient(135deg, #7C6FF7, #5B4FD4)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+              <span style={{ color: "white", fontSize: "16px" }}>①</span>
+            </div>
+            <div>
+              <p style={{ color: "#7C6FF7", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" as const, margin: 0 }}>Sau bài test Bản Đồ Nội Tâm</p>
+              <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.15rem", fontWeight: 800, margin: 0 }}>Lần đầu tiên nhìn thấy mình rõ</h3>
+            </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1rem" }}>
+            {[
+              {
+                before: "Tôi biết mình có vấn đề, nhưng không biết vấn đề là gì",
+                after: "Tôi có tên gọi cho điều mình đang làm — và biết nó đến từ đâu",
+                icon: "🏷️"
+              },
+              {
+                before: "Tôi cứ tưởng mình như vậy là do tính cách, không thể khác",
+                after: "Tôi hiểu đây là mô thức học được — không phải con người thật của mình",
+                icon: "🔓"
+              },
+              {
+                before: "Tôi phán xét bản thân rất nặng vì những phản ứng mình không kiểm soát được",
+                after: "Tôi thấy mình phản ứng theo một logic — và logic đó có lý do để tồn tại",
+                icon: "🤝"
+              },
+              {
+                before: "Tôi cô đơn với những gì mình đang trải qua — nghĩ chỉ có mình như vậy",
+                after: "Tôi nhận ra mô thức này phổ biến hơn tôi nghĩ — và có cách hiểu nó",
+                icon: "🌐"
+              },
+            ].map((item, i) => (
+              <div key={i} style={{ backgroundColor: "white", border: "1px solid #E8E3F0", borderRadius: "14px", padding: "1.5rem", position: "relative" as const, overflow: "hidden" as const }}>
+                <div style={{ position: "absolute" as const, top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #7C6FF7, #5B4FD4)" }} />
+                <span style={{ fontSize: "20px", display: "block", marginBottom: "1rem" }}>{item.icon}</span>
+                <p style={{ color: "#B0ACCC", fontSize: "13px", lineHeight: 1.6, marginBottom: "0.75rem", fontStyle: "italic" as const }}>
+                  Trước: &ldquo;{item.before}&rdquo;
+                </p>
+                <p style={{ color: "#1C1A3E", fontSize: "14px", lineHeight: 1.7, fontWeight: 600 }}>
+                  Sau: &ldquo;{item.after}&rdquo;
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem", margin: "2.5rem 0" }}>
+          <div style={{ flex: 1, height: "1px", backgroundColor: "#E8E3F0" }} />
+          <span style={{ color: "#9B96C0", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", whiteSpace: "nowrap" as const }}>SAU KHI HỌC CHUYÊN SÂU</span>
+          <div style={{ flex: 1, height: "1px", backgroundColor: "#E8E3F0" }} />
+        </div>
+
+        {/* After Course */}
+        <div style={{ marginBottom: "3rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1.5rem" }}>
+            <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "linear-gradient(135deg, #18B5B0, #0D8C88)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+              <span style={{ color: "white", fontSize: "16px" }}>②</span>
+            </div>
+            <div>
+              <p style={{ color: "#18B5B0", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" as const, margin: 0 }}>Sau khóa học Bản Đồ Nội Tâm Chuyên Sâu</p>
+              <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.15rem", fontWeight: 800, margin: 0 }}>Hiểu đủ sâu để có thể thay đổi</h3>
+            </div>
+          </div>
+
+          {/* Big transformations - 2 column */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "1rem", marginBottom: "1rem" }}>
+            {[
+              {
+                title: "Tôi biết mô thức của mình vận hành như thế nào",
+                desc: "Không chỉ biết tên — tôi hiểu cơ chế. Tại sao nó được kích hoạt. Trong hoàn cảnh nào. Với ai. Và điều gì ở bên dưới nó.",
+                icon: "🔬",
+                color: "#7C6FF7"
+              },
+              {
+                title: "Tôi nhận ra khi nào cơ chế cũ đang hoạt động",
+                desc: "Giữa một cuộc xung đột, tôi dừng lại được — và hỏi: đây là phản ứng thật của tôi, hay cơ chế bảo vệ đang chạy? Cái khoảng dừng đó thay đổi mọi thứ.",
+                icon: "⏸️",
+                color: "#18B5B0"
+              },
+              {
+                title: "Tôi hiểu vết thương cốt lõi và không còn xấu hổ về nó",
+                desc: "Tôi biết nhu cầu nào của mình chưa được đáp ứng từ nhỏ — và tại sao mô thức hiện tại là nỗ lực tốt nhất của đứa trẻ trong tôi để đối phó với điều đó.",
+                icon: "🌱",
+                color: "#5B8A3C"
+              },
+              {
+                title: "Tôi có thể nói chuyện khác đi — với mình và với người khác",
+                desc: "Tôi có ngôn ngữ để đặt tên cho trải nghiệm bên trong. Điều này giúp tôi giao tiếp thật hơn — không diễn, không phòng thủ, không biến mất.",
+                icon: "💬",
+                color: "#E85A71"
+              },
+            ].map((item, i) => (
+              <div key={i} style={{ backgroundColor: "white", border: "1px solid #E8E3F0", borderRadius: "14px", padding: "1.75rem", display: "flex", gap: "1rem" }}>
+                <span style={{ fontSize: "24px", flexShrink: 0, marginTop: "2px" }}>{item.icon}</span>
+                <div>
+                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "15px", fontWeight: 700, marginBottom: "0.5rem", lineHeight: 1.4 }}>{item.title}</h4>
+                  <p style={{ color: "#6B678F", fontSize: "13px", lineHeight: 1.75 }}>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Honest note */}
+        <div style={{ backgroundColor: "#1C1A3E", borderRadius: "16px", padding: "2rem 2.5rem", display: "flex", gap: "1.25rem", alignItems: "flex-start" }}>
+          <span style={{ fontSize: "24px", flexShrink: 0 }}>📌</span>
+          <div>
+            <p style={{ color: "#B8B3FA", fontWeight: 700, fontSize: "14px", marginBottom: "0.5rem" }}>Cần nói thẳng</p>
+            <p style={{ color: "#9B96C0", fontSize: "14px", lineHeight: 1.8 }}>
+              AIMIND không hứa hẹn thay đổi sau một bài test hay một khóa học. Thay đổi thật cần thời gian, lặp đi lặp lại, và đôi khi cần đồng hành. Điều mà AIMIND cung cấp là <strong style={{ color: "white" }}>nền tảng nhận thức</strong> — bạn hiểu mình đủ rõ để biết cần thay đổi điều gì, bắt đầu từ đâu, và tại sao những cách cũ không hiệu quả.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   );
