@@ -1305,6 +1305,553 @@ export const articles: Article[] = [
     ]
   }
 
+,
+  // ─── 7 BÀI MỚI — VIRAL INSIGHTS TOÀN CẦU ────────────────────────────────
+  {
+    slug: "biet-type-van-khong-thay-doi-duoc",
+    tag: "Mô thức",
+    tagColor: "#7C6FF7",
+    title: "Tại sao biết mô thức của mình vẫn không giúp bạn thay đổi",
+    excerpt: "Biết mình là Type 4, Type 2, hay bất kỳ type nào — cảm giác đó rất hay. Nhưng sau vài tuần, bạn vẫn phản ứng theo cách cũ. Đây không phải vì hệ thống sai. Mà vì có một khoảng cách rất lớn giữa hiểu và thay đổi mà ít ai nói đến.",
+    readTime: "7 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn làm bài test. Đọc mô tả. Gật đầu liên tục — Đúng quá, đây là mình. Chia sẻ với bạn bè. Cảm thấy được nhìn thấy lần đầu tiên trong nhiều năm."
+      },
+      {
+        type: "paragraph",
+        content: "Rồi ba tuần sau — bạn lại phản ứng theo đúng mô thức cũ. Vẫn lo lắng như vậy. Vẫn cho đi như vậy. Vẫn rút lui như vậy."
+      },
+      {
+        type: "paragraph",
+        content: "Và bạn tự hỏi: Biết để làm gì?"
+      },
+      {
+        type: "heading",
+        content: "Insight không phải thay đổi"
+      },
+      {
+        type: "paragraph",
+        content: "Đây là điều các nhà tâm lý học gọi là insight-action gap — khoảng cách giữa hiểu biết và hành động. Nghiên cứu nhất quán cho thấy: hiểu vấn đề của mình không tự động dẫn đến thay đổi hành vi."
+      },
+      {
+        type: "paragraph",
+        content: "Thật ra, đôi khi hiểu còn làm bạn stuck hơn. Vì bạn bắt đầu giải thích thay vì thay đổi. Thay vì xử lý cảm xúc, bạn phân tích: Mình đang lo lắng vì mình là Type 6, cơ chế phòng thủ của mình là... Và rồi bạn ở lại trong đầu, không xuống cơ thể."
+      },
+      {
+        type: "quote",
+        content: "Tự nhận thức mà không có hành động chỉ tạo ra một câu chuyện tinh vi hơn về lý do tại sao bạn là như vậy — không phải sự thay đổi."
+      },
+      {
+        type: "heading",
+        content: "Ba lý do biết không đủ"
+      },
+      {
+        type: "list",
+        items: [
+          "Mô thức được lưu trong cơ thể, không chỉ trong đầu: Khi bị trigger, phản ứng xảy ra trước khi bạn kịp nghĩ. Não cảm xúc (amygdala) bắn trước, não lý trí (prefrontal cortex) đến sau. Biết về mô thức không làm chậm được phản xạ thần kinh.",
+          "Hiểu tạo ra sự thoải mái giả: Khi bạn có tên cho vấn đề — Tôi né tránh vì gắn bó né tránh — não cảm thấy đã xử lý xong. Cảm giác hiểu tạo ra dopamine nhỏ. Và bạn không còn động lực thật sự để làm việc khó hơn.",
+          "Thay đổi cần lặp lại trong bối cảnh thật: Hiểu mô thức trong phòng yên tĩnh khác hoàn toàn với giữ bình tĩnh khi người yêu không trả lời tin nhắn lúc 11 giờ đêm. Thay đổi thật xảy ra trong bối cảnh có cảm xúc thật — không phải trong bài test trắc nghiệm."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Vậy biết để làm gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Biết là điểm bắt đầu — không phải điểm kết thúc. Giá trị thật của việc hiểu mô thức không phải là nhãn dán. Là bản đồ để bạn nhận ra khi nào mình đang bị cuốn vào mô thức cũ — và có khoảng dừng nhỏ đủ để chọn khác đi."
+      },
+      {
+        type: "paragraph",
+        content: "Khoảng dừng đó — theo nhà tâm lý học Viktor Frankl — là nơi tự do nằm. Giữa kích thích và phản ứng, có một khoảng không gian. Và trong khoảng không gian đó là sức mạnh để chọn."
+      },
+      {
+        type: "list",
+        items: [
+          "Nhận ra trigger ngay lúc nó xảy ra, không phải sau: Tập đặt tên cảm giác trong thời gian thực — Mình đang lo lắng. Mình đang muốn rút lui. Mình đang cần được trấn an.",
+          "Làm việc với cơ thể, không chỉ với đầu: Mô thức được giải phóng qua cơ thể — thở, chuyển động, cảm nhận. Không qua phân tích thêm.",
+          "Thực hành trong tình huống an toàn thật: Không phải đọc thêm. Là thử phản ứng khác đi trong một cuộc trò chuyện thật, một khoảnh khắc thật."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Mô thức không thay đổi khi bạn hiểu nó. Nó thay đổi khi bạn sống khác đi — lần này, rồi lần sau, rồi lần sau nữa."
+      }
+    ]
+  },
+  {
+    slug: "dopamine-va-nhung-nguoi-gay-nghien",
+    tag: "Khoa học thần kinh",
+    tagColor: "#18B5B0",
+    title: "Dopamine và những mối quan hệ gây nghiện: Khoa học đằng sau cảm giác không thể buông",
+    excerpt: "Tại sao người hot-and-cold lại khó quên hơn người tốt bụng nhất quán? Tại sao bạn biết mối quan hệ độc hại nhưng vẫn quay lại? Đây không phải yếu đuối. Đây là neurochemistry.",
+    readTime: "8 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn biết họ không tốt cho bạn. Bạn đã phân tích. Đã nói chuyện với bạn bè. Đã viết nhật ký. Đã quyết định dứt khoát."
+      },
+      {
+        type: "paragraph",
+        content: "Rồi họ nhắn một tin. Và mọi thứ sụp đổ."
+      },
+      {
+        type: "paragraph",
+        content: "Không phải vì bạn yếu. Mà vì não bạn đang bị mắc kẹt trong một vòng lặp neurochemical mà các nhà khoa học so sánh với nghiện chất."
+      },
+      {
+        type: "heading",
+        content: "Intermittent reinforcement — vũ khí gây nghiện mạnh nhất"
+      },
+      {
+        type: "paragraph",
+        content: "Nhà tâm lý học B.F. Skinner phát hiện điều này từ thập niên 1950 qua thí nghiệm với chuột: Lịch thưởng ngắt quãng — đôi khi có thưởng, đôi khi không — tạo ra hành vi mạnh nhất và dai dẳng nhất."
+      },
+      {
+        type: "paragraph",
+        content: "Máy đánh bạc hoạt động theo nguyên lý này. Mối quan hệ hot-and-cold cũng vậy."
+      },
+      {
+        type: "paragraph",
+        content: "Khi người yêu bạn nhất quán và tốt bụng — não bạn điều chỉnh về mức baseline. Mọi thứ dễ chịu nhưng không hưng phấn. Khi người yêu bạn lúc nóng lúc lạnh — não bạn liên tục ở trạng thái chờ đợi. Mỗi lần họ quay lại, dopamine tăng vọt. Cảm giác đó được não mã hóa là passion, chemistry, yêu thật sự."
+      },
+      {
+        type: "quote",
+        content: "Não không phân biệt được giữa phần thưởng gây ra bởi tình yêu lành mạnh và phần thưởng gây ra bởi sự giải thoát khỏi lo lắng. Cả hai đều tạo ra dopamine. Và não muốn thêm."
+      },
+      {
+        type: "heading",
+        content: "Cortisol: cơn nghiện ẩn phía sau sự lo lắng"
+      },
+      {
+        type: "paragraph",
+        content: "Mối quan hệ hỗn loạn không chỉ tạo ra dopamine — nó còn tạo ra cortisol liên tục. Cortisol là hormone stress. Khi bạn không biết họ có trả lời không, khi bạn phân tích từng tin nhắn, khi bạn chờ đợi trong lo lắng — cortisol đang chạy."
+      },
+      {
+        type: "paragraph",
+        content: "Khi stress giải tỏa — khi họ trả lời, khi họ quay lại — sự giảm cortisol đột ngột tạo ra cảm giác nhẹ nhõm được não giải thích là hạnh phúc. Là cảm giác đúng chỗ. Là nhà."
+      },
+      {
+        type: "list",
+        items: [
+          "Người tốt bụng và nhất quán không kích hoạt vòng cortisol-dopamine này. Họ cảm thấy boring không phải vì họ kém hấp dẫn — mà vì não bạn chưa quen với sự an toàn.",
+          "Người hỗn loạn và không thể đoán kích hoạt hệ thần kinh vào trạng thái chiến đấu hoặc bỏ chạy liên tục. Và sau đủ nhiều lần, hệ thần kinh bắt đầu nhầm trạng thái này với sự kết nối.",
+          "Đây là lý do nhiều người nói cảm thấy boring với người tốt — không phải thiếu tình cảm, mà hệ thần kinh chưa được học cách cảm thấy an toàn với sự bình yên."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Thoát ra như thế nào khi não đang nghiện?"
+      },
+      {
+        type: "paragraph",
+        content: "Bước đầu tiên: không phán xét bản thân. Đây là phản ứng sinh học, không phải tính cách yếu đuối."
+      },
+      {
+        type: "list",
+        items: [
+          "Đặt tên cho vòng lặp khi nó xảy ra: Mình đang trong vòng dopamine-cortisol. Não mình đang nhầm stress với passion. Đây không phải tình yêu thật — đây là hóa học não.",
+          "Tránh tiếp xúc đủ lâu để vòng lặp giải thể: Giống như cai nghiện, cần thời gian không tiếp xúc để hệ thần kinh reset. Mỗi lần liên hệ lại làm vòng lặp mạnh thêm.",
+          "Học cách chịu đựng sự bình yên: Nếu sự nhất quán cảm thấy boring, đây là thứ cần làm việc — không phải tìm thêm drama. Trị liệu hoặc coaching giúp hệ thần kinh học lại cách cảm thấy an toàn với sự an toàn."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Không phải bạn yêu họ. Là não bạn đang cần liều dopamine tiếp theo. Biết điều này không xóa cảm xúc — nhưng cho bạn lựa chọn khác để đứng ngoài vòng lặp."
+      }
+    ]
+  },
+  {
+    slug: "tai-sao-ban-khong-chi-bi-thu-hut-ma-con-tai-tao",
+    tag: "Quan hệ",
+    tagColor: "#E8A87C",
+    title: "Bạn không chỉ bị thu hút về cùng một kiểu người — bạn đang tái tạo họ",
+    excerpt: "Mọi người hỏi: Tại sao mình cứ gặp cùng một kiểu người? Câu hỏi đúng hơn là: Tại sao mình vô thức chọn, diễn giải, và tạo ra điều kiện để những gì không lành mạnh lặp lại?",
+    readTime: "9 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Cô ấy hẹn hò với ba người đàn ông khác nhau trong ba năm. Một kế toán trưởng. Một nghệ sĩ. Một kỹ sư. Hoàn cảnh khác nhau, nghề nghiệp khác nhau, tính cách khác nhau."
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng kết thúc giống nhau: cô ấy cảm thấy không được lắng nghe. Không được trân trọng. Cô đơn trong mối quan hệ."
+      },
+      {
+        type: "paragraph",
+        content: "Vấn đề không phải là cô ấy gặp xui. Vấn đề nằm ở một nơi khác — và khó nhìn thấy hơn nhiều."
+      },
+      {
+        type: "heading",
+        content: "Repetition compulsion — cú lặp vô thức"
+      },
+      {
+        type: "paragraph",
+        content: "Sigmund Freud đặt tên cho hiện tượng này là repetition compulsion — xu hướng vô thức tái tạo những trải nghiệm chưa được giải quyết từ quá khứ. Không phải để đau thêm — mà vì não đang cố gắng lần này kết thúc khác đi."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu bạn lớn lên với cha mẹ xa cách cảm xúc, bạn có thể liên tục bị thu hút bởi những người xa cách cảm xúc — và nỗ lực hết mình để làm họ gần gũi hơn. Không phải vì bạn thích đau. Mà vì phần vô thức của bạn đang cố gắng sửa kịch bản cũ."
+      },
+      {
+        type: "quote",
+        content: "Chúng ta không tìm kiếm người làm mình hạnh phúc. Chúng ta tìm kiếm người mà với họ, chúng ta có thể diễn lại và — hy vọng lần này — sửa được vở kịch từ tuổi thơ."
+      },
+      {
+        type: "heading",
+        content: "Ba cơ chế bạn tái tạo mô thức"
+      },
+      {
+        type: "list",
+        items: [
+          "Lựa chọn có chọn lọc: Trong một phòng 50 người, hệ thần kinh của bạn nhận ra người phù hợp với mô thức quen thuộc và gửi tín hiệu hấp dẫn. Không phải vì họ tốt nhất — mà vì họ quen nhất với những gì bạn đã biết xử lý.",
+          "Diễn giải có chọn lọc: Cùng một người, bạn có thể giải thích hành vi của họ theo cách xác nhận mô thức cũ. Họ đến muộn = không coi trọng mình. Hoặc: họ bận. Bộ lọc của bạn quyết định bạn thấy gì.",
+          "Kích hoạt bằng hành vi của chính mình: Bạn có thể vô thức tạo ra điều kiện để mô thức cũ xảy ra — trở nên cần thiết quá mức, hoặc rút lui khi mọi thứ tốt đẹp, hoặc thử thách họ theo những cách khiến họ phản ứng theo cách quen thuộc với bạn."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Phá vỡ vòng lặp — không chỉ là chọn người khác"
+      },
+      {
+        type: "paragraph",
+        content: "Nhiều người nghĩ rằng nếu tìm được người khác type là xong. Nhưng nếu mô thức bên trong chưa thay đổi — bạn sẽ tái tạo động lực cũ với người mới."
+      },
+      {
+        type: "list",
+        items: [
+          "Nhìn vào pattern, không phải người: Thay vì phân tích tại sao người đó như vậy — hỏi: Mình cảm thấy quen thuộc với điều gì trong mối quan hệ này? Mình đã cảm thấy điều này từ khi nào?",
+          "Để ý khi nào bạn bị cuốn mạnh nhất: Sức hút mạnh bất thường thường là tín hiệu của mô thức cũ đang được kích hoạt — không phải tình yêu thật sự. Ngược lại, cảm giác ổn định và an toàn đôi khi bị nhầm là thiếu chemistry.",
+          "Làm việc với kịch bản gốc: Điều thật sự cần thay đổi không phải danh sách người bạn chọn — mà là vết thương gốc mà mô thức đang cố gắng chữa lành. Đây là việc của trị liệu, coaching, hoặc làm việc nội tâm sâu."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Khi bạn thật sự chữa lành vết thương gốc — người bạn bị thu hút cũng sẽ thay đổi. Không phải vì bạn có tiêu chuẩn cao hơn. Mà vì bạn không còn cần họ để hoàn thành điều gì từ quá khứ nữa."
+      }
+    ]
+  },
+  {
+    slug: "bong-toi-noi-tam-dang-dieu-khien-ban",
+    tag: "Tự nhận thức",
+    tagColor: "#7BAE7F",
+    title: "Bóng tối nội tâm: Phần bạn từ chối đang điều khiển cuộc đời bạn",
+    excerpt: "Carl Jung gọi nó là the Shadow — tất cả những phần của bạn mà bạn đã học cách giấu đi, từ chối, hoặc không nhận là của mình. Và chính những phần đó đang âm thầm quyết định nhiều lựa chọn quan trọng nhất của bạn.",
+    readTime: "8 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn ghét khi người ta tự cao. Nhưng tại sao bạn ghét mạnh đến vậy?"
+      },
+      {
+        type: "paragraph",
+        content: "Bạn thấy khó chịu với người đặt ra ranh giới rõ ràng. Bạn xem người thẳng thắn là thô lỗ. Bạn không chịu được người cởi mở về cảm xúc của họ."
+      },
+      {
+        type: "paragraph",
+        content: "Jung có một câu trả lời đơn giản và khó chịu: Những gì bạn phản ứng mạnh nhất ở người khác thường là những gì bạn đang từ chối trong bản thân."
+      },
+      {
+        type: "heading",
+        content: "Shadow là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Từ khi còn nhỏ, bạn học được rằng một số phần của mình được chấp nhận — và một số phần thì không. Đứa trẻ khóc bị bảo im đi. Đứa trẻ tức giận bị phạt. Đứa trẻ kiêu ngạo bị xấu hổ."
+      },
+      {
+        type: "paragraph",
+        content: "Những phần đó không biến mất — chúng chui vào bóng tối. Jung gọi đây là the Shadow: kho chứa tất cả những thứ chúng ta đã học cách không nhận là của mình."
+      },
+      {
+        type: "quote",
+        content: "Cho đến khi bạn nhìn thấy bóng tối của mình, nó sẽ tiếp tục gọi nó là số phận."
+      },
+      {
+        type: "heading",
+        content: "Shadow hoạt động như thế nào?"
+      },
+      {
+        type: "list",
+        items: [
+          "Phóng chiếu (Projection): Khi bạn không thể chấp nhận một phần của mình — bạn nhìn thấy nó ở người khác và phản ứng mạnh với nó. Người hay phán xét người khác là kiêu ngạo thường đang kìm nén sự kiêu ngạo của chính mình.",
+          "Bùng nổ bất ngờ: Shadow không biến mất — nó chờ đợi. Khi bạn kiệt sức hoặc bị tổn thương, nó thoát ra theo cách không kiểm soát. Người bình thường rất điềm tĩnh đột nhiên nổi giận quá mức — đây là Shadow nói chuyện.",
+          "Hành vi tự phá hoại: Đôi khi Shadow thể hiện qua những lựa chọn mà bạn không hiểu tại sao mình lại làm. Phá vỡ điều tốt đẹp. Tự cô lập khi cần kết nối. Trì hoãn khi cần tiến lên."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Shadow work không phải về việc trở thành tồi tệ hơn"
+      },
+      {
+        type: "paragraph",
+        content: "Nhiều người sợ nhìn vào bóng tối của mình vì nghĩ rằng chấp nhận nó có nghĩa là trở thành nó. Nhưng ngược lại."
+      },
+      {
+        type: "paragraph",
+        content: "Người không nhận ra sự giận dữ trong mình sẽ bị nó điều khiển. Người nhìn thấy và chấp nhận sự giận dữ — có thể chọn khi nào và cách nào bày tỏ nó. Ý thức tạo ra lựa chọn."
+      },
+      {
+        type: "list",
+        items: [
+          "Bắt đầu với phản ứng mạnh: Điều gì hoặc ai làm bạn khó chịu không tương xứng? Đây là cửa vào bóng tối của bạn.",
+          "Hỏi: Phần nào của mình đang được phản ánh ở đây? Không phải để chấp nhận hành vi — mà để nhìn thấy phần nào của mình đang bị từ chối.",
+          "Tìm giá trị trong phần bị từ chối: Tức giận có thể là ranh giới cần được thiết lập. Kiêu ngạo có thể là tự tin chưa được nuôi dưỡng. Lạnh lùng có thể là nhu cầu không gian chưa được đáp ứng.",
+          "Tích hợp, không phải loại bỏ: Shadow work không phải xóa bóng tối. Là đưa nó vào ánh sáng để bạn có thể làm việc với nó có ý thức."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Người không nhìn thấy bóng tối của mình sẽ chiếu nó lên thế giới và gọi đó là số phận. Người nhìn thấy nó — có cơ hội thật sự để tự do."
+      }
+    ]
+  },
+  {
+    slug: "tu-pha-hoai-va-khoa-hoc-dang-sau",
+    tag: "Hành vi",
+    tagColor: "#6B678F",
+    title: "Tự phá hoại: Khi phần bạn ghét nhất trong mình lại đang cố bảo vệ bạn",
+    excerpt: "Bạn muốn thành công — nhưng lại trì hoãn đúng lúc quan trọng. Bạn muốn mối quan hệ tốt — nhưng lại làm hỏng chính xác khi mọi thứ bắt đầu đẹp. Đây không phải yếu đuối. Đây là hệ thống bảo vệ cũ đang chạy sai thời điểm.",
+    readTime: "8 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Anh ấy đã chuẩn bị cho buổi thuyết trình quan trọng nhất trong sự nghiệp suốt hai tuần. Tối hôm trước — anh mở Netflix."
+      },
+      {
+        type: "paragraph",
+        content: "Cô ấy cuối cùng đã gặp được người tốt. Người kiên nhẫn, trưởng thành, không drama. Sau ba tuần — cô bắt đầu tìm lỗi."
+      },
+      {
+        type: "paragraph",
+        content: "Đây là self-sabotage — tự phá hoại. Và nó xảy ra thường xuyên hơn bạn nghĩ, ngay cả ở những người thành công nhất."
+      },
+      {
+        type: "heading",
+        content: "Self-sabotage là cơ chế bảo vệ cũ"
+      },
+      {
+        type: "paragraph",
+        content: "Nghịch lý của self-sabotage là: não bộ đang cố bảo vệ bạn. Chỉ là bảo vệ bạn khỏi thứ gì đó mà bây giờ không còn là mối đe dọa nữa."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu lớn lên bạn học rằng thành công thu hút sự ghen tị và tấn công — não bạn mã hóa thành công = nguy hiểm. Nếu mỗi khi mối quan hệ trở nên gần gũi thì đau xảy ra — não mã hóa gần gũi = nguy hiểm."
+      },
+      {
+        type: "paragraph",
+        content: "Phần não cũ không cập nhật calendar. Nó vẫn đang chạy phần mềm từ 20 năm trước. Và khi bạn tiến gần đến thứ gì đó mà nó mã hóa là nguy hiểm — nó kéo tay phanh."
+      },
+      {
+        type: "quote",
+        content: "Bạn không phá hoại vì bạn không muốn thành công. Bạn phá hoại vì một phần của bạn tin rằng thành công sẽ mang lại điều gì đó đáng sợ hơn thất bại."
+      },
+      {
+        type: "heading",
+        content: "Cognitive dissonance và self-sabotage"
+      },
+      {
+        type: "paragraph",
+        content: "Cognitive dissonance là sự căng thẳng khi bạn hành động khác với niềm tin về bản thân. Nếu bạn tin sâu bên trong rằng mình không xứng đáng với thành công — khi bắt đầu thành công, bạn cảm thấy dissonance không thoải mái."
+      },
+      {
+        type: "paragraph",
+        content: "Não tìm cách giải quyết dissonance đó nhanh nhất có thể. Và cách nhanh nhất không phải thay đổi niềm tin — mà là thay đổi hành vi cho phù hợp với niềm tin cũ. Tự phá hoại chính là cách não giải quyết dissonance."
+      },
+      {
+        type: "heading",
+        content: "Dấu hiệu self-sabotage bạn có thể không nhận ra"
+      },
+      {
+        type: "list",
+        items: [
+          "Trì hoãn đúng lúc quan trọng: Không phải lười — mà hệ thần kinh đang né tránh thứ mà nó mã hóa là nguy hiểm.",
+          "Tìm lỗi khi mọi thứ tốt đẹp: Mối quan hệ tốt, công việc tốt — nhưng bạn thấy khó chịu và bắt đầu tìm lý do để rời đi.",
+          "Không hoàn thành những gì đã bắt đầu: Bắt đầu nhiều dự án nhưng không xong — vì hoàn thành đồng nghĩa với phán xét, và phán xét đồng nghĩa với nguy hiểm.",
+          "Tự cô lập khi cần hỗ trợ nhất: Khi áp lực lớn nhất, bạn rút lui thay vì kết nối. Vì cần người khác cảm thấy dễ bị tổn thương."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Làm việc với self-sabotage"
+      },
+      {
+        type: "paragraph",
+        content: "Bước đầu tiên là bỏ tự trách. Self-sabotage không phải tính cách xấu hay thiếu ý chí — đây là cơ chế bảo vệ. Và cơ chế bảo vệ cần được cảm ơn trước khi có thể được cập nhật."
+      },
+      {
+        type: "list",
+        items: [
+          "Nhận ra pattern trước khi nó hoàn thành: Để ý khi nào bạn bắt đầu trì hoãn, rút lui, hoặc tìm lỗi. Hỏi: Mình đang sắp sửa làm gì đây?",
+          "Tìm niềm tin ẩn phía sau: Nếu mình thành công điều này — mình sợ điều gì sẽ xảy ra? Câu trả lời thường là cốt lõi của pattern.",
+          "Thay đổi niềm tin, không phải cố ép hành vi: Ép hành vi mà không thay đổi niềm tin tạo ra thêm dissonance và nhiều self-sabotage hơn. Làm việc với nhà trị liệu hoặc coach để thay đổi từ gốc."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Phần phá hoại bạn không phải kẻ thù. Đó là đứa trẻ sợ hãi đang cố giữ bạn an toàn theo cách nó biết. Hiểu nó — bạn có thể thuyết phục nó thử cách khác."
+      }
+    ]
+  },
+  {
+    slug: "gan-bo-hon-loan-khi-yeu-la-chay-tron",
+    tag: "Gắn bó",
+    tagColor: "#E8A87C",
+    title: "Gắn bó hỗn loạn: Khi bạn vừa chạy đến vừa chạy trốn trong cùng một mối quan hệ",
+    excerpt: "Bạn khao khát sự gần gũi — nhưng khi có được nó, bạn hoảng sợ. Bạn đẩy người ta đi — rồi sụp đổ khi họ rời. Đây là kiểu gắn bó khó nhận ra nhất và cũng đau đớn nhất.",
+    readTime: "9 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn muốn yêu và được yêu — sâu trong lòng, bạn chắc chắn về điều đó. Nhưng mỗi khi ai đó thật sự đến gần — có gì đó trong bạn muốn bỏ chạy."
+      },
+      {
+        type: "paragraph",
+        content: "Và khi bạn bỏ chạy — hoặc họ bỏ chạy vì bạn — bạn lại sụp đổ vì cô đơn."
+      },
+      {
+        type: "paragraph",
+        content: "Không phải bạn điên. Không phải bạn không biết yêu. Đây là gắn bó hỗn loạn — và nó có lý do rất rõ ràng."
+      },
+      {
+        type: "heading",
+        content: "Gắn bó hỗn loạn hình thành thế nào?"
+      },
+      {
+        type: "paragraph",
+        content: "Trong nghiên cứu của Mary Ainsworth và sau đó là Mary Main, gắn bó hỗn loạn (disorganized attachment) xảy ra khi người chăm sóc đồng thời là nguồn an toàn và nguồn nguy hiểm."
+      },
+      {
+        type: "paragraph",
+        content: "Với đứa trẻ có cha hoặc mẹ bạo lực, nghiện ngập, hoặc không ổn định về mặt cảm xúc — đứa trẻ đối mặt với nghịch lý không thể giải quyết: Người mình cần để được an toàn chính là người khiến mình không an toàn."
+      },
+      {
+        type: "paragraph",
+        content: "Não trẻ em không thể xử lý nghịch lý này. Không thể tiến gần (nguy hiểm) cũng không thể rời xa (cũng nguy hiểm). Kết quả là: hệ thống gắn bó bị gián đoạn và hỗn loạn."
+      },
+      {
+        type: "quote",
+        content: "Người có gắn bó hỗn loạn không thiếu khả năng yêu. Họ yêu rất mãnh liệt — nhưng tình yêu với họ đã được học là đi kèm với đau, nguy hiểm, hoặc mất bản thân."
+      },
+      {
+        type: "heading",
+        content: "Dấu hiệu gắn bó hỗn loạn trong quan hệ trưởng thành"
+      },
+      {
+        type: "list",
+        items: [
+          "Vừa muốn gần vừa muốn chạy: Khi người ta xa, bạn khao khát. Khi người ta gần, bạn cảm thấy ngạt thở và tìm cách tạo khoảng cách. Vòng lặp này lặp đi lặp lại.",
+          "Phản ứng cực đoan: Không có vùng trung gian. Yêu hết mực hoặc ghét hoàn toàn. Người hoàn hảo hoặc người tệ nhất. Lý tưởng hóa rồi phá vỡ.",
+          "Sợ bị bỏ rơi lẫn sợ bị nuốt chửng: Cả hai nỗi sợ cùng tồn tại — và chúng kéo bạn về hai hướng đối lập trong cùng một mối quan hệ.",
+          "Tự phá hoại khi mọi thứ tốt đẹp: Khi mối quan hệ ổn định và an toàn — cảm giác đó lạ lẫm đến mức bạn vô thức phá vỡ nó để quay về vùng quen thuộc.",
+          "Khó tin tưởng — nhưng cũng bám víu quá mức: Vừa không tin người khác sẽ ở lại, vừa bám chặt theo cách đẩy họ đi."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Chữa lành gắn bó hỗn loạn"
+      },
+      {
+        type: "paragraph",
+        content: "Gắn bó hỗn loạn là kiểu gắn bó khó chữa lành nhất — nhưng cũng hoàn toàn có thể thay đổi được. Điều quan trọng nhất: cần một mối quan hệ an toàn và nhất quán để não học lại rằng gần gũi không phải nguy hiểm."
+      },
+      {
+        type: "list",
+        items: [
+          "Trị liệu chuyên sâu về sang chấn: Đặc biệt là các phương pháp làm việc với cơ thể như EMDR, Somatic Experiencing. Gắn bó hỗn loạn có gốc rễ sang chấn sâu — cần được tiếp cận ở cấp độ đó.",
+          "Nhận ra vòng lặp tiếp cận-rút lui: Khi bạn cảm thấy ngạt thở, đặt tên cho nó: Mình đang muốn chạy. Đây là phản xạ cũ, không phải thực tế hiện tại.",
+          "Thực hành chịu đựng sự gần gũi an toàn: Bắt đầu nhỏ — chịu đựng sự kết nối chân thực trong 5 phút, 10 phút. Não học rằng gần gũi không gây hại.",
+          "Kiên nhẫn với chính mình: Gắn bó hỗn loạn hình thành trong nhiều năm đầu đời. Thay đổi nó không thể xảy ra trong vài tuần. Mỗi lần bạn chọn ở lại thay vì bỏ chạy — là một bước thật."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Bạn không bị hỏng. Bạn đang chạy phần mềm được viết bởi hoàn cảnh không phải do bạn chọn. Và phần mềm đó có thể được viết lại — từng trải nghiệm an toàn một."
+      }
+    ]
+  },
+  {
+    slug: "enneagram-va-shadow-khi-diem-manh-la-diem-mu",
+    tag: "Phân biệt mô thức",
+    tagColor: "#9B7FD4",
+    title: "Khi điểm mạnh của bạn trở thành điểm mù: Mặt tối trong mỗi mô thức",
+    excerpt: "Mỗi mô thức Enneagram có một điểm mạnh nổi bật — và một mặt tối tương ứng mà chính mô thức đó khó nhìn thấy nhất. Hiểu điều này không phải để tự trách — mà để không bị cái mạnh của mình làm hại chính mình.",
+    readTime: "8 phút",
+    publishDate: "Tháng 7, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Type 1 cực kỳ trách nhiệm — và không thể tha thứ cho bản thân khi không hoàn hảo."
+      },
+      {
+        type: "paragraph",
+        content: "Type 2 vô cùng quan tâm người khác — và không biết cách nhận lại sự quan tâm."
+      },
+      {
+        type: "paragraph",
+        content: "Type 3 làm việc không mệt mỏi — và không biết mình là ai khi không làm gì."
+      },
+      {
+        type: "paragraph",
+        content: "Không phải ngẫu nhiên. Mặt tối của mỗi mô thức luôn nằm chính xác ở phần mà mô thức đó phát triển nhất."
+      },
+      {
+        type: "heading",
+        content: "Tại sao điểm mạnh tạo ra điểm mù?"
+      },
+      {
+        type: "paragraph",
+        content: "Enneagram không mô tả tính cách. Nó mô tả chiến lược sinh tồn — cách mỗi người học để đảm bảo an toàn và thuộc về. Chiến lược đó được luyện tập đến mức trở thành bản năng. Và bất kỳ điều gì trở thành bản năng đều có thể chạy mà không cần ý thức."
+      },
+      {
+        type: "paragraph",
+        content: "Jung gọi điều này là one-sidedness — sự phát triển một chiều. Khi bạn phát triển quá mạnh về một phía, phía đối lập bị bỏ quên và trở thành bóng tối."
+      },
+      {
+        type: "heading",
+        content: "Mặt tối trong từng mô thức"
+      },
+      {
+        type: "list",
+        items: [
+          "Type 1 — Người Cầu Toàn: Điểm mạnh là tính chính trực và trách nhiệm. Mặt tối: Phê phán bản thân và người khác theo tiêu chuẩn không thể đáp ứng. Khi mọi thứ không đạt chuẩn — tức giận bị kìm nén biến thành phán xét ngầm.",
+          "Type 2 — Người Cho Đi: Điểm mạnh là sự ấm áp và quan tâm. Mặt tối: Cho đi để được cần, không phải vì muốn. Không nhận ra nhu cầu của chính mình. Và khi không được ghi nhận — cảm thấy bị lợi dụng dù không ai ép.",
+          "Type 3 — Người Thành Công: Điểm mạnh là năng lực và hiệu quả. Mặt tối: Danh tính gắn chặt với thành tích. Không biết mình là ai khi thất bại hoặc không làm gì. Giỏi thể hiện cảm xúc cần thiết — khó cảm nhận cảm xúc thật.",
+          "Type 4 — Người Độc Đáo: Điểm mạnh là chiều sâu cảm xúc và sự chân thực. Mặt tối: Đắm chìm trong cảm xúc đến mức tê liệt. Lý tưởng hóa những gì không có và phủ nhận những gì đang có.",
+          "Type 5 — Người Quan Sát: Điểm mạnh là tư duy độc lập và phân tích sâu. Mặt tối: Rút vào đầu, tách khỏi cơ thể và cảm xúc. Thu mình để bảo toàn năng lượng đến mức cô lập.",
+          "Type 6 — Người Trung Thành: Điểm mạnh là sự cảnh giác và trung thành. Mặt tối: Lo lắng mãn tính về mối đe dọa — thật và tưởng tượng. Tin tưởng người khác hơn bản thân, hoặc ngược lại — không tin ai.",
+          "Type 7 — Người Nhiệt Tình: Điểm mạnh là năng lượng và khả năng tận hưởng. Mặt tối: Né tránh đau, tổn thương, và bất kỳ thứ gì âm tính bằng cách luôn chuyển sang điều mới. Không ngồi lại đủ lâu để xử lý.",
+          "Type 8 — Người Thủ Lĩnh: Điểm mạnh là sức mạnh và bảo vệ người khác. Mặt tối: Dễ bị tổn thương bị xem là yếu đuối — cần kiểm soát để cảm thấy an toàn. Đẩy người khác đi vì tiến gần quá sẽ dẫn đến bị phản bội.",
+          "Type 9 — Người Hòa Giải: Điểm mạnh là sự bình thản và chấp nhận. Mặt tối: Hòa giải bằng cách xóa mờ bản thân — không biết mình muốn gì, cần gì. Tránh xung đột đến mức không còn tiếng nói riêng."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Không có type nào tốt hơn type nào. Mỗi type có món quà của nó — và bóng tối tương xứng. Trưởng thành không phải trở thành type khác. Là nhìn thấy bóng tối của type mình — và chọn có ý thức hơn."
+      },
+      {
+        type: "heading",
+        content: "Làm việc với mặt tối của mô thức"
+      },
+      {
+        type: "paragraph",
+        content: "Câu hỏi không phải Mình là type gì? Câu hỏi sâu hơn là: Điểm mạnh của mình đang được dùng như thế nào? Nó đang phục vụ mình và người xung quanh — hay nó đang chạy tự động và gây hại?"
+      },
+      {
+        type: "paragraph",
+        content: "Type 1 có thể dùng tính trách nhiệm để xây dựng — hoặc để phán xét. Type 2 có thể dùng sự quan tâm để kết nối thật — hoặc để kiểm soát. Sự khác biệt nằm ở mức độ ý thức, không phải ở type."
+      }
+    ]
+  }
+
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

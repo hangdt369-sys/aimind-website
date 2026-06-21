@@ -125,13 +125,71 @@ const articles = [
     readTime: "7 phút",
     color: "#9B7FD4",
   },
+,
+  // ─── 7 BÀI VIRAL INSIGHTS ──────────────────────────────────────────────────
+  {
+    slug: "/kien-thuc/bai-viet/biet-type-van-khong-thay-doi-duoc",
+    tag: "Mô thức",
+    title: "Tại sao biết mô thức của mình vẫn không giúp bạn thay đổi",
+    excerpt: "Biết mình là Type 4, Type 2, hay bất kỳ type nào — cảm giác đó rất hay. Nhưng sau vài tuần, bạn vẫn phản ứng theo cách cũ. Có một khoảng cách rất lớn giữa hiểu và thay đổi mà ít ai nói đến.",
+    readTime: "7 phút",
+    color: "#7C6FF7",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/dopamine-va-nhung-nguoi-gay-nghien",
+    tag: "Khoa học thần kinh",
+    title: "Dopamine và những mối quan hệ gây nghiện: Khoa học đằng sau cảm giác không thể buông",
+    excerpt: "Tại sao người hot-and-cold lại khó quên hơn người tốt bụng nhất quán? Tại sao bạn biết mối quan hệ độc hại nhưng vẫn quay lại? Đây không phải yếu đuối — đây là neurochemistry.",
+    readTime: "8 phút",
+    color: "#18B5B0",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/tai-sao-ban-khong-chi-bi-thu-hut-ma-con-tai-tao",
+    tag: "Quan hệ",
+    title: "Bạn không chỉ bị thu hút về cùng một kiểu người — bạn đang tái tạo họ",
+    excerpt: "Mọi người hỏi: Tại sao mình cứ gặp cùng một kiểu người? Câu hỏi đúng hơn là: Tại sao mình vô thức chọn, diễn giải, và tạo ra điều kiện để những gì không lành mạnh lặp lại?",
+    readTime: "9 phút",
+    color: "#E8A87C",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/bong-toi-noi-tam-dang-dieu-khien-ban",
+    tag: "Tự nhận thức",
+    title: "Bóng tối nội tâm: Phần bạn từ chối đang điều khiển cuộc đời bạn",
+    excerpt: "Carl Jung gọi nó là the Shadow — tất cả những phần của bạn mà bạn đã học cách giấu đi. Và chính những phần đó đang âm thầm quyết định nhiều lựa chọn quan trọng nhất của bạn.",
+    readTime: "8 phút",
+    color: "#7BAE7F",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/tu-pha-hoai-va-khoa-hoc-dang-sau",
+    tag: "Hành vi",
+    title: "Tự phá hoại: Khi phần bạn ghét nhất trong mình lại đang cố bảo vệ bạn",
+    excerpt: "Bạn muốn thành công — nhưng trì hoãn đúng lúc quan trọng. Bạn muốn mối quan hệ tốt — nhưng làm hỏng chính xác khi mọi thứ bắt đầu đẹp. Đây là hệ thống bảo vệ cũ đang chạy sai thời điểm.",
+    readTime: "8 phút",
+    color: "#6B678F",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/gan-bo-hon-loan-khi-yeu-la-chay-tron",
+    tag: "Gắn bó",
+    title: "Gắn bó hỗn loạn: Khi bạn vừa chạy đến vừa chạy trốn trong cùng một mối quan hệ",
+    excerpt: "Bạn khao khát sự gần gũi — nhưng khi có được nó, bạn hoảng sợ. Bạn đẩy người ta đi — rồi sụp đổ khi họ rời. Đây là kiểu gắn bó khó nhận ra nhất và cũng đau đớn nhất.",
+    readTime: "9 phút",
+    color: "#E8A87C",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/enneagram-va-shadow-khi-diem-manh-la-diem-mu",
+    tag: "Phân biệt mô thức",
+    title: "Khi điểm mạnh của bạn trở thành điểm mù: Mặt tối trong mỗi mô thức",
+    excerpt: "Mỗi mô thức có một điểm mạnh nổi bật — và một mặt tối tương ứng mà chính mô thức đó khó nhìn thấy nhất. Hiểu điều này không phải để tự trách — mà để không bị cái mạnh của mình làm hại chính mình.",
+    readTime: "8 phút",
+    color: "#9B7FD4",
+  },
 ];
 
 const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Quan hệ", "Tự nhận thức", "Hành vi", "Gắn bó", "Phân biệt mô thức"];
 
 export default function BaiVietPage() {
   const [activeTag, setActiveTag] = useState("Tất cả");
-  const filtered = activeTag === "Tất cả" ? articles : articles.filter((a) => a.tag === activeTag);
+  const filtered = activeTag === "Tất cả" ? articles : articles.filter((a): a is NonNullable<typeof a> => !!a && a.tag === activeTag);
 
   return (
     <>
@@ -228,7 +286,7 @@ export default function BaiVietPage() {
                   gap: "1.5rem",
                 }}
               >
-                {filtered.map((article, i) => (
+                {filtered.filter(Boolean).map((article, i) => article && (
                   <Link
                     key={i}
                     href={article.slug}
@@ -276,7 +334,7 @@ export default function BaiVietPage() {
                       Đọc tiếp →
                     </div>
                   </Link>
-                ))}
+                ))})
               </div>
             )}
           </div>
