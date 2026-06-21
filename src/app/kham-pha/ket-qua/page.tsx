@@ -7,6 +7,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { archetypes, archetypeOrder } from "@/data/archetypes";
 import { getStoredTestResult, isValidEmail } from "@/lib/utils";
+import { articles } from "@/lib/articles";
 import type { ArchetypeKey, TestResult } from "@/types";
 
 // ─── Results Page ─────────────────────────────────────────────────────────────
@@ -47,6 +48,19 @@ function ResultsContent() {
   const secondaryKey = result?.secondary;
   const secondaryArchetype = secondaryKey ? archetypes[secondaryKey] : null;
   const scores = result?.scores;
+
+  // Bài viết liên quan theo mô thức
+  const relatedSlugs: Record<string, string[]> = {
+    "lo-au": ["gan-bo-lo-lang-khi-yeu-dong-nghia-voi-so-mat", "4-kieu-gan-bo-va-cach-chung-dinh-hinh-moi-quan-he", "tai-sao-ban-cu-thu-hut-cung-mot-kieu-nguoi"],
+    "ne-tranh": ["gan-bo-ne-tranh-khi-gan-gui-cam-thay-nguy-hiem", "huong-noi-hay-ne-tranh-su-khac-biet", "ranh-gioi-khong-phai-lanh-lung"],
+    "kiem-soat": ["khi-cau-toan-tro-thanh-cai-bay", "burnout-khong-phai-do-lam-nhieu", "y-chi-khong-du-thay-doi-hanh-vi"],
+    "hy-sinh": ["enneagram-type-2-cho-di-de-duoc-yeu", "tai-sao-ban-khong-the-noi-khong", "ranh-gioi-khong-phai-lanh-lung"],
+    "tu-huy": ["tu-pha-hoai-va-khoa-hoc-dang-sau", "bong-toi-noi-tam-dang-dieu-khien-ban", "biet-type-van-khong-thay-doi-duoc"],
+    "can-bang": ["mo-thuc-noi-tam-co-ban", "biet-minh-va-hieu-minh", "hanh-phuc-that-su-den-tu-dau"],
+  };
+  const relatedArticles = (relatedSlugs[dominantKey] ?? [])
+    .map((slug) => articles.find((a) => a.slug === slug))
+    .filter(Boolean);
 
   async function handleEmailSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -441,46 +455,184 @@ function ResultsContent() {
             </div>
           )}
 
-          {/* Next step — course CTA */}
+          {/* Related articles */}
+          {relatedArticles.length > 0 && (
+            <div className="card-base" style={{ padding: "2rem", marginBottom: "1.5rem" }}>
+              <h3
+                style={{
+                  color: "#1C1A3E",
+                  fontFamily: "'Be Vietnam Pro', sans-serif",
+                  fontSize: "1.1rem",
+                  fontWeight: 700,
+                  marginBottom: "0.5rem",
+                }}
+              >
+                📚 Bài viết dành riêng cho mô thức {archetype.name}
+              </h3>
+              <p style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "1.5rem" }}>
+                Đọc để hiểu sâu hơn về cách mô thức này vận hành trong cuộc sống của bạn.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column" as const, gap: "0.75rem" }}>
+                {relatedArticles.map((article) => article && (
+                  <Link
+                    key={article.slug}
+                    href={`/kien-thuc/bai-viet/${article.slug}`}
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-start",
+                      gap: "1rem",
+                      padding: "1rem 1.25rem",
+                      backgroundColor: "#F8F4EE",
+                      borderRadius: "12px",
+                      textDecoration: "none",
+                      border: "1px solid #E8E3F0",
+                      transition: "border-color 0.2s",
+                    }}
+                  >
+                    <div
+                      style={{
+                        backgroundColor: `${archetype.color}15`,
+                        border: `1px solid ${archetype.color}30`,
+                        borderRadius: "8px",
+                        padding: "4px 10px",
+                        fontSize: "11px",
+                        fontWeight: 700,
+                        color: archetype.color,
+                        flexShrink: 0,
+                        whiteSpace: "nowrap" as const,
+                      }}
+                    >
+                      {article.readTime}
+                    </div>
+                    <div>
+                      <p style={{ color: "#1C1A3E", fontWeight: 600, fontSize: "14px", lineHeight: 1.4, marginBottom: "4px" }}>
+                        {article.title}
+                      </p>
+                      <p style={{ color: "#9B96C0", fontSize: "12px", lineHeight: 1.5 }}>
+                        {article.excerpt.slice(0, 80)}...
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <Link
+                href="/kien-thuc/bai-viet"
+                style={{
+                  display: "inline-block",
+                  marginTop: "1rem",
+                  color: archetype.color,
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                Xem tất cả bài viết →
+              </Link>
+            </div>
+          )}
+
+          {/* Hành trình tiếp theo */}
           <div
             style={{
-              background: "linear-gradient(135deg, #1C1A3E 0%, #3B3772 100%)",
+              background: "linear-gradient(135deg, #1C1A3E 0%, #2D2A5E 100%)",
               borderRadius: "20px",
               padding: "2.5rem",
               marginBottom: "2rem",
               color: "white",
             }}
           >
+            <p style={{ color: "#B8B3FA", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" as const, marginBottom: "0.75rem" }}>
+              Hành trình tiếp theo
+            </p>
             <h3
               style={{
                 color: "white",
                 fontFamily: "'Be Vietnam Pro', sans-serif",
-                fontSize: "1.4rem",
+                fontSize: "1.3rem",
                 fontWeight: 800,
-                marginBottom: "0.75rem",
+                marginBottom: "0.5rem",
               }}
             >
-              Bước tiếp theo dành cho bạn
+              Bạn vừa nhìn thấy mô thức — giờ là lúc hiểu nó
             </h3>
-            <p style={{ color: "#C4C0E0", lineHeight: 1.75, marginBottom: "1.5rem" }}>
+            <p style={{ color: "#9B96C0", fontSize: "14px", marginBottom: "2rem" }}>
               {archetype.nextStep}
             </p>
-            <Link
-              href="/hanh-trinh/ban-do-noi-tam-chuyen-sau"
-              style={{
-                display: "inline-block",
-                background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
-                color: "white",
-                padding: "14px 28px",
-                borderRadius: "999px",
-                fontSize: "15px",
-                fontWeight: 700,
-                textDecoration: "none",
-                fontFamily: "'Be Vietnam Pro', sans-serif",
-              }}
-            >
-              Xem khóa học Bản Đồ Nội Tâm Chuyên Sâu →
-            </Link>
+
+            <div style={{ display: "flex", flexDirection: "column" as const, gap: "1rem", marginBottom: "2rem" }}>
+              {[
+                {
+                  step: "01",
+                  title: "Đọc bài viết liên quan",
+                  desc: "Hiểu sâu hơn về cách mô thức của bạn hình thành và vận hành — miễn phí.",
+                  href: "/kien-thuc/bai-viet",
+                  label: "Đọc bài viết →",
+                  color: "#18B5B0",
+                },
+                {
+                  step: "02",
+                  title: "Học khóa Bản Đồ Nội Tâm Chuyên Sâu",
+                  desc: "Từ nhận diện đến thay đổi thật — 6 module đi vào gốc rễ của mô thức.",
+                  href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau",
+                  label: "Xem khóa học →",
+                  color: "#7C6FF7",
+                },
+                {
+                  step: "03",
+                  title: "Đồng hành 1-1 cùng Hanna",
+                  desc: "Đi sâu vào mô thức của riêng bạn với người hiểu cách nó vận hành.",
+                  href: "/dong-hanh",
+                  label: "Đăng ký đồng hành →",
+                  color: "#E67E74",
+                },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  style={{
+                    display: "flex",
+                    gap: "1.25rem",
+                    alignItems: "flex-start",
+                    backgroundColor: "rgba(255,255,255,0.06)",
+                    borderRadius: "14px",
+                    padding: "1.25rem",
+                  }}
+                >
+                  <div
+                    style={{
+                      color: item.color,
+                      fontFamily: "'Be Vietnam Pro', sans-serif",
+                      fontWeight: 800,
+                      fontSize: "1.4rem",
+                      lineHeight: 1,
+                      flexShrink: 0,
+                      opacity: 0.5,
+                      minWidth: "36px",
+                    }}
+                  >
+                    {item.step}
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ color: "white", fontWeight: 700, fontSize: "15px", marginBottom: "4px" }}>{item.title}</p>
+                    <p style={{ color: "#9B96C0", fontSize: "13px", lineHeight: 1.6, marginBottom: "10px" }}>{item.desc}</p>
+                    <Link
+                      href={item.href}
+                      style={{
+                        display: "inline-block",
+                        backgroundColor: item.color,
+                        color: "white",
+                        padding: "7px 18px",
+                        borderRadius: "999px",
+                        fontSize: "13px",
+                        fontWeight: 700,
+                        textDecoration: "none",
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Share */}
