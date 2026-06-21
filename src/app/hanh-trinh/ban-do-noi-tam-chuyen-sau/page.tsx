@@ -8,32 +8,32 @@ export default function KhoaHocPage() {
   const modules = [
     {
       number: "01",
-      title: "Đọc bản đồ của bạn",
-      desc: "Hiểu sâu kết quả bài test — mô thức của bạn hình thành như thế nào, biểu hiện ra sao trong cuộc sống thực.",
+      title: "Đọc kết quả bài test của bạn",
+      desc: "Hiểu sâu kết quả bài test — khuôn mẫu của bạn hình thành như thế nào, đang ảnh hưởng đến cuộc sống của bạn ra sao trong thực tế.",
       duration: "3 bài học · 45 phút",
     },
     {
       number: "02",
-      title: "Nguồn gốc của mô thức",
-      desc: "Truy ngược về tuổi thơ và những quyết định vô thức đã lập trình nên cách bạn phản ứng hôm nay.",
+      title: "Khuôn mẫu đến từ đâu?",
+      desc: "Truy về quá khứ để hiểu những trải nghiệm hồi nhỏ đã hình thành cách bạn phản ứng như hôm nay — để không còn tự trách mình.",
       duration: "4 bài học · 60 phút",
     },
     {
       number: "03",
-      title: "Hệ thần kinh và cơ thể",
-      desc: "Mô thức không chỉ trong đầu — nó sống trong cơ thể. Học cách nhận ra và làm việc với tín hiệu cơ thể.",
+      title: "Cơ thể cũng ghi nhớ",
+      desc: "Khuôn mẫu không chỉ nằm trong suy nghĩ — nó sống trong cơ thể. Học cách nhận ra và lắng nghe những tín hiệu cơ thể đang gửi đến bạn.",
       duration: "3 bài học · 50 phút",
     },
     {
       number: "04",
-      title: "Tháo gỡ từng lớp",
-      desc: "Công cụ thực hành để làm việc với mô thức — không phải chiến đấu hay chối bỏ, mà là hiểu và tích hợp.",
+      title: "Làm việc với khuôn mẫu cũ",
+      desc: "Công cụ thực hành để làm việc với khuôn mẫu cũ — không phải chiến đấu hay chối bỏ nó, mà là hiểu nó và dần dần sống khác đi.",
       duration: "4 bài học · 70 phút",
     },
     {
       number: "05",
-      title: "Cài đặt mô thức mới",
-      desc: "Xây dựng hành vi mới từ bên trong — dựa trên hiểu biết sâu sắc về chính mình, không phải ý chí.",
+      title: "Xây dựng cách sống mới",
+      desc: "Thiết kế hành vi mới từ bên trong — dựa trên hiểu biết thật sự về chính mình, không phải cố ép hay dùng ý chí.",
       duration: "3 bài học · 55 phút",
     },
   ];
@@ -101,7 +101,7 @@ export default function KhoaHocPage() {
                 lineHeight: 1.75,
               }}
             >
-              Từ kết quả bài test, đi sâu vào hiểu tại sao mô thức đó hình thành — và cách bắt đầu thay đổi từ gốc rễ.
+              Từ kết quả bài test, đi sâu hơn để hiểu tại sao bạn lại như vậy — và cách thật sự thay đổi, không phải chỉ cố gắng bằng ý chí.
             </p>
 
             <div

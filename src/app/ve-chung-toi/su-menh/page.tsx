@@ -6,17 +6,17 @@ const values = [
   {
     icon: "🧠",
     title: "Tự nhận thức sâu",
-    desc: "Chúng tôi tin rằng mọi sự thay đổi thật sự đều bắt đầu từ việc nhìn thấy chính mình — không phán xét, không né tránh.",
+    desc: "Mọi thay đổi thật sự đều bắt đầu từ việc dừng lại và nhìn thấy mình — không phán xét, không né tránh, không tô hồng.",
   },
   {
     icon: "🔬",
     title: "Dựa trên khoa học",
-    desc: "Mọi phương pháp tại AIMIND đều có nền tảng từ khoa học thần kinh, tâm lý học hành vi và nghiên cứu thực chứng.",
+    desc: "Mọi phương pháp tại AIMIND đều có nền tảng từ khoa học thần kinh (não bộ), tâm lý học hành vi và các nghiên cứu đã được kiểm chứng — không phải lý thuyết cảm tính.",
   },
   {
     icon: "🌱",
     title: "Chuyển hóa thực tế",
-    desc: "Không dừng ở hiểu biết. Mục tiêu là hành vi mới, lựa chọn mới, cuộc sống mới — có thể đo đếm được.",
+    desc: "Không dừng ở việc hiểu. Mục tiêu là hành vi thật sự thay đổi — cách bạn phản ứng, cách bạn lựa chọn, cách bạn sống từng ngày.",
   },
   {
     icon: "🤝",
@@ -75,8 +75,8 @@ export default function SuMenhPage() {
               }}
             >
               Giúp người Việt nhìn thấy{" "}
-              <span style={{ color: "#7C6FF7" }}>mô thức vô thức</span>{" "}
-              đang điều khiển cuộc đời họ
+              <span style={{ color: "#7C6FF7" }}>những khuôn mẫu ẩn</span>{" "}
+              đang âm thầm định hình cuộc đời họ
             </h1>
             <p
               style={{
@@ -86,8 +86,8 @@ export default function SuMenhPage() {
                 marginBottom: "2.5rem",
               }}
             >
-              AIMIND — Awareness Intelligence Mind — được tạo ra với một niềm tin duy nhất:
-              khi bạn thật sự hiểu mình, mọi thứ trong cuộc sống bắt đầu thay đổi.
+              AIMIND — Awareness Intelligence Mind — ra đời từ một niềm tin đơn giản:
+              khi bạn thật sự hiểu mình, bạn không còn phải cố gắng thay đổi bằng ý chí — thay đổi sẽ tự xảy ra.
             </p>
           </div>
         </section>
@@ -117,9 +117,8 @@ export default function SuMenhPage() {
                   Tại sao AIMIND tồn tại?
                 </h2>
                 <p style={{ color: "#4A4570", fontSize: "16px", lineHeight: 1.85, marginBottom: "1rem" }}>
-                  Phần lớn người Việt Nam đang sống theo những mô thức mà họ không biết là đang tồn tại.
-                  Những mô thức hình thành từ thời thơ ấu, từ gia đình, từ văn hóa — và âm thầm
-                  quyết định họ yêu như thế nào, làm việc ra sao, phản ứng với áp lực thế nào.
+                  Phần lớn người Việt Nam đang sống theo những khuôn mẫu hành vi mà họ không biết là đang tồn tại — chúng tôi gọi đó là <strong>&ldquo;mô thức&rdquo;</strong>.
+                  Những khuôn mẫu này hình thành từ thời thơ ấu, từ gia đình, từ văn hóa — và âm thầm quyết định họ yêu như thế nào, làm việc ra sao, phản ứng với áp lực ra sao.
                 </p>
                 <p style={{ color: "#4A4570", fontSize: "16px", lineHeight: 1.85 }}>
                   AIMIND tồn tại để tạo ra công cụ giúp mọi người <strong>nhìn thấy những mô thức đó</strong> —
@@ -299,7 +298,7 @@ export default function SuMenhPage() {
               Bắt đầu hành trình của bạn
             </h2>
             <p style={{ color: "#C4C0E0", marginBottom: "2rem", fontSize: "16px" }}>
-              Làm bài test miễn phí để khám phá mô thức nội tâm của bạn
+              Làm bài test miễn phí — 15 phút để nhìn thấy khuôn mẫu bạn chưa bao giờ thấy rõ
             </p>
             <Link
               href="/kham-pha/ban-do-noi-tam"

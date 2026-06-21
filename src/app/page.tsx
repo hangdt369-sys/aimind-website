@@ -104,8 +104,8 @@ function HeroSection() {
         <div style={{ marginTop: "3rem", display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" as const }}>
           {[
             { icon: "🧬", label: "Dựa trên khoa học thần kinh" },
-            { icon: "🗺️", label: "Identity Intelligence System" },
-            { icon: "🔬", label: "Schema & Attachment Theory" },
+            { icon: "🗺️", label: "Hệ thống nhận diện bản thân" },
+            { icon: "🔬", label: "Tâm lý học & Khoa học thần kinh" },
           ].map((item) => (
             <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span style={{ fontSize: "16px" }}>{item.icon}</span>
@@ -133,7 +133,7 @@ function AboutAimindSection() {
             Hệ thống Identity Intelligence đầu tiên tại Việt Nam
           </h2>
           <p style={{ color: "#6B678F", fontSize: "17px", lineHeight: 1.85, maxWidth: "680px", margin: "0 auto" }}>
-            AIMIND không phải bài test tính cách hay công cụ xếp loại con người. Đây là hệ thống giúp bạn nhìn thấy <strong style={{ color: "#1C1A3E" }}>bản đồ vận hành nội tâm</strong> của chính mình — những mô thức ẩn đang điều khiển cách bạn suy nghĩ, cảm xúc, và hành động.
+            AIMIND không phải bài test tính cách hay công cụ xếp loại con người. Đây là hệ thống giúp bạn nhìn thấy <strong style={{ color: "#1C1A3E" }}>bản đồ vận hành nội tâm</strong> của chính mình — những <em>khuôn mẫu hành vi</em> đang âm thầm điều khiển cách bạn suy nghĩ, cảm xúc, và phản ứng. Chúng tôi gọi những khuôn mẫu này là <strong style={{ color: "#1C1A3E" }}>&ldquo;mô thức&rdquo;</strong>.
           </p>
         </div>
 
@@ -148,10 +148,16 @@ function AboutAimindSection() {
         }}>
           <div style={{ position: "absolute" as const, top: 0, right: 0, width: "300px", height: "300px", background: "radial-gradient(circle, rgba(124,111,247,0.15) 0%, transparent 70%)", pointerEvents: "none" as const }} />
           <p style={{ color: "#B8B3FA", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "1rem" }}>
-            Identity Intelligence
+            AIMIND làm được gì cho bạn?
           </p>
-          <p style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.15rem", lineHeight: 1.85, fontStyle: "italic" as const, maxWidth: "680px", marginBottom: "1.25rem" }}>
-            &ldquo;Khả năng nhận diện và hiểu sâu các mô thức vận hành nội tâm của bản thân — bao gồm cơ chế bảo vệ, hệ thống niềm tin, phản ứng tự động, và cách chúng hình thành từ kinh nghiệm và thần kinh học — để từ đó có thể can thiệp có chủ đích vào hành vi và trải nghiệm sống.&rdquo;
+          <p style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.1rem", lineHeight: 1.85, maxWidth: "680px", marginBottom: "1.5rem" }}>
+            Giúp bạn nhìn ra những khuôn mẫu bạn cứ lặp đi lặp lại mà không hiểu tại sao — kiểu như luôn chọn sai người, luôn né tránh xung đột, hay luôn làm quá sức dù đã kiệt sức. Những khuôn mẫu đó không phải tính cách bẩm sinh — chúng là thứ bạn đã <em>học</em> để tồn tại từ hồi nhỏ. Và vì học được, thì hoàn toàn có thể học lại.
+          </p>
+          <p style={{ color: "#B8B3FA", fontSize: "11px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
+            Thuật ngữ chuyên môn gọi đây là &ldquo;Identity Intelligence&rdquo; — Trí tuệ Nhận diện Bản thân:
+          </p>
+          <p style={{ color: "#C4C0E0", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "0.9rem", lineHeight: 1.75, fontStyle: "italic" as const, maxWidth: "680px", marginBottom: "1.25rem" }}>
+            &ldquo;Khả năng nhận diện và hiểu sâu các khuôn mẫu vận hành nội tâm của bản thân — bao gồm cơ chế bảo vệ, hệ thống niềm tin, phản ứng tự động, và cách chúng hình thành từ kinh nghiệm và thần kinh học — để từ đó có thể lựa chọn có chủ đích thay vì phản ứng tự động.&rdquo;
           </p>
           <p style={{ color: "#9B96C0", fontSize: "13px" }}>— Định nghĩa AIMIND Framework, 2024</p>
         </div>
@@ -175,6 +181,9 @@ function AboutAimindSection() {
                   <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Lý thuyết Gắn bó</h4>
                 </div>
               </div>
+              <p style={{ color: "#E85A71", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
+                Nói đơn giản: Cách bạn yêu thương, gần gũi hay xa cách với người khác — được định hình từ mối quan hệ đầu tiên trong cuộc đời bạn (cha mẹ hoặc người nuôi dưỡng).
+              </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
                 Phát triển bởi John Bowlby và Mary Ainsworth, lý thuyết này cho thấy cách mối quan hệ đầu đời hình thành hệ thống niềm tin về bản thân và người khác — và cách chúng tiếp tục vận hành trong người lớn qua các kiểu gắn bó: an toàn, lo lắng, né tránh, và lưỡng lự.
               </p>
@@ -188,10 +197,13 @@ function AboutAimindSection() {
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
                 <span style={{ fontSize: "24px" }}>🧬</span>
                 <div>
-                  <p style={{ color: "#6B5B95", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Neuroscience</p>
+                  <p style={{ color: "#6B5B95", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Neuroscience — Khoa học về não bộ</p>
                   <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Khoa học Thần kinh</h4>
                 </div>
               </div>
+              <p style={{ color: "#6B5B95", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
+                Nói đơn giản: Não bộ có thể thay đổi — những gì bạn lặp lại nhiều lần sẽ trở thành &ldquo;đường mòn&rdquo; quen thuộc. AIMIND giúp bạn tạo đường mòn mới theo hướng mình muốn.
+              </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
                 Dựa trên nghiên cứu về neuroplasticity, hệ thần kinh tự chủ (polyvagal theory của Stephen Porges), và cơ chế phản ứng stress của amygdala. Não không phải cấu trúc cố định — nó thay đổi theo trải nghiệm và hành vi lặp lại. AIMIND xây dựng lộ trình can thiệp dựa trên nguyên lý này.
               </p>
@@ -205,10 +217,13 @@ function AboutAimindSection() {
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
                 <span style={{ fontSize: "24px" }}>🏗️</span>
                 <div>
-                  <p style={{ color: "#E8925A", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Schema Therapy</p>
+                  <p style={{ color: "#E8925A", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Schema Therapy — Liệu pháp Niềm tin Lõi</p>
                   <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Liệu pháp Schema</h4>
                 </div>
               </div>
+              <p style={{ color: "#E8925A", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
+                Nói đơn giản: Những niềm tin ăn sâu vào người bạn như &ldquo;mình không đủ tốt&rdquo;, &ldquo;mình dễ bị bỏ rơi&rdquo; — hình thành từ thời thơ ấu và âm thầm quyết định mọi lựa chọn của bạn.
+              </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
                 Phát triển bởi Jeffrey Young, schema therapy xác định 18 early maladaptive schemas — niềm tin lõi hình thành từ thời thơ ấu khi nhu cầu tâm lý cơ bản không được đáp ứng. Các schema này vô thức điều hướng cách một người chọn đối tác, phản ứng với xung đột, tự phá hoại khi thành công gần kề.
               </p>
@@ -223,9 +238,12 @@ function AboutAimindSection() {
                 <span style={{ fontSize: "24px" }}>🗺️</span>
                 <div>
                   <p style={{ color: "#18B5B0", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Enneagram + Behavioural Science</p>
-                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Bản đồ Mô thức & Hành vi</h4>
+                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Bản đồ Khuôn mẫu & Hành vi</h4>
                 </div>
               </div>
+              <p style={{ color: "#18B5B0", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
+                Nói đơn giản: Chín kiểu người — mỗi kiểu có nỗi sợ riêng và cách tự bảo vệ riêng. Kết hợp khoa học hành vi để giúp bạn thiết kế thói quen mới từ bên trong.
+              </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
                 Enneagram không chỉ là bài test tính cách — khi hiểu đúng, đây là hệ thống mô tả chín cấu trúc nhân cách với động lực cốt lõi, nỗi sợ ẩn, và cơ chế phòng thủ đặc trưng. Kết hợp với khoa học hành vi (habit loops, cognitive behavioral patterns), AIMIND tạo ra ngôn ngữ thực hành để thay đổi mô thức.
               </p>
@@ -260,12 +278,12 @@ function AboutAimindSection() {
 
 function RecognitionSection() {
   const patterns = [
-    { emoji: "1", title: "Bạn luôn lo lắng dù mọi thứ đang ổn", desc: "Không thể thư giãn. Luôn có một mối lo mơ hồ nào đó bám theo." },
-    { emoji: "2", title: "Bạn né tránh những cuộc nói chuyện khó", desc: "Thà im lặng chịu đựng còn hơn đối mặt với xung đột." },
-    { emoji: "3", title: "Bạn cần kiểm soát mọi thứ xung quanh", desc: "Khi mất kiểm soát, bạn cảm thấy bất an và lo lắng sâu sắc." },
-    { emoji: "4", title: "Bạn cho đi mãi mà không biết nhận lại", desc: "Nói không với người khác khiến bạn cảm thấy có lỗi." },
-    { emoji: "5", title: "Bạn cứ lặp lại cùng một vấn đề", desc: "Hiểu rõ vấn đề nhưng vẫn không thể thay đổi cách phản ứng." },
-    { emoji: "6", title: "Bạn tự phê bình bản thân quá mức", desc: "Tiêu chuẩn cao với mình nhưng không bao giờ cảm thấy đủ." },
+    { emoji: "😟", title: "Lúc nào cũng lo lắng dù mọi thứ đang ổn", desc: "Không thể thư giãn thật sự. Luôn có một mối lo mơ hồ bám theo, dù cuộc sống không có gì xấu cả." },
+    { emoji: "🙈", title: "Né tránh những cuộc nói chuyện khó", desc: "Thà im lặng chịu đựng còn hơn đối mặt với xung đột — dù biết rằng im lặng không giải quyết được gì." },
+    { emoji: "🎛️", title: "Cần kiểm soát để không cảm thấy bất an", desc: "Khi có gì đó không theo ý mình, cảm giác lo lắng ập đến ngay. Cần biết trước, cần chắc chắn, cần mọi thứ trong tầm tay." },
+    { emoji: "🫶", title: "Cho đi mãi mà không biết cách nhận lại", desc: "Đặt nhu cầu người khác lên trên của mình. Nói không khiến bạn cảm thấy tội lỗi — dù đã kiệt sức từ lâu rồi." },
+    { emoji: "🔁", title: "Cứ lặp lại cùng một kiểu vấn đề", desc: "Biết mình đang làm điều này không tốt nhưng vẫn không dừng được. Hiểu lý thuyết rồi nhưng hành động vẫn theo cũ." },
+    { emoji: "😔", title: "Tự trách mình quá mức dù đã rất cố", desc: "Tiêu chuẩn cao với bản thân nhưng không bao giờ cảm thấy đủ tốt. Thành công rồi vẫn cảm thấy trống rỗng." },
   ];
   return (
     <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
@@ -275,8 +293,11 @@ function RecognitionSection() {
             Bạn có nhận ra mình không?
           </p>
           <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, maxWidth: "600px", margin: "0 auto", lineHeight: 1.3 }}>
-            Những mô thức này không phải tính cách — chúng là những gì bạn đã học để sống sót
+            Nghe cái nào quen không?
           </h2>
+          <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.75, maxWidth: "500px", margin: "0.75rem auto 0" }}>
+            Đây không phải &ldquo;tính cách xấu&rdquo; của bạn — đây là những cách bạn đã học để đối phó từ hồi còn nhỏ. Và vì học được, thì có thể thay đổi.
+          </p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
           {patterns.map((p) => (
@@ -334,7 +355,7 @@ function JourneySection() {
   const steps = [
     { number: "01", title: "Khám phá mô thức", desc: "Làm bài test Bản Đồ Nội Tâm. Nhận kết quả miễn phí về mô thức cốt lõi của bạn.", cta: "Làm bài test", href: "/kham-pha/ban-do-noi-tam", color: "#7C6FF7" },
     { number: "02", title: "Đi sâu vào hiểu", desc: "Khóa học Bản Đồ Nội Tâm Chuyên Sâu — tại sao mô thức hình thành và cách thay đổi từ gốc rễ.", cta: "Xem khóa học", href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", color: "#18B5B0" },
-    { number: "03", title: "Đồng hành chuyển hóa", desc: "Coaching 1-1 với Hanna — không phải tư vấn, mà là đồng hành thực sự trong quá trình thay đổi.", cta: "Tìm hiểu thêm", href: "/lien-he", color: "#5B4FD4" },
+    { number: "03", title: "Đồng hành chuyển hóa", desc: "Đồng hành 1-1 với Hanna — không phải chỉ tư vấn, mà là cùng bạn đi qua từng bước thay đổi thật sự.", cta: "Tìm hiểu thêm", href: "/lien-he", color: "#5B4FD4" },
   ];
   return (
     <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>

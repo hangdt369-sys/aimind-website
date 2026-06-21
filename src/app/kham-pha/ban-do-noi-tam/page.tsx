@@ -358,7 +358,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
             marginBottom: "2rem",
           }}
         >
-          20 câu hỏi sẽ giúp bạn nhận diện mô thức hành vi đang chi phối cuộc sống của bạn — trong tình yêu, công việc, và những quyết định hàng ngày mà bạn chưa hiểu tại sao mình lại chọn như vậy.
+          20 câu hỏi giúp bạn nhìn ra khuôn mẫu hành vi (mô thức) đang chi phối cuộc sống của bạn — trong tình yêu, công việc, và những quyết định hàng ngày mà bạn chưa hiểu tại sao mình cứ chọn như vậy.
         </p>
 
         {/* How to */}
@@ -386,8 +386,8 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
             Để kết quả chính xác nhất:
           </h3>
           {[
-            "Trả lời theo bản năng đầu tiên — đừng suy nghĩ quá lâu",
-            "Chọn theo thực tế, không theo cách bạn muốn mình là",
+            "Trả lời theo cảm giác đầu tiên — đừng suy nghĩ quá nhiều",
+            "Chọn theo thực tế của bạn hiện tại — không phải cách bạn muốn mình là",
             "Không có câu trả lời đúng hay sai",
             "Khoảng 10-15 phút để hoàn thành",
           ].map((tip) => (
