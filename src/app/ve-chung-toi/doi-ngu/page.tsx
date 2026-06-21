@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Hanna Dang — Người sáng lập AIMIND",
-  description: "Hanna Dang là người sáng lập AIMIND. Hơn 7 năm nghiên cứu tâm lý học, khoa học nhận thức và hành trình khám phá bản thân — không từ sách vở mà từ cuộc đời thật.",
+  description: "Hanna Dang là người sáng lập AIMIND. Hơn 7 năm quan sát, nghiên cứu và đi qua hành trình khám phá chính mình — không phải từ sách vở mà từ cuộc đời thật.",
 };
 
 const expertise = [
@@ -17,42 +17,6 @@ const expertise = [
   { label: "Lý thuyết gắn bó (Attachment)", icon: "🔗" },
   { label: "Schema Therapy", icon: "🏗️" },
   { label: "Coaching chuyển hóa", icon: "✨" },
-];
-
-const mentors = [
-  {
-    name: "Người thầy 1",
-    role: "Tên & vai trò — Hanna điền vào",
-    contribution: "Điều họ dạy Hanna hoặc ảnh hưởng lớn nhất trong hành trình",
-    icon: "🌱",
-  },
-  {
-    name: "Người thầy 2",
-    role: "Tên & vai trò — Hanna điền vào",
-    contribution: "Điều họ dạy Hanna hoặc ảnh hưởng lớn nhất trong hành trình",
-    icon: "🔭",
-  },
-  {
-    name: "Người thầy 3",
-    role: "Tên & vai trò — Hanna điền vào",
-    contribution: "Điều họ dạy Hanna hoặc ảnh hưởng lớn nhất trong hành trình",
-    icon: "💡",
-  },
-];
-
-const collaborators = [
-  {
-    name: "Cộng sự 1",
-    role: "Vai trò — Hanna điền vào",
-    desc: "Mô tả ngắn về cộng sự và đóng góp trong hệ sinh thái AIMIND",
-    icon: "🤝",
-  },
-  {
-    name: "Cộng sự 2",
-    role: "Vai trò — Hanna điền vào",
-    desc: "Mô tả ngắn về cộng sự và đóng góp trong hệ sinh thái AIMIND",
-    icon: "🎯",
-  },
 ];
 
 export default function DoiNguPage() {
@@ -152,28 +116,22 @@ export default function DoiNguPage() {
                   overflow: "hidden",
                   border: "3px solid rgba(124,111,247,0.4)",
                   boxShadow: "0 20px 60px rgba(124,111,247,0.25)",
-                  position: "relative" as const,
                   flexShrink: 0,
+                  position: "relative" as const,
                 }}
               >
-                  {/* TODO: Upload ảnh thật vào /public/hanna-dang.jpg rồi bỏ comment Image bên dưới */}
-                {/* <Image src="/hanna-dang.jpg" alt="Hanna Dang" fill style={{ objectFit: "cover" }} priority /> */}
-                <div
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/hanna-dang.jpg"
+                  alt="Hanna Dang — Người sáng lập AIMIND"
                   style={{
                     width: "100%",
                     height: "100%",
-                    background: "linear-gradient(160deg, #2D2A5E 0%, #3B3772 40%, #7C6FF7 100%)",
-                    display: "flex",
-                    flexDirection: "column" as const,
-                    alignItems: "center",
-                    justifyContent: "flex-end",
-                    paddingBottom: "2rem",
+                    objectFit: "cover",
+                    objectPosition: "center top",
+                    display: "block",
                   }}
-                >
-                  <div style={{ fontSize: "5rem", marginBottom: "0.5rem" }}>👩🏻</div>
-                  <p style={{ color: "white", fontWeight: 700, fontSize: "15px", fontFamily: "'Be Vietnam Pro', sans-serif" }}>Hanna Dang</p>
-                  <p style={{ color: "#B8B3FA", fontSize: "12px" }}>Nhà sáng lập AIMIND</p>
-                </div>
+                />
               </div>
             </div>
           </div>
@@ -216,20 +174,87 @@ export default function DoiNguPage() {
                 Đó là những câu hỏi Hanna bắt đầu đặt ra — không phải trong sách vở mà từ cuộc sống của chính mình. Cô không tìm kiếm lý thuyết. Cô đang cố hiểu tại sao mình làm những điều mình làm, cảm những điều mình cảm, và lặp đi lặp lại những vòng tròn mà dù cố thoát cũng không ra.
               </p>
               <p style={{ marginBottom: "1.5rem" }}>
-                Hành trình tìm kiếm đó dẫn Hanna đi qua khoa học nhận thức, tâm lý học sâu, lý thuyết gắn bó, schema therapy, Enneagram, somatic — và quan trọng hơn là đi qua chính mình. Từng lớp. Từng mô thức. Từng vết thương mà cô chưa biết là đang tồn tại.
-              </p>
-              <p style={{ marginBottom: "1.5rem" }}>
-                Hanna tin rằng phần lớn những khó khăn trong cuộc sống không đến từ việc chúng ta chưa đủ giỏi hay chưa đủ cố gắng — mà đến từ việc chúng ta chưa thật sự hiểu mình. Khi nhìn rõ những khuôn mẫu vô thức, niềm tin sâu bên trong và cơ chế vận hành của tâm trí, mỗi người đều có cơ hội tạo ra những thay đổi sâu sắc và bền vững hơn.
+                Hành trình tìm kiếm đó dẫn Hanna đi qua khoa học nhận thức, tâm lý học sâu, lý thuyết gắn bó, schema therapy, Enneagram, somatic — và quan trọng hơn là đi qua chính mình. Từng lớp. Từng khuôn mẫu. Từng vết thương mà cô chưa biết là đang tồn tại.
               </p>
               <p>
-                AIMIND được xây dựng từ niềm tin đó. Không phải để nói cho bạn biết bạn là ai — mà để giúp bạn nhìn thấy chính mình rõ ràng hơn, hiểu điều gì đang vận hành bên trong, và từng bước sống một cuộc đời phù hợp với con người thật của mình.
+                Hanna tin rằng phần lớn những khó khăn trong cuộc sống không đến từ việc chúng ta chưa đủ giỏi hay chưa đủ cố gắng — mà đến từ việc chúng ta chưa thật sự hiểu mình. Khi nhìn rõ những khuôn mẫu vô thức, niềm tin sâu bên trong và cơ chế vận hành của tâm trí, mỗi người đều có cơ hội tạo ra những thay đổi sâu sắc và bền vững hơn.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ── Chuyên môn ───────────────────────────────────────── */}
+        {/* ── Quan sát — nguồn gốc của AIMIND ─────────────────── */}
         <section style={{ padding: "5rem 0", backgroundColor: "white" }}>
+          <div className="container-main" style={{ maxWidth: "860px" }}>
+            <div
+              style={{
+                background: "linear-gradient(135deg, #1C1A3E 0%, #2D2A5E 100%)",
+                borderRadius: "24px",
+                padding: "3rem",
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "2.5rem",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <p
+                  style={{
+                    color: "#B8B3FA",
+                    fontSize: "12px",
+                    fontWeight: 700,
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase" as const,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Nguồn gốc của AIMIND
+                </p>
+                <h3
+                  style={{
+                    color: "white",
+                    fontFamily: "'Be Vietnam Pro', sans-serif",
+                    fontSize: "1.4rem",
+                    fontWeight: 800,
+                    lineHeight: 1.35,
+                    marginBottom: "1.25rem",
+                  }}
+                >
+                  Không chỉ từ nghiên cứu — mà từ quan sát
+                </h3>
+                <p style={{ color: "#C4C0E0", fontSize: "15px", lineHeight: 1.85 }}>
+                  AIMIND được xây dựng từ nhiều năm Hanna quan sát chính mình và những người xung quanh — bạn bè, người thân, người Hanna đồng hành. Cô nhận ra một điều lặp đi lặp lại: con người không thiếu thông tin, không thiếu nỗ lực — họ thiếu <strong style={{ color: "white" }}>công cụ để nhìn thấy chính mình</strong>.
+                </p>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" as const, gap: "1rem" }}>
+                {[
+                  { icon: "👁️", text: "Quan sát bản thân qua nhiều năm — không phán xét, chỉ nhìn thấy" },
+                  { icon: "👥", text: "Quan sát những người xung quanh — cùng câu hỏi, cùng vòng lặp" },
+                  { icon: "🔗", text: "Nhận ra: khuôn mẫu của mỗi người đều có lý do riêng để tồn tại" },
+                  { icon: "💡", text: "Từ đó xây hệ thống giúp mỗi người nhìn thấy — không phán xét" },
+                ].map((item) => (
+                  <div
+                    key={item.text}
+                    style={{
+                      display: "flex",
+                      gap: "0.75rem",
+                      alignItems: "flex-start",
+                      backgroundColor: "rgba(255,255,255,0.06)",
+                      borderRadius: "12px",
+                      padding: "0.85rem 1rem",
+                    }}
+                  >
+                    <span style={{ fontSize: "18px", flexShrink: 0 }}>{item.icon}</span>
+                    <p style={{ color: "#C4C0E0", fontSize: "14px", lineHeight: 1.6 }}>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Chuyên môn ───────────────────────────────────────── */}
+        <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
           <div className="container-main">
             <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
               <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
@@ -262,7 +287,7 @@ export default function DoiNguPage() {
                     display: "flex",
                     alignItems: "center",
                     gap: "0.75rem",
-                    backgroundColor: "#F8F4EE",
+                    backgroundColor: "white",
                     borderRadius: "12px",
                     padding: "1rem 1.25rem",
                     border: "1px solid #E8E3F0",
@@ -276,75 +301,12 @@ export default function DoiNguPage() {
           </div>
         </section>
 
-        {/* ── Người thầy lớn ────────────────────────────────────── */}
-        <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
-          <div className="container-main" style={{ maxWidth: "860px" }}>
-            <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-              <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
-                Người đã định hình hành trình
-              </p>
-              <h2
-                style={{
-                  color: "#1C1A3E",
-                  fontFamily: "'Be Vietnam Pro', sans-serif",
-                  fontSize: "clamp(1.5rem, 3vw, 2rem)",
-                  fontWeight: 800,
-                  lineHeight: 1.3,
-                  marginBottom: "0.75rem",
-                }}
-              >
-                Những người thầy lớn trong đời Hanna
-              </h2>
-              <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.75 }}>
-                Không ai đi được một mình. Đây là những người đã giúp Hanna nhìn thấy điều cô chưa thể thấy một mình.
-              </p>
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-                gap: "1.5rem",
-              }}
-            >
-              {mentors.map((m) => (
-                <div
-                  key={m.name}
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: "16px",
-                    padding: "2rem",
-                    border: "1px solid #E8E3F0",
-                    borderTop: "4px solid #7C6FF7",
-                  }}
-                >
-                  <span style={{ fontSize: "2rem", display: "block", marginBottom: "1rem" }}>{m.icon}</span>
-                  <h3
-                    style={{
-                      color: "#1C1A3E",
-                      fontFamily: "'Be Vietnam Pro', sans-serif",
-                      fontWeight: 700,
-                      fontSize: "17px",
-                      marginBottom: "4px",
-                    }}
-                  >
-                    {m.name}
-                  </h3>
-                  <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 600, marginBottom: "0.75rem" }}>
-                    {m.role}
-                  </p>
-                  <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.75 }}>{m.contribution}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Cộng sự đồng hành ─────────────────────────────────── */}
+        {/* ── Người thầy & Tri kỷ ──────────────────────────────── */}
         <section style={{ padding: "5rem 0", backgroundColor: "white" }}>
           <div className="container-main" style={{ maxWidth: "860px" }}>
             <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-              <p style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
-                Đồng hành xây dựng
+              <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
+                Những người đã định hình Hanna
               </p>
               <h2
                 style={{
@@ -356,57 +318,124 @@ export default function DoiNguPage() {
                   marginBottom: "0.75rem",
                 }}
               >
-                Những cộng sự của AIMIND
+                Người thầy lớn và người tri kỷ
               </h2>
-              <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.75 }}>
-                AIMIND không được xây bởi một người. Đây là những người đang cùng Hanna đưa công cụ này đến với nhiều người hơn.
+              <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.75, maxWidth: "520px", margin: "0 auto" }}>
+                Không ai đi được một mình. Đây là hai người đã ảnh hưởng sâu sắc đến cách Hanna nhìn về bản thân và về con người.
               </p>
             </div>
+
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
                 gap: "1.5rem",
               }}
             >
-              {collaborators.map((c) => (
+              {/* Người thầy */}
+              <div
+                style={{
+                  backgroundColor: "#F8F4EE",
+                  borderRadius: "20px",
+                  padding: "2.5rem",
+                  border: "1px solid #E8E3F0",
+                  borderTop: "4px solid #7C6FF7",
+                  position: "relative" as const,
+                }}
+              >
                 <div
-                  key={c.name}
                   style={{
-                    backgroundColor: "#F8F4EE",
-                    borderRadius: "16px",
-                    padding: "2rem",
-                    border: "1px solid #E8E3F0",
-                    display: "flex",
-                    gap: "1rem",
-                    alignItems: "flex-start",
+                    display: "inline-block",
+                    backgroundColor: "rgba(124,111,247,0.1)",
+                    border: "1px solid rgba(124,111,247,0.25)",
+                    borderRadius: "999px",
+                    padding: "4px 14px",
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    color: "#7C6FF7",
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase" as const,
+                    marginBottom: "1.25rem",
                   }}
                 >
-                  <span style={{ fontSize: "2rem", flexShrink: 0 }}>{c.icon}</span>
-                  <div>
-                    <h3
-                      style={{
-                        color: "#1C1A3E",
-                        fontFamily: "'Be Vietnam Pro', sans-serif",
-                        fontWeight: 700,
-                        fontSize: "16px",
-                        marginBottom: "4px",
-                      }}
-                    >
-                      {c.name}
-                    </h3>
-                    <p style={{ color: "#18B5B0", fontSize: "13px", fontWeight: 600, marginBottom: "0.5rem" }}>
-                      {c.role}
-                    </p>
-                    <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.7 }}>{c.desc}</p>
-                  </div>
+                  Người thầy lớn
                 </div>
-              ))}
+                <h3
+                  style={{
+                    color: "#1C1A3E",
+                    fontFamily: "'Be Vietnam Pro', sans-serif",
+                    fontWeight: 800,
+                    fontSize: "1.2rem",
+                    marginBottom: "0.25rem",
+                  }}
+                >
+                  {/* Hanna điền tên người thầy vào đây */}
+                  [Tên người thầy]
+                </h3>
+                <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 600, marginBottom: "1rem" }}>
+                  {/* Hanna điền vai trò / chuyên môn */}
+                  [Vai trò / Chuyên môn]
+                </p>
+                <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.8 }}>
+                  {/* Hanna viết về điều người thầy dạy hoặc ảnh hưởng lớn nhất */}
+                  [Điều người thầy này dạy Hanna — hoặc khoảnh khắc thay đổi cách Hanna nhìn về bản thân và về con người]
+                </p>
+              </div>
+
+              {/* Người tri kỷ */}
+              <div
+                style={{
+                  backgroundColor: "#F8F4EE",
+                  borderRadius: "20px",
+                  padding: "2.5rem",
+                  border: "1px solid #E8E3F0",
+                  borderTop: "4px solid #18B5B0",
+                  position: "relative" as const,
+                }}
+              >
+                <div
+                  style={{
+                    display: "inline-block",
+                    backgroundColor: "rgba(24,181,176,0.1)",
+                    border: "1px solid rgba(24,181,176,0.25)",
+                    borderRadius: "999px",
+                    padding: "4px 14px",
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    color: "#18B5B0",
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase" as const,
+                    marginBottom: "1.25rem",
+                  }}
+                >
+                  Người tri kỷ
+                </div>
+                <h3
+                  style={{
+                    color: "#1C1A3E",
+                    fontFamily: "'Be Vietnam Pro', sans-serif",
+                    fontWeight: 800,
+                    fontSize: "1.2rem",
+                    marginBottom: "0.25rem",
+                  }}
+                >
+                  {/* Hanna điền tên người tri kỷ */}
+                  [Tên người tri kỷ]
+                </h3>
+                <p style={{ color: "#18B5B0", fontSize: "13px", fontWeight: 600, marginBottom: "1rem" }}>
+                  {/* Vai trò / mối quan hệ */}
+                  [Mối quan hệ / Vai trò trong cuộc sống Hanna]
+                </p>
+                <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.8 }}>
+                  {/* Hanna viết về người tri kỷ */}
+                  [Người này đã ở cạnh Hanna như thế nào — hoặc điều họ phản chiếu lại giúp Hanna hiểu mình hơn]
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ── Cách làm việc ─────────────────────────────────────── */}
+        {/* ── Cách đồng hành ───────────────────────────────────── */}
         <section
           style={{
             padding: "5rem 0",
@@ -434,7 +463,7 @@ export default function DoiNguPage() {
                 {
                   step: "01",
                   title: "Nhìn thấy trước — không phán xét",
-                  desc: "Không ai có thể thay đổi điều họ chưa nhìn thấy. Hanna bắt đầu bằng việc giúp bạn nhận ra khuôn mẫu đang vận hành — không gán nhãn, không so sánh, không ép buộc phải khác đi ngay.",
+                  desc: "Không ai có thể thay đổi điều họ chưa nhìn thấy. Hanna bắt đầu bằng việc giúp bạn nhận ra khuôn mẫu đang vận hành — không gán nhãn, không ép buộc phải khác đi ngay.",
                   color: "#7C6FF7",
                 },
                 {
@@ -446,7 +475,7 @@ export default function DoiNguPage() {
                 {
                   step: "03",
                   title: "Thiết kế thay đổi từ bên trong",
-                  desc: "Thay đổi thật không đến từ ý chí hay cố gắng — mà đến từ hiểu biết. Khi bạn hiểu mình đủ sâu, hành vi mới trở nên tự nhiên thay vì phải ép buộc.",
+                  desc: "Thay đổi thật không đến từ ý chí hay cố gắng — mà đến từ hiểu biết sâu. Khi bạn hiểu mình đủ rõ, hành vi mới trở nên tự nhiên thay vì phải ép buộc.",
                   color: "#5B4FD4",
                 },
               ].map((a) => (
@@ -471,7 +500,7 @@ export default function DoiNguPage() {
                       fontSize: "1.8rem",
                       lineHeight: 1,
                       flexShrink: 0,
-                      opacity: 0.3,
+                      opacity: 0.25,
                       marginTop: "2px",
                     }}
                   >
@@ -497,7 +526,7 @@ export default function DoiNguPage() {
           </div>
         </section>
 
-        {/* ── Quote cá nhân ─────────────────────────────────────── */}
+        {/* ── Quote ────────────────────────────────────────────── */}
         <section
           style={{
             padding: "4rem 0",
