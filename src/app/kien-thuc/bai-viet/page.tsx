@@ -3,8 +3,18 @@ import { useState } from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import Link from "next/link";
+import { articles as rawArticles } from "@/lib/articles";
 
-const articles = [
+const articles = rawArticles.map((a) => ({
+  slug: `/kien-thuc/bai-viet/${a.slug}`,
+  tag: a.tag,
+  color: a.tagColor,
+  title: a.title,
+  excerpt: a.excerpt,
+  readTime: a.readTime,
+}));
+
+const _UNUSED = [
   {
     slug: "/kien-thuc/bai-viet/mo-thuc-noi-tam-co-ban",
     tag: "Mô thức",
@@ -184,6 +194,7 @@ const articles = [
     color: "#9B7FD4",
   },
 ];
+// end legacy array (unused)
 
 const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Gắn bó", "Phân biệt mô thức", "Gia đình", "Ranh giới", "Cảm xúc", "Sự nghiệp", "Quan hệ", "Tự nhận thức", "Hành vi"];
 
