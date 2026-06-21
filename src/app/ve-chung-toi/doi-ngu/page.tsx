@@ -122,7 +122,7 @@ export default function DoiNguPage() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/hanna-dang.jpg"
+                  src="/hanna.jpg.jpg"
                   alt="Hanna Dang — Người sáng lập AIMIND"
                   style={{
                     width: "100%",
@@ -359,18 +359,6 @@ export default function DoiNguPage() {
                     </span>
                   ))}
                 </div>
-                <h3
-                  style={{
-                    color: "#1C1A3E",
-                    fontFamily: "'Be Vietnam Pro', sans-serif",
-                    fontWeight: 800,
-                    fontSize: "1.1rem",
-                    marginBottom: "1rem",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Ẩn danh — vì một số ân tình không cần tên để được nhớ đến
-                </h3>
                 <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.85 }}>
                   Có một người trong cuộc đời Hanna vừa là người thầy dẫn đường, vừa là người tri kỷ thật sự hiểu cô. Người này đã giúp Hanna nhìn thấy những phần trong bản thân mà cô chưa dám nhìn — không bằng cách chỉ bảo, mà bằng cách ở bên và phản chiếu lại sự thật một cách nhẹ nhàng.
                 </p>
