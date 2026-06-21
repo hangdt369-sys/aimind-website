@@ -39,7 +39,7 @@ const articles = [
     slug: "/kien-thuc/bai-viet/enneagram-type-2-cho-di-de-duoc-yeu",
     tag: "Mô thức",
     title: "Người Enneagram Type 2: Khi cho đi trở thành cách để được yêu",
-    excerpt: "Type 2 không chỉ là 'người hay giúp đỡ'. Đằng sau sự hào phóng đó là một câu hỏi sâu hơn: Tôi có được yêu thương không nếu không cho đi?",
+    excerpt: "Type 2 không chỉ là người hay giúp đỡ. Đằng sau sự hào phóng đó là một câu hỏi sâu hơn: Tôi có được yêu thương không nếu không cho đi?",
     readTime: "9 phút",
     color: "#7C6FF7",
   },
@@ -51,9 +51,81 @@ const articles = [
     readTime: "7 phút",
     color: "#18B5B0",
   },
+  {
+    slug: "/kien-thuc/bai-viet/he-than-kinh-dang-bao-ve-ban",
+    tag: "Khoa học thần kinh",
+    title: "Hệ thần kinh của bạn không hỏng — nó chỉ đang bảo vệ bạn",
+    excerpt: "Bạn hay lo lắng quá mức, hay tê liệt khi căng thẳng? Đó không phải tính cách. Đó là hệ thần kinh đang làm đúng nhiệm vụ của nó — chỉ là trong hoàn cảnh không còn cần thiết.",
+    readTime: "7 phút",
+    color: "#18B5B0",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/sang-chan-tam-ly-khong-chi-o-trong-ky-uc",
+    tag: "Khoa học thần kinh",
+    title: "Sang chấn tâm lý không chỉ nằm trong ký ức — nó nằm trong cơ thể",
+    excerpt: "Nhiều người đã hiểu và tha thứ cho quá khứ về mặt lý trí. Nhưng cơ thể vẫn phản ứng như thể nó chưa qua. Đây là cách sang chấn thật sự hoạt động.",
+    readTime: "8 phút",
+    color: "#18B5B0",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/neuroplasticity-nao-bo-co-the-thay-doi",
+    tag: "Khoa học thần kinh",
+    title: "Neuroplasticity: Não bộ có thể thay đổi — nhưng không theo cách bạn nghĩ",
+    excerpt: "Chúng ta nghe nhiều về não bộ có thể thay đổi. Nhưng ít ai nói rõ: thay đổi như thế nào, mất bao lâu, và tại sao biết điều này vẫn không giúp bạn thay đổi nhanh hơn.",
+    readTime: "6 phút",
+    color: "#18B5B0",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/4-kieu-gan-bo-va-cach-chung-dinh-hinh-moi-quan-he",
+    tag: "Gắn bó",
+    title: "4 kiểu gắn bó và cách chúng định hình mọi mối quan hệ của bạn",
+    excerpt: "Cách bạn yêu, cách bạn tranh luận, cách bạn rời đi — tất cả đều bắt nguồn từ kiểu gắn bó hình thành từ khi bạn còn là đứa trẻ chưa biết nói.",
+    readTime: "9 phút",
+    color: "#E8A87C",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/gan-bo-lo-lang-khi-yeu-dong-nghia-voi-so-mat",
+    tag: "Gắn bó",
+    title: "Người gắn bó lo lắng: Khi yêu đồng nghĩa với sợ mất",
+    excerpt: "Bạn yêu rất nhiều — nhưng tình yêu đó đi kèm với lo lắng liên tục. Không phải vì bạn quá nhạy cảm. Mà vì hệ thần kinh của bạn đã học: gần gũi là không chắc chắn.",
+    readTime: "8 phút",
+    color: "#E8A87C",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/gan-bo-ne-tranh-khi-gan-gui-cam-thay-nguy-hiem",
+    tag: "Gắn bó",
+    title: "Người gắn bó né tránh: Khi sự gần gũi cảm thấy nguy hiểm",
+    excerpt: "Bạn muốn có mối quan hệ tốt — nhưng khi ai đó thật sự gần, bạn cảm thấy ngạt thở. Không phải vì bạn lạnh lùng. Mà vì não bộ của bạn đã học: gần gũi đồng nghĩa mất tự do.",
+    readTime: "8 phút",
+    color: "#E8A87C",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/type-4-hay-type-2-cach-phan-biet",
+    tag: "Phân biệt mô thức",
+    title: "Type 4 hay Type 2? Khi hai mô thức trông giống nhau nhưng vận hành hoàn toàn khác",
+    excerpt: "Cả hai đều nhạy cảm, đều quan tâm người khác, đều sợ bị từ chối. Nhưng cơ chế hoàn toàn khác — và nhầm lẫn giữa chúng sẽ dẫn đến con đường chuyển hóa sai.",
+    readTime: "7 phút",
+    color: "#9B7FD4",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/huong-noi-hay-ne-tranh-su-khac-biet",
+    tag: "Phân biệt mô thức",
+    title: "Hướng nội hay né tránh? Ranh giới mà nhiều người nhầm lẫn",
+    excerpt: "Thích ở một mình, ngại đám đông, cần thời gian để nạp năng lượng — đây là hướng nội hay né tránh xã hội? Câu trả lời quyết định bạn cần gì để thật sự phát triển.",
+    readTime: "6 phút",
+    color: "#9B7FD4",
+  },
+  {
+    slug: "/kien-thuc/bai-viet/khi-ban-thay-minh-trong-nhieu-mo-thuc",
+    tag: "Phân biệt mô thức",
+    title: "Khi bạn thấy mình trong nhiều mô thức: Đây là điều đang xảy ra",
+    excerpt: "Đọc về 9 mô thức và thấy mình trong 3-4 cái? Điều đó không có nghĩa là bạn không có type. Nó có nghĩa là bạn đang nhìn thấy những lớp khác nhau của cùng một mô thức cốt lõi.",
+    readTime: "7 phút",
+    color: "#9B7FD4",
+  },
 ];
 
-const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Quan hệ", "Tự nhận thức", "Hành vi"];
+const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Quan hệ", "Tự nhận thức", "Hành vi", "Gắn bó", "Phân biệt mô thức"];
 
 export default function BaiVietPage() {
   return (

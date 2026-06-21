@@ -573,6 +573,738 @@ export const articles: Article[] = [
       }
     ]
   }
+,
+  // ─── CHUỖI: KHOA HỌC THẦN KINH ───────────────────────────────────────────
+  {
+    slug: "he-than-kinh-dang-bao-ve-ban",
+    tag: "Khoa học thần kinh",
+    tagColor: "#18B5B0",
+    title: "Hệ thần kinh của bạn không hỏng — nó chỉ đang bảo vệ bạn",
+    excerpt: "Bạn hay lo lắng quá mức, hay tê liệt khi căng thẳng, hay bùng nổ mà không kiểm soát được? Đó không phải tính cách. Đó là hệ thần kinh đang làm đúng nhiệm vụ của nó — chỉ là trong hoàn cảnh không còn cần thiết.",
+    readTime: "7 phút",
+    publishDate: "Tháng 4, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Có người nói với tôi: 'Tôi biết mình lo lắng vô lý. Tôi biết không có gì nguy hiểm. Nhưng cơ thể tôi không nghe.' Và họ thấy mình có vấn đề. Thấy mình yếu đuối."
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng thật ra — cơ thể họ đang làm đúng. Chỉ là đúng với một mối đe dọa từ 20 năm trước."
+      },
+      {
+        type: "heading",
+        content: "Hệ thần kinh tự chủ là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Hệ thần kinh tự chủ (autonomic nervous system) điều khiển những thứ bạn không tự ý kiểm soát: nhịp tim, hơi thở, tiêu hóa, phản xạ stress. Nó có hai nhánh chính:"
+      },
+      {
+        type: "list",
+        items: [
+          "Hệ giao cảm (sympathetic): Chế độ chiến đấu hoặc bỏ chạy — tim đập nhanh, cơ bắp căng, adrenaline tăng. Cơ thể chuẩn bị cho nguy hiểm.",
+          "Hệ phó giao cảm (parasympathetic): Chế độ nghỉ ngơi và tiêu hóa — nhịp tim chậm, cơ thể thư giãn, hệ miễn dịch hoạt động. Cơ thể phục hồi và kết nối."
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Nhà nghiên cứu Stephen Porges đã phát triển Lý thuyết Polyvagal — cho thấy thực ra có ba trạng thái, không phải hai. Ngoài giao cảm và phó giao cảm, còn có trạng thái đóng băng — khi mối đe dọa quá lớn, cơ thể tắt nguồn để tồn tại."
+      },
+      {
+        type: "heading",
+        content: "Ba trạng thái thần kinh và bạn nhận ra mình ở đâu"
+      },
+      {
+        type: "list",
+        items: [
+          "An toàn (Safe): Bạn thoải mái kết nối. Giọng nói ấm áp, ánh mắt mềm, cơ thể thư giãn. Suy nghĩ rõ ràng. Có thể chơi đùa, sáng tạo, thân mật.",
+          "Chiến đấu hoặc Bỏ chạy (Fight/Flight): Tim đập nhanh, hơi thở nông, cơ bắp căng. Bạn nóng giận, lo lắng, phòng thủ hoặc muốn thoát khỏi tình huống. Khó nghĩ rõ ràng.",
+          "Đóng băng (Freeze/Shutdown): Tê liệt, tách khỏi cảm xúc, không thể phản ứng. Cảm giác trống rỗng, vô nghĩa. Nhiều người nhầm đây là lười biếng hoặc trầm cảm."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Hệ thần kinh không phân biệt được nguy hiểm thật và nguy hiểm tưởng tượng. Nó chỉ phản ứng với tín hiệu — và tín hiệu đó có thể đến từ ký ức, từ mùi, từ giọng nói của ai đó nghe giống người từng làm bạn đau."
+      },
+      {
+        type: "heading",
+        content: "Tại sao hệ thần kinh bị kẹt?"
+      },
+      {
+        type: "paragraph",
+        content: "Khi bạn trải qua stress hoặc sang chấn — đặc biệt trong thời thơ ấu — hệ thần kinh học cách phản ứng với những tín hiệu nhất định. Nếu lớn lên trong môi trường không ổn định, hệ giao cảm của bạn được luyện tập để luôn cảnh giác."
+      },
+      {
+        type: "paragraph",
+        content: "Vấn đề là: khi lớn lên, môi trường thay đổi — nhưng hệ thần kinh vẫn chạy theo chương trình cũ. Bạn phản ứng với sếp như với cha. Bạn cảnh giác trong mối quan hệ lành mạnh như thể đang ở trong mối quan hệ độc hại. Bạn tê liệt với deadline như thể đang đối mặt với nguy hiểm thật."
+      },
+      {
+        type: "heading",
+        content: "Điều chỉnh hệ thần kinh — không phải bằng ý chí"
+      },
+      {
+        type: "paragraph",
+        content: "Bạn không thể nói với hệ thần kinh bình tĩnh lại và nó nghe. Nhưng có những cách tác động trực tiếp lên hệ phó giao cảm:"
+      },
+      {
+        type: "list",
+        items: [
+          "Thở chậm, thở ra dài hơn thở vào: Thở ra dài kích hoạt dây thần kinh phế vị — nhánh chính của hệ phó giao cảm. 4 giây hít vào, 8 giây thở ra.",
+          "Chuyển động nhẹ và có nhịp: Đi bộ, lắc lư nhẹ, vỗ nhẹ — giúp hệ thần kinh thoát khỏi trạng thái đóng băng.",
+          "Kết nối xã hội an toàn: Giọng nói ấm áp, ánh mắt nhẹ nhàng của người khác là tín hiệu an toàn mạnh nhất với hệ thần kinh của chúng ta.",
+          "Nhận diện trạng thái: Chỉ cần nhận ra mình đang ở trạng thái chiến đấu hoặc bỏ chạy đã giúp vỏ não trước trán tham gia — làm giảm phản ứng tự động."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Thay đổi không bắt đầu từ suy nghĩ tốt hơn. Nó bắt đầu từ cơ thể cảm thấy đủ an toàn để thay đổi."
+      }
+    ]
+  },
+  {
+    slug: "sang-chan-tam-ly-khong-chi-o-trong-ky-uc",
+    tag: "Khoa học thần kinh",
+    tagColor: "#18B5B0",
+    title: "Sang chấn tâm lý không chỉ nằm trong ký ức — nó nằm trong cơ thể",
+    excerpt: "Nhiều người đã hiểu và tha thứ cho quá khứ về mặt lý trí. Nhưng cơ thể vẫn phản ứng như thể nó chưa qua. Đây không phải mâu thuẫn — đây là cách sang chấn thật sự hoạt động.",
+    readTime: "8 phút",
+    publishDate: "Tháng 4, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Mình đã hiểu rồi. Mình biết ba không có ý xấu. Mình tha thứ cho ông ấy rồi. Nhưng mỗi khi ai đó nói giọng to một chút — cơ thể vẫn co lại. Tim vẫn đập nhanh. Miệng vẫn khô."
+      },
+      {
+        type: "paragraph",
+        content: "Điều này không có nghĩa là bạn chưa tha thứ thật sự. Nó có nghĩa là sang chấn không chỉ là ký ức — nó là phản xạ thần kinh được lưu trong cơ thể."
+      },
+      {
+        type: "heading",
+        content: "The Body Keeps the Score"
+      },
+      {
+        type: "paragraph",
+        content: "Bác sĩ tâm thần Bessel van der Kolk sau 30 năm nghiên cứu về sang chấn đã viết cuốn sách có tiêu đề chính xác như vậy: The Body Keeps the Score — Cơ thể giữ điểm số."
+      },
+      {
+        type: "paragraph",
+        content: "Phát hiện cốt lõi của ông: Sang chấn không được lưu trữ như một câu chuyện trong vỏ não. Nó được lưu trữ như một phản xạ — trong hạch hạnh nhân (amygdala), trong hệ thần kinh, trong cơ bắp và mô cơ thể."
+      },
+      {
+        type: "quote",
+        content: "Ký ức sang chấn không giống như ký ức thông thường — có thể nhớ lại và kể lại. Nó bùng phát như thể đang xảy ra ngay bây giờ — với đầy đủ cảm xúc và cảm giác cơ thể của lần đầu tiên."
+      },
+      {
+        type: "heading",
+        content: "Tại sao nói chuyện không đủ"
+      },
+      {
+        type: "paragraph",
+        content: "Liệu pháp trò chuyện truyền thống (talk therapy) giúp bạn hiểu câu chuyện của mình. Đây là bước quan trọng. Nhưng vỏ não trước trán — phần não xử lý ngôn ngữ và lý trí — khi bị kích hoạt sang chấn, nó gần như bị tắt bởi hạch hạnh nhân."
+      },
+      {
+        type: "paragraph",
+        content: "Đó là lý do tại sao bạn có thể giải thích về sang chấn của mình một cách rõ ràng trong phòng trị liệu — và vẫn bị cuốn vào phản ứng cũ khi ra ngoài gặp trigger."
+      },
+      {
+        type: "list",
+        items: [
+          "Ngôn ngữ xử lý ở vỏ não (cortex) — phần tiến hóa mới nhất của não.",
+          "Sang chấn được lưu ở hạch hạnh nhân và thân não — phần cổ nhất và sâu nhất.",
+          "Khi bị trigger, luồng thông tin chạy từ dưới lên trên — hạch hạnh nhân kích hoạt trước khi vỏ não kịp xử lý."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Cơ thể mang dấu vết sang chấn thế nào?"
+      },
+      {
+        type: "paragraph",
+        content: "Sang chấn được lưu trong cơ thể dưới nhiều dạng:"
+      },
+      {
+        type: "list",
+        items: [
+          "Căng cơ mãn tính: Vai gồng, hàm nghiến, cổ cứng — cơ thể đang giữ tư thế phòng thủ từ ngày cũ.",
+          "Phản ứng giật mình thái quá: Bộ não đang ở chế độ cảnh giác cao, tiêu tốn nhiều tài nguyên.",
+          "Tách khỏi cơ thể (dissociation): Không cảm nhận được cơ thể, như đang nhìn bản thân từ bên ngoài — đây là cơ chế bảo vệ khi đau quá mức để xử lý.",
+          "Vấn đề tiêu hóa, miễn dịch, giấc ngủ: Hệ thần kinh tự chủ điều khiển tất cả những hệ thống này."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Cách tiếp cận cơ thể trong chữa lành"
+      },
+      {
+        type: "paragraph",
+        content: "Chữa lành sang chấn hiệu quả cần làm việc với cơ thể — không chỉ với tâm trí. Một số hướng tiếp cận được nghiên cứu:"
+      },
+      {
+        type: "list",
+        items: [
+          "Somatic Experiencing (Peter Levine): Học cách hoàn thành phản xạ sinh tồn bị gián đoạn — giúp hệ thần kinh thoát khỏi trạng thái bị kẹt.",
+          "EMDR: Xử lý lại ký ức sang chấn qua chuyển động mắt — giúp não tiêu hóa những gì chưa được tiêu hóa.",
+          "Yoga trị liệu sang chấn: Tái kết nối với cơ thể một cách an toàn.",
+          "Nhận diện và đặt tên cảm giác cơ thể: Điều đơn giản nhưng mạnh mẽ — Mình đang thấy thắt ở ngực. Mình đang thấy nặng ở vai."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Bạn không thể suy nghĩ thoát khỏi sang chấn. Nhưng bạn có thể cảm nhận theo cách mới — và dần dần, cơ thể học được rằng hiện tại an toàn hơn quá khứ."
+      }
+    ]
+  },
+  {
+    slug: "neuroplasticity-nao-bo-co-the-thay-doi",
+    tag: "Khoa học thần kinh",
+    tagColor: "#18B5B0",
+    title: "Neuroplasticity: Não bộ có thể thay đổi — nhưng không theo cách bạn nghĩ",
+    excerpt: "Chúng ta nghe nhiều về não bộ có thể thay đổi. Nhưng ít ai nói rõ: thay đổi như thế nào, mất bao lâu, và tại sao biết điều này vẫn không giúp bạn thay đổi nhanh hơn.",
+    readTime: "6 phút",
+    publishDate: "Tháng 4, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Neuroplasticity — tính dẻo của thần kinh — là một trong những phát hiện quan trọng nhất của khoa học thần kinh thế kỷ 20. Não bộ không cố định sau tuổi dậy thì. Nó tiếp tục thay đổi suốt cuộc đời."
+      },
+      {
+        type: "paragraph",
+        content: "Nghe có vẻ tuyệt vời. Và đúng là vậy. Nhưng cũng thường bị hiểu sai theo cách khiến người ta thất vọng."
+      },
+      {
+        type: "heading",
+        content: "Neuroplasticity thật sự là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Não bộ gồm khoảng 86 tỷ tế bào thần kinh (neuron). Chúng kết nối với nhau qua synapse. Mỗi lần bạn nghĩ, cảm xúc, hành động — một chuỗi tế bào nào đó bắn tín hiệu với nhau."
+      },
+      {
+        type: "paragraph",
+        content: "Nguyên tắc cơ bản: Neurons that fire together, wire together — Tế bào thần kinh bắn cùng nhau thì kết nối với nhau. Điều bạn lặp lại nhiều lần sẽ tạo ra đường dẫn thần kinh ngày càng mạnh hơn — như con đường mòn trong rừng."
+      },
+      {
+        type: "quote",
+        content: "Não bộ không thay đổi vì bạn muốn nó thay đổi. Nó thay đổi theo những gì bạn lặp lại đủ nhiều lần, đủ lâu, với đủ cảm xúc."
+      },
+      {
+        type: "heading",
+        content: "Ba điều người ta thường hiểu sai"
+      },
+      {
+        type: "list",
+        items: [
+          "Sai: Nghe podcast về tư duy tích cực là đang thay đổi não. Đúng: Nghe thụ động tạo ra kết nối yếu. Thay đổi não cần thực hành chủ động, lặp lại, trong bối cảnh cảm xúc thật.",
+          "Sai: Não bộ thay đổi nhanh. Đúng: Tạo đường mòn mới mất từ 66 ngày đến nhiều tháng hoặc năm, tùy độ sâu của mô thức cũ. Đường mòn cũ không biến mất — nó chỉ được dùng ít hơn khi đường mới mạnh hơn.",
+          "Sai: Hiểu về neuroplasticity giúp bạn thay đổi nhanh hơn. Đúng: Hiểu là điểm khởi đầu. Nhưng não không thay đổi qua hiểu — nó thay đổi qua trải nghiệm lặp lại."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Điều gì thực sự kích hoạt thay đổi não?"
+      },
+      {
+        type: "list",
+        items: [
+          "Cảm xúc mạnh: Trải nghiệm có cảm xúc tạo ra kết nối thần kinh mạnh hơn nhiều so với thông tin thuần túy. Đây là lý do ký ức cảm xúc bền vững hơn ký ức học thuật.",
+          "Sự tập trung chú ý: Khi bạn chú ý đến điều gì đó, não giải phóng acetylcholine — giúp tăng cường tạo kết nối mới ở vùng đó.",
+          "Giấc ngủ: Trong giấc ngủ, não củng cố những kết nối mới được hình thành trong ngày. Thiếu ngủ làm giảm neuroplasticity đáng kể.",
+          "Lặp lại trong bối cảnh mới: Thực hành hành vi mới trong nhiều tình huống khác nhau giúp não tổng quát hóa — không chỉ có thể làm trong điều kiện lý tưởng."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Tại sao mô thức cũ dai dẳng?"
+      },
+      {
+        type: "paragraph",
+        content: "Đường dẫn thần kinh cũ không biến mất khi bạn tạo đường mới. Nó chỉ ít được sử dụng hơn. Và khi bạn căng thẳng, mệt mỏi, hoặc thiếu ngủ — não có xu hướng quay về đường mòn quen thuộc hơn."
+      },
+      {
+        type: "paragraph",
+        content: "Đây là lý do bạn có thể thực hành tốt trong điều kiện bình thường — nhưng khi áp lực, bạn lại phản ứng theo cách cũ. Não đang tiết kiệm năng lượng bằng cách dùng đường có sẵn."
+      },
+      {
+        type: "quote",
+        content: "Thay đổi não không phải xóa cái cũ. Là xây đường mới đủ mạnh để nó trở thành lựa chọn mặc định — kể cả khi bạn đang căng thẳng."
+      },
+      {
+        type: "paragraph",
+        content: "Điều này giải thích tại sao chuyển hóa thật sự cần thời gian, cần lặp lại, và cần làm việc ở cả cấp độ tâm lý lẫn thần kinh — không chỉ ở cấp độ nhận thức."
+      }
+    ]
+  },
+
+  // ─── CHUỖI: CÁC KIỂU GẮN BÓ ───────────────────────────────────────────────
+  {
+    slug: "4-kieu-gan-bo-va-cach-chung-dinh-hinh-moi-quan-he",
+    tag: "Gắn bó",
+    tagColor: "#E8A87C",
+    title: "4 kiểu gắn bó và cách chúng định hình mọi mối quan hệ của bạn",
+    excerpt: "Cách bạn yêu, cách bạn tranh luận, cách bạn rời đi — tất cả đều bắt nguồn từ kiểu gắn bó hình thành từ khi bạn còn là đứa trẻ chưa biết nói.",
+    readTime: "9 phút",
+    publishDate: "Tháng 5, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Hai người yêu nhau. Một người cần gần gũi liên tục — muốn biết đối phương đang nghĩ gì, đang ở đâu, có còn yêu không. Người kia cần không gian — cảm thấy ngạt thở khi bị hỏi quá nhiều, rút lui khi người kia tiến gần."
+      },
+      {
+        type: "paragraph",
+        content: "Cả hai đều yêu nhau. Cả hai đều đau. Và cả hai đều không hiểu tại sao lại cứ như vậy."
+      },
+      {
+        type: "paragraph",
+        content: "Câu trả lời nằm ở một nơi không ngờ — những năm đầu đời."
+      },
+      {
+        type: "heading",
+        content: "Lý thuyết gắn bó ra đời thế nào"
+      },
+      {
+        type: "paragraph",
+        content: "Vào những năm 1950-60, bác sĩ tâm thần người Anh John Bowlby nghiên cứu về trẻ em mồ côi và nhận thấy: trẻ không chỉ cần thức ăn và mái ấm để phát triển — chúng cần một mối quan hệ gắn bó an toàn với người chăm sóc."
+      },
+      {
+        type: "paragraph",
+        content: "Sau đó, nhà tâm lý học Mary Ainsworth thiết kế thí nghiệm Strange Situation — để trẻ nhỏ trong phòng với mẹ, rồi người lạ, rồi một mình. Qua phản ứng của trẻ khi mẹ quay lại, bà xác định được các kiểu gắn bó khác nhau."
+      },
+      {
+        type: "heading",
+        content: "4 kiểu gắn bó"
+      },
+      {
+        type: "list",
+        items: [
+          "An toàn (Secure ~55% dân số): Người chăm sóc nhất quán, đáp ứng đúng mức. Trẻ biết mẹ sẽ về — có thể khám phá thế giới mà không quá lo lắng. Lớn lên: thoải mái với gần gũi và độc lập, có thể tin tưởng và cho phép được tin tưởng.",
+          "Lo lắng (Anxious ~20%): Người chăm sóc không nhất quán — đôi khi đáp ứng, đôi khi không. Trẻ không biết khi nào mẹ sẽ về nên khi mẹ về thì bám chặt và khóc nhiều hơn. Lớn lên: sợ bị bỏ rơi, cần liên tục được trấn an, cảm xúc mạnh trong quan hệ.",
+          "Né tránh (Avoidant ~25%): Người chăm sóc lạnh lùng, không đáp ứng cảm xúc. Trẻ học cách không cần — tắt nhu cầu gắn bó. Khi mẹ về, trẻ tỏ ra không quan tâm. Lớn lên: coi trọng độc lập, khó chịu với sự gần gũi, xu hướng cắt đứt khi quá thân mật.",
+          "Hỗn loạn (Disorganized ~5%): Người chăm sóc vừa là nguồn an toàn vừa là nguồn nguy hiểm — thường liên quan đến sang chấn hoặc lạm dụng. Trẻ vừa muốn đến gần vừa sợ. Lớn lên: quan hệ hỗn loạn, vừa khao khát vừa phá hoại sự gần gũi, khó tin tưởng."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Kiểu gắn bó không phải bản án. Nhưng nó là bản đồ — giúp bạn hiểu tại sao bạn phản ứng như vậy khi yêu, và tại sao người kia phản ứng như vậy với bạn."
+      },
+      {
+        type: "heading",
+        content: "Kiểu gắn bó thay đổi được không?"
+      },
+      {
+        type: "paragraph",
+        content: "Có — nhưng cần thời gian và thường cần làm việc có ý thức. Một mối quan hệ an toàn (với người yêu, nhà trị liệu, hoặc cộng đồng) có thể dần dần tái lập trình kiểu gắn bó."
+      },
+      {
+        type: "paragraph",
+        content: "Điều quan trọng đầu tiên: nhận ra kiểu gắn bó của mình. Không phải để tự trách — mà để hiểu: À, mình phản ứng như vậy không phải vì mình có vấn đề. Mà vì mình đang chạy một chương trình rất cũ."
+      },
+      {
+        type: "paragraph",
+        content: "Câu hỏi tự hỏi: Trong quan hệ thân thiết, mình sợ điều gì hơn — bị bỏ rơi, hay bị nuốt chửng? Trả lời trung thực câu đó là bước đầu tiên."
+      }
+    ]
+  },
+  {
+    slug: "gan-bo-lo-lang-khi-yeu-dong-nghia-voi-so-mat",
+    tag: "Gắn bó",
+    tagColor: "#E8A87C",
+    title: "Người gắn bó lo lắng: Khi yêu đồng nghĩa với sợ mất",
+    excerpt: "Bạn yêu rất nhiều — nhưng tình yêu đó đi kèm với lo lắng liên tục. Bạn cần trấn an. Bạn phân tích từng tin nhắn. Không phải vì bạn quá nhạy cảm. Mà vì hệ thần kinh của bạn đã học: gần gũi là không chắc chắn.",
+    readTime: "8 phút",
+    publishDate: "Tháng 5, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn gửi tin nhắn. Đợi. Đọc lại tin nhắn của mình xem có gì sai không. Đợi thêm. Bắt đầu nghĩ họ có tức mình không, có chuyện gì xảy ra không, mình có làm gì sai không. Rồi họ trả lời — và mọi thứ lại ổn. Cho đến lần sau."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu điều này quen thuộc — bạn có thể đang vận hành với kiểu gắn bó lo lắng."
+      },
+      {
+        type: "heading",
+        content: "Kiểu gắn bó lo lắng hình thành thế nào?"
+      },
+      {
+        type: "paragraph",
+        content: "Người có gắn bó lo lắng thường có người chăm sóc không nhất quán trong thời thơ ấu — không phải lạnh lùng hay lạm dụng, mà không đáng tin cậy về mặt cảm xúc. Đôi khi ấm áp và gần gũi. Đôi khi bận, lo lắng, hay lo tâm trạng của chính họ."
+      },
+      {
+        type: "paragraph",
+        content: "Đứa trẻ không biết khi nào thì được đáp ứng — nên nó làm điều hợp lý nhất có thể: tăng cường tín hiệu. Khóc to hơn. Bám chặt hơn. Cảnh giác hơn với bất kỳ dấu hiệu nào người chăm sóc sắp rời đi."
+      },
+      {
+        type: "quote",
+        content: "Gắn bó lo lắng không phải tính cách yếu đuối. Đó là chiến lược sinh tồn của một đứa trẻ sống trong môi trường không thể đoán trước."
+      },
+      {
+        type: "heading",
+        content: "Dấu hiệu gắn bó lo lắng trong quan hệ trưởng thành"
+      },
+      {
+        type: "list",
+        items: [
+          "Cần liên tục được trấn an: Anh/em có còn yêu không — không phải vì nghi ngờ, mà vì hệ thần kinh cần xác nhận để ổn định.",
+          "Phân tích quá mức: Đọc lại tin nhắn nhiều lần. Phân tích giọng điệu. Tìm ý nghĩa ẩn trong những thứ bình thường.",
+          "Sợ bị bỏ rơi: Phản ứng mạnh với việc đối phương cần không gian. Giải thích cần không gian là dấu hiệu của việc mất đi.",
+          "Hy sinh bản thân để giữ quan hệ: Đồng ý với những thứ mình không muốn, tránh xung đột dù bất đồng — vì xung đột đồng nghĩa nguy cơ mất mối quan hệ.",
+          "Cảm xúc leo thang nhanh: Nhỏ chuyện thành lớn chuyện trong đầu rất nhanh. Từ họ không trả lời đến họ không còn yêu mình trong vài giờ."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Điều người gắn bó lo lắng cần nhất"
+      },
+      {
+        type: "paragraph",
+        content: "Không phải người yêu hoàn hảo luôn luôn sẵn sàng. Mà là học cách tự điều chỉnh — tức là, khả năng ổn định cảm xúc từ bên trong thay vì phụ thuộc hoàn toàn vào người khác."
+      },
+      {
+        type: "paragraph",
+        content: "Điều này không có nghĩa là không cần người khác. Mà là có thể chịu đựng sự không chắc chắn ngắn hạn mà không rơi vào vòng xoáy lo lắng."
+      },
+      {
+        type: "list",
+        items: [
+          "Nhận ra trigger: Mình đang lo lắng. Điều gì đang kích hoạt cảm giác này?",
+          "Phân biệt quá khứ và hiện tại: Đây có thật sự là dấu hiệu nguy hiểm — hay mình đang phản ứng với ký ức cũ?",
+          "Xây dựng nguồn an toàn bên trong: Bạn bè, sở thích, cơ thể — những thứ không phụ thuộc vào một mối quan hệ duy nhất.",
+          "Làm việc với nhà trị liệu: Gắn bó lo lắng thay đổi nhanh hơn trong một mối quan hệ trị liệu an toàn và nhất quán."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Người gắn bó lo lắng không yêu quá nhiều. Họ yêu từ nơi thiếu an toàn. Và khi được an toàn — họ có thể yêu theo cách rất đẹp."
+      }
+    ]
+  },
+  {
+    slug: "gan-bo-ne-tranh-khi-gan-gui-cam-thay-nguy-hiem",
+    tag: "Gắn bó",
+    tagColor: "#E8A87C",
+    title: "Người gắn bó né tránh: Khi sự gần gũi cảm thấy nguy hiểm",
+    excerpt: "Bạn muốn có mối quan hệ tốt — nhưng khi ai đó thật sự gần, bạn cảm thấy ngạt thở. Không phải vì bạn lạnh lùng. Mà vì một phần não bộ của bạn đã học: gần gũi đồng nghĩa mất tự do, mất bản thân.",
+    readTime: "8 phút",
+    publishDate: "Tháng 5, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn thích người đó. Thật sự thích. Nhưng khi họ bắt đầu muốn gặp nhiều hơn, muốn biết nhiều hơn, muốn gần hơn — bạn cảm thấy thứ gì đó bên trong muốn rút lui. Tìm lý do để bận. Cần không gian."
+      },
+      {
+        type: "paragraph",
+        content: "Và khi họ phàn nàn về điều đó, bạn cảm thấy bị bóp nghẹt. Bị kiểm soát. Dù họ chỉ đang yêu theo cách bình thường."
+      },
+      {
+        type: "heading",
+        content: "Nguồn gốc của gắn bó né tránh"
+      },
+      {
+        type: "paragraph",
+        content: "Trẻ em có kiểu gắn bó né tránh thường có người chăm sóc cảm xúc lạnh lùng, xa cách, hoặc không đáp ứng nhu cầu cảm xúc — dù có thể đáp ứng nhu cầu vật chất."
+      },
+      {
+        type: "paragraph",
+        content: "Khi đứa trẻ khóc và không được ôm, nó làm điều duy nhất có thể: tắt nhu cầu đó đi. Học cách tự đủ. Học cách không cần. Vì cần mà không được đáp ứng còn đau hơn không cần."
+      },
+      {
+        type: "paragraph",
+        content: "Đây không phải lạnh lùng — đây là thích nghi thông minh của não bộ trẻ em."
+      },
+      {
+        type: "quote",
+        content: "Người né tránh không thiếu cảm xúc. Họ có cảm xúc — chỉ là đã học cách không tin tưởng chúng, không hiển thị chúng, và không trông cậy vào người khác để xử lý chúng."
+      },
+      {
+        type: "heading",
+        content: "Dấu hiệu gắn bó né tránh"
+      },
+      {
+        type: "list",
+        items: [
+          "Cần nhiều không gian một mình: Nạp năng lượng từ sự độc lập. Cảm thấy ngạt thở khi đối phương cần quá nhiều thời gian.",
+          "Khó nói về cảm xúc: Không phải giấu — mà thật sự không quen tiếp cận cảm xúc bên trong. Câu em đang cảm thấy thế nào tạo ra lo lắng thật sự.",
+          "Khi quan hệ trở nên thân mật, bắt đầu thấy lỗi: Não tìm lý do để tạo khoảng cách an toàn.",
+          "Coi trọng độc lập hơn kết nối: Thành công, tự lập, không cần ai — những giá trị này không chỉ là ưu tiên, mà là danh tính.",
+          "Sau chia tay phục hồi nhanh hơn người khác: Không phải vì không yêu — mà vì đã quen tắt nhu cầu kết nối."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Điều người gắn bó né tránh cần biết về bản thân"
+      },
+      {
+        type: "paragraph",
+        content: "Đằng sau sự độc lập đó thường là một nhu cầu gắn bó vẫn đang tồn tại — chỉ là bị chôn sâu. Nghiên cứu cho thấy người né tránh, khi được đo nhịp tim và phản ứng thần kinh trong tình huống thân mật, thực ra có mức stress cao — dù bề ngoài trông bình thản."
+      },
+      {
+        type: "paragraph",
+        content: "Họ không thiếu nhu cầu kết nối. Họ chỉ không tin là an toàn khi có nhu cầu đó."
+      },
+      {
+        type: "list",
+        items: [
+          "Nhận ra khi nào bạn đang rút lui và tại sao: Đây là để thoát khỏi lo lắng — không phải vì bạn không muốn ở lại.",
+          "Thực hành ở lại với sự khó chịu nhỏ: Chịu đựng sự gần gũi 10% nhiều hơn mức thoải mái — để não học lại rằng gần gũi không nguy hiểm.",
+          "Cho người kia biết bạn cần không gian — thay vì biến mất: Sự khác biệt giữa mình cần 2 tiếng một mình và im lặng rút lui rất lớn với người lo lắng.",
+          "Kiên nhẫn với quá trình: Não bộ né tránh mất nhiều thời gian để học lại vì nó đã được lập trình rất sớm và rất kỹ."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Người gắn bó né tránh không sợ tình yêu. Họ sợ những gì tình yêu đòi hỏi — sự phụ thuộc, sự dễ tổn thương, nguy cơ mất bản thân trong người khác. Và nỗi sợ đó rất thật."
+      }
+    ]
+  },
+
+  // ─── CHUỖI: RANH GIỚI GIỮA CÁC MÔ THỨC ──────────────────────────────────
+  {
+    slug: "type-4-hay-type-2-cach-phan-biet",
+    tag: "Phân biệt mô thức",
+    tagColor: "#9B7FD4",
+    title: "Type 4 hay Type 2? Khi hai mô thức trông giống nhau nhưng vận hành hoàn toàn khác",
+    excerpt: "Cả hai đều nhạy cảm, đều quan tâm người khác, đều sợ bị từ chối. Nhưng nguồn gốc và cơ chế của hai mô thức này hoàn toàn khác nhau — và nhầm lẫn giữa chúng sẽ dẫn đến con đường chuyển hóa sai.",
+    readTime: "7 phút",
+    publishDate: "Tháng 6, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Nhiều người đọc về Type 4 và Type 2 rồi thấy mình trong cả hai. Đều nhạy cảm. Đều quan tâm đến người khác. Đều có xu hướng đặt cảm xúc lên trên lý trí."
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng hỏi kỹ hơn một chút — sẽ thấy chúng vận hành theo logic hoàn toàn khác nhau."
+      },
+      {
+        type: "heading",
+        content: "Type 4 — Người Độc Đáo"
+      },
+      {
+        type: "paragraph",
+        content: "Nỗi sợ cốt lõi của Type 4: Mình bình thường, không có gì đặc biệt, không có danh tính thật sự. Khao khát cốt lõi: Được biết đến và yêu thương vì sự độc đáo của mình — không phải dù mình khác biệt mà chính vì mình khác biệt."
+      },
+      {
+        type: "paragraph",
+        content: "Type 4 hướng vào trong. Họ quan tâm đến cảm xúc và trải nghiệm của chính mình trước tiên. Họ cảm thấy có gì đó thiếu — thứ người khác có mà họ không có — và điều này tạo ra cảm giác khao khát mãn tính."
+      },
+      {
+        type: "heading",
+        content: "Type 2 — Người Cho Đi"
+      },
+      {
+        type: "paragraph",
+        content: "Nỗi sợ cốt lõi của Type 2: Mình không được yêu nếu không hữu ích, không cần thiết, không cho đi. Khao khát cốt lõi: Được yêu vô điều kiện — nhưng không tin điều đó có thể xảy ra nếu không làm gì để xứng đáng."
+      },
+      {
+        type: "paragraph",
+        content: "Type 2 hướng ra ngoài. Họ rất nhạy với nhu cầu của người khác — đôi khi đến mức quên mất nhu cầu của chính mình. Họ tìm kiếm giá trị bản thân qua sự đánh giá cao của người khác."
+      },
+      {
+        type: "heading",
+        content: "Test phân biệt quan trọng nhất"
+      },
+      {
+        type: "list",
+        items: [
+          "Khi một mình, bạn thường nghĩ về điều gì? Type 4: Về chính mình — cảm xúc, ý nghĩa, danh tính. Type 2: Về người khác — họ ổn không, họ cần gì, mình đã làm đủ chưa.",
+          "Khi cảm thấy tệ, bạn muốn gì? Type 4: Được thấy và hiểu trong nỗi đau của mình. Type 2: Được cần — giúp ai đó để cảm thấy có giá trị trở lại.",
+          "Điều gì gây ra cảm giác xấu hổ mạnh nhất? Type 4: Bị xem là bình thường, nhạt nhẽo, không có chiều sâu. Type 2: Bị xem là ích kỷ, không quan tâm, chỉ nghĩ cho mình.",
+          "Với người lạ, bạn tự nhiên làm gì? Type 4: Quan sát, đánh giá, tự hỏi mình có hợp với họ không. Type 2: Tìm cách kết nối, hỏi về họ, tìm điều có thể giúp."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Type 4 tìm kiếm bản thân mình trong mối quan hệ. Type 2 tìm kiếm giá trị của mình trong mối quan hệ. Nghe giống nhau nhưng khác hoàn toàn."
+      },
+      {
+        type: "heading",
+        content: "Tại sao nhầm lẫn này quan trọng"
+      },
+      {
+        type: "paragraph",
+        content: "Con đường chuyển hóa của Type 4 là học cách tìm ý nghĩa trong hiện tại — thay vì luôn khao khát thứ không có. Trong khi Type 2 cần học cách nhận — không chỉ cho. Nếu Type 2 áp dụng hành trình của Type 4, họ sẽ càng rút vào trong và quên mất người khác hơn. Nếu Type 4 áp dụng hành trình của Type 2, họ sẽ càng cho đi nhiều hơn và mất kết nối với bản thân."
+      }
+    ]
+  },
+  {
+    slug: "huong-noi-hay-ne-tranh-su-khac-biet",
+    tag: "Phân biệt mô thức",
+    tagColor: "#9B7FD4",
+    title: "Hướng nội hay né tránh? Ranh giới mà nhiều người nhầm lẫn",
+    excerpt: "Thích ở một mình, ngại đám đông, cần thời gian để nạp năng lượng — đây là hướng nội hay né tránh xã hội? Câu trả lời quyết định bạn cần gì để thật sự phát triển.",
+    readTime: "6 phút",
+    publishDate: "Tháng 6, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Mình chỉ là người hướng nội. Câu này được dùng rất nhiều — đôi khi đúng, đôi khi là cách không cần đối mặt với một điều khác."
+      },
+      {
+        type: "paragraph",
+        content: "Hướng nội là đặc điểm tính cách. Né tránh là cơ chế tự vệ. Chúng trông giống nhau từ bên ngoài — nhưng có nguồn gốc và hệ quả hoàn toàn khác."
+      },
+      {
+        type: "heading",
+        content: "Hướng nội thật sự là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Theo Carl Jung và nghiên cứu tâm lý học hiện đại, hướng nội là xu hướng nạp năng lượng từ bên trong — từ suy nghĩ, ý tưởng, trải nghiệm nội tâm — thay vì từ tương tác xã hội. Người hướng nội không ghét người khác. Họ chỉ bị tiêu hao bởi tương tác xã hội nhiều hơn người hướng ngoại — và cần thời gian một mình để phục hồi."
+      },
+      {
+        type: "list",
+        items: [
+          "Người hướng nội thích cuộc trò chuyện sâu hơn small talk — không phải tránh tất cả.",
+          "Người hướng nội có thể tận hưởng các buổi tụ họp — nhưng cần thời gian một mình sau đó.",
+          "Người hướng nội chọn ít kết nối nhưng sâu — không phải zero kết nối.",
+          "Sau khi ở một mình đủ, người hướng nội cảm thấy thoải mái và muốn kết nối trở lại."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Né tránh xã hội là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Né tránh xã hội là cơ chế phòng vệ — xuất phát từ lo lắng xã hội, sang chấn, hoặc kiểu gắn bó né tránh. Người né tránh không chỉ thích ở một mình — họ sợ những gì xảy ra khi kết nối: bị phán xét, bị từ chối, bị tổn thương, mất kiểm soát."
+      },
+      {
+        type: "list",
+        items: [
+          "Né tránh: Muốn kết nối nhưng sợ. Ở một mình không phải để nạp năng lượng mà để tránh nguy cơ.",
+          "Né tránh: Sau khi tránh né, cảm thấy vừa nhẹ nhõm vừa cô đơn và tiếc nuối.",
+          "Né tránh: Tưởng tượng tình huống xã hội trước và lo lắng về nó.",
+          "Né tránh: Cuộc sống thu hẹp dần theo thời gian — ít tương tác, ít rủi ro, ít sống hơn."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Người hướng nội ở nhà vì ở nhà tốt. Người né tránh ở nhà vì ra ngoài đáng sợ. Từ bên ngoài trông giống nhau — từ bên trong hoàn toàn khác."
+      },
+      {
+        type: "heading",
+        content: "Test tự kiểm tra"
+      },
+      {
+        type: "paragraph",
+        content: "Hỏi bản thân: Nếu mình chắc chắn 100% không ai phán xét, không ai làm mình khó chịu, không có hệ quả xấu — mình có muốn kết nối với người khác nhiều hơn không?"
+      },
+      {
+        type: "paragraph",
+        content: "Nếu có — bạn đang né tránh, không phải hướng nội. Nhu cầu kết nối vẫn ở đó — chỉ bị chặn bởi lo lắng."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu không — bạn thật sự cần ít kết nối hơn để phát triển tốt. Đó là hướng nội thuần túy, không cần chữa."
+      },
+      {
+        type: "heading",
+        content: "Tại sao phân biệt này quan trọng?"
+      },
+      {
+        type: "paragraph",
+        content: "Người hướng nội cần thiết kế cuộc sống phù hợp với mình — ít tương tác hơn, sâu hơn. Người né tránh cần làm việc với nỗi sợ — dần dần mở rộng vùng an toàn, không phải ép buộc bản thân."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu người né tránh được xác nhận là hướng nội — họ sẽ thu mình thêm và gọi đó là tự chăm sóc. Nếu người hướng nội bị gọi là né tránh — họ sẽ ép buộc bản thân ra ngoài và kiệt sức."
+      }
+    ]
+  },
+  {
+    slug: "khi-ban-thay-minh-trong-nhieu-mo-thuc",
+    tag: "Phân biệt mô thức",
+    tagColor: "#9B7FD4",
+    title: "Khi bạn thấy mình trong nhiều mô thức: Đây là điều đang xảy ra",
+    excerpt: "Đọc về 9 mô thức và thấy mình trong 3-4 cái? Điều đó không có nghĩa là bạn không có type. Nó có nghĩa là bạn đang nhìn thấy những lớp khác nhau của cùng một mô thức cốt lõi.",
+    readTime: "7 phút",
+    publishDate: "Tháng 6, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Mình đọc Type 1 thấy đúng. Đọc Type 4 cũng đúng. Đọc Type 7 cũng thấy mình. Mình là type gì vậy?"
+      },
+      {
+        type: "paragraph",
+        content: "Đây là điều gần như mọi người trải qua khi lần đầu tiếp xúc với Enneagram hoặc bất kỳ hệ thống mô thức nào. Và cảm giác đó không phải vô nghĩa — nó đang nói với bạn điều gì đó quan trọng."
+      },
+      {
+        type: "heading",
+        content: "Tại sao bạn thấy mình trong nhiều mô thức?"
+      },
+      {
+        type: "paragraph",
+        content: "Ba lý do chính:"
+      },
+      {
+        type: "list",
+        items: [
+          "Mô thức cánh (Wings): Trong Enneagram, mỗi type chịu ảnh hưởng từ hai type liền kề. Type 4 có cánh 3 hoặc cánh 5. Bạn có thể nhận ra đặc điểm của type kề bên vì chúng thật sự hiện diện trong bạn.",
+          "Mô thức stress và an toàn: Khi căng thẳng, mỗi type di chuyển về phía một type khác và thể hiện những đặc điểm tiêu cực của type đó. Khi an toàn, bạn di chuyển về phía type khác nữa. Bạn có thể nhận ra mình ở cả ba nơi.",
+          "Lớp mặt nạ và lớp cốt lõi: Bạn thường có một mô thức bề mặt — mô thức bạn học để tồn tại trong môi trường cụ thể — và một mô thức cốt lõi — nỗi sợ và khao khát sâu nhất. Chúng đôi khi trông khác nhau."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Cách tìm mô thức cốt lõi"
+      },
+      {
+        type: "paragraph",
+        content: "Đừng tìm qua hành vi bề mặt. Tìm qua nỗi sợ và động lực."
+      },
+      {
+        type: "quote",
+        content: "Mô thức không định nghĩa bạn qua những gì bạn làm. Nó định nghĩa bạn qua những gì bạn sợ nhất và muốn nhất — ở tầng sâu nhất, trước khi lý trí can thiệp."
+      },
+      {
+        type: "list",
+        items: [
+          "Nỗi sợ nào khiến bạn phản ứng tự động nhất? Bị từ chối, bị kiểm soát, bị xem là thất bại, bị bỏ rơi?",
+          "Điều gì bạn muốn nhất trong mọi mối quan hệ và tình huống? Được tự do, được yêu, được an toàn, được thấy?",
+          "Bạn cảm thấy xấu hổ sâu nhất khi bị gọi là gì? Ích kỷ, yếu đuối, lập dị, nhạt nhẽo?"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Mô thức ở trạng thái stress"
+      },
+      {
+        type: "paragraph",
+        content: "Trong Enneagram, mỗi type có một mũi tên stress — type mà họ di chuyển đến khi căng thẳng và thể hiện những đặc điểm không lành mạnh của type đó."
+      },
+      {
+        type: "list",
+        items: [
+          "Type 1 khi stress đi về Type 4: Bắt đầu u ám, cảm thấy bị hiểu lầm, rút vào cảm xúc.",
+          "Type 2 khi stress đi về Type 8: Bùng nổ, kiểm soát, đòi được ghi nhận.",
+          "Type 4 khi stress đi về Type 2: Bám víu người khác, mất bản sắc, cần được cần thiết.",
+          "Type 7 khi stress đi về Type 1: Cứng nhắc, phê phán, mất khả năng vui."
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Nếu bạn đang nhận ra mình ở nhiều type — hãy hỏi: Cái nào là mình lúc bình thường, cái nào là mình lúc stress? Câu trả lời sẽ giúp bạn phân biệt type cốt lõi và type stress."
+      },
+      {
+        type: "heading",
+        content: "Quan trọng hơn type"
+      },
+      {
+        type: "paragraph",
+        content: "Mục tiêu không phải tìm đúng nhãn. Mục tiêu là hiểu cơ chế — tại sao bạn phản ứng như vậy, điều gì đang thật sự vận hành bên dưới hành vi bề mặt."
+      },
+      {
+        type: "paragraph",
+        content: "Một người hiểu sâu về một type và áp dụng được vào cuộc sống thật của họ — có giá trị hơn nhiều so với người biết tên của tất cả 9 type nhưng không thay đổi gì."
+      },
+      {
+        type: "quote",
+        content: "Hệ thống mô thức không phải để phân loại người. Nó là công cụ để thấy rõ hơn — bản thân mình và người khác. Dùng nó như vậy, không phải như hộp dán nhãn."
+      }
+    ]
+  }
+
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
