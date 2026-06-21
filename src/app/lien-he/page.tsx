@@ -37,7 +37,7 @@ export default function LienHePage() {
               }}
             >
               {[
-                { icon: "📱", label: "Facebook", value: "AIMIND Vietnam", href: "https://facebook.com" },
+                { icon: "📱", label: "Facebook", value: "Hanna Dang", href: "https://www.facebook.com/profile.php?id=100042962491656" },
                 { icon: "💬", label: "Zalo", value: "Liên hệ qua Zalo", href: "#" },
                 { icon: "📧", label: "Email", value: "hello@aimind.com.vn", href: "mailto:hello@aimind.com.vn" },
               ].map((item) => (
@@ -94,9 +94,9 @@ export default function LienHePage() {
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {[
-                  { label: "Ngân hàng", value: "Vietcombank" },
-                  { label: "Số tài khoản", value: "1234567890" },
-                  { label: "Chủ tài khoản", value: "HANNA DANG" },
+                  { label: "Ngân hàng", value: "BIDV" },
+                  { label: "Số tài khoản", value: "3110856777" },
+                  { label: "Chủ tài khoản", value: "DANG THI HANG" },
                   { label: "Nội dung CK", value: "[Tên] - BDNT Chuyên Sâu" },
                 ].map((row) => (
                   <div key={row.label} style={{ display: "flex", gap: "1rem" }}>
