@@ -29,7 +29,7 @@ const milestones = [
   { year: "2019", event: "Hanna Dang bắt đầu hành trình nghiên cứu tâm lý học hành vi và khoa học thần kinh" },
   { year: "2021", event: "Phát triển khung Bản Đồ Nội Tâm — hệ thống nhận diện 9 mô thức hành vi cốt lõi" },
   { year: "2023", event: "Ra mắt chương trình coaching 1-1 và khóa học đầu tiên" },
-  { year: "2024", event: "Hơn 500 người Việt Nam đã trải qua hành trình nhận thức bản thân qua AIMIND" },
+  { year: "2024", event: "Ra mắt bài test Bản Đồ Nội Tâm — công cụ nhận diện mô thức đầu tiên của AIMIND" },
   { year: "2025", event: "Ra mắt nền tảng AIMIND — đưa công cụ chuyển hóa đến với mọi người" },
 ];
 

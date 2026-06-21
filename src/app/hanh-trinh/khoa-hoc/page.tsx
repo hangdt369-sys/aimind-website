@@ -255,7 +255,7 @@ export default function KhoaHocPage() {
               Bắt đầu hành trình chuyển hóa
             </h2>
             <p style={{ color: "#9B96C0", fontSize: "14px", marginBottom: "2.5rem" }}>
-              Liên hệ Hanna để được tư vấn và nhận thông tin học phí
+              Ưu đãi ra mắt — chỉ còn cho 20 người đầu tiên
             </p>
             <div
               style={{
@@ -272,8 +272,8 @@ export default function KhoaHocPage() {
               <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
+                  alt="QR thanh toán BIDV — Khóa học AIMIND"
                   src="https://img.vietqr.io/image/BIDV-3110856777-compact2.png?amount=499000&addInfo=BDNT%20chuyen%20sau&accountName=DANG%20THI%20HANG"
-                  alt="QR thanh toán BIDV - DANG THI HANG"
                   style={{ width: "200px", height: "auto", borderRadius: "12px", backgroundColor: "white", padding: "8px" }}
                 />
               </div>

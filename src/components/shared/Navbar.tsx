@@ -53,11 +53,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div style={{ display: "flex", alignItems: "center", gap: "2rem" }} className="hidden-mobile">
+          <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }} className="hidden-mobile">
             <NavLink href="/kham-pha/ban-do-noi-tam">Bài Test</NavLink>
             <NavLink href="/kien-thuc/bai-viet">Kiến Thức</NavLink>
             <NavLink href="/hanh-trinh/khoa-hoc">Khóa Học</NavLink>
             <NavLink href="/dong-hanh">Đồng Hành</NavLink>
+            <NavLink href="/ve-chung-toi/su-menh">Về AIMIND</NavLink>
           </div>
 
           {/* CTA */}
@@ -131,6 +132,8 @@ export default function Navbar() {
               { href: "/kien-thuc/bai-viet", label: "Kiến Thức" },
               { href: "/hanh-trinh/khoa-hoc", label: "Khóa Học" },
               { href: "/dong-hanh", label: "Đồng Hành 1-1" },
+              { href: "/ve-chung-toi/su-menh", label: "Về AIMIND" },
+              { href: "/lien-he", label: "Liên Hệ" },
             ].map((item) => (
               <Link
                 key={item.href}
