@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const articles = [
   {
-    slug: "#",
+    slug: "/kien-thuc/bai-viet/mo-thuc-noi-tam-co-ban",
     tag: "Mô thức",
     title: "9 mô thức nội tâm cơ bản và cách nhận diện mô thức của bạn",
     excerpt: "Mỗi người trong chúng ta đều vận hành theo một mô thức cốt lõi — một cách nhìn thế giới và phản ứng với nó được hình thành từ rất sớm trong cuộc đời.",
@@ -12,7 +12,7 @@ const articles = [
     color: "#7C6FF7",
   },
   {
-    slug: "#",
+    slug: "/kien-thuc/bai-viet/y-chi-khong-du-thay-doi-hanh-vi",
     tag: "Khoa học thần kinh",
     title: "Tại sao ý chí không đủ: Khoa học đằng sau thay đổi hành vi",
     excerpt: "Chúng ta được dạy rằng thay đổi cần ý chí. Nhưng khoa học thần kinh cho thấy điều ngược lại — ý chí là nguồn tài nguyên có hạn và dễ cạn kiệt.",
@@ -20,7 +20,7 @@ const articles = [
     color: "#18B5B0",
   },
   {
-    slug: "#",
+    slug: "/kien-thuc/bai-viet/tai-sao-ban-cu-thu-hut-cung-mot-kieu-nguoi",
     tag: "Quan hệ",
     title: "Tại sao bạn cứ thu hút về phía mình cùng một kiểu người?",
     excerpt: "Không phải ngẫu nhiên. Mô thức nội tâm của bạn đang tích cực lựa chọn — và thường lựa chọn những gì quen thuộc, không phải những gì tốt cho bạn.",
@@ -28,7 +28,7 @@ const articles = [
     color: "#E8A87C",
   },
   {
-    slug: "#",
+    slug: "/kien-thuc/bai-viet/biet-minh-va-hieu-minh",
     tag: "Tự nhận thức",
     title: "Sự khác biệt giữa biết mình và thật sự hiểu mình",
     excerpt: "Hầu hết chúng ta đều biết một vài điều về bản thân. Nhưng biết và hiểu là hai điều rất khác nhau — và sự khác biệt đó quyết định mọi thứ.",
@@ -36,7 +36,7 @@ const articles = [
     color: "#7BAE7F",
   },
   {
-    slug: "#",
+    slug: "/kien-thuc/bai-viet/enneagram-type-2-cho-di-de-duoc-yeu",
     tag: "Mô thức",
     title: "Người Enneagram Type 2: Khi cho đi trở thành cách để được yêu",
     excerpt: "Type 2 không chỉ là 'người hay giúp đỡ'. Đằng sau sự hào phóng đó là một câu hỏi sâu hơn: Tôi có được yêu thương không nếu không cho đi?",
@@ -44,7 +44,7 @@ const articles = [
     color: "#7C6FF7",
   },
   {
-    slug: "#",
+    slug: "/kien-thuc/bai-viet/vong-lap-thoi-quen",
     tag: "Hành vi",
     title: "Vòng lặp thói quen và cách phá vỡ nó từ bên trong",
     excerpt: "Thói quen không phải điểm yếu của ý chí. Chúng là thuật toán mà não bộ viết ra để tiết kiệm năng lượng. Và bạn có thể viết lại thuật toán đó.",
