@@ -179,6 +179,12 @@ export default function DoiNguPage() {
               <p>
                 Hanna tin rằng phần lớn những khó khăn trong cuộc sống không đến từ việc chúng ta chưa đủ giỏi hay chưa đủ cố gắng — mà đến từ việc chúng ta chưa thật sự hiểu mình. Khi nhìn rõ những khuôn mẫu vô thức, niềm tin sâu bên trong và cơ chế vận hành của tâm trí, mỗi người đều có cơ hội tạo ra những thay đổi sâu sắc và bền vững hơn.
               </p>
+              <p style={{ marginTop: "1.75rem", padding: "1.5rem 1.75rem", borderLeft: "4px solid #7C6FF7", backgroundColor: "rgba(124,111,247,0.05)", borderRadius: "0 12px 12px 0" }}>
+                Nhưng có một khoảnh khắc Hanna không thể quên — nhìn người thầy, người tri kỷ của mình đang vật lộn ở lằn ranh giữa sống và chết. Giữa sinh tồn và kỳ vọng. Giữa mâu thuẫn nội tâm và khát khao được sống đúng với chính mình. Và Hanna chỉ có thể đứng ngoài — bất lực.
+              </p>
+              <p style={{ marginTop: "1.25rem" }}>
+                Chính khoảnh khắc bất lực đó đã khiến Hanna hiểu: hiểu bản thân không phải chuyện xa xỉ hay tự phát triển kiểu thời thượng. Đó là điều căn bản nhất để một người có thể sống — thật sự sống, không chỉ tồn tại. AIMIND được xây từ nỗi đau đó. Từ mong muốn không ai phải đứng một mình ở lằn ranh đó mà không có gì để bám vào.
+              </p>
             </div>
           </div>
         </section>
