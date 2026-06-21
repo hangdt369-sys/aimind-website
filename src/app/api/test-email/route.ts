@@ -5,8 +5,17 @@ export async function GET() {
   const gmailUser = process.env.GMAIL_USER;
   const gmailPass = process.env.GMAIL_PASS;
 
+  // Debug: cho biết env vars có tồn tại không (không lộ giá trị thật)
+  const debug = {
+    GMAIL_USER_exists: !!gmailUser,
+    GMAIL_USER_value: gmailUser ? `${gmailUser.slice(0, 4)}...` : "KHÔNG CÓ",
+    GMAIL_PASS_exists: !!gmailPass,
+    GMAIL_PASS_length: gmailPass ? gmailPass.replace(/\s/g, "").length : 0,
+    NODE_ENV: process.env.NODE_ENV,
+  };
+
   if (!gmailUser || !gmailPass) {
-    return NextResponse.json({ error: "Chưa có GMAIL_USER hoặc GMAIL_PASS trong env" }, { status: 500 });
+    return NextResponse.json({ error: "Chưa có env vars", debug }, { status: 500 });
   }
 
   try {
@@ -29,8 +38,8 @@ export async function GET() {
       text: "Email đang hoạt động đúng!",
     });
 
-    return NextResponse.json({ success: true, sentTo: gmailUser });
+    return NextResponse.json({ success: true, sentTo: gmailUser, debug });
   } catch (error) {
-    return NextResponse.json({ error: String(error) }, { status: 500 });
+    return NextResponse.json({ error: String(error), debug }, { status: 500 });
   }
 }
