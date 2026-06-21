@@ -138,26 +138,58 @@ export default function KhoaHocPage() {
             <div
               style={{
                 backgroundColor: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.12)",
+                border: "1px solid rgba(124,111,247,0.4)",
                 borderRadius: "16px",
                 padding: "1.5rem 2rem",
                 display: "inline-block",
                 marginBottom: "1.5rem",
+                position: "relative" as const,
               }}
             >
-              <p style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "4px" }}>Học phí</p>
-              <p
-                style={{
-                  color: "white",
-                  fontFamily: "'Be Vietnam Pro', sans-serif",
-                  fontSize: "2rem",
-                  fontWeight: 800,
-                  marginBottom: "4px",
-                }}
-              >
-                1.500.000 đ
-              </p>
-              <p style={{ color: "#9B96C0", fontSize: "12px" }}>Thanh toán một lần · Truy cập trọn đời</p>
+              {/* Early bird badge */}
+              <div style={{
+                position: "absolute" as const,
+                top: "-12px",
+                left: "50%",
+                transform: "translateX(-50%)",
+                backgroundColor: "#F59E0B",
+                color: "#1C1A3E",
+                fontSize: "11px",
+                fontWeight: 800,
+                padding: "3px 14px",
+                borderRadius: "999px",
+                whiteSpace: "nowrap" as const,
+                letterSpacing: "0.04em",
+              }}>
+                🔥 CHỈ CÒN CHO 20 NGƯỜI ĐẦU TIÊN
+              </div>
+              <p style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "4px", marginTop: "8px" }}>Học phí ưu đãi ra mắt</p>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "4px" }}>
+                <p
+                  style={{
+                    color: "#5C5A80",
+                    fontFamily: "'Be Vietnam Pro', sans-serif",
+                    fontSize: "1.1rem",
+                    fontWeight: 500,
+                    textDecoration: "line-through",
+                    margin: 0,
+                  }}
+                >
+                  1.500.000 đ
+                </p>
+                <p
+                  style={{
+                    color: "white",
+                    fontFamily: "'Be Vietnam Pro', sans-serif",
+                    fontSize: "2rem",
+                    fontWeight: 800,
+                    margin: 0,
+                  }}
+                >
+                  499.000 đ
+                </p>
+              </div>
+              <p style={{ color: "#F59E0B", fontSize: "12px", fontWeight: 600 }}>Tiết kiệm 1.001.000 đ · Thanh toán một lần · Truy cập trọn đời</p>
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
