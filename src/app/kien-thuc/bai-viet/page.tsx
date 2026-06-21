@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import Link from "next/link";
@@ -128,6 +130,9 @@ const articles = [
 const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Quan hệ", "Tự nhận thức", "Hành vi", "Gắn bó", "Phân biệt mô thức"];
 
 export default function BaiVietPage() {
+  const [activeTag, setActiveTag] = useState("Tất cả");
+  const filtered = activeTag === "Tất cả" ? articles : articles.filter((a) => a.tag === activeTag);
+
   return (
     <>
       <Navbar />
@@ -181,24 +186,29 @@ export default function BaiVietPage() {
         <section style={{ backgroundColor: "white", borderBottom: "1px solid #E8E3F0", padding: "1.25rem 0" }}>
           <div className="container-main">
             <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" as const }}>
-              {tags.map((tag, i) => (
-                <button
-                  key={tag}
-                  style={{
-                    padding: "6px 16px",
-                    borderRadius: "999px",
-                    fontSize: "13px",
-                    fontWeight: 600,
-                    border: "1px solid",
-                    cursor: "pointer",
-                    backgroundColor: i === 0 ? "#1C1A3E" : "transparent",
-                    color: i === 0 ? "white" : "#6B678F",
-                    borderColor: i === 0 ? "#1C1A3E" : "#E8E3F0",
-                  }}
-                >
-                  {tag}
-                </button>
-              ))}
+              {tags.map((tag) => {
+                const isActive = activeTag === tag;
+                return (
+                  <button
+                    key={tag}
+                    onClick={() => setActiveTag(tag)}
+                    style={{
+                      padding: "6px 16px",
+                      borderRadius: "999px",
+                      fontSize: "13px",
+                      fontWeight: 600,
+                      border: "1px solid",
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                      backgroundColor: isActive ? "#1C1A3E" : "transparent",
+                      color: isActive ? "white" : "#6B678F",
+                      borderColor: isActive ? "#1C1A3E" : "#E8E3F0",
+                    }}
+                  >
+                    {tag}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -206,63 +216,69 @@ export default function BaiVietPage() {
         {/* Articles grid */}
         <section style={{ padding: "4rem 0", backgroundColor: "#F8F4EE" }}>
           <div className="container-main">
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-                gap: "1.5rem",
-              }}
-            >
-              {articles.map((article, i) => (
-                <Link
-                  key={i}
-                  href={article.slug}
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: "16px",
-                    padding: "2rem",
-                    border: "1px solid #E8E3F0",
-                    textDecoration: "none",
-                    display: "block",
-                    transition: "transform 0.2s, box-shadow 0.2s",
-                  }}
-                >
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
-                    <span
-                      style={{
-                        backgroundColor: article.color + "15",
-                        color: article.color,
-                        padding: "4px 12px",
-                        borderRadius: "999px",
-                        fontSize: "12px",
-                        fontWeight: 700,
-                      }}
-                    >
-                      {article.tag}
-                    </span>
-                    <span style={{ color: "#9B96C0", fontSize: "12px" }}>{article.readTime} đọc</span>
-                  </div>
-                  <h2
+            {filtered.length === 0 ? (
+              <p style={{ color: "#9B96C0", textAlign: "center", padding: "3rem 0" }}>
+                Chưa có bài viết trong chủ đề này.
+              </p>
+            ) : (
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+                  gap: "1.5rem",
+                }}
+              >
+                {filtered.map((article, i) => (
+                  <Link
+                    key={i}
+                    href={article.slug}
                     style={{
-                      color: "#1C1A3E",
-                      fontFamily: "'Be Vietnam Pro', sans-serif",
-                      fontWeight: 700,
-                      fontSize: "17px",
-                      lineHeight: 1.45,
-                      marginBottom: "0.75rem",
+                      backgroundColor: "white",
+                      borderRadius: "16px",
+                      padding: "2rem",
+                      border: "1px solid #E8E3F0",
+                      textDecoration: "none",
+                      display: "block",
+                      transition: "transform 0.2s, box-shadow 0.2s",
                     }}
                   >
-                    {article.title}
-                  </h2>
-                  <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.75 }}>
-                    {article.excerpt}
-                  </p>
-                  <div style={{ marginTop: "1.5rem", color: article.color, fontSize: "13px", fontWeight: 700 }}>
-                    Đọc tiếp →
-                  </div>
-                </Link>
-              ))}
-            </div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
+                      <span
+                        style={{
+                          backgroundColor: article.color + "15",
+                          color: article.color,
+                          padding: "4px 12px",
+                          borderRadius: "999px",
+                          fontSize: "12px",
+                          fontWeight: 700,
+                        }}
+                      >
+                        {article.tag}
+                      </span>
+                      <span style={{ color: "#9B96C0", fontSize: "12px" }}>{article.readTime} đọc</span>
+                    </div>
+                    <h2
+                      style={{
+                        color: "#1C1A3E",
+                        fontFamily: "'Be Vietnam Pro', sans-serif",
+                        fontWeight: 700,
+                        fontSize: "17px",
+                        lineHeight: 1.45,
+                        marginBottom: "0.75rem",
+                      }}
+                    >
+                      {article.title}
+                    </h2>
+                    <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.75 }}>
+                      {article.excerpt}
+                    </p>
+                    <div style={{ marginTop: "1.5rem", color: article.color, fontSize: "13px", fontWeight: 700 }}>
+                      Đọc tiếp →
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 

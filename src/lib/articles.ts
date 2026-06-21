@@ -1314,3 +1314,10 @@ export function getArticleBySlug(slug: string): Article | undefined {
 export function getAllArticleSlugs(): string[] {
   return articles.map(a => a.slug);
 }
+
+export function getRelatedArticles(currentSlug: string, tag: string, limit = 3): Article[] {
+  return articles
+    .filter(a => a.slug !== currentSlug && a.tag === tag)
+    .slice(0, limit);
+}
+

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import Link from "next/link";
-import { getArticleBySlug, getAllArticleSlugs } from "@/lib/articles";
+import { getArticleBySlug, getAllArticleSlugs, getRelatedArticles } from "@/lib/articles";
 
 export async function generateStaticParams() {
   return getAllArticleSlugs().map((slug) => ({ slug }));
@@ -11,6 +11,7 @@ export async function generateStaticParams() {
 export default function ArticlePage({ params }: { params: { slug: string } }) {
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
+  const related = getRelatedArticles(params.slug, article.tag, 3);
 
   return (
     <>
@@ -200,6 +201,77 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </section>
+
+        {/* Related Articles */}
+        {related.length > 0 && (
+          <section style={{ padding: "4rem 0", backgroundColor: "#F8F4EE" }}>
+            <div className="container-main" style={{ maxWidth: "800px" }}>
+              <h3
+                style={{
+                  color: "#1C1A3E",
+                  fontFamily: "'Be Vietnam Pro', sans-serif",
+                  fontWeight: 800,
+                  fontSize: "1.3rem",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                Bài viết liên quan
+              </h3>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+                  gap: "1.25rem",
+                }}
+              >
+                {related.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/kien-thuc/bai-viet/${r.slug}`}
+                    style={{
+                      backgroundColor: "white",
+                      borderRadius: "14px",
+                      padding: "1.5rem",
+                      border: "1px solid #E8E3F0",
+                      textDecoration: "none",
+                      display: "block",
+                    }}
+                  >
+                    <span
+                      style={{
+                        backgroundColor: r.tagColor + "15",
+                        color: r.tagColor,
+                        padding: "3px 10px",
+                        borderRadius: "999px",
+                        fontSize: "11px",
+                        fontWeight: 700,
+                        display: "inline-block",
+                        marginBottom: "0.75rem",
+                      }}
+                    >
+                      {r.tag}
+                    </span>
+                    <h4
+                      style={{
+                        color: "#1C1A3E",
+                        fontFamily: "'Be Vietnam Pro', sans-serif",
+                        fontWeight: 700,
+                        fontSize: "15px",
+                        lineHeight: 1.45,
+                        marginBottom: "0.5rem",
+                      }}
+                    >
+                      {r.title}
+                    </h4>
+                    <div style={{ color: r.tagColor, fontSize: "12px", fontWeight: 700, marginTop: "0.75rem" }}>
+                      Đọc tiếp →
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section style={{ padding: "3rem 0 5rem" }}>
