@@ -42,7 +42,7 @@ Tuy nhiên, không có hệ thống nào hoàn toàn an toàn. Nếu phát hiệ
 • Hủy đăng ký nhận email bất kỳ lúc nào bằng cách nhấn link "Hủy đăng ký" trong mỗi email.
 • Khiếu nại nếu bạn cho rằng quyền riêng tư của mình bị xâm phạm.
 
-Để thực hiện các quyền này, liên hệ: hello@aimind.com.vn`,
+Để thực hiện các quyền này, liên hệ: aimind.hcm@gmail.com`,
   },
   {
     title: "6. Cookie",
@@ -147,7 +147,7 @@ export default function ChinhSachBaoMatPage() {
               >
                 <p style={{ color: "#6B678F", fontSize: "13px", lineHeight: 1.75 }}>
                   <strong style={{ color: "#1C1A3E" }}>Liên hệ:</strong> Mọi thắc mắc về chính sách bảo mật,
-                  vui lòng gửi email đến <strong>hello@aimind.com.vn</strong> hoặc nhắn tin qua Facebook.
+                  vui lòng gửi email đến <strong>aimind.hcm@gmail.com</strong> hoặc nhắn tin qua Facebook.
                 </p>
               </div>
             </div>

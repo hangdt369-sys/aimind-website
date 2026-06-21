@@ -31,7 +31,7 @@ const sections = [
 • Học phí được thanh toán trước qua chuyển khoản ngân hàng.
 • Sau khi xác nhận thanh toán, quyền truy cập sẽ được kích hoạt trong 24 giờ.
 
-Chính sách hoàn tiền: Hoàn 100% trong vòng 7 ngày kể từ ngày mua nếu bạn chưa hoàn thành quá 2 module đầu tiên. Liên hệ hello@aimind.com.vn để yêu cầu hoàn tiền.`,
+Chính sách hoàn tiền: Hoàn 100% trong vòng 7 ngày kể từ ngày mua nếu bạn chưa hoàn thành quá 2 module đầu tiên. Liên hệ aimind.hcm@gmail.com để yêu cầu hoàn tiền.`,
   },
   {
     title: "5. Quyền sở hữu trí tuệ",
@@ -149,7 +149,7 @@ export default function DieuKhoanPage() {
               >
                 <p style={{ color: "#6B678F", fontSize: "13px", lineHeight: 1.75 }}>
                   <strong style={{ color: "#1C1A3E" }}>Câu hỏi?</strong> Liên hệ chúng tôi tại{" "}
-                  <strong>hello@aimind.com.vn</strong> hoặc qua Facebook. Chúng tôi luôn sẵn sàng
+                  <strong>aimind.hcm@gmail.com</strong> hoặc qua Facebook. Chúng tôi luôn sẵn sàng
                   giải thích rõ hơn về bất kỳ điều khoản nào.
                 </p>
               </div>

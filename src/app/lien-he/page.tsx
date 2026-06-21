@@ -39,7 +39,7 @@ export default function LienHePage() {
               {[
                 { icon: "📱", label: "Facebook", value: "Hanna Dang", href: "https://www.facebook.com/profile.php?id=100042962491656" },
                 { icon: "💬", label: "Zalo", value: "Liên hệ qua Zalo", href: "#" },
-                { icon: "📧", label: "Email", value: "hello@aimind.com.vn", href: "mailto:hello@aimind.com.vn" },
+                { icon: "📧", label: "Email", value: "aimind.hcm@gmail.com", href: "mailto:aimind.hcm@gmail.com" },
               ].map((item) => (
                 <a
                   key={item.label}
