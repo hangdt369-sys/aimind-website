@@ -85,34 +85,30 @@ export default function LienHePage() {
                   fontFamily: "'Be Vietnam Pro', sans-serif",
                   fontWeight: 700,
                   fontSize: "14px",
-                  marginBottom: "1rem",
+                  marginBottom: "1.25rem",
                   textTransform: "uppercase" as const,
                   letterSpacing: "0.06em",
                 }}
               >
                 Thanh toán khóa học
               </h3>
+
+              {/* QR Code */}
+              <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.25rem" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://img.vietqr.io/image/BIDV-3110856777-compact2.png?amount=499000&addInfo=BDNT%20chuyen%20sau&accountName=DANG%20THI%20HANG"
+                  alt="QR thanh toán BIDV - DANG THI HANG"
+                  style={{ width: "200px", height: "auto", borderRadius: "12px", border: "1px solid rgba(124,111,247,0.2)" }}
+                />
+              </div>
+
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {[
                   { label: "Ngân hàng", value: "BIDV" },
                   { label: "Số tài khoản", value: "3110856777" },
                   { label: "Chủ tài khoản", value: "DANG THI HANG" },
+                  { label: "Số tiền", value: "499.000 VND" },
                   { label: "Nội dung CK", value: "[Tên] - BDNT Chuyên Sâu" },
                 ].map((row) => (
-                  <div key={row.label} style={{ display: "flex", gap: "1rem" }}>
-                    <span style={{ color: "#9B96C0", fontSize: "13px", minWidth: "120px" }}>{row.label}</span>
-                    <span style={{ color: "#1C1A3E", fontSize: "13px", fontWeight: 600 }}>{row.value}</span>
-                  </div>
-                ))}
-              </div>
-              <p style={{ color: "#6B678F", fontSize: "12px", marginTop: "1rem" }}>
-                Sau khi chuyển khoản, nhắn tin Zalo/Facebook kèm ảnh chụp màn hình để được xác nhận và kích hoạt tài khoản.
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
+                  <div key={row.label} style={{ di

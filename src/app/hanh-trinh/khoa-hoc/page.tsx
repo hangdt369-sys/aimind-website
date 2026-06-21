@@ -266,34 +266,22 @@ export default function KhoaHocPage() {
                 marginBottom: "2rem",
               }}
             >
-              <div style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "0.5rem" }}>Chuyển khoản đăng ký</div>
+              <div style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "1.25rem" }}>Quét QR hoặc chuyển khoản thủ công</div>
+
+              {/* QR Code */}
+              <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://img.vietqr.io/image/BIDV-3110856777-compact2.png?amount=499000&addInfo=BDNT%20chuyen%20sau&accountName=DANG%20THI%20HANG"
+                  alt="QR thanh toán BIDV - DANG THI HANG"
+                  style={{ width: "200px", height: "auto", borderRadius: "12px", backgroundColor: "white", padding: "8px" }}
+                />
+              </div>
+
               <div style={{ color: "white", fontSize: "14px", lineHeight: 2 }}>
                 <div>BIDV · <strong>3110856777</strong></div>
                 <div>DANG THI HANG</div>
+                <div style={{ color: "#18B5B0", fontWeight: 700 }}>499.000 VND</div>
                 <div style={{ color: "#9B96C0", fontSize: "12px" }}>Nội dung: [Tên] - BDNT Chuyên Sâu</div>
               </div>
             </div>
-            <Link
-              href="/lien-he"
-              style={{
-                display: "inline-block",
-                background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
-                color: "white",
-                padding: "16px 40px",
-                borderRadius: "999px",
-                fontSize: "16px",
-                fontWeight: 700,
-                textDecoration: "none",
-                fontFamily: "'Be Vietnam Pro', sans-serif",
-                boxShadow: "0 8px 24px rgba(124,111,247,0.4)",
-              }}
-            >
-              Liên hệ đăng ký ngay
-            </Link>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
