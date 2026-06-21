@@ -56,7 +56,7 @@ export default function Navbar() {
           <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }} className="hidden-mobile">
             <NavLink href="/kham-pha/ban-do-noi-tam">Bài Test</NavLink>
             <NavLink href="/kien-thuc/bai-viet">Kiến Thức</NavLink>
-            <NavLink href="/hanh-trinh/khoa-hoc">Khóa Học</NavLink>
+            <NavLink href="/hanh-trinh/ban-do-noi-tam-chuyen-sau">Khóa Học</NavLink>
             <NavLink href="/dong-hanh">Đồng Hành</NavLink>
             <NavLink href="/ve-chung-toi/su-menh">Về AIMIND</NavLink>
           </div>
@@ -130,7 +130,7 @@ export default function Navbar() {
             {[
               { href: "/kham-pha/ban-do-noi-tam", label: "Bài Test Bản Đồ Nội Tâm" },
               { href: "/kien-thuc/bai-viet", label: "Kiến Thức" },
-              { href: "/hanh-trinh/khoa-hoc", label: "Khóa Học" },
+              { href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", label: "Khóa Học" },
               { href: "/dong-hanh", label: "Đồng Hành 1-1" },
               { href: "/ve-chung-toi/su-menh", label: "Về AIMIND" },
               { href: "/lien-he", label: "Liên Hệ" },

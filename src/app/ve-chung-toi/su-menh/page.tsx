@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sứ Mệnh AIMIND — Hệ thống nhận diện bản thân đầu tiên tại Việt Nam",
+  description: "AIMIND được xây dựng để giúp người Việt nhìn thấy những khuôn mẫu hành vi đang định hình cuộc đời họ — và lần đầu tiên có lựa chọn thật sự.",
+};
+
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import Link from "next/link";

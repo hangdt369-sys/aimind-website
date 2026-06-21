@@ -1,4 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AIMIND — Bài Test Bản Đồ Nội Tâm Miễn Phí",
+  description: "Làm bài test miễn phí để nhận diện khuôn mẫu hành vi đang chi phối cuộc sống của bạn. 20 câu hỏi · 15 phút · Kết quả chi tiết.",
+  openGraph: {
+    title: "AIMIND — Bài Test Bản Đồ Nội Tâm Miễn Phí",
+    description: "Nhận diện khuôn mẫu hành vi của bạn. 20 câu · 15 phút · Miễn phí.",
+  },
+};
+
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 

@@ -82,7 +82,7 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "0.625rem" }}>
               <FooterLink href="/kham-pha/ban-do-noi-tam">Bài Test Nội Tâm</FooterLink>
               <FooterLink href="/kien-thuc/bai-viet">Bài Viết</FooterLink>
-              <FooterLink href="/hanh-trinh/khoa-hoc">Khóa Học</FooterLink>
+              <FooterLink href="/hanh-trinh/ban-do-noi-tam-chuyen-sau">Khóa Học</FooterLink>
               <FooterLink href="/dong-hanh">Coaching 1-1</FooterLink>
             </div>
           </div>

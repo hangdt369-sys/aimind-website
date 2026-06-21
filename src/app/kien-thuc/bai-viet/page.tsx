@@ -116,9 +116,9 @@ export default function BaiVietPage() {
                   gap: "1.5rem",
                 }}
               >
-                {filtered.filter(Boolean).map((article, i) => article && (
+                {filtered.filter(Boolean).map((article) => article && (
                   <Link
-                    key={i}
+                    key={article.slug}
                     href={article.slug}
                     style={{
                       backgroundColor: "white",
