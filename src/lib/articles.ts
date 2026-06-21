@@ -1852,6 +1852,1036 @@ export const articles: Article[] = [
     ]
   }
 
+,
+  // ─── CLUSTER 1: GIA ĐÌNH & MÔ THỨC THẾ HỆ ───────────────────────────────
+  {
+    slug: "trauma-the-he-nhung-gi-cha-me-chua-chua-lanh",
+    tag: "Gia đình",
+    tagColor: "#C4752A",
+    title: "Những gì cha mẹ chưa chữa lành — bạn đang mang",
+    excerpt: "Không phải bạn sinh ra đã lo lắng, đã sợ bị bỏ rơi, hay đã không tin tưởng bản thân. Những thứ đó được truyền đi — không phải qua gen, mà qua cách cha mẹ yêu thương theo khả năng họ có.",
+    readTime: "9 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Có những thứ bạn không nhớ học bao giờ — nhưng bạn biết. Cách im lặng khi có xung đột. Cách tự xử lý một mình thay vì nhờ giúp đỡ. Cách cảm thấy có lỗi khi nói ra nhu cầu của mình."
+      },
+      {
+        type: "paragraph",
+        content: "Bạn không học những thứ đó từ sách. Bạn học từ cách quan sát — cách ba mẹ phản ứng với cảm xúc, với xung đột, với stress. Và não trẻ em, vốn không có khả năng phân tích, ghi lại tất cả như bài học về cách tồn tại trong thế giới."
+      },
+      {
+        type: "heading",
+        content: "Trauma thế hệ là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Trauma thế hệ (intergenerational trauma) là những vết thương tâm lý chưa được xử lý được truyền từ thế hệ này sang thế hệ khác — không phải qua gen trực tiếp, mà qua hành vi, cảm xúc, và cách nuôi dưỡng."
+      },
+      {
+        type: "paragraph",
+        content: "Một người mẹ lớn lên trong gia đình không được phép khóc sẽ vô thức khó chịu khi con khóc — không phải vì bà không yêu con, mà vì cảm xúc đó kích hoạt điều gì đó chưa được giải quyết trong bà. Đứa con học: khóc = tạo ra vấn đề. Và mang bài học đó vào cuộc đời mình."
+      },
+      {
+        type: "quote",
+        content: "Cha mẹ không truyền vết thương vì họ muốn. Họ truyền những gì họ chưa chữa lành — vì bạn không thể cho đi điều bạn chưa có."
+      },
+      {
+        type: "heading",
+        content: "Dấu hiệu bạn đang mang trauma thế hệ"
+      },
+      {
+        type: "list",
+        items: [
+          "Cảm xúc quá mức không tương xứng: Bạn phản ứng với tình huống nhỏ bằng cảm xúc lớn — và cảm thấy mình mất kiểm soát. Đây thường là cảm xúc của cả bạn lẫn thế hệ trước đang cùng được kích hoạt.",
+          "Niềm tin giới hạn mà bạn không biết từ đâu ra: Tiền là nguồn gốc của mọi xung đột. Không nên tin ai hoàn toàn. Thành công là thứ của người khác. Bạn không nhớ ai dạy điều này — vì nó được học qua không khí gia đình.",
+          "Mô thức lặp lại qua các thế hệ: Bạo lực, nghiện ngập, ly hôn, lo lắng mãn tính — những điều này không phải ngẫu nhiên. Chúng thường là câu chuyện chạy trong gia đình qua nhiều thế hệ.",
+          "Cảm giác tội lỗi khi tốt hơn cha mẹ: Khi bạn thành công hơn, hạnh phúc hơn, hoặc có những thứ cha mẹ không có — cảm giác tội lỗi hoặc lo sợ là dấu hiệu của loyalty vô thức với mô thức gia đình."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Hiểu — không phải đổ lỗi"
+      },
+      {
+        type: "paragraph",
+        content: "Làm việc với trauma thế hệ không phải để đổ lỗi cho cha mẹ. Họ cũng là sản phẩm của những gì họ không chọn. Ông bà nội ngoại của bạn sống qua chiến tranh, đói nghèo, hoặc những hoàn cảnh tạo ra những vết thương rất thật."
+      },
+      {
+        type: "paragraph",
+        content: "Mục tiêu không phải là phán xét. Mà là nhìn thấy: Điều này không phải của mình. Mình không cần tiếp tục mang nó."
+      },
+      {
+        type: "list",
+        items: [
+          "Đặt câu hỏi về niềm tin: Niềm tin này đến từ trải nghiệm thật của mình — hay mình học nó từ gia đình mà không bao giờ kiểm chứng?",
+          "Nhận ra khi nào mình đang phản ứng như cha mẹ: Không phải để tự trách — mà để có khoảng dừng và chọn khác đi.",
+          "Phá vỡ câu chuyện bằng cách sống khác: Mỗi lần bạn phản ứng khác mô thức cũ là bạn đang viết một trang mới — không chỉ cho mình mà cho thế hệ sau."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Bạn không thể chọn những gì được truyền cho mình. Nhưng bạn có thể chọn mình sẽ truyền gì tiếp theo."
+      }
+    ]
+  },
+  {
+    slug: "con-ngoan-va-cai-gia-phai-tra",
+    tag: "Gia đình",
+    tagColor: "#C4752A",
+    title: "Con ngoan và cái giá tâm lý phải trả",
+    excerpt: "Bạn được khen là ngoan từ nhỏ. Biết vâng lời, không phiền ai, luôn làm đúng kỳ vọng. Nhưng đằng sau danh hiệu đó là một đứa trẻ đã học cách xóa mờ bản thân để được yêu thương.",
+    readTime: "8 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Con ngoan là niềm tự hào của gia đình. Không cãi. Không đòi. Biết hi sinh. Luôn đặt gia đình lên trên. Học giỏi, làm theo lời ba mẹ, không tạo ra vấn đề."
+      },
+      {
+        type: "paragraph",
+        content: "Nghe có vẻ tốt. Cho đến khi bạn lớn lên và nhận ra — mình không biết mình muốn gì. Không biết cảm thấy thế nào về điều gì đó khi chưa xem người khác phản ứng. Không biết nói không mà không cảm thấy có lỗi."
+      },
+      {
+        type: "heading",
+        content: "Con ngoan học được gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Đứa trẻ được khen là ngoan đã học một bài học rất rõ ràng: Cảm xúc và nhu cầu của mình = tạo ra vấn đề. Sự thuận thảo và vâng lời = được yêu. Vậy não làm điều hợp lý — nó tắt những gì gây rắc rối."
+      },
+      {
+        type: "list",
+        items: [
+          "Tắt cơn giận: Giận không được phép vì giận là vô lễ. Đứa trẻ học cách nuốt giận vào trong — và giận đó trở thành lo lắng, trầm cảm, hoặc bùng nổ bất ngờ sau nhiều năm.",
+          "Tắt nhu cầu: Đòi hỏi là ích kỷ. Đứa trẻ học cách không cần — rồi lớn lên không biết mình thật sự cần gì.",
+          "Tắt ý kiến riêng: Có ý kiến khác với ba mẹ là không hiếu thảo. Đứa trẻ học cách đồng ý trước — và lo lắng sau.",
+          "Tắt cái tôi: Người khác quan trọng hơn mình. Đây nghe có vẻ cao thượng — nhưng thực ra là danh tính bị xóa mờ dần dần."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Con ngoan không phải đứa trẻ hạnh phúc. Là đứa trẻ đã học cách làm người lớn hạnh phúc — dù bản thân không hạnh phúc."
+      },
+      {
+        type: "heading",
+        content: "Hệ quả khi lớn lên"
+      },
+      {
+        type: "paragraph",
+        content: "Người lớn lên là con ngoan thường có những đặc điểm rất nhận ra được:"
+      },
+      {
+        type: "list",
+        items: [
+          "Khó biết mình muốn gì: Khi được hỏi bạn muốn gì ăn, muốn đi đâu, muốn làm gì — câu trả lời mặc định là tùy. Không phải vì không quan tâm. Mà vì nhu cầu của mình đã được học là không quan trọng.",
+          "Sợ xung đột và bất đồng: Không đồng ý = tạo ra rắc rối = không còn được yêu. Vậy dù bất đồng, vẫn gật đầu.",
+          "Mang cảm giác có lỗi mà không biết vì sao: Làm gì cho mình cũng cảm thấy ích kỷ. Nói không cũng cảm thấy có lỗi. Đây là hệ quả của việc nhu cầu bản thân bị gắn nhãn là xấu.",
+          "Tìm kiếm sự chấp thuận liên tục: Vì tình yêu từ nhỏ có điều kiện — ngoan thì được yêu — não vẫn đang liên tục kiểm tra: Mình có đang được chấp nhận không?"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Chữa lành không phải là trở nên ích kỷ"
+      },
+      {
+        type: "paragraph",
+        content: "Nhiều người sợ rằng nếu bắt đầu có nhu cầu và ranh giới, mình sẽ trở nên ích kỷ và tệ như những người họ ghét. Nhưng đây là hiểu nhầm."
+      },
+      {
+        type: "paragraph",
+        content: "Người thật sự lành mạnh không phải người không quan tâm đến người khác. Là người biết quan tâm đến bản thân và người khác cùng một lúc — không phải hi sinh một để có cái kia."
+      },
+      {
+        type: "paragraph",
+        content: "Bắt đầu bằng câu hỏi nhỏ: Hôm nay mình muốn gì? Cảm xúc thật của mình về điều này là gì — trước khi xem người khác nghĩ gì? Không cần trả lời ngay. Chỉ cần bắt đầu hỏi."
+      },
+      {
+        type: "quote",
+        content: "Bạn không cần làm con ngoan nữa. Bạn đã lớn. Câu hỏi bây giờ là: Bạn muốn trở thành ai khi không ai đang chấm điểm?"
+      }
+    ]
+  },
+  {
+    slug: "tai-sao-ban-yeu-theo-cach-ba-me-yeu-nhau",
+    tag: "Gia đình",
+    tagColor: "#C4752A",
+    title: "Tại sao bạn yêu theo cách ba mẹ đã yêu nhau",
+    excerpt: "Mối quan hệ đầu tiên bạn quan sát không phải mối tình đầu của bạn. Mà là mối quan hệ giữa ba và mẹ. Và bạn đã học từ đó — cả tốt lẫn không tốt — trước khi biết nói chuyện về tình yêu.",
+    readTime: "8 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn tự hứa sẽ không như ba mẹ. Sẽ không tranh luận như họ. Sẽ không im lặng như họ. Sẽ không xa cách như họ."
+      },
+      {
+        type: "paragraph",
+        content: "Rồi một ngày, bạn nghe mình nói câu mà mẹ hay nói. Phản ứng giống ba. Và bạn dừng lại — sửng sốt."
+      },
+      {
+        type: "heading",
+        content: "Mô hình quan hệ đầu tiên"
+      },
+      {
+        type: "paragraph",
+        content: "Trước khi bạn có khái niệm về tình yêu lãng mạn, não bạn đã được lập trình với một mô hình: Đây là cách hai người thân thiết với nhau trông như thế nào."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu ba mẹ giải quyết xung đột bằng im lặng — bạn học im lặng là cách xử lý mâu thuẫn. Nếu một người luôn nhường và người kia luôn chiếm — bạn học rằng mối quan hệ có người mạnh và người yếu. Nếu tình yêu đi kèm điều kiện — bạn học rằng cần làm gì đó để được yêu."
+      },
+      {
+        type: "paragraph",
+        content: "Những bài học này không được dạy bằng lời. Chúng được học bằng quan sát — và vì não trẻ em học qua quan sát là cực kỳ hiệu quả, chúng in sâu hơn bất kỳ điều gì bạn đọc trong sách."
+      },
+      {
+        type: "heading",
+        content: "Bốn điều bạn có thể đã học về tình yêu"
+      },
+      {
+        type: "list",
+        items: [
+          "Tình yêu là hi sinh: Nếu một người trong gia đình luôn cho đi và chịu đựng — bạn học rằng yêu thật sự = đặt người khác lên trên. Và bạn có thể lặp lại điều này — hoặc tìm kiếm người sẽ hi sinh cho mình.",
+          "Xung đột là nguy hiểm: Nếu nhà bạn tranh cãi căng thẳng, hoặc im lặng kéo dài sau xung đột — bạn học rằng bất đồng = nguy cơ mất nhau. Và bạn hoặc né tránh mọi xung đột, hoặc leo thang rất nhanh.",
+          "Tình yêu không được nói ra: Nhiều gia đình Việt bày tỏ tình yêu qua hành động — nấu ăn, lo tài chính, hy sinh — nhưng không nói lời yêu hay nói chuyện về cảm xúc. Bạn có thể đang tìm kiếm tình yêu thứ hai — tình yêu bằng ngôn từ và kết nối cảm xúc — mà không nhận ra đây là thứ mình thiếu.",
+          "Người yêu không phải bạn đồng hành: Nếu ba mẹ sống song song hơn là cùng nhau — bạn có thể không biết mối quan hệ thật sự thân mật trông như thế nào, và cảm thấy sợ hãi hoặc không thoải mái với sự gần gũi thật sự."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Bạn không bị kết án bởi những gì bạn quan sát từ nhỏ. Nhưng bạn cần nhìn thấy chúng — trước khi có thể chọn khác đi."
+      },
+      {
+        type: "heading",
+        content: "Nhìn lại mà không phán xét"
+      },
+      {
+        type: "paragraph",
+        content: "Không có gia đình hoàn hảo. Ba mẹ của bạn cũng là sản phẩm của ba mẹ họ — và hoàn cảnh lịch sử, kinh tế, văn hóa mà họ sống. Họ đã yêu bạn theo khả năng tốt nhất của họ."
+      },
+      {
+        type: "paragraph",
+        content: "Nhìn lại mô hình tình yêu gia đình không phải để trách họ. Mà để bạn hiểu: điều tôi đang làm trong mối quan hệ — điều này có phải lựa chọn có ý thức của tôi, hay chỉ là điều tôi biết vì đó là điều tôi đã thấy?"
+      },
+      {
+        type: "paragraph",
+        content: "Câu trả lời cho câu hỏi đó là bắt đầu của tự do thật sự trong tình yêu."
+      }
+    ]
+  },
+
+  // ─── CLUSTER 2: RANH GIỚI & GIÁ TRỊ BẢN THÂN ───────────────────────────
+  {
+    slug: "ranh-gioi-khong-phai-lanh-lung",
+    tag: "Ranh giới",
+    tagColor: "#E85A71",
+    title: "Ranh giới không phải lạnh lùng — đây là hành động của tình yêu",
+    excerpt: "Người Việt được dạy rằng đặt ranh giới là ích kỷ, vô lễ, hoặc không quan tâm. Nhưng không có ranh giới không phải yêu thương hơn — nó là yêu thương mà không có bản thân.",
+    readTime: "7 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn nói có khi muốn nói không. Bạn ở lại khi muốn rời. Bạn giải thích, biện hộ, xin lỗi — không phải vì bạn sai, mà vì bạn sợ người kia buồn."
+      },
+      {
+        type: "paragraph",
+        content: "Và mỗi lần như vậy, có thứ gì đó nhỏ trong bạn lại bị xói mòn thêm."
+      },
+      {
+        type: "heading",
+        content: "Ranh giới thật sự là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Ranh giới không phải bức tường để ngăn người khác ra. Ranh giới là sự xác định rõ ràng: Đây là tôi. Đây là thứ tôi có thể làm. Đây là thứ tôi không thể chấp nhận."
+      },
+      {
+        type: "paragraph",
+        content: "Nhà tâm lý học Brené Brown định nghĩa ranh giới là điều khiến tình yêu bền vững được. Không có ranh giới, bạn cho đi cho đến khi kiệt sức — rồi oán trách. Có ranh giới, bạn cho đi từ nơi đầy đủ — và có thể tiếp tục lâu dài."
+      },
+      {
+        type: "quote",
+        content: "Ranh giới là cách bạn nói: Tôi quan tâm đến mối quan hệ này đủ để không để nó bào mòn đến mức tôi trở nên người tôi không muốn là."
+      },
+      {
+        type: "heading",
+        content: "Tại sao người Việt khó đặt ranh giới?"
+      },
+      {
+        type: "list",
+        items: [
+          "Văn hóa tập thể: Cá nhân hi sinh cho tập thể — gia đình, cộng đồng. Nhu cầu cá nhân thường được dạy là ích kỷ nếu xung đột với nhu cầu chung.",
+          "Hiếu thảo và sự vâng lời: Phản đối người lớn tuổi hơn, kể cả khi họ sai, bị xem là vô lễ. Điều này khiến nhiều người không có khả năng đặt ranh giới với cha mẹ, sếp, người lớn hơn.",
+          "Sĩ diện và cái nhìn của xã hội: Lo ngại về việc bị xem là người không biết quan tâm, không biết hi sinh, không tốt — khiến người ta hy sinh bản thân để duy trì hình ảnh.",
+          "Không có mô hình: Nếu ba mẹ không có ranh giới, bạn chưa bao giờ thấy ranh giới lành mạnh trông như thế nào — và không biết cách làm."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Ranh giới không phải về người khác — là về bạn"
+      },
+      {
+        type: "paragraph",
+        content: "Lầm tưởng phổ biến nhất về ranh giới: Đặt ranh giới là kiểm soát hành vi của người khác."
+      },
+      {
+        type: "paragraph",
+        content: "Không. Ranh giới là thông báo về bạn — không phải yêu cầu về người khác. Bạn không thể kiểm soát họ làm gì. Bạn chỉ có thể xác định bạn sẽ làm gì nếu họ tiếp tục."
+      },
+      {
+        type: "list",
+        items: [
+          "Không có ranh giới: Mày không được nói chuyện với tao như vậy! (yêu cầu thay đổi hành vi của người khác)",
+          "Có ranh giới: Khi mày nói chuyện với tao theo cách đó, tao sẽ kết thúc cuộc nói chuyện này. (xác định hành động của mình)",
+          "Sự khác biệt nhỏ — nhưng quyết định bạn có đang thật sự chăm sóc bản thân hay đang cố kiểm soát người khác."
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Bắt đầu nhỏ: Thực hành nói không với một điều nhỏ tuần này. Không cần giải thích nhiều. Không, mình không thể. Cảm ơn bạn đã hiểu. Xem điều gì xảy ra — thường thì ít drama hơn bạn tưởng."
+      },
+      {
+        type: "quote",
+        content: "Người yêu bạn thật sự sẽ tôn trọng ranh giới của bạn. Người không tôn trọng ranh giới của bạn — đang cho bạn thông tin quan trọng về họ."
+      }
+    ]
+  },
+  {
+    slug: "tai-sao-ban-khong-the-noi-khong",
+    tag: "Ranh giới",
+    tagColor: "#E85A71",
+    title: "Tại sao bạn không thể nói không — dù thật lòng muốn",
+    excerpt: "Bạn biết mình nên từ chối. Miệng đã chuẩn bị nói rồi. Nhưng cuối cùng lại là: Ừ, được. Sau đó bạn vừa đi về vừa tức chính mình. Đây không phải yếu đuối — đây là thần kinh học.",
+    readTime: "7 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn nhận được yêu cầu. Bạn biết mình không muốn làm. Não đã nghĩ câu từ chối. Nhưng khi đến lúc mở miệng — cái gì đó kéo bạn lại. Và bạn nghe mình nói: Được, để mình xem."
+      },
+      {
+        type: "paragraph",
+        content: "Không phải bạn không biết cách nói không. Bạn biết. Vấn đề không nằm ở ngôn ngữ — mà nằm ở những gì não dự đoán sẽ xảy ra nếu bạn nói không."
+      },
+      {
+        type: "heading",
+        content: "Não đang tính toán gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Trong tích tắc trước khi trả lời, não bạn đang chạy một mô phỏng nhanh: Nếu mình nói không — điều gì sẽ xảy ra? Họ sẽ thất vọng. Sẽ nghĩ mình ích kỷ. Sẽ ít thích mình hơn. Có thể sẽ xa lánh mình."
+      },
+      {
+        type: "paragraph",
+        content: "Và não — vốn ưu tiên sự an toàn xã hội như ưu tiên sự sống còn — quyết định: Nói có là an toàn hơn. Dù cái giá phải trả là thời gian, năng lượng, hoặc sức khỏe tinh thần của bạn."
+      },
+      {
+        type: "quote",
+        content: "Nói có khi muốn nói không không phải lịch sự. Đó là não đang ưu tiên sự chấp thuận của người khác hơn phúc lợi của bạn."
+      },
+      {
+        type: "heading",
+        content: "Những dạng không thể nói không"
+      },
+      {
+        type: "list",
+        items: [
+          "Sợ bị ghét: Nói không = họ sẽ không thích mình nữa. Mình cần được tất cả mọi người chấp nhận.",
+          "Sợ xung đột: Nói không = đối đầu. Và đối đầu = nguy hiểm. Dù lý trí biết điều này không đúng.",
+          "Cảm giác có trách nhiệm với cảm xúc của người khác: Nếu mình nói không và họ buồn — đó là lỗi của mình. Mình phải làm họ ổn.",
+          "Nhận dạng bản thân gắn với sự hữu ích: Mình có giá trị vì mình có ích. Nếu mình không giúp — mình là ai?",
+          "Không tin vào quyền của mình: Mình có quyền không không? Hay đây là ích kỷ?"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Cách luyện tập nói không"
+      },
+      {
+        type: "paragraph",
+        content: "Không cần bắt đầu bằng những từ chối lớn. Luyện tập với những thứ nhỏ — và xây dựng bằng chứng rằng nói không không phá hủy mối quan hệ."
+      },
+      {
+        type: "list",
+        items: [
+          "Không cần giải thích dài: Không, mình không thể hôm đó là câu hoàn chỉnh. Bạn không mắc nợ ai một câu chuyện dài về lý do tại sao.",
+          "Trì hoãn quyết định: Để mình xem lịch rồi báo. Đây mua cho bạn thời gian để quyết định từ chỗ bình tĩnh — không phải từ chỗ panic.",
+          "Để ý cảm giác trong cơ thể trước: Khi được nhờ và bạn cảm thấy co lại, nặng, hoặc mệt mỏi ngay — đó thường là tín hiệu của không. Học lắng nghe nó trước khi miệng trả lời.",
+          "Chịu đựng sự khó chịu khi nói không: Những lần đầu sẽ không thoải mái. Người kia có thể thất vọng. Cảm giác tội lỗi sẽ đến. Đây là bình thường — và nó sẽ nhỏ dần theo từng lần thực hành."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Mỗi lần bạn nói không với điều không phù hợp — bạn đang nói có với bản thân. Và đó là kỹ năng đáng tập suốt đời."
+      }
+    ]
+  },
+  {
+    slug: "tu-trong-va-tu-ai-nguoi-viet-hay-nham",
+    tag: "Ranh giới",
+    tagColor: "#E85A71",
+    title: "Tự trọng và tự ái: Hai thứ người Việt hay nhầm lẫn",
+    excerpt: "Tự ái bị gọi là tự trọng. Tự trọng bị gọi là kiêu ngạo. Và giữa hai sự nhầm lẫn đó, nhiều người hoặc không dám bảo vệ bản thân — hoặc bảo vệ bản thân theo cách gây hại.",
+    readTime: "7 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Anh ấy không nói chuyện với em trai suốt ba năm vì một câu nói vô tình. Chị ấy bỏ công việc tốt vì sếp phê bình trước mặt người khác. Cô ấy cắt đứt tình bạn 10 năm vì bạn không mời dự một buổi tiệc."
+      },
+      {
+        type: "paragraph",
+        content: "Họ gọi đó là tự trọng. Nhưng thật ra — đây là tự ái."
+      },
+      {
+        type: "heading",
+        content: "Tự ái là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Tự ái (fragile ego) là sự nhạy cảm thái quá với bất kỳ điều gì có thể đe dọa hình ảnh bản thân. Người tự ái phản ứng mạnh với phê bình, bị xem nhẹ, hoặc không được tôn trọng theo kỳ vọng của họ."
+      },
+      {
+        type: "paragraph",
+        content: "Nguồn gốc của tự ái thường là giá trị bản thân không ổn định — phụ thuộc vào sự đánh giá của người khác. Khi sự đánh giá đó bị rút đi hoặc tổn thương — phản ứng rất mạnh vì nó đang đe dọa nền tảng."
+      },
+      {
+        type: "heading",
+        content: "Tự trọng là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Tự trọng (self-respect) là biết giá trị của mình từ bên trong — và hành động phù hợp với giá trị đó, bất kể người khác đánh giá thế nào."
+      },
+      {
+        type: "paragraph",
+        content: "Người có tự trọng không cần phải thắng mọi cuộc tranh luận. Không cần ai công nhận họ trước khi họ hành động. Không cần trả đũa khi bị xúc phạm — vì cảm giác giá trị của họ không đến từ bên ngoài."
+      },
+      {
+        type: "list",
+        items: [
+          "Tự ái: Bị phê bình → phòng thủ ngay, tấn công lại, hoặc cắt đứt. Cần chứng minh mình đúng.",
+          "Tự trọng: Bị phê bình → có thể lắng nghe, đánh giá xem có phần nào đúng, và quyết định xử lý theo giá trị của mình — không phải theo cảm xúc nhất thời.",
+          "Tự ái: Cần người khác xác nhận quyết định của mình trước khi tự tin làm.",
+          "Tự trọng: Có thể hành động dù không có sự công nhận — vì biết mình đang làm đúng với giá trị của mình."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Tự trọng không cần khán giả. Tự ái thì cần."
+      },
+      {
+        type: "heading",
+        content: "Xây dựng tự trọng thật"
+      },
+      {
+        type: "paragraph",
+        content: "Tự trọng không phải thứ ai cho bạn — hay ai lấy được của bạn. Nó được xây dựng từ những lần bạn hành động phù hợp với giá trị của mình, dù khó."
+      },
+      {
+        type: "list",
+        items: [
+          "Biết giá trị cốt lõi của mình là gì: Không phải những gì bạn nói bạn coi trọng — mà những gì bạn thật sự hành động vì. Khi hành động và giá trị nhất quán — tự trọng tăng tự nhiên.",
+          "Phân biệt phê bình về hành vi và phê bình về con người: Họ phê bình điều bạn làm — không phải điều bạn là. Khả năng nhận ra sự khác biệt này là nền tảng của tự trọng.",
+          "Không cần thắng để bảo vệ bản thân: Đôi khi bảo vệ bản thân là bước ra — không phải chiến đấu. Người có tự trọng biết khi nào nên rời mà không cần chứng minh gì."
+        ]
+      }
+    ]
+  }
+,
+  // ─── CLUSTER 3: CẢM XÚC & CƠ THỂ ─────────────────────────────────────────
+  {
+    slug: "cam-xuc-bi-kim-nen-di-dau",
+    tag: "Cảm xúc",
+    tagColor: "#4A9EBA",
+    title: "Cảm xúc bị kìm nén đi đâu?",
+    excerpt: "Người ta nói: kìm nén cảm xúc là yếu đuối. Hoặc ngược lại: kiểm soát cảm xúc là trưởng thành. Cả hai đều sai. Cảm xúc không biến mất khi bị chặn — nó chỉ đổi địa chỉ.",
+    readTime: "8 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn nuốt cơn giận vào. Cười trong khi muốn khóc. Nói ổn trong khi không ổn. Và tự nhủ: mình đang trưởng thành, mình đang mạnh mẽ."
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng cảm xúc không hoạt động như rác — bạn không thể vứt nó đi và quên. Nó tồn tại ở đâu đó khác."
+      },
+      {
+        type: "heading",
+        content: "Cảm xúc là dữ liệu sinh lý"
+      },
+      {
+        type: "paragraph",
+        content: "Về mặt thần kinh học, cảm xúc là một chuỗi phản ứng sinh lý: hormone được giải phóng, thần kinh tự chủ được kích hoạt, cơ thể chuẩn bị hành động. Cảm xúc không chỉ tồn tại trong đầu — nó tồn tại trong cơ thể."
+      },
+      {
+        type: "paragraph",
+        content: "Khi bạn kìm nén cảm xúc — bạn không tắt phản ứng sinh lý đó. Bạn chỉ không hành động theo nó. Năng lượng đó vẫn còn trong hệ thống."
+      },
+      {
+        type: "heading",
+        content: "Nó đi đâu?"
+      },
+      {
+        type: "list",
+        items: [
+          "Ra cơ thể: Stress mãn tính, căng cơ, đau đầu, rối loạn tiêu hóa, mất ngủ — đây thường là cảm xúc chưa được xử lý tích lũy trong cơ thể. Nhiều nghiên cứu cho thấy các bệnh tự miễn và viêm mãn tính có liên quan đến stress cảm xúc kéo dài.",
+          "Ra hành vi: Bạn không biết mình đang giận — nhưng bạn đột nhiên cáu với người không liên quan. Bạn không nhận ra mình buồn — nhưng bạn ăn quá nhiều, uống quá nhiều, cuộn mạng xã hội không dừng được.",
+          "Vào vô thức: Cảm xúc bị kìm nén không biến mất khỏi não — nó đi vào những vùng không có ý thức tiếp cận. Và từ đó, nó tiếp tục ảnh hưởng đến cách bạn nhìn nhận, quyết định, và phản ứng — mà bạn không biết tại sao.",
+          "Bùng nổ không đúng lúc: Bạn bình tĩnh trong nhiều tháng. Rồi một chuyện nhỏ — một câu nói bình thường — kéo tuột tất cả ra. Đây là dấu hiệu cảm xúc đã tích lũy đến ngưỡng."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Không thể hiện cảm xúc không có nghĩa là không có cảm xúc. Nó có nghĩa là cảm xúc đang tìm lối thoát khác — và thường là lối thoát tệ hơn."
+      },
+      {
+        type: "heading",
+        content: "Xử lý — không phải kìm nén, không phải bùng nổ"
+      },
+      {
+        type: "paragraph",
+        content: "Xử lý cảm xúc không phải diễn ra cảm xúc một cách kịch tính. Không phải la hét vào gối hay khóc một tiếng thật to. Xử lý cảm xúc là nhận ra và gọi tên cảm xúc đang có — rồi để nó đi qua hệ thống một cách tự nhiên."
+      },
+      {
+        type: "list",
+        items: [
+          "Đặt tên cho cảm xúc: Não khi gọi được tên cảm xúc sẽ giảm hoạt động ở amygdala (trung tâm cảm xúc) và tăng hoạt động ở vỏ não trước. Gọi tên là bước đầu tiên để điều tiết.",
+          "Hỏi cảm xúc đang ở đâu trong cơ thể: Cổ họng nghẹn? Ngực nặng? Bụng siết? Để ý cảm giác thể chất là cách não xử lý cảm xúc không bị kẹt.",
+          "Di chuyển cơ thể: Cảm xúc là năng lượng — đi bộ, tập thể dục, thậm chí run người nhẹ là những cách cơ thể xả năng lượng cảm xúc tự nhiên.",
+          "Nói chuyện với ai đó hoặc viết ra: Đưa cảm xúc từ bên trong ra bên ngoài — dù bằng lời hay chữ — giúp não xử lý và tích hợp."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "tai-sao-khoc-khong-phai-yeu-duoi",
+    tag: "Cảm xúc",
+    tagColor: "#4A9EBA",
+    title: "Tại sao khóc không phải yếu đuối — và khoa học đứng sau",
+    excerpt: "Người Việt được dạy từ nhỏ: con trai không được khóc. Con gái khóc quá là yếu. Người lớn phải mạnh. Nhưng khoa học thần kinh nói điều hoàn toàn ngược lại về những gì nước mắt thật sự làm.",
+    readTime: "7 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Khi bạn khóc và có ai đó nói: Thôi nín đi, yếu lắm — điều đó không chỉ sai. Nó còn cản trở một quá trình mà cơ thể đang cố thực hiện để giúp bạn."
+      },
+      {
+        type: "heading",
+        content: "Khoa học về nước mắt"
+      },
+      {
+        type: "paragraph",
+        content: "Không phải tất cả nước mắt đều giống nhau. Nước mắt do khói hay gió khác hoàn toàn với nước mắt do cảm xúc. Nước mắt cảm xúc chứa cortisol (hormone stress), leucine enkephalin (tự nhiên giảm đau), và các protein liên quan đến stress."
+      },
+      {
+        type: "paragraph",
+        content: "Khi bạn khóc vì cảm xúc, cơ thể đang thực sự giải phóng các chất hóa học stress ra ngoài cơ thể. Đây không phải ẩn dụ — đây là sinh hóa thật."
+      },
+      {
+        type: "list",
+        items: [
+          "Sau khi khóc, cortisol trong máu giảm: Nghiên cứu cho thấy mức cortisol giảm đáng kể sau khi khóc cảm xúc — điều này giải thích cảm giác nhẹ nhõm sau khi khóc.",
+          "Hệ thần kinh phó giao cảm được kích hoạt: Khi khóc, hơi thở chậm lại, nhịp tim giảm, cơ thể chuyển sang trạng thái phục hồi. Đây là hệ thần kinh ngược lại với stress.",
+          "Oxytocin được giải phóng: Đặc biệt khi khóc với người khác hoặc nhận được sự an ủi. Oxytocin là hormone kết nối và bình tĩnh.",
+          "Não xử lý và tích hợp cảm xúc: Khóc giúp não chuyển cảm xúc từ phần xử lý nguyên thủy (amygdala) sang vỏ não trước, nơi có khả năng lý giải và tích hợp. Đây là bước quan trọng để cảm xúc không bị kẹt lại."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Khóc không phải mất kiểm soát. Đó là cơ thể đang hoạt động đúng chức năng — tự điều tiết và phục hồi."
+      },
+      {
+        type: "heading",
+        content: "Tại sao không khóc được lại nguy hiểm hơn"
+      },
+      {
+        type: "paragraph",
+        content: "Nhiều người — đặc biệt nam giới và người được dạy kìm nén cảm xúc — không thể khóc khi muốn. Đây là dấu hiệu hệ thần kinh đã bị tập luyện để chặn phản ứng cảm xúc tự nhiên."
+      },
+      {
+        type: "paragraph",
+        content: "Người không thể khóc thường có các triệu chứng thay thế: cơ thể căng cứng, tê liệt cảm xúc, hoặc bùng nổ hành vi. Cảm xúc tìm lối thoát khác — thường là lối thoát ít lành mạnh hơn."
+      },
+      {
+        type: "paragraph",
+        content: "Nếu bạn là người không thể khóc và cảm thấy tê liệt cảm xúc — đây không phải mạnh mẽ. Đây là dấu hiệu cần chú ý. Bắt đầu nhỏ: cho phép mình cảm nhận mà không ngay lập tức chặn lại."
+      },
+      {
+        type: "quote",
+        content: "Người mạnh không phải người không khóc. Là người đã khóc — và vẫn tiếp tục."
+      }
+    ]
+  },
+  {
+    slug: "ngon-ngu-co-the-khi-tam-tri-tu-choi",
+    tag: "Cảm xúc",
+    tagColor: "#4A9EBA",
+    title: "Ngôn ngữ của cơ thể khi tâm trí từ chối lắng nghe",
+    excerpt: "Trước khi bạn có thể tên gọi cho cảm xúc, cơ thể đã biết. Ngực nặng. Cổ họng nghẹn. Bụng co lại. Cơ thể không nói dối — nhưng nhiều người chưa học cách nghe.",
+    readTime: "8 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn nói mình ổn. Nhưng hàm bạn đang nghiến. Vai bạn đang gồng lên. Hơi thở bạn đang nông. Cơ thể đang nói điều khác."
+      },
+      {
+        type: "paragraph",
+        content: "Cơ thể không biết cách nói dối kiểu tâm trí có thể. Và khi tâm trí từ chối lắng nghe, cơ thể tìm cách khác để nói."
+      },
+      {
+        type: "heading",
+        content: "Tại sao cơ thể và tâm trí tách ra?"
+      },
+      {
+        type: "paragraph",
+        content: "Khi trải qua những tình huống quá tải — stress, sang chấn, cảm xúc không được phép — não học cách tách khỏi cảm giác trong cơ thể. Đây là cơ chế bảo vệ: nếu cảm giác quá đau, tắt đi là an toàn hơn."
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng theo thời gian, sự tách biệt này trở thành mặc định. Bạn không còn biết mình đang căng thẳng cho đến khi đau cơ. Không biết mình đang lo lắng cho đến khi mất ngủ. Không biết mình đang buồn cho đến khi cơ thể kiệt sức không rõ lý do."
+      },
+      {
+        type: "heading",
+        content: "Bản đồ cảm xúc trong cơ thể"
+      },
+      {
+        type: "paragraph",
+        content: "Nghiên cứu từ Đại học Aalto (Phần Lan) đã vẽ bản đồ cảm giác cơ thể tương ứng với các cảm xúc khác nhau — và kết quả nhất quán giữa các nền văn hóa:"
+      },
+      {
+        type: "list",
+        items: [
+          "Giận dữ: Nóng rực từ ngực lên đầu, tay nắm chặt, hàm siết",
+          "Sợ hãi: Tim đập nhanh, bụng rỗng, chân tay lạnh, hơi thở nông",
+          "Buồn bã: Ngực nặng, cổ họng nghẹn, vai sụp xuống, năng lượng thấp",
+          "Lo lắng: Bụng siết, cơ bắp căng, đầu nặng, khó thở sâu",
+          "Vui vẻ: Ấm áp từ ngực lan ra, cơ thể nhẹ, cơ mặt thư giãn",
+          "Tình yêu/kết nối: Ấm ngực, thư giãn toàn thân, hơi thở chậm và đều"
+        ]
+      },
+      {
+        type: "quote",
+        content: "Cơ thể là cuốn nhật ký mà bạn không biết mình đang viết. Học đọc nó là học hiểu bản thân ở tầng sâu hơn nhiều."
+      },
+      {
+        type: "heading",
+        content: "Bắt đầu lắng nghe cơ thể"
+      },
+      {
+        type: "list",
+        items: [
+          "Check-in cơ thể mỗi ngày: Dừng lại 30 giây và hỏi: Hiện tại mình đang cảm thấy gì trong cơ thể? Không cần đặt tên cảm xúc ngay. Chỉ để ý cảm giác vật lý.",
+          "Không phán xét những gì bạn tìm thấy: Cảm giác khó chịu không có nghĩa là sai. Nó có nghĩa là có thông tin cần nghe.",
+          "Liên kết cảm giác với sự kiện: Sau khi nhận ra cảm giác trong cơ thể, hỏi: Chuyện gì vừa xảy ra? Điều này kết nối cơ thể và tâm trí trở lại.",
+          "Thực hành thở chậm: Hơi thở là cầu nối giữa hệ thần kinh tự chủ và ý thức. Thở chậm 4 giây vào — 6 giây ra kích hoạt hệ phó giao cảm và giúp cơ thể thoát khỏi chế độ sinh tồn."
+        ]
+      }
+    ]
+  },
+
+  // ─── CLUSTER 4: MÔ THỨC TRONG CÔNG VIỆC ────────────────────────────────
+  {
+    slug: "hoi-chung-ke-mao-danh-imposter-syndrome",
+    tag: "Sự nghiệp",
+    tagColor: "#5B8A3C",
+    title: "Hội chứng kẻ mạo danh: Khi thành công không xóa được nỗi sợ bị lộ",
+    excerpt: "Bạn đã làm được. Được công nhận. Được thăng chức. Nhưng bên trong có tiếng nói nhỏ: Mình chỉ may mắn thôi. Sớm thôi họ sẽ phát hiện ra mình không đủ năng lực. Đây không phải khiêm tốn — đây là mô thức tâm lý thật.",
+    readTime: "9 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn chuẩn bị bài thuyết trình hàng tuần. Kiểm tra lại nhiều lần hơn cần thiết. Thành công thì cho rằng may mắn. Thất bại thì coi là bằng chứng mình thật sự không đủ giỏi."
+      },
+      {
+        type: "paragraph",
+        content: "Đây là imposter syndrome — hội chứng kẻ mạo danh. Và theo nghiên cứu, hơn 70% người từng trải qua điều này ít nhất một lần trong cuộc đời — kể cả những người rất thành công."
+      },
+      {
+        type: "heading",
+        content: "Imposter syndrome là gì?"
+      },
+      {
+        type: "paragraph",
+        content: "Được đặt tên lần đầu năm 1978 bởi nhà tâm lý học Pauline Clance và Suzanne Imes, imposter syndrome là trải nghiệm liên tục nghi ngờ năng lực của mình và lo sợ bị người khác phát hiện ra mình không đủ giỏi như họ nghĩ — dù có bằng chứng khách quan ngược lại."
+      },
+      {
+        type: "list",
+        items: [
+          "Quy thành công cho may mắn, thời điểm, hoặc người khác — không phải năng lực bản thân",
+          "Sợ rằng sớm thôi, ai đó sẽ phát hiện ra mình không đủ tốt",
+          "Chuẩn bị thái quá hoặc trì hoãn vì sợ thất bại sẽ lộ ra sự thật",
+          "Không thể tiếp nhận lời khen — luôn có lý do để giảm nhẹ",
+          "Cảm giác như mình là ngoại lệ may mắn trong nhóm người thật sự giỏi"
+        ]
+      },
+      {
+        type: "heading",
+        content: "Tại sao người thành công lại có imposter syndrome?"
+      },
+      {
+        type: "paragraph",
+        content: "Nghịch lý: imposter syndrome phổ biến hơn ở những người có tiêu chuẩn cao và tự nhận thức tốt. Người không có khả năng tự nhận thức thường không biết mình không đủ giỏi — đây gọi là hiệu ứng Dunning-Kruger."
+      },
+      {
+        type: "paragraph",
+        content: "Người có imposter syndrome thường đã được dạy rằng giá trị của mình gắn với thành tích. Khi thành tích đến, não không tự động cập nhật hình ảnh bản thân — vì bản sắc vẫn gắn với nỗi sợ không đủ giỏi. Thành công chỉ là tình huống tạm thời. Thất bại mới là sự thật."
+      },
+      {
+        type: "quote",
+        content: "Imposter syndrome không phải dấu hiệu bạn không đủ giỏi. Đó là dấu hiệu bạn đang lớn hơn vùng mà bản sắc của bạn đã quen."
+      },
+      {
+        type: "heading",
+        content: "Làm gì với imposter syndrome?"
+      },
+      {
+        type: "list",
+        items: [
+          "Đặt tên cho nó: Nhận ra khi tiếng nói imposter xuất hiện. Nói với bản thân: Đây là imposter syndrome. Không phải sự thật. Đây là mô thức.",
+          "Thu thập bằng chứng đối lập: Giữ một danh sách — những lần bạn đã thật sự làm được. Không phải để khoe. Mà để có dữ liệu thực tế chống lại tiếng nói trong đầu.",
+          "Phân biệt cảm giác và sự thật: Cảm thấy như kẻ mạo danh khác với việc thật sự là kẻ mạo danh. Cảm xúc không phải bằng chứng.",
+          "Nói chuyện về nó: Khi biết hơn 70% người có imposter syndrome, nói chuyện với đồng nghiệp tin cậy thường mang lại cú sốc: họ cũng cảm thấy vậy. Sự cô đơn của imposter syndrome tan ra rất nhanh khi được nói ra.",
+          "Tách giá trị bản thân khỏi thành tích: Đây là công việc dài hạn nhất — nhưng quan trọng nhất. Bạn có giá trị không phải vì bạn làm gì. Mà vì bạn là ai."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "khi-cau-toan-tro-thanh-cai-bay",
+    tag: "Sự nghiệp",
+    tagColor: "#5B8A3C",
+    title: "Khi cầu toàn trở thành cái bẫy — và cách thoát ra",
+    excerpt: "Cầu toàn không phải tiêu chuẩn cao. Đó là nỗi sợ bị phán xét nếu không đạt tiêu chuẩn đó. Và sự khác biệt này thay đổi hoàn toàn cách chúng ta xử lý thất bại, trì hoãn, và áp lực.",
+    readTime: "8 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn không nộp vì chưa sẵn sàng. Chưa sẵn sàng vì vẫn còn có thể tốt hơn. Vẫn còn tốt hơn vì chưa hoàn hảo. Và hoàn hảo chưa bao giờ đến."
+      },
+      {
+        type: "paragraph",
+        content: "Hoặc: Bạn làm xong. Nhưng không cảm thấy tốt vì thấy tất cả chỗ còn thiếu. Và dù người khác khen — bạn không tin, vì bạn biết nó có thể tốt hơn."
+      },
+      {
+        type: "heading",
+        content: "Cầu toàn lành mạnh và cầu toàn độc hại"
+      },
+      {
+        type: "paragraph",
+        content: "Nhà tâm lý học Brené Brown phân biệt hai loại:"
+      },
+      {
+        type: "list",
+        items: [
+          "Cầu toàn lành mạnh (healthy striving): Muốn làm tốt nhất có thể — được thúc đẩy bởi giá trị và niềm vui trong công việc. Thất bại được xem là thông tin để cải thiện.",
+          "Cầu toàn độc hại (perfectionism): Muốn làm hoàn hảo — được thúc đẩy bởi nỗi sợ bị phán xét, thất bại, hoặc không đủ. Thất bại được xem là bằng chứng về giá trị bản thân."
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Sự khác biệt không nằm ở tiêu chuẩn — mà ở động lực. Và động lực đó tạo ra hai hệ quả hoàn toàn khác."
+      },
+      {
+        type: "heading",
+        content: "Tại sao cầu toàn độc hại lại trì hoãn hơn?"
+      },
+      {
+        type: "paragraph",
+        content: "Trực giác nói rằng người cầu toàn sẽ làm việc nhiều hơn. Nhưng thực tế thường ngược lại. Vì khi làm xong = bị phán xét, não quyết định: không làm xong = không bị phán xét. Trì hoãn trở thành cơ chế bảo vệ."
+      },
+      {
+        type: "quote",
+        content: "Trì hoãn thường không phải lười biếng. Đó là não đang tránh nguy cơ thất bại — thất bại mà nó hiểu là nguy hiểm đến giá trị bản thân."
+      },
+      {
+        type: "heading",
+        content: "Thoát khỏi bẫy cầu toàn"
+      },
+      {
+        type: "list",
+        items: [
+          "Nhận ra câu hỏi thật: Thay vì 'Làm sao để hoàn hảo hơn?' hỏi 'Nỗi sợ gì đang thúc đẩy tôi tìm kiếm sự hoàn hảo này?'",
+          "Tách giá trị bản thân khỏi kết quả: Bạn không phải công việc của bạn. Một sản phẩm tệ không phải bạn là người tệ. Một lần thất bại không phải bạn là kẻ thất bại.",
+          "Đặt tiêu chuẩn tốt — không phải hoàn hảo: Tốt đủ để ra đi → nhận phản hồi → cải thiện là chu kỳ phát triển thật. Hoàn hảo trước khi ra đi là không bao giờ ra đi.",
+          "Thực hành làm tệ có chủ đích: Gửi email chưa hoàn hảo. Đăng bài chưa đủ ý. Không phải vì không cố gắng — mà để não học rằng thế giới không sụp đổ khi không hoàn hảo."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "burnout-khong-phai-do-lam-nhieu",
+    tag: "Sự nghiệp",
+    tagColor: "#5B8A3C",
+    title: "Burnout không phải do làm nhiều — mà do mô thức",
+    excerpt: "Có người làm 12 tiếng một ngày mà vẫn tràn đầy năng lượng. Có người làm 8 tiếng mà kiệt sức. Burnout không phải về số giờ — mà về những gì đang xảy ra bên trong khi làm.",
+    readTime: "9 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn không nhớ lần cuối cảm thấy hứng thú với công việc là khi nào. Buổi sáng thức dậy đã mệt. Làm xong không có cảm giác hoàn thành — chỉ là hết ngày. Nhìn lịch tuần tới và thấy nặng nề."
+      },
+      {
+        type: "paragraph",
+        content: "Đây không phải mệt. Đây là burnout."
+      },
+      {
+        type: "heading",
+        content: "WHO định nghĩa burnout là gì"
+      },
+      {
+        type: "paragraph",
+        content: "Tổ chức Y tế Thế giới (WHO) chính thức phân loại burnout là hiện tượng nghề nghiệp với ba đặc điểm: kiệt sức cảm xúc (exhaustion), khoảng cách tâm lý với công việc (cynicism/depersonalization), và giảm hiệu quả nghề nghiệp (reduced efficacy)."
+      },
+      {
+        type: "paragraph",
+        content: "Chú ý: Burnout không phải trầm cảm — dù chúng có thể xảy ra cùng lúc. Burnout gắn với bối cảnh công việc cụ thể. Trầm cảm ảnh hưởng đến mọi lĩnh vực cuộc sống."
+      },
+      {
+        type: "heading",
+        content: "Sáu nguyên nhân thật của burnout"
+      },
+      {
+        type: "paragraph",
+        content: "Nhà nghiên cứu Christina Maslach — người tiên phong trong nghiên cứu burnout — xác định sáu yếu tố dẫn đến burnout, không phải chỉ là làm việc nhiều:"
+      },
+      {
+        type: "list",
+        items: [
+          "Khối lượng công việc không bền vững: Yêu cầu liên tục vượt quá nguồn lực có sẵn — và không có thời gian phục hồi.",
+          "Thiếu kiểm soát: Không có quyền quyết định về cách làm, thời gian, ưu tiên. Cảm giác làm theo yêu cầu mà không có agency.",
+          "Thiếu sự công nhận xứng đáng: Nỗ lực không được thấy. Kết quả không được trân trọng. Đóng góp vô hình.",
+          "Thiếu cộng đồng: Môi trường cô lập, thiếu tin tưởng, hoặc xung đột mãn tính với đồng nghiệp hay cấp trên.",
+          "Bất công: Cảm giác quy trình, phần thưởng, hoặc đánh giá không công bằng — dù khách quan hay chủ quan.",
+          "Mất kết nối giá trị: Làm công việc xung đột với giá trị cá nhân, hoặc không còn thấy ý nghĩa trong những gì mình làm."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Burnout không phải dấu hiệu bạn yếu. Đó là dấu hiệu bạn đã mạnh quá lâu trong môi trường không đủ hỗ trợ."
+      },
+      {
+        type: "heading",
+        content: "Mô thức nào khiến bạn dễ burnout hơn?"
+      },
+      {
+        type: "list",
+        items: [
+          "Không thể nói không: Nhận mọi yêu cầu vì sợ từ chối, muốn được nhìn nhận, hoặc cảm thấy có trách nhiệm với cảm xúc của người khác.",
+          "Giá trị gắn với thành tích: Nghỉ = lười. Làm ít hơn = không đủ cống hiến. Không thể dừng lại mà không cảm thấy tội lỗi.",
+          "Cầu toàn và kiểm soát thái quá: Không thể delegate. Mọi thứ phải qua tay mình. Năng lượng tiêu thụ gấp đôi vì vừa làm vừa kiểm soát.",
+          "Khó nhận sự giúp đỡ: Tự xử một mình là bình thường. Nhờ giúp đỡ là thể hiện yếu kém hoặc làm phiền người khác."
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Phục hồi từ burnout cần nhiều hơn nghỉ ngơi — dù nghỉ là cần thiết. Cần nhìn lại mô thức đã dẫn đến burnout. Không thay đổi mô thức — burnout sẽ quay lại dù bạn có nghỉ bao lâu."
+      }
+    ]
+  },
+
+  // ─── HUBERMAN-INSPIRED: KHOA HỌC ỨNG DỤNG ─────────────────────────────
+  {
+    slug: "giac-ngu-va-suc-khoe-tam-than",
+    tag: "Khoa học thần kinh",
+    tagColor: "#6B5B95",
+    title: "Giấc ngủ và sức khỏe tâm thần: Khoa học bạn không được dạy ở trường",
+    excerpt: "Không phải vì bạn lo lắng nên bạn ngủ không được. Thường là ngược lại — vì bạn ngủ không đủ nên não bạn tạo ra lo lắng. Giấc ngủ không phải nghỉ ngơi thụ động. Đây là khi não làm công việc quan trọng nhất.",
+    readTime: "9 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn nằm xuống và não bắt đầu chạy. Hàng triệu suy nghĩ. Lo lắng về ngày mai. Replay những gì đã xảy ra hôm nay. Và rồi bạn tự trách mình: tại sao không ngủ được?"
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng câu hỏi thật không phải tại sao bạn không ngủ được. Mà là tại sao não bạn đang trong trạng thái không thể ngủ — và điều đó đang nói gì về những gì đang xảy ra bên trong."
+      },
+      {
+        type: "heading",
+        content: "Não làm gì khi bạn ngủ?"
+      },
+      {
+        type: "paragraph",
+        content: "Giấc ngủ không phải thời gian não tắt. Đó là thời gian não hoạt động theo cách không thể làm khi bạn thức:"
+      },
+      {
+        type: "list",
+        items: [
+          "Xử lý và tích hợp cảm xúc: Trong giai đoạn REM (giấc ngủ mơ), não tái hoạt động các ký ức cảm xúc — nhưng trong môi trường không có cortisol (hormone stress). Đây là cơ chế tự nhiên để cảm xúc đau được xử lý mà không bị sang chấn thêm. Thiếu REM = cảm xúc không được tiêu hóa.",
+          "Dọn dẹp chất độc: Hệ thống glymphatic — chỉ hoạt động khi ngủ — rửa sạch các protein độc hại tích tụ trong não suốt ngày. Đây bao gồm beta-amyloid, liên quan đến Alzheimer.",
+          "Củng cố trí nhớ: Những gì bạn học được chuyển từ bộ nhớ ngắn hạn sang dài hạn trong khi ngủ. Ngủ không đủ = học kém hiệu quả hơn.",
+          "Điều tiết cảm xúc: Chỉ một đêm thiếu ngủ tăng phản ứng của amygdala (trung tâm cảm xúc) lên 60% với các kích thích tiêu cực. Bạn không lo lắng quá mức vì yếu — mà vì não thiếu ngủ thật sự đang phản ứng mạnh hơn bình thường."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Giấc ngủ là hành động quan trọng nhất bạn có thể làm để tái thiết lập sức khỏe não và cảm xúc. — Matthew Walker, Giáo sư thần kinh học UC Berkeley"
+      },
+      {
+        type: "heading",
+        content: "Tại sao lo lắng và mất ngủ tạo vòng lặp"
+      },
+      {
+        type: "paragraph",
+        content: "Khi thiếu ngủ, amygdala phản ứng mạnh hơn với căng thẳng. Căng thẳng và lo lắng tăng cortisol — hormone giữ bạn tỉnh táo. Cortisol cao khiến bạn không ngủ được. Và vòng lặp tiếp tục."
+      },
+      {
+        type: "paragraph",
+        content: "Phá vỡ vòng lặp này không chỉ là 'cố ngủ hơn'. Cần can thiệp vào cả hai chiều: giảm kích hoạt thần kinh ban ngày và tạo điều kiện sinh lý cho giấc ngủ ban đêm."
+      },
+      {
+        type: "heading",
+        content: "Những gì khoa học thần kinh đề xuất"
+      },
+      {
+        type: "list",
+        items: [
+          "Ánh sáng buổi sáng: 10-30 phút ánh sáng mặt trời buổi sáng đặt lại đồng hồ sinh học và tạo serotonin — tiền chất của melatonin ban đêm. Đây là bước đơn giản nhất nhưng ít được biết nhất.",
+          "Giảm ánh sáng xanh tối: Ánh sáng màn hình điện thoại ức chế melatonin 1-3 giờ. Tránh màn hình 1 giờ trước ngủ hoặc dùng kính lọc ánh sáng xanh.",
+          "Nhiệt độ phòng mát: Não cần giảm nhiệt độ cơ thể 1-2 độ để vào giấc ngủ sâu. Phòng mát (18-20°C) hỗ trợ quá trình này.",
+          "Nhất quán thời gian ngủ và dậy: Ngay cả cuối tuần. Đây là yếu tố quan trọng nhất cho chất lượng giấc ngủ — quan trọng hơn số giờ ngủ.",
+          "Không nằm cố ngủ khi không ngủ được: Việc nằm lo lắng trong tối làm não liên kết giường với lo lắng. Nếu 20 phút không ngủ được, đứng dậy làm điều gì nhẹ nhàng rồi thử lại."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "hanh-phuc-that-su-den-tu-dau",
+    tag: "Tự nhận thức",
+    tagColor: "#D4A017",
+    title: "Hạnh phúc thật sự đến từ đâu — và tại sao chúng ta liên tục tìm sai chỗ",
+    excerpt: "Não người có một thiết kế lỗi đặc biệt: nó tệ kinh khủng trong việc dự đoán điều gì sẽ khiến mình hạnh phúc. Hiểu điều này không làm bạn cynical — nó giúp bạn dừng đuổi theo những thứ không bao giờ đủ.",
+    readTime: "9 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Bạn đã từng nghĩ: khi mình có được X, mình sẽ hạnh phúc. Rồi X đến. Và sau vài tuần — cảm giác đó biến mất. Rồi bạn lại nghĩ: khi có Y thì khác."
+      },
+      {
+        type: "paragraph",
+        content: "Đây không phải bạn đòi hỏi quá. Đây là não bạn đang hoạt động theo đúng thiết kế của nó."
+      },
+      {
+        type: "heading",
+        content: "Vấn đề với dự đoán cảm xúc"
+      },
+      {
+        type: "paragraph",
+        content: "Nhà tâm lý học Daniel Gilbert gọi đây là affective forecasting — khả năng dự đoán cảm xúc trong tương lai. Và nghiên cứu của ông chỉ ra một điều nhất quán: Người ta cực kỳ tệ trong việc dự đoán điều này."
+      },
+      {
+        type: "list",
+        items: [
+          "Impact bias: Chúng ta luôn đánh giá quá cao tác động của sự kiện tương lai đến hạnh phúc — cả tốt lẫn xấu. Thắng xổ số không khiến người ta hạnh phúc lâu dài như họ nghĩ. Bị tai nạn không khiến người ta bất hạnh lâu dài như họ sợ.",
+          "Hedonic adaptation: Não thích nghi rất nhanh với trạng thái mới — dù tốt hay xấu. Thu nhập tăng gấp đôi → hạnh phúc tăng → vài tháng sau trở về mức cũ. Đây không phải thiếu sót của bạn. Đây là thiết kế tiến hóa.",
+          "Focalism: Khi nghĩ đến tương lai, chúng ta chỉ tập trung vào một yếu tố (công việc mới, mối quan hệ mới) mà quên rằng mọi thứ khác trong cuộc sống vẫn tiếp tục."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Khoa học nói gì thật sự tạo ra hạnh phúc bền?"
+      },
+      {
+        type: "paragraph",
+        content: "Nghiên cứu từ Đại học Harvard về Hạnh phúc Người lớn — theo dõi 724 người trong 80 năm — cho kết quả rõ ràng nhất về hạnh phúc bền vững:"
+      },
+      {
+        type: "quote",
+        content: "Chất lượng mối quan hệ là yếu tố dự đoán hạnh phúc và sức khỏe tốt nhất — không phải tiền, danh vọng, hay thành tích. — Robert Waldinger, Giám đốc nghiên cứu"
+      },
+      {
+        type: "list",
+        items: [
+          "Kết nối xã hội có chiều sâu: Không phải số lượng bạn bè — mà chất lượng của những mối quan hệ thân thiết nhất. Cảm giác được hiểu và quan tâm.",
+          "Ý nghĩa hơn là niềm vui: Những hoạt động có ý nghĩa (đóng góp, phát triển, kết nối) tạo ra hạnh phúc bền hơn những hoạt động chỉ dễ chịu.",
+          "Hiện tại hơn là tương lai: Nghiên cứu về mind-wandering (tâm trí lang thang) cho thấy người đang nghĩ đến thứ khác với điều họ đang làm — bất kể đang làm gì — báo cáo kém hạnh phúc hơn.",
+          "Tự chủ và làm chủ: Cảm giác có quyền điều hướng cuộc sống của mình là yếu tố tâm lý mạnh nhất liên quan đến hạnh phúc chủ quan.",
+          "Lòng biết ơn thực hành: Không phải nói cảm ơn lịch sự — mà nhận ra và ghi nhận những thứ đang đúng ngay bây giờ. Thực hành này thực sự thay đổi cấu trúc não theo thời gian."
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "Hạnh phúc ít khi đến từ chỗ bạn đang tìm. Thường nó đang ở những thứ bình thường — mối quan hệ thật, khoảnh khắc hiện tại, ý nghĩa trong những điều nhỏ. Não bạn không giỏi nhìn thấy điều này vì nó không ở trong tương lai và không kích thích dopamine đủ mạnh. Nhưng nó ở đó."
+      }
+    ]
+  },
+  {
+    slug: "thiet-lap-muc-tieu-bang-khoa-hoc-nao",
+    tag: "Hành vi",
+    tagColor: "#E8925A",
+    title: "Thiết lập mục tiêu bằng khoa học não: Tại sao hầu hết mục tiêu thất bại",
+    excerpt: "Bạn viết mục tiêu đầu năm. Đến tháng ba thì quên. Đây không phải thiếu kỷ luật — đây là thiếu hiểu biết về cách não thật sự xử lý mục tiêu và hành động. Và khi hiểu được, mọi thứ thay đổi.",
+    readTime: "8 phút",
+    publishDate: "Tháng 8, 2026",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Năm nay bạn sẽ tập thể dục đều đặn. Đọc 20 cuốn sách. Tiết kiệm hơn. Bớt điện thoại. Ngủ sớm hơn. Cuối năm nhìn lại — hầu hết không xảy ra."
+      },
+      {
+        type: "paragraph",
+        content: "Bạn không lười. Não bạn chỉ không được thiết kế để theo đuổi mục tiêu theo cách bạn đang làm."
+      },
+      {
+        type: "heading",
+        content: "Tại sao mục tiêu thất bại về mặt thần kinh học"
+      },
+      {
+        type: "list",
+        items: [
+          "Mục tiêu quá xa khiến não không ưu tiên: Não ưu tiên phần thưởng ngay lập tức hơn tương lai. Khi mục tiêu ở xa, não không tạo đủ cấp bách để hành động hôm nay.",
+          "Visualize thành công quá nhiều có thể phản tác dụng: Nghiên cứu từ Gabriele Oettingen cho thấy chỉ tưởng tượng kết quả tốt — không kèm kế hoạch đối phó trở ngại — thực ra giảm động lực. Não nhầm tưởng tượng với thực tế và giảm nỗ lực.",
+          "Mục tiêu kết quả vs. mục tiêu hành vi: 'Giảm 10kg' là mục tiêu kết quả — não không biết làm gì với nó hôm nay. 'Đi bộ 20 phút sau bữa sáng' là mục tiêu hành vi — cụ thể, có thể thực hiện ngay.",
+          "Thiếu implementation intention: Nói 'mình sẽ tập thể dục' khác với 'mình sẽ tập 7h sáng thứ 2-4-6 tại phòng gym gần nhà'. Nghiên cứu cho thấy implementation intention tăng tỷ lệ thực hiện lên 2-3 lần."
+        ]
+      },
+      {
+        type: "heading",
+        content: "Khung WOOP từ nghiên cứu tâm lý học"
+      },
+      {
+        type: "paragraph",
+        content: "Gabriele Oettingen phát triển khung WOOP (Wish - Outcome - Obstacle - Plan) được kiểm chứng qua nhiều nghiên cứu là hiệu quả hơn đặt mục tiêu thông thường:"
+      },
+      {
+        type: "list",
+        items: [
+          "Wish (Ước muốn): Điều bạn muốn đạt được — đủ thách thức nhưng có thể thực hiện.",
+          "Outcome (Kết quả): Điều tốt nhất sẽ xảy ra khi bạn đạt mục tiêu. Hình dung cụ thể cảm giác và cuộc sống.",
+          "Obstacle (Trở ngại): Điều bên trong bạn (không phải bên ngoài) có thể cản trở. Thói quen, cảm xúc, tình huống quen thuộc nào?",
+          "Plan (Kế hoạch): Nếu trở ngại đó xảy ra — tôi sẽ làm gì? Câu dạng nếu-thì: Nếu tôi cảm thấy không muốn đi tập, thì tôi sẽ chỉ cần mặc đồ thể thao và bước ra cửa."
+        ]
+      },
+      {
+        type: "quote",
+        content: "Kỷ luật không phải ý chí. Kỷ luật là thiết kế môi trường và hành vi tốt đến mức ý chí không cần thiết nữa."
+      },
+      {
+        type: "heading",
+        content: "Ba nguyên tắc thực hành"
+      },
+      {
+        type: "list",
+        items: [
+          "Mục tiêu nhỏ hơn bạn nghĩ cần: Quá nhỏ đến mức ngại không làm. Đọc 1 trang. Đi bộ 5 phút. Viết 1 câu. Não cần thấy bằng chứng rằng mình có thể — trước khi sẵn sàng làm nhiều hơn.",
+          "Gắn hành vi mới vào thói quen cũ: Sau khi uống cà phê sáng, mình sẽ đọc 10 phút. Não học hành vi mới dễ hơn khi gắn vào cấu trúc đã có.",
+          "Đo lường hành vi — không phải kết quả: Kiểm soát được bao nhiêu lần bạn tập — không phải bao nhiêu kg bạn giảm. Kết quả theo sau hành vi nhất quán — không phải ngược lại."
+        ]
+      }
+    ]
+  }
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

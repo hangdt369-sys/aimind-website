@@ -185,7 +185,7 @@ const articles = [
   },
 ];
 
-const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Quan hệ", "Tự nhận thức", "Hành vi", "Gắn bó", "Phân biệt mô thức"];
+const tags = ["Tất cả", "Mô thức", "Khoa học thần kinh", "Gắn bó", "Phân biệt mô thức", "Gia đình", "Ranh giới", "Cảm xúc", "Sự nghiệp", "Quan hệ", "Tự nhận thức", "Hành vi"];
 
 export default function BaiVietPage() {
   const [activeTag, setActiveTag] = useState("Tất cả");
