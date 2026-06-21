@@ -107,9 +107,25 @@ function createCustomerEmail(
   </div>
   ` : ""}
 
-  <div style="background:#1C1A3E;border-radius:12px;padding:24px;text-align:center;margin-bottom:24px">
-    <p style="color:#C4C0E0;font-size:14px;line-height:1.75;margin:0 0 16px">Muốn đi sâu hơn vào mô thức của mình? Nhắn trực tiếp cho Hanna.</p>
-    <a href="https://zalo.me/0848270819" style="display:inline-block;background:linear-gradient(135deg,#7C6FF7,#5B4FD4);color:white;padding:12px 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px">Nhắn Zalo với Hanna →</a>
+  <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:12px;padding:20px;margin-bottom:20px">
+    <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#166534">🎁 Công cụ thực hành miễn phí dành cho bạn</p>
+    <p style="margin:0 0 14px;font-size:13px;color:#1C4A48;line-height:1.6">Nhật ký quan sát mô thức ${name} — 3 buổi/ngày, câu hỏi được thiết kế riêng cho mô thức của bạn. Dùng miễn phí, không cần đăng ký.</p>
+    <a href="https://aimind-website.vercel.app/thuc-hanh?mo-thuc=${archetypeKey}" style="display:inline-block;background:#166534;color:white;padding:10px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px">Mở công cụ thực hành →</a>
+  </div>
+
+  <div style="background:#1C1A3E;border-radius:12px;padding:20px;margin-bottom:16px">
+    <p style="color:#C4C0E0;font-size:13px;font-weight:700;margin:0 0 8px">📖 Hướng dẫn sử dụng công cụ</p>
+    <ul style="color:#9B96C0;font-size:13px;line-height:1.8;margin:0;padding-left:18px">
+      <li>Dùng <strong style="color:white">3 lần mỗi ngày</strong>: sáng – giữa ngày – tối</li>
+      <li>Viết thật, không cần hoàn hảo — không ai đọc câu trả lời của bạn</li>
+      <li>Làm mỗi ngày trong <strong style="color:white">21 ngày</strong> để nhận ra khuôn mẫu rõ hơn</li>
+      <li>Sao chép câu trả lời vào note riêng để đọc lại</li>
+    </ul>
+  </div>
+
+  <div style="background:#1C1A3E;border-radius:12px;padding:20px;text-align:center;margin-bottom:20px">
+    <p style="color:#C4C0E0;font-size:13px;line-height:1.75;margin:0 0 14px">Muốn đi sâu hơn vào mô thức của mình? Nhắn trực tiếp cho Hanna.</p>
+    <a href="https://zalo.me/0848270819" style="display:inline-block;background:linear-gradient(135deg,#7C6FF7,#5B4FD4);color:white;padding:11px 24px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px">Nhắn Zalo với Hanna →</a>
   </div>
 
   <p style="color:#9B96C0;font-size:12px;text-align:center">Hanna Dang — AIMIND · aimind.hcm@gmail.com · Zalo: 0848270819</p>
