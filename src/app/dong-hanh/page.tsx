@@ -313,7 +313,7 @@ export default function DongHanhPage() {
               và bạn cảm nhận xem coaching có phù hợp không.
             </p>
             <Link
-              href="/lien-he"
+              href="https://zalo.me/0848270819"
               style={{
                 display: "inline-block",
                 background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
@@ -327,12 +327,10 @@ export default function DongHanhPage() {
                 boxShadow: "0 8px 24px rgba(124,111,247,0.4)",
               }}
             >
-              Nhắn tin Hanna qua Facebook
+              Nhắn tin Hanna qua Zalo
             </Link>
           </div>
         </section>
       </main>
       <Footer />
-    </>
-  );
-}
+ 

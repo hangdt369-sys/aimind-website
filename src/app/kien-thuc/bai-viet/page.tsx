@@ -212,14 +212,16 @@ export default function BaiVietPage() {
                 marginBottom: "1rem",
               }}
             >
-              Nhận insight hàng tuần
+              Muốn nói chuyện sâu hơn?
             </h2>
             <p style={{ color: "#C4C0E0", marginBottom: "2rem", fontSize: "15px", lineHeight: 1.75 }}>
-              Mỗi tuần một insight sâu sắc về tâm lý hành vi.
-              Không spam. Không chào hàng. Chỉ là hiểu biết thật sự.
+              Nhắn tin trực tiếp cho Hanna qua Zalo —
+              để hỏi về khóa học, coaching, hoặc bất cứ điều gì bạn đang thắc mắc.
             </p>
-            <Link
-              href="/kham-pha/ban-do-noi-tam"
+            <a
+              href="https://zalo.me/0848270819"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: "inline-block",
                 background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
@@ -230,14 +232,7 @@ export default function BaiVietPage() {
                 fontWeight: 700,
                 textDecoration: "none",
                 fontFamily: "'Be Vietnam Pro', sans-serif",
+                boxShadow: "0 8px 24px rgba(124,111,247,0.4)",
               }}
             >
-              Làm bài test và đăng ký nhận insight
-            </Link>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
+             

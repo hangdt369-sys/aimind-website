@@ -149,7 +149,7 @@ export default function DieuKhoanPage() {
               >
                 <p style={{ color: "#6B678F", fontSize: "13px", lineHeight: 1.75 }}>
                   <strong style={{ color: "#1C1A3E" }}>Câu hỏi?</strong> Liên hệ chúng tôi tại{" "}
-                  <strong>aimind.hcm@gmail.com</strong> hoặc qua Facebook. Chúng tôi luôn sẵn sàng
+                  <strong>aimind.hcm@gmail.com</strong> hoặc qua Zalo <strong>0848270819</strong>. Chúng tôi luôn sẵn sàng
                   giải thích rõ hơn về bất kỳ điều khoản nào.
                 </p>
               </div>
@@ -157,7 +157,4 @@ export default function DieuKhoanPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
-  );
-}
+      <F

@@ -147,14 +147,11 @@ export default function ChinhSachBaoMatPage() {
               >
                 <p style={{ color: "#6B678F", fontSize: "13px", lineHeight: 1.75 }}>
                   <strong style={{ color: "#1C1A3E" }}>Liên hệ:</strong> Mọi thắc mắc về chính sách bảo mật,
-                  vui lòng gửi email đến <strong>aimind.hcm@gmail.com</strong> hoặc nhắn tin qua Facebook.
+                  vui lòng gửi email đến <strong>aimind.hcm@gmail.com</strong> hoặc nhắn tin qua Zalo <strong>0848270819</strong>.
                 </p>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <Footer />
-    </>
-  );
-}
+      <F

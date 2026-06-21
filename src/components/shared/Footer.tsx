@@ -99,15 +99,33 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Newsletter */}
+          {/* Zalo CTA */}
           <div>
             <h4 style={{ color: "white", fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>
-              Nhận Insight Hàng Tuần
+              Liên Hệ Hanna
             </h4>
             <p style={{ color: "#9B96C0", fontSize: "13px", lineHeight: 1.6, marginBottom: "1rem" }}>
-              Mỗi tuần một insight sâu sắc về tâm lý hành vi — không spam, không chào hàng.
+              Nhắn tin trực tiếp để đặt lịch coaching hoặc hỏi về khóa học.
             </p>
-            <NewsletterForm />
+            <a
+              href="https://zalo.me/0848270819"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                background: "rgba(124,111,247,0.15)",
+                border: "1px solid rgba(124,111,247,0.3)",
+                color: "#B8B3FA",
+                borderRadius: "8px",
+                padding: "10px 14px",
+                fontSize: "13px",
+                fontWeight: 600,
+                textDecoration: "none",
+                transition: "all 0.2s",
+              }}
+            >
+              Nhắn tin qua Zalo →
+            </a>
           </div>
         </div>
 
@@ -139,43 +157,3 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
   );
 }
 
-function NewsletterForm() {
-  return (
-    <form
-      style={{ display: "flex", flexDirection: "column", gap: "8px" }}
-      onSubmit={(e) => e.preventDefault()}
-    >
-      <input
-        type="email"
-        placeholder="email@example.com"
-        style={{
-          background: "rgba(255,255,255,0.06)",
-          border: "1px solid rgba(255,255,255,0.12)",
-          borderRadius: "8px",
-          padding: "10px 14px",
-          color: "white",
-          fontSize: "13px",
-          outline: "none",
-          width: "100%",
-        }}
-      />
-      <button
-        type="submit"
-        style={{
-          background: "rgba(124,111,247,0.15)",
-          border: "1px solid rgba(124,111,247,0.3)",
-          color: "#B8B3FA",
-          borderRadius: "8px",
-          padding: "10px 14px",
-          fontSize: "13px",
-          fontWeight: 600,
-          cursor: "pointer",
-          transition: "all 0.2s",
-          textAlign: "left" as const,
-        }}
-      >
-        Đăng ký nhận insight →
-      </button>
-        </form>
-  );
-}
