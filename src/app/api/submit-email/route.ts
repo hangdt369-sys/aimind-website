@@ -1,77 +1,120 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import nodemailer from "nodemailer";
 
-// ─── API: Submit Email + Phone Capture ───────────────────────────────────────
-// Nhận email, phone, archetypeKey từ quiz result page
-// Gửi 2 email qua Web3Forms:
-//   1. Thông báo cho Hanna (aimind.hcm@gmail.com)
-//   2. Email kết quả cho khách
+// ─── API: Gửi email qua Gmail SMTP ───────────────────────────────────────────
+// Env cần có trong Vercel:
+//   GMAIL_USER  = aimind.hcm@gmail.com
+//   GMAIL_PASS  = app password 16 ký tự từ Google
 
-const ARCHETYPE_DATA: Record<string, { name: string; emoji: string; description: string; gift: string; challenge: string }> = {
-  "the-architect": {
-    name: "Kiến Trúc Sư",
-    emoji: "🏛️",
-    description: "Bạn nhìn thế giới bằng hệ thống và cấu trúc. Bạn có khả năng đặc biệt trong việc nhìn thấy pattern mà người khác bỏ qua.",
-    gift: "Tư duy hệ thống, khả năng lập kế hoạch và thiết kế giải pháp phức tạp.",
-    challenge: "Đôi khi bị kẹt trong vòng lặp phân tích — khó hành động khi chưa có đủ dữ liệu.",
+const ARCHETYPE_LABELS: Record<string, { name: string; desc: string; gift: string; challenge: string }> = {
+  "lo-au": {
+    name: "Lo Âu",
+    desc: "Bạn luôn sẵn sàng cho điều tệ nhất — não bạn đang hoạt động ở chế độ bảo vệ liên tục.",
+    gift: "Cẩn thận, chu đáo, nhạy bén với rủi ro. Bạn thường là người phát hiện vấn đề trước khi nó xảy ra.",
+    challenge: "Khó tận hưởng hiện tại vì luôn lo về tương lai. Cần học cách phân biệt mối lo có thực và mối lo do não tự tạo ra.",
   },
-  "the-empath": {
-    name: "Người Đồng Cảm",
-    emoji: "💙",
-    description: "Bạn cảm nhận được cảm xúc của người khác như thể chúng là của chính mình. Đây là món quà hiếm có.",
-    gift: "Kết nối sâu, sự thấu hiểu và khả năng chữa lành trong mối quan hệ.",
-    challenge: "Ranh giới cảm xúc mờ nhạt — dễ mang nặng cảm xúc người khác và kiệt sức.",
+  "ne-tranh": {
+    name: "Né Tránh",
+    desc: "Bạn ưu tiên hòa khí và tránh đối đầu — thường hi sinh nhu cầu mình để giữ không khí bình yên.",
+    gift: "Khả năng thấu cảm, không phán xét, tạo không gian an toàn cho người khác.",
+    challenge: "Nhu cầu và cảm xúc thật của bạn bị chôn vùi theo thời gian. Xung đột né tránh không biến mất — nó tích lũy.",
   },
-  "the-pioneer": {
-    name: "Người Tiên Phong",
-    emoji: "🚀",
-    description: "Bạn luôn nhìn về phía trước và sống trong thế giới của những khả năng. Bạn thấy cơ hội khi người khác thấy rào cản.",
-    gift: "Sáng tạo, dũng cảm thử nghiệm và khả năng truyền cảm hứng.",
-    challenge: "Khó duy trì khi hứng khởi qua đi — bắt đầu nhiều, hoàn thành ít.",
+  "kiem-soat": {
+    name: "Kiểm Soát",
+    desc: "Bạn cần mọi thứ trong tầm kiểm soát — không chắc chắn tạo ra lo lắng sâu.",
+    gift: "Có tổ chức, đáng tin cậy, khả năng lập kế hoạch và thực thi xuất sắc.",
+    challenge: "Kiểm soát thái quá có thể gây stress cho bạn và người xung quanh. Gốc rễ thường là nỗi sợ mất an toàn.",
   },
-  "the-guardian": {
-    name: "Người Bảo Vệ",
-    emoji: "🛡️",
-    description: "Bạn có bản năng bảo vệ mạnh mẽ — với người thân, với giá trị, với những gì bạn tin là đúng.",
-    gift: "Trung thành, đáng tin cậy và tạo ra môi trường an toàn cho người xung quanh.",
-    challenge: "Xu hướng kiểm soát xuất phát từ nỗi sợ mất mát — đôi khi cản trở sự tự do của bản thân và người khác.",
+  "hy-sinh": {
+    name: "Hy Sinh",
+    desc: "Bạn đặt người khác lên trước — cảm giác có lỗi khi nghĩ đến nhu cầu của chính mình.",
+    gift: "Hào phóng, quan tâm sâu sắc, tạo ra giá trị thật cho người xung quanh.",
+    challenge: "Cho đi liên tục mà không nhận lại dẫn đến kiệt sức và oán trách ngầm.",
   },
-  "the-sage": {
-    name: "Người Thông Thái",
-    emoji: "🌿",
-    description: "Bạn tìm kiếm ý nghĩa sâu xa trong mọi thứ. Bạn không dừng lại ở bề mặt — bạn muốn hiểu tại sao.",
-    gift: "Chiều sâu tư duy, khả năng tổng hợp kiến thức và truyền đạt insight.",
-    challenge: "Xu hướng cô lập khi bị áp lực — rút vào thế giới nội tâm thay vì kết nối.",
+  "tu-huy": {
+    name: "Tự Hủy",
+    desc: "Bạn có xu hướng tự phá hoại những điều tốt đẹp khi chúng gần đến tay.",
+    gift: "Tự nhận thức cao, trung thực với bản thân, nhạy cảm với sự giả dối.",
+    challenge: "Vô thức tin rằng mình không xứng đáng — cần nhận diện cơ chế này trước khi nó vận hành.",
   },
-  "the-alchemist": {
-    name: "Người Chuyển Hóa",
-    emoji: "⚗️",
-    description: "Bạn có khả năng biến khó khăn thành bài học và đau thương thành sức mạnh.",
-    gift: "Khả năng phục hồi phi thường, tư duy tăng trưởng và truyền cảm hứng chuyển hóa.",
-    challenge: "Đôi khi tìm kiếm khủng hoảng để cảm thấy sống — khó tìm bình yên trong sự ổn định.",
-  },
-  "the-connector": {
-    name: "Người Kết Nối",
-    emoji: "🤝",
-    description: "Bạn tự nhiên kéo mọi người lại gần nhau. Bạn thấy giá trị trong từng người và biết cách tạo ra cộng đồng.",
-    gift: "Networking tự nhiên, khả năng tạo sự hòa hợp và xây dựng cộng đồng.",
-    challenge: "Sợ xung đột — đôi khi hy sinh nhu cầu bản thân để giữ hòa khí.",
-  },
-  "the-rebel": {
-    name: "Người Phá Vỡ",
-    emoji: "⚡",
-    description: "Bạn không thể chấp nhận thứ không có lý do tồn tại. Bạn thách thức các quy ước và mở đường mới.",
-    gift: "Tư duy độc lập, dũng cảm nói sự thật và khả năng tạo ra thay đổi hệ thống.",
-    challenge: "Kháng cự có thể trở thành phản xạ — đôi khi chống lại thứ tốt chỉ vì nó là quy tắc.",
-  },
-  "the-dreamer": {
-    name: "Người Mơ Mộng",
-    emoji: "✨",
-    description: "Bạn sống trong thế giới của hình ảnh, cảm xúc và khả năng vô tận. Bạn thấy cái đẹp ở những nơi người khác không ngờ.",
-    gift: "Trí tưởng tượng phong phú, sáng tạo nghệ thuật và khả năng truyền cảm hứng.",
-    challenge: "Khoảng cách giữa ý tưởng và thực tế — khó hiện thực hóa những gì bạn thấy trong đầu.",
+  "can-bang": {
+    name: "Cân Bằng",
+    desc: "Bạn đang trong quá trình tích hợp — đã nhận ra mô thức của mình và đang tìm cách thay đổi.",
+    gift: "Khả năng tự quan sát và điều chỉnh. Đây là điểm khởi đầu của chuyển hóa thật.",
+    challenge: "Duy trì hành trình khi không có áp lực bên ngoài. Thay đổi cần nhất quán hơn cần cường độ.",
   },
 };
+
+function createHannaEmail(
+  email: string,
+  phone: string,
+  archetypeKey: string,
+  archetypeName: string,
+  timestamp: string
+): string {
+  const a = ARCHETYPE_LABELS[archetypeKey];
+  const name = a?.name || archetypeName || archetypeKey;
+  return `
+<div style="font-family:sans-serif;max-width:560px;margin:0 auto;padding:24px">
+  <div style="background:#1C1A3E;border-radius:12px;padding:24px;color:white;margin-bottom:24px">
+    <p style="color:#B8B3FA;font-size:12px;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.1em">AIMIND — Khách mới</p>
+    <h2 style="margin:0;font-size:20px">Mô thức: ${name}</h2>
+    <p style="color:#9B96C0;font-size:13px;margin:8px 0 0">${timestamp}</p>
+  </div>
+
+  <table style="width:100%;border-collapse:collapse;margin-bottom:24px">
+    <tr><td style="padding:12px;border:1px solid #E8E3F0;background:#F8F4EE;font-weight:600;width:120px">Email</td><td style="padding:12px;border:1px solid #E8E3F0">${email}</td></tr>
+    <tr><td style="padding:12px;border:1px solid #E8E3F0;background:#F8F4EE;font-weight:600">Điện thoại</td><td style="padding:12px;border:1px solid #E8E3F0">${phone || "Chưa cung cấp"}</td></tr>
+    <tr><td style="padding:12px;border:1px solid #E8E3F0;background:#F8F4EE;font-weight:600">Mô thức</td><td style="padding:12px;border:1px solid #E8E3F0"><strong>${name}</strong> (${archetypeKey})</td></tr>
+  </table>
+
+  <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:16px;margin-bottom:16px">
+    <p style="margin:0;font-size:14px;color:#166534">✅ Hành động tiếp theo: Nhắn Zalo/email cho khách, gửi tài liệu thực hành và offer coaching nếu phù hợp.</p>
+  </div>
+
+  <p style="color:#9B96C0;font-size:12px;text-align:center">AIMIND · aimind.hcm@gmail.com</p>
+</div>`;
+}
+
+function createCustomerEmail(
+  archetypeKey: string,
+  archetypeName: string
+): string {
+  const a = ARCHETYPE_LABELS[archetypeKey];
+  const name = a?.name || archetypeName || archetypeKey;
+  return `
+<div style="font-family:sans-serif;max-width:560px;margin:0 auto;padding:24px">
+  <div style="background:linear-gradient(135deg,#2D2A5E,#1C1A3E);border-radius:16px;padding:32px;color:white;text-align:center;margin-bottom:28px">
+    <p style="color:#B8B3FA;font-size:12px;margin:0 0 12px;text-transform:uppercase;letter-spacing:0.1em">Kết quả Bản Đồ Nội Tâm</p>
+    <h1 style="margin:0;font-size:26px;font-weight:800">Mô thức của bạn:</h1>
+    <h2 style="margin:8px 0 0;font-size:32px;font-weight:900;color:#B8B3FA">${name}</h2>
+  </div>
+
+  ${a ? `
+  <div style="margin-bottom:24px">
+    <p style="color:#1C1A3E;font-size:16px;line-height:1.8">${a.desc}</p>
+  </div>
+
+  <div style="border:1px solid #E8E3F0;border-radius:12px;padding:20px;margin-bottom:16px">
+    <p style="color:#7C6FF7;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Điểm mạnh của bạn</p>
+    <p style="color:#1C1A3E;font-size:15px;line-height:1.75;margin:0">${a.gift}</p>
+  </div>
+
+  <div style="border:1px solid #E8E3F0;border-radius:12px;padding:20px;margin-bottom:28px">
+    <p style="color:#E85A71;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Thách thức cần nhận diện</p>
+    <p style="color:#1C1A3E;font-size:15px;line-height:1.75;margin:0">${a.challenge}</p>
+  </div>
+  ` : ""}
+
+  <div style="background:#1C1A3E;border-radius:12px;padding:24px;text-align:center;margin-bottom:24px">
+    <p style="color:#C4C0E0;font-size:14px;line-height:1.75;margin:0 0 16px">Muốn đi sâu hơn vào mô thức của mình? Nhắn trực tiếp cho Hanna.</p>
+    <a href="https://zalo.me/0848270819" style="display:inline-block;background:linear-gradient(135deg,#7C6FF7,#5B4FD4);color:white;padding:12px 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px">Nhắn Zalo với Hanna →</a>
+  </div>
+
+  <p style="color:#9B96C0;font-size:12px;text-align:center">Hanna Dang — AIMIND · aimind.hcm@gmail.com · Zalo: 0848270819</p>
+</div>`;
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -80,114 +123,49 @@ export async function POST(request: NextRequest) {
       phone?: string;
       archetypeKey: string;
       archetypeName?: string;
-      source?: string;
     };
 
-    const { email, phone, archetypeKey, archetypeName } = body;
+    const { email, phone, archetypeKey, archetypeName = "" } = body;
 
     if (!email || !archetypeKey) {
-      return NextResponse.json(
-        { error: "Email và archetypeKey là bắt buộc" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Thiếu thông tin" }, { status: 400 });
     }
 
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
+    const gmailUser = process.env.GMAIL_USER;
+    const gmailPass = process.env.GMAIL_PASS;
 
-    const archetype = ARCHETYPE_DATA[archetypeKey] || {
-      name: archetypeName || archetypeKey,
-      emoji: "🌟",
-      description: "",
-      gift: "",
-      challenge: "",
-    };
+    if (!gmailUser || !gmailPass) {
+      console.warn("GMAIL_USER / GMAIL_PASS chưa được cấu hình trong Vercel");
+      return NextResponse.json({ success: true, warn: "email_not_configured" });
+    }
 
-    const resolvedName = archetype.name;
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: { user: gmailUser, pass: gmailPass },
+    });
+
     const timestamp = new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" });
 
-    // ── 1. Gửi thông báo cho Hanna ────────────────────────────────────────
-    if (accessKey) {
-      try {
-        await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            access_key: accessKey,
-            subject: `[AIMIND] Khách mới làm bài test: ${resolvedName} — ${email}`,
-            from_name: "AIMIND Website",
-            message: [
-              `📬 Khách hàng mới vừa hoàn thành bài test Bản Đồ Nội Tâm`,
-              ``,
-              `📧 Email: ${email}`,
-              `📱 Số điện thoại: ${phone || "Chưa cung cấp"}`,
-              `🎭 Bản dạng: ${archetype.emoji} ${resolvedName} (${archetypeKey})`,
-              `⏰ Thời gian: ${timestamp}`,
-              ``,
-              `👉 Hành động tiếp theo:`,
-              `- Gửi app thực hành cho khách qua Zalo/Email`,
-              `- Follow up coaching nếu phù hợp`,
-            ].join("\n"),
-          }),
-        });
-      } catch (err) {
-        console.warn("Web3Forms Hanna notification failed:", err);
-      }
+    // 1. Thông báo cho Hanna
+    await transporter.sendMail({
+      from: `"AIMIND Website" <${gmailUser}>`,
+      to: gmailUser,
+      subject: `[AIMIND] Khách mới: ${ARCHETYPE_LABELS[archetypeKey]?.name || archetypeName} — ${email}`,
+      html: createHannaEmail(email, phone ?? "", archetypeKey, archetypeName, timestamp),
+    });
 
-      // ── 2. Gửi email kết quả cho khách ────────────────────────────────────
-      try {
-        await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            access_key: accessKey,
-            subject: `Kết quả Bản Đồ Nội Tâm của bạn: ${archetype.emoji} ${resolvedName}`,
-            from_name: "Hanna Dang — AIMIND",
-            to: email,
-            replyto: "aimind.hcm@gmail.com",
-            message: [
-              `Xin chào,`,
-              ``,
-              `Cảm ơn bạn đã hoàn thành bài test Bản Đồ Nội Tâm tại AIMIND.`,
-              ``,
-              `━━━━━━━━━━━━━━━━━━━━━━━━`,
-              `Bản dạng của bạn: ${archetype.emoji} ${resolvedName}`,
-              `━━━━━━━━━━━━━━━━━━━━━━━━`,
-              ``,
-              `${archetype.description}`,
-              ``,
-              `🎁 Điểm mạnh của bạn:`,
-              `${archetype.gift}`,
-              ``,
-              `⚠️ Thách thức cần nhận diện:`,
-              `${archetype.challenge}`,
-              ``,
-              `━━━━━━━━━━━━━━━━━━━━━━━━`,
-              ``,
-              `Bước tiếp theo:`,
-              `→ Nhắn tin Hanna qua Zalo 0848270819 để nhận app thực hành cá nhân`,
-              `→ Tìm hiểu khóa học Bản Đồ Nội Tâm Chuyên Sâu: https://aimind-website.vercel.app/hanh-trinh/khoa-hoc`,
-              ``,
-              `Trân trọng,`,
-              `Hanna Dang — AIMIND`,
-              `Zalo: 0848270819 | Email: aimind.hcm@gmail.com`,
-            ].join("\n"),
-          }),
-        });
-      } catch (err) {
-        console.warn("Web3Forms customer email failed:", err);
-      }
-    } else {
-      console.warn("WEB3FORMS_ACCESS_KEY not set — email not sent");
-    }
-
-    console.log("Quiz submission:", { email, phone, archetypeKey });
+    // 2. Email kết quả cho khách
+    await transporter.sendMail({
+      from: `"Hanna Dang — AIMIND" <${gmailUser}>`,
+      to: email,
+      replyTo: gmailUser,
+      subject: `Kết quả Bản Đồ Nội Tâm: ${ARCHETYPE_LABELS[archetypeKey]?.name || archetypeName}`,
+      html: createCustomerEmail(archetypeKey, archetypeName),
+    });
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Submit email error:", error);
-    return NextResponse.json(
-      { error: "Lỗi server. Vui lòng thử lại." },
-      { status: 500 }
-    );
+    console.error("Email error:", error);
+    return NextResponse.json({ error: "Lỗi gửi email" }, { status: 500 });
   }
 }
