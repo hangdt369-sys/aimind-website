@@ -303,10 +303,10 @@ export default function DoiNguPage() {
 
         {/* ── Người thầy & Tri kỷ ──────────────────────────────── */}
         <section style={{ padding: "5rem 0", backgroundColor: "white" }}>
-          <div className="container-main" style={{ maxWidth: "860px" }}>
+          <div className="container-main" style={{ maxWidth: "760px" }}>
             <div style={{ textAlign: "center", marginBottom: "3rem" }}>
               <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
-                Những người đã định hình Hanna
+                Người đã định hình Hanna
               </p>
               <h2
                 style={{
@@ -318,117 +318,64 @@ export default function DoiNguPage() {
                   marginBottom: "0.75rem",
                 }}
               >
-                Người thầy lớn và người tri kỷ
+                Người thầy và tri kỷ
               </h2>
               <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.75, maxWidth: "520px", margin: "0 auto" }}>
-                Không ai đi được một mình. Đây là hai người đã ảnh hưởng sâu sắc đến cách Hanna nhìn về bản thân và về con người.
+                Có những người trong cuộc đời vừa là thầy, vừa là tri kỷ — người nhìn thấy bạn trước khi bạn nhìn thấy chính mình.
               </p>
             </div>
 
             <div
               style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
-                gap: "1.5rem",
+                backgroundColor: "#F8F4EE",
+                borderRadius: "24px",
+                padding: "2.5rem 3rem",
+                border: "1px solid #E8E3F0",
+                borderLeft: "5px solid #7C6FF7",
+                display: "flex",
+                gap: "2rem",
+                alignItems: "flex-start",
               }}
             >
-              {/* Người thầy */}
-              <div
-                style={{
-                  backgroundColor: "#F8F4EE",
-                  borderRadius: "20px",
-                  padding: "2.5rem",
-                  border: "1px solid #E8E3F0",
-                  borderTop: "4px solid #7C6FF7",
-                  position: "relative" as const,
-                }}
-              >
-                <div
-                  style={{
-                    display: "inline-block",
-                    backgroundColor: "rgba(124,111,247,0.1)",
-                    border: "1px solid rgba(124,111,247,0.25)",
-                    borderRadius: "999px",
-                    padding: "4px 14px",
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    color: "#7C6FF7",
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase" as const,
-                    marginBottom: "1.25rem",
-                  }}
-                >
-                  Người thầy lớn
+              <div style={{ fontSize: "3rem", flexShrink: 0, lineHeight: 1, paddingTop: "4px" }}>🌿</div>
+              <div>
+                <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem", flexWrap: "wrap" as const }}>
+                  {["Người thầy lớn", "Tri kỷ"].map((tag) => (
+                    <span
+                      key={tag}
+                      style={{
+                        backgroundColor: "rgba(124,111,247,0.1)",
+                        border: "1px solid rgba(124,111,247,0.25)",
+                        borderRadius: "999px",
+                        padding: "3px 14px",
+                        fontSize: "11px",
+                        fontWeight: 700,
+                        color: "#7C6FF7",
+                        letterSpacing: "0.08em",
+                        textTransform: "uppercase" as const,
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
                 <h3
                   style={{
                     color: "#1C1A3E",
                     fontFamily: "'Be Vietnam Pro', sans-serif",
                     fontWeight: 800,
-                    fontSize: "1.2rem",
-                    marginBottom: "0.25rem",
+                    fontSize: "1.1rem",
+                    marginBottom: "1rem",
+                    fontStyle: "italic",
                   }}
                 >
-                  {/* Hanna điền tên người thầy vào đây */}
-                  [Tên người thầy]
+                  Ẩn danh — vì một số ân tình không cần tên để được nhớ đến
                 </h3>
-                <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 600, marginBottom: "1rem" }}>
-                  {/* Hanna điền vai trò / chuyên môn */}
-                  [Vai trò / Chuyên môn]
+                <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.85 }}>
+                  Có một người trong cuộc đời Hanna vừa là người thầy dẫn đường, vừa là người tri kỷ thật sự hiểu cô. Người này đã giúp Hanna nhìn thấy những phần trong bản thân mà cô chưa dám nhìn — không bằng cách chỉ bảo, mà bằng cách ở bên và phản chiếu lại sự thật một cách nhẹ nhàng.
                 </p>
-                <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.8 }}>
-                  {/* Hanna viết về điều người thầy dạy hoặc ảnh hưởng lớn nhất */}
-                  [Điều người thầy này dạy Hanna — hoặc khoảnh khắc thay đổi cách Hanna nhìn về bản thân và về con người]
-                </p>
-              </div>
-
-              {/* Người tri kỷ */}
-              <div
-                style={{
-                  backgroundColor: "#F8F4EE",
-                  borderRadius: "20px",
-                  padding: "2.5rem",
-                  border: "1px solid #E8E3F0",
-                  borderTop: "4px solid #18B5B0",
-                  position: "relative" as const,
-                }}
-              >
-                <div
-                  style={{
-                    display: "inline-block",
-                    backgroundColor: "rgba(24,181,176,0.1)",
-                    border: "1px solid rgba(24,181,176,0.25)",
-                    borderRadius: "999px",
-                    padding: "4px 14px",
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    color: "#18B5B0",
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase" as const,
-                    marginBottom: "1.25rem",
-                  }}
-                >
-                  Người tri kỷ
-                </div>
-                <h3
-                  style={{
-                    color: "#1C1A3E",
-                    fontFamily: "'Be Vietnam Pro', sans-serif",
-                    fontWeight: 800,
-                    fontSize: "1.2rem",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  {/* Hanna điền tên người tri kỷ */}
-                  [Tên người tri kỷ]
-                </h3>
-                <p style={{ color: "#18B5B0", fontSize: "13px", fontWeight: 600, marginBottom: "1rem" }}>
-                  {/* Vai trò / mối quan hệ */}
-                  [Mối quan hệ / Vai trò trong cuộc sống Hanna]
-                </p>
-                <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.8 }}>
-                  {/* Hanna viết về người tri kỷ */}
-                  [Người này đã ở cạnh Hanna như thế nào — hoặc điều họ phản chiếu lại giúp Hanna hiểu mình hơn]
+                <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.85, marginTop: "1rem" }}>
+                  Chính những cuộc trò chuyện với người này — đôi khi chỉ là một câu hỏi đặt ra đúng lúc — đã thay đổi cách Hanna nhìn về bản thân, về mối quan hệ, và về con người nói chung. AIMIND mang trong đó dấu ấn của những cuộc trò chuyện đó.
                 </p>
               </div>
             </div>
