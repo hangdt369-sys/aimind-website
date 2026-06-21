@@ -285,3 +285,27 @@ export default function KhoaHocPage() {
                 <div style={{ color: "#9B96C0", fontSize: "12px" }}>Nội dung: [Tên] - BDNT Chuyên Sâu</div>
               </div>
             </div>
+            <Link
+              href="/lien-he"
+              style={{
+                display: "inline-block",
+                background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
+                color: "white",
+                padding: "16px 40px",
+                borderRadius: "999px",
+                fontSize: "16px",
+                fontWeight: 700,
+                textDecoration: "none",
+                fontFamily: "'Be Vietnam Pro', sans-serif",
+                boxShadow: "0 8px 24px rgba(124,111,247,0.4)",
+              }}
+            >
+              Liên hệ đăng ký ngay
+            </Link>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

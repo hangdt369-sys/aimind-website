@@ -235,4 +235,12 @@ export default function BaiVietPage() {
                 boxShadow: "0 8px 24px rgba(124,111,247,0.4)",
               }}
             >
-             
+              Nhắn tin Hanna qua Zalo
+            </a>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

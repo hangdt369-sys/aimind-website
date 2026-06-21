@@ -106,7 +106,7 @@ export default function DongHanhPage() {
               những mô thức thật sự đang điều khiển cuộc đời bạn.
             </p>
             <Link
-              href="/lien-he"
+              href="https://zalo.me/0848270819"
               style={{
                 display: "inline-block",
                 background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
@@ -120,7 +120,7 @@ export default function DongHanhPage() {
                 boxShadow: "0 8px 24px rgba(124,111,247,0.4)",
               }}
             >
-              Đặt buổi khám phá miễn phí
+              Nhắn tin Hanna qua Zalo
             </Link>
           </div>
         </section>
@@ -333,4 +333,6 @@ export default function DongHanhPage() {
         </section>
       </main>
       <Footer />
- 
+    </>
+  );
+}

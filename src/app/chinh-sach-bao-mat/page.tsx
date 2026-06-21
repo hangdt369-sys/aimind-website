@@ -154,4 +154,7 @@ export default function ChinhSachBaoMatPage() {
           </div>
         </section>
       </main>
-      <F
+      <Footer />
+    </>
+  );
+}

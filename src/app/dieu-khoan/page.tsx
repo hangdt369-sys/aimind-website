@@ -157,4 +157,7 @@ export default function DieuKhoanPage() {
           </div>
         </section>
       </main>
-      <F
+      <Footer />
+    </>
+  );
+}
