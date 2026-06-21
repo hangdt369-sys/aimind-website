@@ -26,7 +26,9 @@ function ResultsContent() {
   const [showEmailCapture, setShowEmailCapture] = useState(false);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
@@ -48,26 +50,39 @@ function ResultsContent() {
 
   async function handleEmailSubmit(e: React.FormEvent) {
     e.preventDefault();
+    let hasError = false;
+
     if (!isValidEmail(email)) {
       setEmailError("Vui lòng nhập email hợp lệ");
-      return;
+      hasError = true;
+    } else {
+      setEmailError("");
     }
-    setEmailError("");
+
+    if (phone && !/^[0-9\s\+\-]{9,12}$/.test(phone.trim())) {
+      setPhoneError("Số điện thoại không hợp lệ");
+      hasError = true;
+    } else {
+      setPhoneError("");
+    }
+
+    if (hasError) return;
     setSubmitting(true);
 
     try {
-      // API call to save email
       await fetch("/api/submit-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
+          phone,
           archetypeKey: dominantKey,
+          archetypeName: archetype.name,
           source: "test-result",
         }),
       });
     } catch {
-      // Fail silently — still mark as submitted
+      // Fail silently — vẫn hiện success để UX không bị gián đoạn
     }
 
     setSubmitting(false);
@@ -559,7 +574,7 @@ function ResultsContent() {
               Nhận phân tích chuyên sâu về mô thức {archetype.name}
             </h4>
             <p style={{ color: "#6B678F", fontSize: "13px", marginBottom: "1rem", lineHeight: 1.6 }}>
-              Gửi kết quả và hướng dẫn thực hành đến email — để bạn có thể quay lại đọc khi cần.
+              Điền email + số điện thoại để nhận kết quả chi tiết và ứng dụng thực hành cá nhân.
             </p>
 
             <form onSubmit={handleEmailSubmit}>
@@ -567,7 +582,7 @@ function ResultsContent() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email của bạn"
+                placeholder="Email của bạn *"
                 style={{
                   width: "100%",
                   padding: "10px 14px",
@@ -584,6 +599,29 @@ function ResultsContent() {
               {emailError && (
                 <p style={{ color: "#E55A5A", fontSize: "12px", marginBottom: "8px" }}>
                   {emailError}
+                </p>
+              )}
+              <input
+                type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="Số điện thoại (để nhận app thực hành)"
+                style={{
+                  width: "100%",
+                  padding: "10px 14px",
+                  borderRadius: "10px",
+                  border: phoneError ? "1px solid #E55A5A" : "1px solid #E8E3F0",
+                  fontSize: "14px",
+                  color: "#1C1A3E",
+                  backgroundColor: "#F8F4EE",
+                  marginBottom: phoneError ? "4px" : "10px",
+                  outline: "none",
+                  boxSizing: "border-box" as const,
+                }}
+              />
+              {phoneError && (
+                <p style={{ color: "#E55A5A", fontSize: "12px", marginBottom: "8px" }}>
+                  {phoneError}
                 </p>
               )}
               <button
@@ -629,10 +667,10 @@ function ResultsContent() {
             }}
           >
             <p style={{ color: "#0A7B78", fontWeight: 700, marginBottom: "4px" }}>
-              ✓ Đã gửi! Kiểm tra email của bạn.
+              ✓ Đã nhận! Kiểm tra email của bạn.
             </p>
             <p style={{ color: "#1C4A48", fontSize: "13px" }}>
-              Phân tích chuyên sâu sẽ đến trong vài phút.
+              Kết quả và ứng dụng thực hành sẽ đến trong vài phút.
             </p>
           </div>
         )}
