@@ -8,6 +8,7 @@ export default function HomePage() {
       <Navbar />
       <main style={{ flex: 1 }}>
         <HeroSection />
+        <AboutAimindSection />
         <RecognitionSection />
         <TestPreviewSection />
         <JourneySection />
@@ -99,18 +100,158 @@ function HeroSection() {
           </Link>
           <p style={{ color: "#9B96C0", fontSize: "13px" }}>Miễn phí · 15 phút · Không cần đăng ký</p>
         </div>
-        <div style={{ marginTop: "4rem", display: "flex", justifyContent: "center", gap: "3rem", flexWrap: "wrap" }}>
+        <div style={{ marginTop: "3rem", display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" as const }}>
           {[
-            { number: "12,000+", label: "người đã khám phá" },
-            { number: "6", label: "mô thức nội tâm" },
-            { number: "94%", label: "cảm thấy đúng với mình" },
-          ].map((stat) => (
-            <div key={stat.label} style={{ textAlign: "center" }}>
-              <div style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.8rem", fontWeight: 800 }}>{stat.number}</div>
-              <div style={{ color: "#9B96C0", fontSize: "13px", marginTop: "4px" }}>{stat.label}</div>
+            { icon: "🧬", label: "Dựa trên khoa học thần kinh" },
+            { icon: "🗺️", label: "Identity Intelligence System" },
+            { icon: "🔬", label: "Schema & Attachment Theory" },
+          ].map((item) => (
+            <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontSize: "16px" }}>{item.icon}</span>
+              <span style={{ color: "#9B96C0", fontSize: "13px", fontWeight: 600 }}>{item.label}</span>
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+
+function AboutAimindSection() {
+  return (
+    <section style={{ padding: "5rem 0", backgroundColor: "white" }}>
+      <div className="container-main" style={{ maxWidth: "900px" }}>
+
+        {/* Header */}
+        <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
+          <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "0.75rem" }}>
+            AIMIND là gì
+          </p>
+          <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, lineHeight: 1.3, marginBottom: "1.25rem" }}>
+            Hệ thống Identity Intelligence đầu tiên tại Việt Nam
+          </h2>
+          <p style={{ color: "#6B678F", fontSize: "17px", lineHeight: 1.85, maxWidth: "680px", margin: "0 auto" }}>
+            AIMIND không phải bài test tính cách hay công cụ xếp loại con người. Đây là hệ thống giúp bạn nhìn thấy <strong style={{ color: "#1C1A3E" }}>bản đồ vận hành nội tâm</strong> của chính mình — những mô thức ẩn đang điều khiển cách bạn suy nghĩ, cảm xúc, và hành động.
+          </p>
+        </div>
+
+        {/* Identity Intelligence definition */}
+        <div style={{
+          background: "linear-gradient(135deg, #2D2A5E 0%, #1C1A3E 100%)",
+          borderRadius: "20px",
+          padding: "2.5rem 3rem",
+          marginBottom: "3rem",
+          position: "relative" as const,
+          overflow: "hidden" as const,
+        }}>
+          <div style={{ position: "absolute" as const, top: 0, right: 0, width: "300px", height: "300px", background: "radial-gradient(circle, rgba(124,111,247,0.15) 0%, transparent 70%)", pointerEvents: "none" as const }} />
+          <p style={{ color: "#B8B3FA", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, marginBottom: "1rem" }}>
+            Identity Intelligence
+          </p>
+          <p style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.15rem", lineHeight: 1.85, fontStyle: "italic" as const, maxWidth: "680px", marginBottom: "1.25rem" }}>
+            &ldquo;Khả năng nhận diện và hiểu sâu các mô thức vận hành nội tâm của bản thân — bao gồm cơ chế bảo vệ, hệ thống niềm tin, phản ứng tự động, và cách chúng hình thành từ kinh nghiệm và thần kinh học — để từ đó có thể can thiệp có chủ đích vào hành vi và trải nghiệm sống.&rdquo;
+          </p>
+          <p style={{ color: "#9B96C0", fontSize: "13px" }}>— Định nghĩa AIMIND Framework, 2024</p>
+        </div>
+
+        {/* Framework pillars */}
+        <div style={{ marginBottom: "3rem" }}>
+          <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.3rem", fontWeight: 800, marginBottom: "0.5rem", textAlign: "center" }}>
+            Framework được xây dựng như thế nào?
+          </h3>
+          <p style={{ color: "#6B678F", fontSize: "15px", textAlign: "center", marginBottom: "2.5rem", lineHeight: 1.75 }}>
+            AIMIND được tổng hợp từ 4 nền tảng nghiên cứu đã được kiểm chứng lâm sàng và khoa học
+          </p>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "1.5rem" }}>
+            {/* Attachment Theory */}
+            <div style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "1.75rem", borderLeft: "4px solid #E85A71" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
+                <span style={{ fontSize: "24px" }}>🔗</span>
+                <div>
+                  <p style={{ color: "#E85A71", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Attachment Theory</p>
+                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Lý thuyết Gắn bó</h4>
+                </div>
+              </div>
+              <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
+                Phát triển bởi John Bowlby và Mary Ainsworth, lý thuyết này cho thấy cách mối quan hệ đầu đời hình thành hệ thống niềm tin về bản thân và người khác — và cách chúng tiếp tục vận hành trong người lớn qua các kiểu gắn bó: an toàn, lo lắng, né tránh, và lưỡng lự.
+              </p>
+              <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
+                AIMIND ứng dụng: Xác định kiểu gắn bó cốt lõi và cơ chế tự bảo vệ trong quan hệ.
+              </p>
+            </div>
+
+            {/* Neuroscience */}
+            <div style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "1.75rem", borderLeft: "4px solid #6B5B95" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
+                <span style={{ fontSize: "24px" }}>🧬</span>
+                <div>
+                  <p style={{ color: "#6B5B95", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Neuroscience</p>
+                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Khoa học Thần kinh</h4>
+                </div>
+              </div>
+              <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
+                Dựa trên nghiên cứu về neuroplasticity, hệ thần kinh tự chủ (polyvagal theory của Stephen Porges), và cơ chế phản ứng stress của amygdala. Não không phải cấu trúc cố định — nó thay đổi theo trải nghiệm và hành vi lặp lại. AIMIND xây dựng lộ trình can thiệp dựa trên nguyên lý này.
+              </p>
+              <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
+                AIMIND ứng dụng: Giải thích cơ chế thần kinh đằng sau mô thức — để can thiệp đúng chỗ.
+              </p>
+            </div>
+
+            {/* Schema Therapy */}
+            <div style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "1.75rem", borderLeft: "4px solid #E8925A" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
+                <span style={{ fontSize: "24px" }}>🏗️</span>
+                <div>
+                  <p style={{ color: "#E8925A", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Schema Therapy</p>
+                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Liệu pháp Schema</h4>
+                </div>
+              </div>
+              <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
+                Phát triển bởi Jeffrey Young, schema therapy xác định 18 early maladaptive schemas — niềm tin lõi hình thành từ thời thơ ấu khi nhu cầu tâm lý cơ bản không được đáp ứng. Các schema này vô thức điều hướng cách một người chọn đối tác, phản ứng với xung đột, tự phá hoại khi thành công gần kề.
+              </p>
+              <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
+                AIMIND ứng dụng: Nhận diện schema đang hoạt động và thiết kế can thiệp có mục tiêu.
+              </p>
+            </div>
+
+            {/* Enneagram + Behavioural Science */}
+            <div style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "1.75rem", borderLeft: "4px solid #18B5B0" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
+                <span style={{ fontSize: "24px" }}>🗺️</span>
+                <div>
+                  <p style={{ color: "#18B5B0", fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "2px" }}>Enneagram + Behavioural Science</p>
+                  <h4 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1rem", fontWeight: 700, margin: 0 }}>Bản đồ Mô thức & Hành vi</h4>
+                </div>
+              </div>
+              <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
+                Enneagram không chỉ là bài test tính cách — khi hiểu đúng, đây là hệ thống mô tả chín cấu trúc nhân cách với động lực cốt lõi, nỗi sợ ẩn, và cơ chế phòng thủ đặc trưng. Kết hợp với khoa học hành vi (habit loops, cognitive behavioral patterns), AIMIND tạo ra ngôn ngữ thực hành để thay đổi mô thức.
+              </p>
+              <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
+                AIMIND ứng dụng: Bản đồ hoá mô thức và thiết kế vòng phản hồi hành vi mới.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* What makes AIMIND different */}
+        <div style={{ backgroundColor: "#F8F4EE", borderRadius: "20px", padding: "2.5rem 3rem", textAlign: "center" }}>
+          <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" as const, marginBottom: "0.75rem" }}>Điểm khác biệt</p>
+          <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.4rem", fontWeight: 800, marginBottom: "1.25rem", lineHeight: 1.4 }}>
+            Không gán nhãn. Không phân loại. Không phán xét.
+          </h3>
+          <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.85, maxWidth: "620px", margin: "0 auto 1.5rem" }}>
+            Mục tiêu của AIMIND không phải cho bạn biết bạn là &ldquo;Type 4&rdquo; hay &ldquo;INFJ&rdquo;. Mục tiêu là giúp bạn hiểu tại sao bạn làm những điều bạn làm — và có lựa chọn thật sự để làm khác đi nếu muốn.
+          </p>
+          <Link
+            href="/ve-chung-toi/phuong-phap"
+            style={{ color: "#7C6FF7", fontWeight: 700, fontSize: "14px", textDecoration: "none" }}
+          >
+            Đọc thêm về phương pháp AIMIND →
+          </Link>
+        </div>
+
       </div>
     </section>
   );
