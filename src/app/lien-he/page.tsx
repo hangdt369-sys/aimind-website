@@ -37,7 +37,7 @@ export default function LienHePage() {
               }}
             >
               {[
-                { icon: "💬", label: "Zalo", value: "0848270819", href: "https://zalo.me/0848270819" },
+                { icon: "💬", label: "Zalo", value: "0848270829", href: "https://zalo.me/0848270829" },
                 { icon: "📧", label: "Email", value: "aimind.hcm@gmail.com", href: "mailto:aimind.hcm@gmail.com" },
               ].map((item) => (
                 <a
@@ -127,7 +127,7 @@ export default function LienHePage() {
               </div>
 
               <p style={{ color: "#7C6FF7", fontSize: "12px", marginTop: "1rem", lineHeight: 1.6 }}>
-                Sau khi chuyển khoản, nhắn tin xác nhận qua Zalo 0848270819 để kích hoạt trong 24 giờ.
+                Sau khi chuyển khoản, nhắn tin xác nhận qua Zalo 0848270829 để kích hoạt trong 24 giờ.
               </p>
             </div>
           </div>
