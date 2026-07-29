@@ -106,7 +106,7 @@ export default function DongHanhPage() {
               những mô thức thật sự đang điều khiển cuộc đời bạn.
             </p>
             <Link
-              href="https://zalo.me/0848270819"
+              href="https://zalo.me/0848270829"
               style={{
                 display: "inline-block",
                 background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
@@ -313,7 +313,7 @@ export default function DongHanhPage() {
               và bạn cảm nhận xem coaching có phù hợp không.
             </p>
             <Link
-              href="https://zalo.me/0848270819"
+              href="https://zalo.me/0848270829"
               style={{
                 display: "inline-block",
                 background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
