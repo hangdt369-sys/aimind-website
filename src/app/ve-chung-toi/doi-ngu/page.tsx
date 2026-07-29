@@ -82,7 +82,7 @@ export default function DoiNguPage() {
                   fontFamily: "'Be Vietnam Pro', sans-serif",
                 }}
               >
-                Nhà nghiên cứu tâm lý hành vi · Người sáng lập AIMIND
+                Nghiên cứu tâm lý hành vi · Người sáng lập AIMIND
               </p>
               <p style={{ color: "#C4C0E0", fontSize: "16px", lineHeight: 1.85, marginBottom: "2rem" }}>
                 Hanna dành nhiều năm quan sát, nghiên cứu và đi qua hành trình khám phá chính mình — không bắt đầu từ học thuật mà từ những câu hỏi rất đời thường không ai dạy cô phải hỏi.
