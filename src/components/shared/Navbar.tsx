@@ -3,57 +3,57 @@
 import Link from "next/link";
 import { useState } from "react";
 
-// â”€â”€â”€ Cáº¥u trÃºc menu 12 má»¥c â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Cấu trúc menu 12 mục ───────────────────────────────────────────────────
 const NAV_ITEMS = [
-  { label: "Trang Chá»§", href: "/" },
+  { label: "Trang Chủ", href: "/" },
   {
-    label: "Báº£n Äá»“ Cá»§a TÃ´i",
+    label: "Bản Đồ Của Tôi",
     href: "/ban-do-cua-toi",
     children: [
       { label: "Mind Test", href: "/kham-pha/ban-do-noi-tam" },
-      { label: "Báº£n Ä‘á»“ ná»™i tÃ¢m", href: "/ban-do-cua-toi" },
-      { label: "Äiá»ƒm máº¡nh", href: "/ban-do-cua-toi#diem-manh" },
-      { label: "Máº«u hÃ nh vi láº·p láº¡i", href: "/ban-do-cua-toi#hanh-vi" },
-      { label: "Niá»m tin cá»‘t lÃµi", href: "/ban-do-cua-toi#niem-tin" },
-      { label: "Lá»™ trÃ¬nh há»c cÃ¡ nhÃ¢n", href: "/ban-do-cua-toi#lo-trinh" },
+      { label: "Bản đồ nội tâm", href: "/ban-do-cua-toi" },
+      { label: "Điểm mạnh", href: "/ban-do-cua-toi#diem-manh" },
+      { label: "Mẫu hành vi lặp lại", href: "/ban-do-cua-toi#hanh-vi" },
+      { label: "Niềm tin cốt lõi", href: "/ban-do-cua-toi#niem-tin" },
+      { label: "Lộ trình học cá nhân", href: "/ban-do-cua-toi#lo-trinh" },
     ],
   },
   {
-    label: "ThÃ¢n",
+    label: "Thân",
     href: "/than",
     children: [
-      { label: "Hiá»ƒu cÆ¡ thá»ƒ", href: "/than/hieu-co-the" },
-      { label: "Há»‡ tháº§n kinh", href: "/than/hieu-co-the/he-than-kinh" },
-      { label: "Stress & Phá»¥c há»“i", href: "/than/hieu-co-the/stress" },
-      { label: "Giáº¥c ngá»§", href: "/than/hieu-co-the/giac-ngu" },
-      { label: "Thá»±c hÃ nh", href: "/than/thuc-hanh" },
-      { label: "Cá»­a hÃ ng", href: "/than/cua-hang" },
+      { label: "Hiểu cơ thể", href: "/than/hieu-co-the" },
+      { label: "Hệ thần kinh", href: "/than/hieu-co-the/he-than-kinh" },
+      { label: "Stress & Phục hồi", href: "/than/hieu-co-the/stress" },
+      { label: "Giấc ngủ", href: "/than/hieu-co-the/giac-ngu" },
+      { label: "Thực hành", href: "/than/thuc-hanh" },
+      { label: "Cửa hàng", href: "/than/cua-hang" },
     ],
   },
   {
-    label: "TÃ¢m",
+    label: "Tâm",
     href: "/tam",
     children: [
-      { label: "Hiá»ƒu tÃ¢m lÃ½", href: "/tam/hieu-tam-ly" },
-      { label: "VÃ´ thá»©c & Schema", href: "/tam/hieu-tam-ly/schema" },
+      { label: "Hiểu tâm lý", href: "/tam/hieu-tam-ly" },
+      { label: "Vô thức & Schema", href: "/tam/hieu-tam-ly/schema" },
       { label: "Attachment", href: "/tam/hieu-tam-ly/attachment" },
-      { label: "Cáº£m xÃºc", href: "/tam/hieu-tam-ly/cam-xuc" },
-      { label: "Hiá»ƒu hÃ nh vi", href: "/tam/hieu-hanh-vi" },
-      { label: "Thá»±c hÃ nh", href: "/tam/thuc-hanh" },
+      { label: "Cảm xúc", href: "/tam/hieu-tam-ly/cam-xuc" },
+      { label: "Hiểu hành vi", href: "/tam/hieu-hanh-vi" },
+      { label: "Thực hành", href: "/tam/thuc-hanh" },
     ],
   },
   {
-    label: "TrÃ­",
+    label: "Trí",
     href: "/tri",
     children: [
-      { label: "TÆ° duy pháº£n biá»‡n", href: "/tri/tu-duy-phan-bien" },
-      { label: "ThiÃªn kiáº¿n nháº­n thá»©c", href: "/tri/thien-kien-nhan-thuc" },
-      { label: "Khoa há»c vá» con ngÆ°á»i", href: "/tri/khoa-hoc-con-nguoi" },
-      { label: "Lá»›p há»c thá»© 7", href: "/tri/lop-hoc" },
+      { label: "Tư duy phản biện", href: "/tri/tu-duy-phan-bien" },
+      { label: "Thiên kiến nhận thức", href: "/tri/thien-kien-nhan-thuc" },
+      { label: "Khoa học về con người", href: "/tri/khoa-hoc-con-nguoi" },
+      { label: "Lớp học thứ 7", href: "/tri/lop-hoc" },
     ],
   },
   {
-    label: "ThÆ° Viá»‡n",
+    label: "Thư Viện",
     href: "/thu-vien",
     children: [
       { label: "Psychology", href: "/thu-vien/psychology" },
@@ -65,33 +65,33 @@ const NAV_ITEMS = [
     ],
   },
   {
-    label: "Há»c CÃ¹ng AIMIND",
+    label: "Học Cùng AIMIND",
     href: "/hoc-cung-aimind",
     children: [
-      { label: "Lá»™ trÃ¬nh cho ngÆ°á»i má»›i", href: "/hoc-cung-aimind/lo-trinh" },
-      { label: "KhÃ³a há»c", href: "/hoc-cung-aimind/khoa-hoc" },
+      { label: "Lộ trình cho người mới", href: "/hoc-cung-aimind/lo-trinh" },
+      { label: "Khóa học", href: "/hoc-cung-aimind/khoa-hoc" },
       { label: "Workshop", href: "/hoc-cung-aimind/workshop" },
-      { label: "Lá»›p tÆ° duy thá»© 7", href: "/hoc-cung-aimind/lop-thu-7" },
+      { label: "Lớp tư duy thứ 7", href: "/hoc-cung-aimind/lop-thu-7" },
     ],
   },
-  { label: "ChuyÃªn Gia", href: "/chuyen-gia" },
-  { label: "Cá»™ng Äá»“ng", href: "/cong-dong" },
+  { label: "Chuyên Gia", href: "/chuyen-gia" },
+  { label: "Cộng Đồng", href: "/cong-dong" },
   { label: "Coaching", href: "/coaching" },
   {
-    label: "Vá» AIMIND",
+    label: "Về AIMIND",
     href: "/ve-chung-toi/su-menh",
     children: [
-      { label: "AIMIND lÃ  gÃ¬?", href: "/ve-chung-toi/su-menh" },
+      { label: "AIMIND là gì?", href: "/ve-chung-toi/su-menh" },
       { label: "Founder", href: "/ve-chung-toi/doi-ngu" },
-      { label: "Triáº¿t lÃ½ & PhÆ°Æ¡ng phÃ¡p", href: "/ve-chung-toi/phuong-phap" },
-      { label: "NguyÃªn táº¯c khoa há»c", href: "/ve-chung-toi/nguyen-tac" },
+      { label: "Triết lý & Phương pháp", href: "/ve-chung-toi/phuong-phap" },
+      { label: "Nguyên tắc khoa học", href: "/ve-chung-toi/nguyen-tac" },
     ],
   },
   { label: "AI AIMIND", href: "/ai-aimind" },
 ];
 
-// â”€â”€â”€ NhÃ³m menu desktop (rÃºt gá»n Ä‘á»ƒ khÃ´ng quÃ¡ cháº­t) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const DESKTOP_PRIMARY = ["ThÃ¢n", "TÃ¢m", "TrÃ­", "ThÆ° Viá»‡n", "Há»c CÃ¹ng AIMIND", "Vá» AIMIND"];
+// ─── Nhóm menu desktop (rút gọn để không quá chật) ─────────────────────────
+const DESKTOP_PRIMARY = ["Thân", "Tâm", "Trí", "Thư Viện", "Học Cùng AIMIND", "Về AIMIND"];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -110,7 +110,7 @@ export default function Navbar() {
       }}
     >
       <div className="container-main">
-        {/* â”€â”€ Top bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+        {/* ── Top bar ────────────────────────────────────────────────────── */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "64px" }}>
           {/* Logo */}
           <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
@@ -128,7 +128,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop nav â€” chá»‰ hiá»‡n cÃ¡c má»¥c cÃ³ dropdown chÃ­nh */}
+          {/* Desktop nav — chỉ hiện các mục có dropdown chính */}
           <div style={{ display: "flex", alignItems: "center", gap: "4px" }} className="hidden-mobile">
             {NAV_ITEMS.filter(item => DESKTOP_PRIMARY.includes(item.label)).map((item) => (
               <div
@@ -221,7 +221,7 @@ export default function Navbar() {
                 e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              LÃ m bÃ i test â†’
+              Làm bài test →
             </Link>
 
             {/* Hamburger */}
@@ -244,10 +244,10 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* â”€â”€ Mobile menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+        {/* ── Mobile menu ────────────────────────────────────────────────── */}
         {mobileOpen && (
           <div style={{ borderTop: "1px solid #E8E3F0", padding: "0.75rem 0 1rem", maxHeight: "80vh", overflowY: "auto" }}>
-            {/* CTA ná»•i báº­t á»Ÿ mobile */}
+            {/* CTA nổi bật ở mobile */}
             <Link
               href="/kham-pha/ban-do-noi-tam"
               onClick={() => setMobileOpen(false)}
@@ -258,7 +258,7 @@ export default function Navbar() {
                 marginBottom: "12px",
               }}
             >
-              LÃ m bÃ i test miá»…n phÃ­ â†’
+              Làm bài test miễn phí →
             </Link>
 
             {NAV_ITEMS.map((item) => (
@@ -293,7 +293,7 @@ export default function Navbar() {
                               fontSize: "14px", textDecoration: "none",
                             }}
                           >
-                            â†’ {child.label}
+                            → {child.label}
                           </Link>
                         ))}
                       </div>
