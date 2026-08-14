@@ -12,7 +12,8 @@ export const metadata: Metadata = {
 
 
 export default function HomePage() {
-  return (      <main style={{ flex: 1 }}>
+  return (
+    <main style={{ flex: 1 }}>
         <HeroSection />
         <AboutAimindSection />
         <RecognitionSection />
@@ -22,7 +23,6 @@ export default function HomePage() {
         <TestimonialsSection />
         <CtaSection />
       </main>
-    </>
   );
 }
 
