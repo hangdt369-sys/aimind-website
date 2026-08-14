@@ -10,14 +10,9 @@ export const metadata: Metadata = {
   },
 };
 
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 
 export default function HomePage() {
-  return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+  return (      <main style={{ flex: 1 }}>
         <HeroSection />
         <AboutAimindSection />
         <RecognitionSection />
@@ -27,7 +22,6 @@ export default function HomePage() {
         <TestimonialsSection />
         <CtaSection />
       </main>
-      <Footer />
     </>
   );
 }
