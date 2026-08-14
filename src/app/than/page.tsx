@@ -2,27 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "THÃ‚N â€” Hiá»ƒu cÆ¡ thá»ƒ Ä‘á»ƒ hiá»ƒu chÃ­nh mÃ¬nh | AIMIND",
+  title: "THÂN — Hiểu cơ thể để hiểu chính mình | AIMIND",
   description:
-    "KhÃ¡m phÃ¡ há»‡ tháº§n kinh, stress, giáº¥c ngá»§, váº­n Ä‘á»™ng vÃ  cÃ¡c thá»±c hÃ nh chÄƒm sÃ³c cÆ¡ thá»ƒ khoa há»c. Hiá»ƒu THÃ‚N lÃ  bÆ°á»›c Ä‘áº§u tiÃªn Ä‘á»ƒ hiá»ƒu mÃ¬nh.",
-  keywords: ["há»‡ tháº§n kinh", "stress", "giáº¥c ngá»§", "váº­n Ä‘á»™ng", "chÄƒm sÃ³c cÆ¡ thá»ƒ", "mobility", "AIMIND"],
+    "Khám phá hệ thần kinh, stress, giấc ngủ, vận động và các thực hành chăm sóc cơ thể khoa học. Hiểu THÂN là bước đầu tiên để hiểu mình.",
+  keywords: ["hệ thần kinh", "stress", "giấc ngủ", "vận động", "chăm sóc cơ thể", "mobility", "AIMIND"],
 };
 
 const HIEU_CO_THE = [
-  { icon: "ðŸ§ ", title: "Há»‡ tháº§n kinh", desc: "Hiá»ƒu cÃ¡ch nÃ£o vÃ  dÃ¢y tháº§n kinh kiá»ƒm soÃ¡t má»i pháº£n á»©ng cá»§a báº¡n.", href: "/than/hieu-co-the/he-than-kinh" },
-  { icon: "âš¡", title: "Stress", desc: "CÆ¡ cháº¿ stress trong cÆ¡ thá»ƒ â€” táº¡i sao vÃ  lÃ m sao thoÃ¡t khá»i vÃ²ng láº·p.", href: "/than/hieu-co-the/stress" },
-  { icon: "ðŸŒ™", title: "Giáº¥c ngá»§", desc: "Khoa há»c vá» giáº¥c ngá»§ vÃ  táº¡i sao Ä‘Ã¢y lÃ  ná»n táº£ng cá»§a má»i thá»©.", href: "/than/hieu-co-the/giac-ngu" },
-  { icon: "ðŸƒ", title: "Váº­n Ä‘á»™ng", desc: "CÆ¡ thá»ƒ Ä‘Æ°á»£c thiáº¿t káº¿ Ä‘á»ƒ chuyá»ƒn Ä‘á»™ng â€” váº­n Ä‘á»™ng thay Ä‘á»•i nÃ£o bá»™.", href: "/than/hieu-co-the/van-dong" },
-  { icon: "ðŸ’ª", title: "CÄƒng cÆ¡", desc: "Hiá»ƒu táº¡i sao cÆ¡ báº¯p cÄƒng cá»©ng vÃ  cÃ¡ch giáº£i phÃ³ng.", href: "/than/hieu-co-the/cang-co" },
-  { icon: "ðŸŒ¬ï¸", title: "HÃ´ háº¥p", desc: "HÆ¡i thá»Ÿ lÃ  cÃ´ng cá»¥ Ä‘iá»u tiáº¿t tháº§n kinh máº¡nh nháº¥t báº¡n cÃ³.", href: "/than/hieu-co-the/ho-hap" },
+  { icon: "🧠", title: "Hệ thần kinh", desc: "Hiểu cách não và dây thần kinh kiểm soát mọi phản ứng của bạn.", href: "/than/hieu-co-the/he-than-kinh" },
+  { icon: "⚡", title: "Stress", desc: "Cơ chế stress trong cơ thể — tại sao và làm sao thoát khỏi vòng lặp.", href: "/than/hieu-co-the/stress" },
+  { icon: "🌙", title: "Giấc ngủ", desc: "Khoa học về giấc ngủ và tại sao đây là nền tảng của mọi thứ.", href: "/than/hieu-co-the/giac-ngu" },
+  { icon: "🏃", title: "Vận động", desc: "Cơ thể được thiết kế để chuyển động — vận động thay đổi não bộ.", href: "/than/hieu-co-the/van-dong" },
+  { icon: "💪", title: "Căng cơ", desc: "Hiểu tại sao cơ bắp căng cứng và cách giải phóng.", href: "/than/hieu-co-the/cang-co" },
+  { icon: "🌬️", title: "Hô hấp", desc: "Hơi thở là công cụ điều tiết thần kinh mạnh nhất bạn có.", href: "/than/hieu-co-the/ho-hap" },
 ];
 
 const THUC_HANH = [
-  { icon: "ðŸ¤¸", title: "Mobility", desc: "Cáº£i thiá»‡n táº§m váº­n Ä‘á»™ng khá»›p vÃ  cá»™t sá»‘ng", href: "/than/thuc-hanh#mobility" },
-  { icon: "ðŸ§˜", title: "Stretching", desc: "KÃ©o giÃ£n cÆ¡ Ä‘Ãºng cÃ¡ch â€” khÃ´ng chá»‰ Ä‘á»ƒ linh hoáº¡t hÆ¡n", href: "/than/thuc-hanh#stretching" },
-  { icon: "ðŸ’†", title: "Tá»± massage", desc: "Ká»¹ thuáº­t tá»± massage giáº£i phÃ³ng cÄƒng tháº³ng", href: "/than/thuc-hanh#massage" },
-  { icon: "ðŸ˜®â€ðŸ’¨", title: "ThÆ° giÃ£n", desc: "CÃ¡c bÃ i táº­p hÃ´ háº¥p vÃ  thÆ° giÃ£n tháº§n kinh", href: "/than/thuc-hanh#thu-gian" },
-  { icon: "ðŸ ", title: "Táº­p táº¡i nhÃ ", desc: "BÃ i táº­p khÃ´ng cáº§n dá»¥ng cá»¥, lÃ m Ä‘Æ°á»£c ngay", href: "/than/thuc-hanh#tai-nha" },
+  { icon: "🤸", title: "Mobility", desc: "Cải thiện tầm vận động khớp và cột sống", href: "/than/thuc-hanh#mobility" },
+  { icon: "🧘", title: "Stretching", desc: "Kéo giãn cơ đúng cách — không chỉ để linh hoạt hơn", href: "/than/thuc-hanh#stretching" },
+  { icon: "💆", title: "Tự massage", desc: "Kỹ thuật tự massage giải phóng căng thẳng", href: "/than/thuc-hanh#massage" },
+  { icon: "😮‍💨", title: "Thư giãn", desc: "Các bài tập hô hấp và thư giãn thần kinh", href: "/than/thuc-hanh#thu-gian" },
+  { icon: "🏠", title: "Tập tại nhà", desc: "Bài tập không cần dụng cụ, làm được ngay", href: "/than/thuc-hanh#tai-nha" },
 ];
 
 export default function ThanPage() {
@@ -54,7 +54,7 @@ export default function ThanPage() {
             }}
           >
             <span style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>
-              Trá»¥ cá»™t 01 â€” THÃ‚N
+              Trụ cột 01 — THÂN
             </span>
           </div>
           <h1
@@ -64,7 +64,7 @@ export default function ThanPage() {
               letterSpacing: "-0.03em", maxWidth: "760px", margin: "0 auto 1.5rem",
             }}
           >
-            CÆ¡ thá»ƒ báº¡n Ä‘ang nÃ³i gÃ¬<br />mÃ  báº¡n chÆ°a nghe?
+            Cơ thể bạn đang nói gì<br />mà bạn chưa nghe?
           </h1>
           <p
             style={{
@@ -72,7 +72,7 @@ export default function ThanPage() {
               lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem",
             }}
           >
-            CÄƒng tháº³ng, máº¥t ngá»§, Ä‘au vai gÃ¡y â€” khÃ´ng pháº£i ngáº«u nhiÃªn. CÆ¡ thá»ƒ Ä‘ang pháº£n Ã¡nh chÃ­nh xÃ¡c tráº¡ng thÃ¡i ná»™i tÃ¢m cá»§a báº¡n.
+            Căng thẳng, mất ngủ, đau vai gáy — không phải ngẫu nhiên. Cơ thể đang phản ánh chính xác trạng thái nội tâm của bạn.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
             <Link
@@ -85,7 +85,7 @@ export default function ThanPage() {
                 boxShadow: "0 8px 24px rgba(24,181,176,0.3)",
               }}
             >
-              KhÃ¡m phÃ¡ THÃ‚N â†’
+              Khám phá THÂN →
             </Link>
             <Link
               href="/than/thuc-hanh"
@@ -95,43 +95,43 @@ export default function ThanPage() {
                 border: "1px solid rgba(255,255,255,0.25)",
               }}
             >
-              Báº¯t Ä‘áº§u thá»±c hÃ nh
+              Bắt đầu thực hành
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Ba lá»™ trÃ¬nh */}
+      {/* Ba lộ trình */}
       <section style={{ padding: "5rem 0", backgroundColor: "white" }}>
         <div className="container-main" style={{ maxWidth: "900px" }}>
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
             <p style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-              Ba con Ä‘Æ°á»ng
+              Ba con đường
             </p>
             <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, lineHeight: 1.3 }}>
-              THÃ‚N trong há»‡ thá»‘ng AIMIND
+              THÂN trong hệ thống AIMIND
             </h2>
             <p style={{ color: "#6B678F", fontSize: "16px", lineHeight: 1.8, maxWidth: "600px", margin: "1rem auto 0" }}>
-              KhÃ´ng pháº£i chá»‰ táº­p gym hay Äƒn sáº¡ch. THÃ‚N trong AIMIND lÃ  hiá»ƒu cÆ¡ thá»ƒ tá»« gÃ³c Ä‘á»™ tháº§n kinh há»c vÃ  tÃ¢m lÃ½ â€” Ä‘á»ƒ thay Ä‘á»•i tá»« gá»‘c rá»….
+              Không phải chỉ tập gym hay ăn sạch. THÂN trong AIMIND là hiểu cơ thể từ góc độ thần kinh học và tâm lý — để thay đổi từ gốc rễ.
             </p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
             {[
               {
-                num: "01", color: "#18B5B0", title: "Hiá»ƒu cÆ¡ thá»ƒ",
-                desc: "Há»‡ tháº§n kinh, stress, giáº¥c ngá»§, váº­n Ä‘á»™ng, hÃ´ háº¥p â€” khoa há»c giáº£i thÃ­ch táº¡i sao cÆ¡ thá»ƒ báº¡n pháº£n á»©ng nhÆ° váº­y.",
-                href: "/than/hieu-co-the", cta: "KhÃ¡m phÃ¡ â†’",
+                num: "01", color: "#18B5B0", title: "Hiểu cơ thể",
+                desc: "Hệ thần kinh, stress, giấc ngủ, vận động, hô hấp — khoa học giải thích tại sao cơ thể bạn phản ứng như vậy.",
+                href: "/than/hieu-co-the", cta: "Khám phá →",
               },
               {
-                num: "02", color: "#7C6FF7", title: "Thá»±c hÃ nh",
-                desc: "Mobility, stretching, tá»± massage, bÃ i táº­p thÆ° giÃ£n â€” nhá»¯ng ká»¹ thuáº­t cÃ³ báº±ng chá»©ng khoa há»c, lÃ m Ä‘Æ°á»£c ngay táº¡i nhÃ .",
-                href: "/than/thuc-hanh", cta: "Báº¯t Ä‘áº§u â†’",
+                num: "02", color: "#7C6FF7", title: "Thực hành",
+                desc: "Mobility, stretching, tự massage, bài tập thư giãn — những kỹ thuật có bằng chứng khoa học, làm được ngay tại nhà.",
+                href: "/than/thuc-hanh", cta: "Bắt đầu →",
               },
               {
-                num: "03", color: "#E85A71", title: "Cá»­a hÃ ng",
-                desc: "Dá»¥ng cá»¥ massage, dry brush, thiáº¿t bá»‹ há»— trá»£ phá»¥c há»“i â€” Ä‘Æ°á»£c chá»n lá»c ká»¹ Ä‘á»ƒ há»— trá»£ thá»±c hÃ nh.",
-                href: "/than/cua-hang", cta: "Xem sáº£n pháº©m â†’",
+                num: "03", color: "#E85A71", title: "Cửa hàng",
+                desc: "Dụng cụ massage, dry brush, thiết bị hỗ trợ phục hồi — được chọn lọc kỹ để hỗ trợ thực hành.",
+                href: "/than/cua-hang", cta: "Xem sản phẩm →",
               },
             ].map((item) => (
               <div
@@ -158,15 +158,15 @@ export default function ThanPage() {
         </div>
       </section>
 
-      {/* Hiá»ƒu cÆ¡ thá»ƒ grid */}
+      {/* Hiểu cơ thể grid */}
       <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
         <div className="container-main">
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
             <p style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-              Hiá»ƒu cÆ¡ thá»ƒ
+              Hiểu cơ thể
             </p>
             <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.5rem, 3.5vw, 2.2rem)", fontWeight: 800, lineHeight: 1.3 }}>
-              6 chá»§ Ä‘á» khoa há»c vá» THÃ‚N
+              6 chủ đề khoa học về THÂN
             </h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1.25rem" }}>
@@ -202,15 +202,15 @@ export default function ThanPage() {
         </div>
       </section>
 
-      {/* Thá»±c hÃ nh */}
+      {/* Thực hành */}
       <section style={{ padding: "5rem 0", backgroundColor: "white" }}>
         <div className="container-main">
           <div style={{ textAlign: "center", marginBottom: "3rem" }}>
             <p style={{ color: "#7C6FF7", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-              Thá»±c hÃ nh
+              Thực hành
             </p>
             <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.5rem, 3.5vw, 2.2rem)", fontWeight: 800 }}>
-              LÃ m Ä‘Æ°á»£c ngay hÃ´m nay
+              Làm được ngay hôm nay
             </h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1.25rem" }}>
@@ -255,10 +255,10 @@ export default function ThanPage() {
       >
         <div className="container-main">
           <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.3 }}>
-            CÆ¡ thá»ƒ vÃ  tÃ¢m trÃ­ lÃ  má»™t há»‡ thá»‘ng
+            Cơ thể và tâm trí là một hệ thống
           </h2>
           <p style={{ color: "#C4C0E0", marginBottom: "2.5rem", fontSize: "16px", lineHeight: 1.75, maxWidth: "520px", margin: "0 auto 2.5rem" }}>
-            Khi hiá»ƒu THÃ‚N, báº¡n sáº½ tháº¥y rÃµ hÆ¡n vÃ¬ sao TÃ‚M báº¡n pháº£n á»©ng nhÆ° váº­y â€” vÃ  TRÃ giÃºp báº¡n hiá»ƒu cáº£ há»‡ thá»‘ng.
+            Khi hiểu THÂN, bạn sẽ thấy rõ hơn vì sao TÂM bạn phản ứng như vậy — và TRÍ giúp bạn hiểu cả hệ thống.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
             <Link
@@ -269,7 +269,7 @@ export default function ThanPage() {
                 fontSize: "15px", fontWeight: 700, textDecoration: "none",
               }}
             >
-              KhÃ¡m phÃ¡ TÃ‚M â†’
+              Khám phá TÂM →
             </Link>
             <Link
               href="/kham-pha/ban-do-noi-tam"
@@ -279,7 +279,7 @@ export default function ThanPage() {
                 border: "1px solid rgba(255,255,255,0.3)",
               }}
             >
-              LÃ m Mind Test
+              Làm Mind Test
             </Link>
           </div>
         </div>
