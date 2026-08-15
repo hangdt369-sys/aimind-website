@@ -1,50 +1,27 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
+import { archetypes } from "@/data/archetypes";
+import type { ArchetypeKey } from "@/types";
 
 // ─── API: Gửi email qua Gmail SMTP ───────────────────────────────────────────
 // Env cần có trong Vercel:
 //   GMAIL_USER  = aimind.hcm@gmail.com
 //   GMAIL_PASS  = app password 16 ký tự từ Google
 
-const ARCHETYPE_LABELS: Record<string, { name: string; desc: string; gift: string; challenge: string }> = {
-  "lo-au": {
-    name: "Lo Âu",
-    desc: "Bạn luôn sẵn sàng cho điều tệ nhất — não bạn đang hoạt động ở chế độ bảo vệ liên tục.",
-    gift: "Cẩn thận, chu đáo, nhạy bén với rủi ro. Bạn thường là người phát hiện vấn đề trước khi nó xảy ra.",
-    challenge: "Khó tận hưởng hiện tại vì luôn lo về tương lai. Cần học cách phân biệt mối lo có thực và mối lo do não tự tạo ra.",
-  },
-  "ne-tranh": {
-    name: "Né Tránh",
-    desc: "Bạn ưu tiên hòa khí và tránh đối đầu — thường hi sinh nhu cầu mình để giữ không khí bình yên.",
-    gift: "Khả năng thấu cảm, không phán xét, tạo không gian an toàn cho người khác.",
-    challenge: "Nhu cầu và cảm xúc thật của bạn bị chôn vùi theo thời gian. Xung đột né tránh không biến mất — nó tích lũy.",
-  },
-  "kiem-soat": {
-    name: "Kiểm Soát",
-    desc: "Bạn cần mọi thứ trong tầm kiểm soát — không chắc chắn tạo ra lo lắng sâu.",
-    gift: "Có tổ chức, đáng tin cậy, khả năng lập kế hoạch và thực thi xuất sắc.",
-    challenge: "Kiểm soát thái quá có thể gây stress cho bạn và người xung quanh. Gốc rễ thường là nỗi sợ mất an toàn.",
-  },
-  "hy-sinh": {
-    name: "Hy Sinh",
-    desc: "Bạn đặt người khác lên trước — cảm giác có lỗi khi nghĩ đến nhu cầu của chính mình.",
-    gift: "Hào phóng, quan tâm sâu sắc, tạo ra giá trị thật cho người xung quanh.",
-    challenge: "Cho đi liên tục mà không nhận lại dẫn đến kiệt sức và oán trách ngầm.",
-  },
-  "tu-huy": {
-    name: "Tự Hủy",
-    desc: "Bạn có xu hướng tự phá hoại những điều tốt đẹp khi chúng gần đến tay.",
-    gift: "Tự nhận thức cao, trung thực với bản thân, nhạy cảm với sự giả dối.",
-    challenge: "Vô thức tin rằng mình không xứng đáng — cần nhận diện cơ chế này trước khi nó vận hành.",
-  },
-  "can-bang": {
-    name: "Cân Bằng",
-    desc: "Bạn đang trong quá trình tích hợp — đã nhận ra mô thức của mình và đang tìm cách thay đổi.",
-    gift: "Khả năng tự quan sát và điều chỉnh. Đây là điểm khởi đầu của chuyển hóa thật.",
-    challenge: "Duy trì hành trình khi không có áp lực bên ngoài. Thay đổi cần nhất quán hơn cần cường độ.",
-  },
-};
+// Adapter: map ArchetypeProfile → email label fields
+function getArchetypeLabel(key: string) {
+  const a = archetypes[key as ArchetypeKey];
+  if (!a) return null;
+  return {
+    name: a.name,
+    desc: a.description,
+    gift: a.strengths[0] ?? a.growthEdge,
+    challenge: a.growthEdge,
+  };
+}
+
+
 
 function createHannaEmail(
   email: string,
@@ -53,7 +30,7 @@ function createHannaEmail(
   archetypeName: string,
   timestamp: string
 ): string {
-  const a = ARCHETYPE_LABELS[archetypeKey];
+  const a = getArchetypeLabel(archetypeKey);
   const name = a?.name || archetypeName || archetypeKey;
   return `
 <div style="font-family:sans-serif;max-width:560px;margin:0 auto;padding:24px">
@@ -81,7 +58,7 @@ function createCustomerEmail(
   archetypeKey: string,
   archetypeName: string
 ): string {
-  const a = ARCHETYPE_LABELS[archetypeKey];
+  const a = getArchetypeLabel(archetypeKey);
   const name = a?.name || archetypeName || archetypeKey;
   return `
 <div style="font-family:sans-serif;max-width:560px;margin:0 auto;padding:24px">
@@ -174,7 +151,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: `"AIMIND Website" <${gmailUser}>`,
       to: gmailUser,
-      subject: `[AIMIND] Khách mới: ${ARCHETYPE_LABELS[archetypeKey]?.name || archetypeName} — ${email}`,
+      subject: `[AIMIND] Khách mới: ${getArchetypeLabel(archetypeKey)?.name || archetypeName} — ${email}`,
       html: createHannaEmail(email, phone ?? "", archetypeKey, archetypeName, timestamp),
     });
 
@@ -183,7 +160,7 @@ export async function POST(request: NextRequest) {
       from: `"Hanna Dang — AIMIND" <${gmailUser}>`,
       to: email,
       replyTo: gmailUser,
-      subject: `Kết quả Bản Đồ Nội Tâm: ${ARCHETYPE_LABELS[archetypeKey]?.name || archetypeName}`,
+      subject: `Kết quả Bản Đồ Nội Tâm: ${getArchetypeLabel(archetypeKey)?.name || archetypeName}`,
       html: createCustomerEmail(archetypeKey, archetypeName),
     });
 
