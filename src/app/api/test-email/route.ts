@@ -1,7 +1,20 @@
 import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function GET() {
+// ─── PROTECTED: Debug endpoint — chỉ dùng nội bộ ────────────────────────────
+// Yêu cầu header: x-admin-secret = ADMIN_SECRET env var
+// Nếu không có header đúng → trả về 404 (không lộ endpoint tồn tại)
+
+export async function GET(request: NextRequest) {
+  // Guard: kiểm tra secret header trước
+  const adminSecret = process.env.ADMIN_SECRET;
+  const providedSecret = request.headers.get("x-admin-secret");
+
+  if (!adminSecret || providedSecret !== adminSecret) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  }
+
   const gmailUser = process.env.GMAIL_USER;
   const gmailPass = process.env.GMAIL_PASS;
 
