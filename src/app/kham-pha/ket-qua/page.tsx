@@ -85,7 +85,7 @@ function ResultsContent() {
 
     try {
       // Gửi qua API route Next.js → Gmail SMTP
-      await fetch("/api/submit-email", {
+      const response = await fetch("/api/submit-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -95,12 +95,17 @@ function ResultsContent() {
           archetypeName: archetype.name,
         }),
       });
-    } catch {
-      // Fail silently — vẫn hiện success để UX không bị gián đoạn
-    }
 
-    setSubmitting(false);
-    setEmailSubmitted(true);
+      if (!response.ok) {
+        throw new Error("Email request failed");
+      }
+
+      setEmailSubmitted(true);
+    } catch {
+      setEmailError("Chưa thể gửi email. Vui lòng thử lại sau.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (

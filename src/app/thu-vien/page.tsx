@@ -42,9 +42,8 @@ export default function ThuVienPage() {
             {CATEGORIES.map((cat) => (
               <Link key={cat.slug} href={`/thu-vien/${cat.slug}`} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-lift-card-high"
                   style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "2rem", transition: "transform 0.2s, box-shadow 0.2s, border-color 0.2s", borderTop: `3px solid ${cat.color}` }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(28,26,62,0.1)"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
                 >
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1rem" }}>
                     <span style={{ fontSize: "2.2rem" }}>{cat.icon}</span>

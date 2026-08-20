@@ -177,17 +177,10 @@ export default function ThanPage() {
                 style={{ textDecoration: "none" }}
               >
                 <div
+                  className="hover-lift-card"
                   style={{
                     backgroundColor: "white", borderRadius: "14px", padding: "1.75rem",
                     border: "1px solid #E8E3F0", transition: "transform 0.2s, box-shadow 0.2s", cursor: "pointer",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
-                    (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(28,26,62,0.08)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
                   }}
                 >
                   <span style={{ fontSize: "2rem", display: "block", marginBottom: "1rem" }}>{item.icon}</span>
@@ -217,18 +210,11 @@ export default function ThanPage() {
             {THUC_HANH.map((item) => (
               <Link key={item.title} href={item.href} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-purple-panel"
                   style={{
                     border: "1px solid #E8E3F0", borderRadius: "14px", padding: "1.5rem",
                     display: "flex", gap: "1rem", alignItems: "flex-start",
                     transition: "border-color 0.2s, background 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#7C6FF7";
-                    (e.currentTarget as HTMLElement).style.background = "rgba(124,111,247,0.03)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#E8E3F0";
-                    (e.currentTarget as HTMLElement).style.background = "transparent";
                   }}
                 >
                   <span style={{ fontSize: "1.8rem", flexShrink: 0 }}>{item.icon}</span>
