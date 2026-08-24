@@ -5,8 +5,6 @@ export const metadata: Metadata = {
   description: "AIMIND được xây dựng để giúp người Việt nhìn thấy những khuôn mẫu hành vi đang định hình cuộc đời họ — và lần đầu tiên có lựa chọn thật sự.",
 };
 
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 
 const values = [
@@ -42,9 +40,7 @@ const milestones = [
 
 export default function SuMenhPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+    <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -325,8 +321,6 @@ export default function SuMenhPage() {
             </Link>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }

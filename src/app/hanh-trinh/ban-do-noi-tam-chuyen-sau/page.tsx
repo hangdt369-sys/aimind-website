@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 };
 
 import Link from "next/link";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 
 // ─── Khóa học: Bản Đồ Nội Tâm Chuyên Sâu ────────────────────────────────────
 
@@ -50,9 +48,7 @@ export default function KhoaHocPage() {
   ];
 
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+    <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -348,8 +344,6 @@ export default function KhoaHocPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }

@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -21,9 +19,7 @@ const expertise = [
 
 export default function DoiNguPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+    <main style={{ flex: 1 }}>
 
         {/* ── Hero ─────────────────────────────────────────────── */}
         <section
@@ -562,8 +558,6 @@ export default function DoiNguPage() {
           </div>
         </section>
 
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
