@@ -1,5 +1,3 @@
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 
 const sections = [
   {
@@ -59,9 +57,7 @@ AIMIND không chịu trách nhiệm cho:
 
 export default function DieuKhoanPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
+    <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
         {/* Header */}
         <section
           style={{
@@ -156,8 +152,6 @@ export default function DieuKhoanPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
