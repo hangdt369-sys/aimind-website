@@ -1,5 +1,3 @@
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 
 const pillars = [
@@ -62,9 +60,7 @@ const steps = [
 
 export default function PhuongPhapPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+    <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -364,8 +360,6 @@ export default function PhuongPhapPage() {
             </Link>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
