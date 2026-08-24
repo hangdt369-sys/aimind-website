@@ -1,5 +1,3 @@
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 
 const sections = [
   {
@@ -56,9 +54,7 @@ Tuy nhiên, không có hệ thống nào hoàn toàn an toàn. Nếu phát hiệ
 
 export default function ChinhSachBaoMatPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
+    <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
         {/* Header */}
         <section
           style={{
@@ -153,8 +149,6 @@ export default function ChinhSachBaoMatPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
