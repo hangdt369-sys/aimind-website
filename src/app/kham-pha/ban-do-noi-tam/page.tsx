@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Navbar from "@/components/shared/Navbar";
 import { testQuestions, TOTAL_QUESTIONS } from "@/data/test-config";
 import type { ArchetypeKey } from "@/types";
 import { storeTestResult, getDominantArchetype, getSecondaryArchetype } from "@/lib/utils";
@@ -95,7 +94,6 @@ export default function TestPage() {
   if (step === "intro") {
     return (
       <>
-        <Navbar />
         <IntroScreen onStart={() => setStep("testing")} />
       </>
     );
@@ -104,7 +102,6 @@ export default function TestPage() {
   if (step === "submitting") {
     return (
       <>
-        <Navbar />
         <LoadingScreen />
       </>
     );
@@ -112,7 +109,6 @@ export default function TestPage() {
 
   return (
     <>
-      <Navbar />
       <div
         style={{
           minHeight: "calc(100vh - 64px)",
