@@ -1,6 +1,4 @@
 import { notFound } from "next/navigation";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 import { getArticleBySlug, getAllArticleSlugs, getRelatedArticles } from "@/lib/articles";
 
@@ -14,9 +12,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   const related = getRelatedArticles(params.slug, article.tag, 3);
 
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1, backgroundColor: "#F8F4EE" }}>
+    <main style={{ flex: 1, backgroundColor: "#F8F4EE" }}>
         {/* Hero */}
         <section
           style={{
@@ -377,8 +373,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
