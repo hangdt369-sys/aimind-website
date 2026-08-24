@@ -355,7 +355,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
             marginBottom: "2rem",
           }}
         >
-          20 câu hỏi giúp bạn nhìn ra khuôn mẫu hành vi (mô thức) đang chi phối cuộc sống của bạn — trong tình yêu, công việc, và những quyết định hàng ngày mà bạn chưa hiểu tại sao mình cứ chọn như vậy.
+          20 câu hỏi giúp bạn quan sát những xu hướng phản ứng có thể đang lặp lại — trong tình yêu, công việc và những quyết định hằng ngày.
         </p>
 
         {/* How to */}
@@ -380,7 +380,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
               letterSpacing: "0.08em",
             }}
           >
-            Để kết quả chính xác nhất:
+            Để câu trả lời phản ánh bạn rõ hơn:
           </h3>
           {[
             "Trả lời theo cảm giác đầu tiên — đừng suy nghĩ quá nhiều",
@@ -475,7 +475,7 @@ function LoadingScreen() {
         Đang phân tích bản đồ của bạn...
       </h2>
       <p style={{ color: "#9B96C0", fontSize: "15px" }}>
-        Chúng tôi đang tổng hợp 20 câu trả lời và xây dựng hồ sơ mô thức cho bạn.
+        Chúng tôi đang tổng hợp 20 câu trả lời để nhận diện những xu hướng đang nổi bật ở thời điểm hiện tại.
       </p>
 
       <style>{`
