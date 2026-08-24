@@ -1,5 +1,3 @@
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 
 const forWho = [
@@ -58,9 +56,7 @@ const faqs = [
 
 export default function DongHanhPage() {
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+    <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -331,8 +327,6 @@ export default function DongHanhPage() {
             </Link>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
