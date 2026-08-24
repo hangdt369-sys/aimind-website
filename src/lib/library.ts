@@ -98,7 +98,7 @@ export const LIBRARY_CATEGORIES: LibraryCategory[] = [
     color: "#9C27B0",
     description: "AI đang thay đổi con người như thế nào — và con người nên thích nghi ra sao.",
     tags: [],
-    keywords: ["trí tuệ nhân tạo", "AI", "công nghệ"],
+    keywords: ["trí tuệ nhân tạo", "công nghệ"],
   },
 ];
 
