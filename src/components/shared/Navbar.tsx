@@ -3,21 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 
-// ─── Cấu trúc menu 12 mục ───────────────────────────────────────────────────
+// ─── Các mục điều hướng đang có nội dung ───────────────────────────────────
 const NAV_ITEMS = [
   { label: "Trang Chủ", href: "/" },
-  {
-    label: "Bản Đồ Của Tôi",
-    href: "/ban-do-cua-toi",
-    children: [
-      { label: "Mind Test", href: "/kham-pha/ban-do-noi-tam" },
-      { label: "Bản đồ nội tâm", href: "/ban-do-cua-toi" },
-      { label: "Điểm mạnh", href: "/ban-do-cua-toi#diem-manh" },
-      { label: "Mẫu hành vi lặp lại", href: "/ban-do-cua-toi#hanh-vi" },
-      { label: "Niềm tin cốt lõi", href: "/ban-do-cua-toi#niem-tin" },
-      { label: "Lộ trình học cá nhân", href: "/ban-do-cua-toi#lo-trinh" },
-    ],
-  },
   {
     label: "Thân",
     href: "/than",
@@ -64,18 +52,8 @@ const NAV_ITEMS = [
       { label: "AI & Human", href: "/thu-vien/ai-and-human" },
     ],
   },
-  {
-    label: "Học Cùng AIMIND",
-    href: "/hoc-cung-aimind",
-    children: [
-      { label: "Lộ trình cho người mới", href: "/hoc-cung-aimind/lo-trinh" },
-      { label: "Khóa học", href: "/hoc-cung-aimind/khoa-hoc" },
-      { label: "Workshop", href: "/hoc-cung-aimind/workshop" },
-      { label: "Lớp tư duy thứ 7", href: "/hoc-cung-aimind/lop-thu-7" },
-    ],
-  },
+  { label: "Học Cùng AIMIND", href: "/hoc-cung-aimind" },
   { label: "Chuyên Gia", href: "/chuyen-gia" },
-  { label: "Cộng Đồng", href: "/cong-dong" },
   { label: "Coaching", href: "/coaching" },
   {
     label: "Về AIMIND",
@@ -84,10 +62,8 @@ const NAV_ITEMS = [
       { label: "AIMIND là gì?", href: "/ve-chung-toi/su-menh" },
       { label: "Founder", href: "/ve-chung-toi/doi-ngu" },
       { label: "Triết lý & Phương pháp", href: "/ve-chung-toi/phuong-phap" },
-      { label: "Nguyên tắc khoa học", href: "/ve-chung-toi/nguyen-tac" },
     ],
   },
-  { label: "AI AIMIND", href: "/ai-aimind" },
 ];
 
 // ─── Nhóm menu desktop (rút gọn để không quá chật) ─────────────────────────
