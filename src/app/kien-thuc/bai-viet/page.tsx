@@ -1,7 +1,5 @@
 "use client";
 import { useState } from "react";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 import { articles as rawArticles } from "@/lib/articles";
 
@@ -22,9 +20,7 @@ export default function BaiVietPage() {
   const filtered = activeTag === "Tất cả" ? articles : articles.filter((a): a is NonNullable<typeof a> => !!a && a.tag === activeTag);
 
   return (
-    <>
-      <Navbar />
-      <main style={{ flex: 1 }}>
+    <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -164,7 +160,7 @@ export default function BaiVietPage() {
                       Đọc tiếp →
                     </div>
                   </Link>
-                ))})
+                ))}
               </div>
             )}
           </div>
@@ -215,8 +211,6 @@ export default function BaiVietPage() {
             </a>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </main>
   );
 }
