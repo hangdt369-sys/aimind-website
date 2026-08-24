@@ -72,7 +72,7 @@ export default function ThanPage() {
               lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem",
             }}
           >
-            Căng thẳng, mất ngủ, đau vai gáy — không phải ngẫu nhiên. Cơ thể đang phản ánh chính xác trạng thái nội tâm của bạn.
+            Căng thẳng, mất ngủ hay đau vai gáy có thể liên quan đến nhiều yếu tố. Việc quan sát cơ thể là một điểm khởi đầu để hiểu trạng thái và nhu cầu phục hồi của bạn.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
             <Link
@@ -112,7 +112,7 @@ export default function ThanPage() {
               THÂN trong hệ thống AIMIND
             </h2>
             <p style={{ color: "#6B678F", fontSize: "16px", lineHeight: 1.8, maxWidth: "600px", margin: "1rem auto 0" }}>
-              Không phải chỉ tập gym hay ăn sạch. THÂN trong AIMIND là hiểu cơ thể từ góc độ thần kinh học và tâm lý — để thay đổi từ gốc rễ.
+              Không phải chỉ tập gym hay ăn sạch. THÂN trong AIMIND là một cách nhìn cơ thể từ góc độ thần kinh học và tâm lý — để bạn nhận diện tín hiệu và thử những thay đổi phù hợp hơn.
             </p>
           </div>
 
