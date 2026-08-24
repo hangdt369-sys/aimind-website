@@ -6,14 +6,14 @@ import type { ArchetypeProfile, ArchetypeKey } from "@/types";
 export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "lo-au": {
     key: "lo-au",
-    name: "Người Lo Âu Gắn Bó",
+    name: "Xu hướng Lo Âu Gắn Bó",
     tagline: "Bạn yêu sâu sắc — nhưng luôn sợ bị bỏ lại",
     description:
-      "Bạn có khả năng yêu thương rất chân thành và gắn kết sâu sắc. Nhưng bên trong luôn có một tiếng thì thầm: 'Người này rồi sẽ rời bỏ mình.' Bạn hay kiểm tra, hay cần được trấn an, và thường cảm thấy bất an ngay cả khi mọi thứ đang ổn.",
+      "Kết quả hiện tại cho thấy bạn có thể trân trọng sự gắn kết sâu sắc, đồng thời dễ lo lắng khi cảm nhận khoảng cách hoặc sự không chắc chắn. Bạn có thể thường xuyên kiểm tra, cần được trấn an hoặc nghĩ đến những kịch bản không mong muốn.",
     coreWound:
-      "Trong quá khứ, tình yêu thương đến không nhất quán — đôi khi có, đôi khi không. Bạn học được rằng bạn phải làm điều gì đó để được yêu.",
+      "Một cách để khám phá xu hướng này là quan sát những trải nghiệm từng khiến sự gần gũi trở nên không chắc chắn, và cách bạn đã học để tìm kiếm cảm giác an toàn.",
     hiddenFear:
-      "Sâu thẳm bên trong, bạn sợ rằng bản thân mình không đủ tốt để được ai đó thật sự ở lại.",
+      "Trong một số tình huống, bạn có thể lo rằng mình không đủ quan trọng hoặc người khác sẽ không ở lại.",
     behaviorPattern: [
       "Hay kiểm tra tin nhắn, cần phản hồi nhanh để cảm thấy an toàn",
       "Khi bị phớt lờ — dù một chút — cảm giác lo âu bùng lên ngay",
@@ -36,14 +36,14 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
 
   "ne-tranh": {
     key: "ne-tranh",
-    name: "Người Né Tránh",
+    name: "Xu hướng Né Tránh",
     tagline: "Bạn cần không gian — nhưng thật ra là cần an toàn",
     description:
-      "Bạn trân trọng sự độc lập và không gian cá nhân. Khi mọi người đến quá gần, bạn tự nhiên lùi lại. Không phải vì không muốn kết nối — mà vì gần gũi cảm thấy nguy hiểm theo một cách nào đó bạn khó giải thích.",
+      "Kết quả hiện tại cho thấy bạn có thể trân trọng sự độc lập và không gian cá nhân. Khi cảm thấy áp lực hoặc quá gần, bạn có xu hướng lùi lại để tự bảo vệ, ngay cả khi vẫn mong muốn kết nối.",
     coreWound:
-      "Bạn đã học được rằng dựa dẫm vào người khác thường dẫn đến thất vọng. Tự lực cánh sinh trở thành chiến lược sống sót.",
+      "Một cách để khám phá xu hướng này là quan sát khi nào việc dựa vào người khác gợi lên cảm giác không chắc chắn, và vì sao tự chủ trở thành lựa chọn quen thuộc.",
     hiddenFear:
-      "Bạn sợ mất đi bản thân nếu để người khác tiếp cận quá sâu. Và sợ rằng nếu họ thật sự biết bạn — họ sẽ rời đi.",
+      "Trong một số tình huống, bạn có thể lo rằng sự gần gũi sẽ làm mất không gian riêng hoặc khiến mình dễ bị tổn thương.",
     behaviorPattern: [
       "Khi cảm xúc leo thang, bạn rút lui về không gian riêng",
       "Khó nói 'tôi cần bạn' — ngay cả khi đó là sự thật",
@@ -66,14 +66,14 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
 
   "kiem-soat": {
     key: "kiem-soat",
-    name: "Người Kiểm Soát",
+    name: "Xu hướng Kiểm Soát",
     tagline: "Bạn làm mọi thứ hoàn hảo — vì sai sót cảm thấy nguy hiểm",
     description:
-      "Bạn có tiêu chuẩn cao và làm việc cực kỳ hiệu quả. Nhưng có một phần bạn không thể thư giãn — vì nếu không kiểm soát mọi thứ, cảm giác lo lắng trỗi dậy. Bạn hay lên kế hoạch, hay chuẩn bị cho tình huống xấu nhất.",
+      "Kết quả hiện tại cho thấy bạn có thể đặt tiêu chuẩn cao và chuẩn bị kỹ. Khi thiếu chắc chắn, bạn có xu hướng lên kế hoạch hoặc kiểm soát nhiều hơn để cảm thấy an toàn.",
     coreWound:
-      "Khi còn nhỏ, thế giới xung quanh có thể không nhất quán hoặc không an toàn. Kiểm soát trở thành cách bạn cảm thấy an toàn.",
+      "Một cách để khám phá xu hướng này là quan sát những tình huống thiếu chắc chắn và cách việc kiểm soát giúp bạn tạm thời cảm thấy an toàn hơn.",
     hiddenFear:
-      "Nếu mọi thứ không theo kế hoạch — bạn không biết mình sẽ cope được không. Và sâu hơn: sợ mình không đủ tốt nếu không hoàn hảo.",
+      "Trong một số tình huống, bạn có thể lo mình không ứng phó được nếu kế hoạch thay đổi, hoặc giá trị bản thân bị ảnh hưởng khi mắc sai sót.",
     behaviorPattern: [
       "Khó giao việc cho người khác vì sợ không đạt tiêu chuẩn",
       "Hay lo lắng về tương lai, lên kế hoạch cho mọi kịch bản",
@@ -96,14 +96,14 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
 
   "hy-sinh": {
     key: "hy-sinh",
-    name: "Người Hy Sinh",
+    name: "Xu hướng Hy Sinh",
     tagline: "Bạn chăm lo cho mọi người — và quên mất chính mình",
     description:
-      "Bạn có trái tim rộng lượng và luôn sẵn sàng giúp đỡ. Nhưng thường xuyên, bạn để nhu cầu người khác lên trước — đến mức quên mất bản thân mình cần gì. Nói 'không' cảm thấy như đang làm điều gì sai trái.",
+      "Kết quả hiện tại cho thấy bạn có thể rất quan tâm và sẵn sàng giúp đỡ người khác. Trong một số tình huống, bạn có xu hướng đặt nhu cầu của họ lên trước và thấy khó nói 'không'.",
     coreWound:
-      "Bạn học được rằng mình được chấp nhận và yêu thương khi hữu ích, khi không gây rắc rối. Sự tồn tại của bạn gắn liền với việc phục vụ người khác.",
+      "Một cách để khám phá xu hướng này là quan sát khi nào việc trở nên hữu ích hoặc không gây phiền giúp bạn cảm thấy được chấp nhận.",
     hiddenFear:
-      "Nếu bạn không còn hữu ích — người ta sẽ không còn cần bạn nữa. Và sâu hơn: sợ rằng bản thân bạn không đủ để được yêu khi không cho đi gì cả.",
+      "Trong một số tình huống, bạn có thể lo rằng mình sẽ ít được trân trọng hơn nếu không tiếp tục cho đi hoặc đáp ứng kỳ vọng.",
     behaviorPattern: [
       "Rất khó nói 'không' — dù trong lòng đang mệt mỏi",
       "Hay cảm thấy tội lỗi khi nghĩ đến nhu cầu của bản thân",
@@ -126,14 +126,14 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
 
   "tu-huy": {
     key: "tu-huy",
-    name: "Người Tự Hủy",
+    name: "Xu hướng Tự Hủy",
     tagline: "Bạn tiến gần đến thành công — rồi tự phá vỡ nó",
     description:
-      "Bạn có tiềm năng thật sự — điều này bạn biết. Nhưng có điều gì đó cứ kéo bạn lại đúng lúc sắp đạt được. Có thể là trì hoãn, có thể là tự phá hoại, có thể là chọn sai người. Đây không phải lười biếng — đây là hệ thần kinh đang bảo vệ bạn khỏi điều gì đó.",
+      "Kết quả hiện tại cho thấy bạn có thể trì hoãn, đổi hướng hoặc làm gián đoạn điều tốt ngay khi nó trở nên quan trọng. Đây có thể là một cách tự bảo vệ trước áp lực, rủi ro hoặc cảm giác bị nhìn thấy.",
     coreWound:
-      "Thành công, hạnh phúc, hay được nhìn thấy — cảm thấy nguy hiểm theo một cách nào đó. Có thể từ những lần trong quá khứ khi điều tốt bị lấy đi.",
+      "Một cách để khám phá xu hướng này là quan sát cảm xúc xuất hiện khi bạn tiến gần đến thành công, sự ổn định hoặc sự công nhận.",
     hiddenFear:
-      "Sợ rằng nếu thật sự thành công — người ta sẽ thấy rằng mình không xứng đáng. Hoặc sợ thành công sẽ thay đổi mình theo cách mình không muốn.",
+      "Trong một số tình huống, bạn có thể lo mình không xứng đáng với kết quả tốt hoặc những thay đổi đi cùng thành công.",
     behaviorPattern: [
       "Trì hoãn ngay trước deadline quan trọng",
       "Chọn những mối quan hệ không phù hợp dù biết rõ",
@@ -156,14 +156,14 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
 
   "can-bang": {
     key: "can-bang",
-    name: "Người Cân Bằng",
+    name: "Xu hướng Cân Bằng",
     tagline: "Bạn đang trong hành trình tích hợp bản thân",
     description:
-      "Bạn có sự cân bằng khá tốt giữa các mô thức — không bị chi phối hoàn toàn bởi một khuôn mẫu nào. Điều này có thể có nghĩa bạn đã tự nhận thức khá nhiều, hoặc đang ở giai đoạn chuyển tiếp giữa các mô thức.",
+      "Kết quả hiện tại chưa cho thấy một xu hướng nào nổi bật vượt trội. Điều này có thể phản ánh sự linh hoạt, bối cảnh trả lời đa dạng hoặc một giai đoạn đang thay đổi.",
     coreWound:
-      "Mỗi người đều có những vết thương từ quá khứ — câu hỏi là bạn đã nhận ra và bắt đầu chữa lành chưa.",
+      "Một điểm khởi đầu là quan sát những tình huống vẫn tạo phản ứng mạnh, thay vì giả định rằng mọi điều trong quá khứ đều đã được giải quyết.",
     hiddenFear:
-      "Đôi khi sự cân bằng là lớp bề ngoài che đi những mô thức chưa được khám phá.",
+      "Trong một số trường hợp, các xu hướng có thể xuất hiện khác nhau tùy bối cảnh và chưa thể hiện rõ trong một bài test ngắn.",
     behaviorPattern: [
       "Có thể thích nghi tốt trong nhiều tình huống khác nhau",
       "Đôi khi không chắc mình thật sự muốn gì",

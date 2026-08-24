@@ -97,9 +97,9 @@ export default function DongHanhPage() {
               <span style={{ color: "#7C6FF7" }}>và đồng hành cùng bạn thay đổi</span>
             </h1>
             <p style={{ color: "#C4C0E0", fontSize: "17px", lineHeight: 1.8, marginBottom: "2.5rem", maxWidth: "600px" }}>
-              Coaching 1-1 với Hanna Dang là hành trình cá nhân hóa hoàn toàn —
+              Coaching 1-1 với Hanna Dang là quá trình đồng hành được điều chỉnh theo bối cảnh của bạn —
               không công thức chung, không lời khuyên cào bằng. Chỉ là bạn và
-              những mô thức thật sự đang điều khiển cuộc đời bạn.
+              những xu hướng phản ứng đang lặp lại và ảnh hưởng đến lựa chọn của bạn.
             </p>
             <Link
               href="https://zalo.me/0848270829"

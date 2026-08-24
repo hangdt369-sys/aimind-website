@@ -6,7 +6,7 @@ import Footer from "@/components/shared/Footer";
 export const metadata: Metadata = {
   title: "AIMIND — Nhìn thấy mình rõ hơn. Sống tự do hơn.",
   description:
-    "AIMIND là nền tảng khám phá và phát triển bản thân. Hiểu mô thức hành vi, giải mã vòng lặp cảm xúc, thiết kế lại hệ điều hành tâm trí của bạn.",
+    "AIMIND giúp bạn nhận diện những vòng lặp trong cách diễn giải, cảm xúc và hành vi — như một điểm khởi đầu để hiểu mình rõ hơn.",
   keywords: [
     "bản đồ nội tâm",
     "phát triển bản thân",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIMIND — Nhìn thấy mình rõ hơn. Sống tự do hơn.",
     description:
-      "Nền tảng khám phá bản thân. Bài test Bản đồ Nội Tâm miễn phí — nhận diện mô thức đang chi phối cuộc sống của bạn.",
+      "Nền tảng khám phá bản thân. Bài test Bản Đồ Nội Tâm miễn phí giúp bạn quan sát những xu hướng phản ứng đang nổi bật ở hiện tại.",
     locale: "vi_VN",
     type: "website",
     siteName: "AIMIND",

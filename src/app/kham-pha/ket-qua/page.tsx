@@ -158,7 +158,7 @@ function ResultsContent() {
                 marginBottom: "1rem",
               }}
             >
-              Mô thức chính của bạn
+              Mô thức nổi bật trong câu trả lời của bạn
             </div>
 
             <h1
@@ -198,12 +198,25 @@ function ResultsContent() {
                   color: "#9B96C0",
                 }}
               >
-                <span>Mô thức phụ:</span>
+                <span>Xu hướng khác cũng xuất hiện:</span>
                 <span style={{ color: "white", fontWeight: 600 }}>
                   {secondaryArchetype.icon} {secondaryArchetype.name}
                 </span>
               </div>
             )}
+            <p
+              style={{
+                color: "#9B96C0",
+                fontSize: "13px",
+                lineHeight: 1.65,
+                maxWidth: "620px",
+                margin: "1.25rem auto 0",
+              }}
+            >
+              Mô thức là xu hướng phản ứng, không phải con người bạn. Kết quả này
+              phản ánh những câu trả lời ở thời điểm hiện tại và là điểm khởi đầu
+              để bạn quan sát bản thân.
+            </p>
           </div>
         </section>
 
@@ -231,7 +244,7 @@ function ResultsContent() {
                   gap: "8px",
                 }}
               >
-                <span style={{ color: archetype.color }}>●</span> Đây là bạn
+                <span style={{ color: archetype.color }}>●</span> Kết quả hiện tại gợi ý
               </h2>
               <p style={{ color: "#3B3772", lineHeight: 1.8, fontSize: "15px" }}>
                 {archetype.description}
@@ -252,7 +265,7 @@ function ResultsContent() {
                   gap: "8px",
                 }}
               >
-                <span style={{ color: "#E67E74" }}>●</span> Gốc rễ mô thức
+                <span style={{ color: "#E67E74" }}>●</span> Điều có thể liên quan
               </h2>
               <p style={{ color: "#3B3772", lineHeight: 1.8, fontSize: "15px" }}>
                 {archetype.coreWound}
@@ -281,7 +294,7 @@ function ResultsContent() {
                 letterSpacing: "0.06em",
               }}
             >
-              Nỗi sợ thầm kín
+              Nỗi lo có thể xuất hiện
             </h2>
             <p
               style={{
@@ -348,7 +361,7 @@ function ResultsContent() {
                   marginBottom: "1rem",
                 }}
               >
-                💪 Điểm mạnh của mô thức này
+                💪 Điểm mạnh có thể đi cùng xu hướng này
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {archetype.strengths.map((s) => (
@@ -390,7 +403,7 @@ function ResultsContent() {
                   marginBottom: "1.5rem",
                 }}
               >
-                📊 Bản đồ mô thức của bạn
+                📊 Các xu hướng trong câu trả lời của bạn
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {archetypeOrder.map((key) => {
@@ -472,10 +485,10 @@ function ResultsContent() {
                   marginBottom: "0.5rem",
                 }}
               >
-                📚 Bài viết dành riêng cho mô thức {archetype.name}
+                📚 Bài viết liên quan đến {archetype.name}
               </h3>
               <p style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "1.5rem" }}>
-                Đọc để hiểu sâu hơn về cách mô thức này vận hành trong cuộc sống của bạn.
+                Đọc như một cách để quan sát xu hướng này có thể xuất hiện trong cuộc sống của bạn.
               </p>
               <div style={{ display: "flex", flexDirection: "column" as const, gap: "0.75rem" }}>
                 {relatedArticles.map((article) => article && (
@@ -558,7 +571,7 @@ function ResultsContent() {
                 marginBottom: "0.5rem",
               }}
             >
-              Bạn vừa nhìn thấy mô thức — giờ là lúc hiểu nó
+              Bạn vừa nhận diện một xu hướng — giờ là lúc quan sát kỹ hơn
             </h3>
             <p style={{ color: "#9B96C0", fontSize: "14px", marginBottom: "2rem" }}>
               {archetype.nextStep}
@@ -569,7 +582,7 @@ function ResultsContent() {
                 {
                   step: "01",
                   title: "Đọc bài viết liên quan",
-                  desc: "Hiểu sâu hơn về cách mô thức của bạn hình thành và vận hành — miễn phí.",
+                  desc: "Tìm hiểu thêm về cách xu hướng này có thể hình thành và xuất hiện — miễn phí.",
                   href: "/kien-thuc/bai-viet",
                   label: "Đọc bài viết →",
                   color: "#18B5B0",
@@ -577,7 +590,7 @@ function ResultsContent() {
                 {
                   step: "02",
                   title: "Học khóa Bản Đồ Nội Tâm Chuyên Sâu",
-                  desc: "Từ nhận diện đến thay đổi thật — 6 module đi vào gốc rễ của mô thức.",
+                  desc: "Từ nhận diện đến thực hành — 6 module giúp bạn quan sát và thử những lựa chọn mới.",
                   href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau",
                   label: "Xem khóa học →",
                   color: "#7C6FF7",
@@ -585,7 +598,7 @@ function ResultsContent() {
                 {
                   step: "03",
                   title: "Đồng hành 1-1 cùng Hanna",
-                  desc: "Đi sâu vào mô thức của riêng bạn với người hiểu cách nó vận hành.",
+                  desc: "Cùng quan sát xu hướng của riêng bạn trong bối cảnh đời sống thực tế.",
                   href: "/dong-hanh",
                   label: "Đăng ký đồng hành →",
                   color: "#E67E74",
@@ -728,7 +741,7 @@ function ResultsContent() {
                 fontSize: "1rem",
               }}
             >
-              Nhận phân tích chuyên sâu về mô thức {archetype.name}
+              Nhận nội dung phân tích thêm về {archetype.name}
             </h4>
             <p style={{ color: "#6B678F", fontSize: "13px", marginBottom: "1rem", lineHeight: 1.6 }}>
               Điền email + số điện thoại để nhận kết quả chi tiết và ứng dụng thực hành cá nhân.

@@ -73,7 +73,7 @@ function HeroSection() {
             margin: "0 auto 1.5rem",
           }}
         >
-          Bạn đã bao giờ tự hỏi tại sao mình lại như vậy?
+          Tại sao bạn cứ phản ứng theo cùng một cách — dù biết mình muốn khác?
         </h1>
         <p
           style={{
@@ -84,7 +84,7 @@ function HeroSection() {
             margin: "0 auto 2.5rem",
           }}
         >
-          Không phải vì bạn không đủ tốt. Mà vì bạn chưa từng có bản đồ để nhìn thấy chính mình.
+          Có lúc bạn làm hài lòng người khác dù đã mệt, phản ứng mạnh với một lời góp ý, hoặc im lặng khi thật sự muốn nói. AIMIND giúp bạn nhìn rõ vòng lặp đang xuất hiện phía sau những khoảnh khắc đó.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
           <Link
@@ -102,7 +102,7 @@ function HeroSection() {
               boxShadow: "0 8px 32px rgba(124,111,247,0.35)",
             }}
           >
-            Khám phá bản đồ nội tâm
+            Bắt đầu quan sát mô thức của bạn
           </Link>
           <p style={{ color: "#9B96C0", fontSize: "13px" }}>Miễn phí · 15 phút · Không cần đăng ký</p>
         </div>
@@ -135,10 +135,10 @@ function AboutAimindSection() {
             AIMIND là gì
           </p>
           <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, lineHeight: 1.3, marginBottom: "1.25rem" }}>
-            Hệ thống Identity Intelligence đầu tiên tại Việt Nam
+            Nhìn thấy vòng lặp đang diễn ra bên trong bạn
           </h2>
           <p style={{ color: "#6B678F", fontSize: "17px", lineHeight: 1.85, maxWidth: "680px", margin: "0 auto" }}>
-            AIMIND không phải bài test tính cách hay công cụ xếp loại con người. Đây là hệ thống giúp bạn nhìn thấy <strong style={{ color: "#1C1A3E" }}>bản đồ vận hành nội tâm</strong> của chính mình — những <em>khuôn mẫu hành vi</em> đang âm thầm điều khiển cách bạn suy nghĩ, cảm xúc, và phản ứng. Chúng tôi gọi những khuôn mẫu này là <strong style={{ color: "#1C1A3E" }}>&ldquo;mô thức&rdquo;</strong>.
+            AIMIND không phải bài test tính cách hay công cụ xếp loại con người. AIMIND giúp bạn quan sát vòng lặp từ <strong style={{ color: "#1C1A3E" }}>sự kiện → diễn giải → cảm xúc và phản ứng cơ thể → cách tự bảo vệ → hành vi</strong>. Những xu hướng lặp lại trong vòng này được gọi là <strong style={{ color: "#1C1A3E" }}>&ldquo;mô thức&rdquo;</strong> — một cách để nhìn nhận điều đang xảy ra, không phải nhãn định nghĩa con người bạn.
           </p>
         </div>
 
@@ -156,15 +156,15 @@ function AboutAimindSection() {
             AIMIND làm được gì cho bạn?
           </p>
           <p style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.1rem", lineHeight: 1.85, maxWidth: "680px", marginBottom: "1.5rem" }}>
-            Giúp bạn nhìn ra những khuôn mẫu bạn cứ lặp đi lặp lại mà không hiểu tại sao — kiểu như luôn chọn sai người, luôn né tránh xung đột, hay luôn làm quá sức dù đã kiệt sức. Những khuôn mẫu đó không phải tính cách bẩm sinh — chúng là thứ bạn đã <em>học</em> để tồn tại từ hồi nhỏ. Và vì học được, thì hoàn toàn có thể học lại.
+            Giúp bạn nhìn ra những khuôn mẫu bạn cứ lặp đi lặp lại mà không hiểu tại sao — kiểu như luôn chọn sai người, luôn né tránh xung đột, hay luôn làm quá sức dù đã kiệt sức. Những khuôn mẫu đó không nhất thiết là tính cách cố định. Chúng có thể liên quan đến những cách phản ứng đã được học qua trải nghiệm; khi nhận ra chúng, bạn có thêm cơ hội thử một cách đáp ứng khác.
           </p>
           <p style={{ color: "#B8B3FA", fontSize: "11px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
-            Thuật ngữ chuyên môn gọi đây là &ldquo;Identity Intelligence&rdquo; — Trí tuệ Nhận diện Bản thân:
+            Trong AIMIND, cách tiếp cận này được gọi là &ldquo;Identity Intelligence&rdquo; — Trí tuệ Nhận diện Bản thân:
           </p>
           <p style={{ color: "#C4C0E0", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "0.9rem", lineHeight: 1.75, fontStyle: "italic" as const, maxWidth: "680px", marginBottom: "1.25rem" }}>
             &ldquo;Khả năng nhận diện và hiểu sâu các khuôn mẫu vận hành nội tâm của bản thân — bao gồm cơ chế bảo vệ, hệ thống niềm tin, phản ứng tự động, và cách chúng hình thành từ kinh nghiệm và thần kinh học — để từ đó có thể lựa chọn có chủ đích thay vì phản ứng tự động.&rdquo;
           </p>
-          <p style={{ color: "#9B96C0", fontSize: "13px" }}>— Định nghĩa AIMIND Framework, 2024</p>
+          <p style={{ color: "#9B96C0", fontSize: "13px" }}>— Cách tiếp cận của AIMIND</p>
         </div>
 
         {/* Framework pillars */}
@@ -193,7 +193,7 @@ function AboutAimindSection() {
                 Phát triển bởi John Bowlby và Mary Ainsworth, lý thuyết này cho thấy cách mối quan hệ đầu đời hình thành hệ thống niềm tin về bản thân và người khác — và cách chúng tiếp tục vận hành trong người lớn qua các kiểu gắn bó: an toàn, lo lắng, né tránh, và lưỡng lự.
               </p>
               <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
-                AIMIND ứng dụng: Xác định kiểu gắn bó cốt lõi và cơ chế tự bảo vệ trong quan hệ.
+                AIMIND ứng dụng: Khám phá xu hướng gắn bó và cách bạn thường tự bảo vệ mình trong quan hệ.
               </p>
             </div>
 
@@ -320,22 +320,22 @@ function RecognitionSection() {
 
 function TestPreviewSection() {
   const archetypes = [
-    { key: "lo-au", name: "Lo Âu", color: "#7C6FF7", desc: "Luôn sẵn sàng cho điều tệ nhất" },
-    { key: "ne-tranh", name: "Né Tránh", color: "#18B5B0", desc: "Tránh xung đột bằng mọi giá" },
-    { key: "kiem-soat", name: "Kiểm Soát", color: "#5B4FD4", desc: "Cần chắc chắn mọi thứ" },
-    { key: "hy-sinh", name: "Hy Sinh", color: "#B8B3FA", desc: "Đặt người khác lên trước" },
-    { key: "tu-huy", name: "Tự Hủy", color: "#FF6B6B", desc: "Phá hoại những điều tốt đẹp" },
-    { key: "can-bang", name: "Cân Bằng", color: "#4CAF50", desc: "Đang trên hành trình tích hợp" },
+    { key: "lo-au", name: "Xu hướng Lo Âu", color: "#7C6FF7", desc: "Luôn sẵn sàng cho điều tệ nhất" },
+    { key: "ne-tranh", name: "Xu hướng Né Tránh", color: "#18B5B0", desc: "Tránh xung đột bằng mọi giá" },
+    { key: "kiem-soat", name: "Xu hướng Kiểm Soát", color: "#5B4FD4", desc: "Cần chắc chắn mọi thứ" },
+    { key: "hy-sinh", name: "Xu hướng Hy Sinh", color: "#B8B3FA", desc: "Đặt người khác lên trước" },
+    { key: "tu-huy", name: "Xu hướng Tự Hủy", color: "#FF6B6B", desc: "Phá hoại những điều tốt đẹp" },
+    { key: "can-bang", name: "Xu hướng Cân Bằng", color: "#4CAF50", desc: "Đang trên hành trình tích hợp" },
   ];
   return (
     <section style={{ padding: "5rem 0", background: "linear-gradient(180deg, #1C1A3E 0%, #2D2A5E 100%)" }}>
       <div className="container-main" style={{ textAlign: "center" }}>
         <p style={{ color: "#18B5B0", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Bài test miễn phí</p>
         <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.3 }}>
-          Bản Đồ Nội Tâm — 6 mô thức cốt lõi
+          Bản Đồ Nội Tâm — 6 nhóm xu hướng phản ứng
         </h2>
         <p style={{ color: "#C4C0E0", maxWidth: "500px", margin: "0 auto 3rem", lineHeight: 1.75 }}>
-          20 câu hỏi. 15 phút. Kết quả giúp bạn nhìn thấy mô thức vô thức đang điều khiển cuộc đời mình.
+          20 câu hỏi. 15 phút. Kết quả là điểm khởi đầu để bạn quan sát những xu hướng phản ứng đang nổi bật ở hiện tại.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "1rem", maxWidth: "720px", margin: "0 auto 3rem" }}>
           {archetypes.map((a) => (
@@ -358,8 +358,8 @@ function TestPreviewSection() {
 
 function JourneySection() {
   const steps = [
-    { number: "01", title: "Khám phá mô thức", desc: "Làm bài test Bản Đồ Nội Tâm. Nhận kết quả miễn phí về mô thức cốt lõi của bạn.", cta: "Làm bài test", href: "/kham-pha/ban-do-noi-tam", color: "#7C6FF7" },
-    { number: "02", title: "Đi sâu vào hiểu", desc: "Khóa học Bản Đồ Nội Tâm Chuyên Sâu — tại sao mô thức hình thành và cách thay đổi từ gốc rễ.", cta: "Xem khóa học", href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", color: "#18B5B0" },
+    { number: "01", title: "Khám phá mô thức", desc: "Làm bài test Bản Đồ Nội Tâm. Nhận gợi ý miễn phí về những xu hướng nổi bật trong câu trả lời của bạn.", cta: "Làm bài test", href: "/kham-pha/ban-do-noi-tam", color: "#7C6FF7" },
+    { number: "02", title: "Đi sâu vào hiểu", desc: "Khóa học Bản Đồ Nội Tâm Chuyên Sâu — tìm hiểu mô thức có thể hình thành thế nào và thực hành những lựa chọn mới.", cta: "Xem khóa học", href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", color: "#18B5B0" },
     { number: "03", title: "Đồng hành chuyển hóa", desc: "Đồng hành 1-1 với Hanna — không phải chỉ tư vấn, mà là cùng bạn đi qua từng bước thay đổi thật sự.", cta: "Tìm hiểu thêm", href: "/lien-he", color: "#5B4FD4" },
   ];
   return (
@@ -567,7 +567,7 @@ function CtaSection() {
     <section style={{ padding: "6rem 0", background: "linear-gradient(135deg, #2D2A5E 0%, #1C1A3E 100%)", textAlign: "center" }}>
       <div className="container-main">
         <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.25 }}>
-          Mô thức nào đang điều khiển bạn?
+          Xu hướng nào đang lặp lại trong cuộc sống của bạn?
         </h2>
         <p style={{ color: "#C4C0E0", marginBottom: "2.5rem", fontSize: "16px", lineHeight: 1.75 }}>
           Bài test miễn phí. 15 phút. Kết quả thay đổi cách bạn nhìn chính mình.

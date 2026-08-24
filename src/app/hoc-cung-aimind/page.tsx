@@ -24,7 +24,7 @@ export default function HocCungAIMINDPage() {
             <span style={{ color: "#B8B3FA", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>Học cùng AIMIND</span>
           </div>
           <h1 style={{ color: "white", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 800, lineHeight: 1.2, fontFamily: "'Be Vietnam Pro', sans-serif", letterSpacing: "-0.03em", maxWidth: "720px", margin: "0 auto 1.5rem" }}>
-            Học có hệ thống.<br />Thay đổi từ bên trong.
+            Học có hệ thống.<br />Hiểu mình qua từng bước.
           </h1>
           <p style={{ color: "#C4C0E0", fontSize: "clamp(1rem, 2.5vw, 1.15rem)", lineHeight: 1.75, maxWidth: "520px", margin: "0 auto 2.5rem" }}>
             Không phải học để biết thêm. Mà học để hiểu chính mình và chọn lại cách sống.

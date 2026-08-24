@@ -204,7 +204,7 @@ export const articles: Article[] = [
     tag: "Quan hệ",
     tagColor: "#E8A87C",
     title: "Tại sao bạn cứ thu hút về phía mình cùng một kiểu người?",
-    excerpt: "Không phải ngẫu nhiên. Mô thức nội tâm của bạn đang tích cực lựa chọn — và thường lựa chọn những gì quen thuộc, không phải những gì tốt cho bạn.",
+    excerpt: "Một cách để nhìn nhận là bạn có thể bị thu hút bởi những điều quen thuộc — ngay cả khi chúng không còn phù hợp hoặc tốt cho bạn.",
     readTime: "7 phút",
     publishDate: "Tháng 2, 2026",
     sections: [
@@ -218,7 +218,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Không phải. Có một cơ chế tâm lý đang vận hành — và nó không phải ngẫu nhiên."
+        content: "Một khả năng là có một xu hướng tâm lý quen thuộc đang ảnh hưởng đến cách bạn chú ý và lựa chọn."
       },
       {
         type: "heading",
@@ -267,7 +267,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Đó chính xác là vấn đề. Sự ổn định cảm thấy xa lạ. Não bộ không nhận ra mẫu cũ — nên không có cảm giác 'hấp dẫn'. Bạn nhầm sự bình yên với sự nhạt nhẽo."
+        content: "Một khả năng là sự ổn định cảm thấy ít quen thuộc hơn những gì bạn từng trải qua. Khi đó, bạn có thể diễn giải sự bình yên thành sự nhạt nhẽo."
       },
       {
         type: "paragraph",
@@ -738,7 +738,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Chữa lành sang chấn hiệu quả cần làm việc với cơ thể — không chỉ với tâm trí. Một số hướng tiếp cận được nghiên cứu:"
+        content: "Một số người có thể thấy việc kết hợp nhận thức với chú ý đến phản ứng cơ thể là hữu ích khi làm việc với sang chấn. Một số hướng tiếp cận đã được nghiên cứu gồm:"
       },
       {
         type: "list",
@@ -842,7 +842,7 @@ export const articles: Article[] = [
     tag: "Gắn bó",
     tagColor: "#E8A87C",
     title: "4 kiểu gắn bó và cách chúng định hình mọi mối quan hệ của bạn",
-    excerpt: "Cách bạn yêu, cách bạn tranh luận, cách bạn rời đi — tất cả đều bắt nguồn từ kiểu gắn bó hình thành từ khi bạn còn là đứa trẻ chưa biết nói.",
+    excerpt: "Cách bạn yêu, tranh luận và tạo khoảng cách có thể chịu ảnh hưởng từ những trải nghiệm gắn bó sớm — cùng với nhiều trải nghiệm và lựa chọn về sau.",
     readTime: "9 phút",
     publishDate: "Tháng 5, 2026",
     sections: [
@@ -1527,12 +1527,12 @@ export const articles: Article[] = [
         items: [
           "Nhìn vào pattern, không phải người: Thay vì phân tích tại sao người đó như vậy — hỏi: Mình cảm thấy quen thuộc với điều gì trong mối quan hệ này? Mình đã cảm thấy điều này từ khi nào?",
           "Để ý khi nào bạn bị cuốn mạnh nhất: Sức hút mạnh bất thường thường là tín hiệu của mô thức cũ đang được kích hoạt — không phải tình yêu thật sự. Ngược lại, cảm giác ổn định và an toàn đôi khi bị nhầm là thiếu chemistry.",
-          "Làm việc với kịch bản gốc: Điều thật sự cần thay đổi không phải danh sách người bạn chọn — mà là vết thương gốc mà mô thức đang cố gắng chữa lành. Đây là việc của trị liệu, coaching, hoặc làm việc nội tâm sâu."
+          "Quan sát kịch bản quen thuộc: Bên cạnh danh sách người bạn chọn, có thể hữu ích khi khám phá nhu cầu hoặc trải nghiệm cũ mà xu hướng này đang cố bảo vệ. Việc này có thể được hỗ trợ qua trị liệu, coaching phù hợp hoặc thực hành phản tư."
         ]
       },
       {
         type: "quote",
-        content: "Khi bạn thật sự chữa lành vết thương gốc — người bạn bị thu hút cũng sẽ thay đổi. Không phải vì bạn có tiêu chuẩn cao hơn. Mà vì bạn không còn cần họ để hoàn thành điều gì từ quá khứ nữa."
+        content: "Khi bạn hiểu rõ hơn nhu cầu và thay đổi cách phản ứng, kiểu quan hệ bạn lựa chọn cũng có thể thay đổi. Đây là một khả năng để quan sát, không phải kết quả chắc chắn cho mọi người."
       }
     ]
   },
@@ -1761,7 +1761,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Gắn bó hỗn loạn là kiểu gắn bó khó chữa lành nhất — nhưng cũng hoàn toàn có thể thay đổi được. Điều quan trọng nhất: cần một mối quan hệ an toàn và nhất quán để não học lại rằng gần gũi không phải nguy hiểm."
+        content: "Xu hướng gắn bó hỗn loạn có thể cần nhiều thời gian và sự hỗ trợ phù hợp để thay đổi. Những trải nghiệm quan hệ an toàn, nhất quán có thể góp phần giúp sự gần gũi bớt gợi cảm giác nguy hiểm."
       },
       {
         type: "list",
@@ -1801,7 +1801,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Không phải ngẫu nhiên. Mặt tối của mỗi mô thức luôn nằm chính xác ở phần mà mô thức đó phát triển nhất."
+        content: "Một góc nhìn hữu ích là điểm mạnh của một mô thức đôi khi cũng có thể tạo ra điểm mù khi được sử dụng quá mức."
       },
       {
         type: "heading",
@@ -1859,7 +1859,7 @@ export const articles: Article[] = [
     tag: "Gia đình",
     tagColor: "#C4752A",
     title: "Những gì cha mẹ chưa chữa lành — bạn đang mang",
-    excerpt: "Không phải bạn sinh ra đã lo lắng, đã sợ bị bỏ rơi, hay đã không tin tưởng bản thân. Những thứ đó được truyền đi — không phải qua gen, mà qua cách cha mẹ yêu thương theo khả năng họ có.",
+    excerpt: "Lo lắng, sợ bị bỏ rơi hay khó tin tưởng bản thân có thể chịu ảnh hưởng từ nhiều yếu tố, trong đó có cách các mối quan hệ gia đình được trải nghiệm qua nhiều thế hệ.",
     readTime: "9 phút",
     publishDate: "Tháng 8, 2026",
     sections: [
@@ -1885,7 +1885,7 @@ export const articles: Article[] = [
       },
       {
         type: "quote",
-        content: "Cha mẹ không truyền vết thương vì họ muốn. Họ truyền những gì họ chưa chữa lành — vì bạn không thể cho đi điều bạn chưa có."
+        content: "Cha mẹ có thể vô tình lặp lại những cách phản ứng họ từng học, đặc biệt khi chưa có cơ hội nhận diện hoặc xây dựng lựa chọn khác."
       },
       {
         type: "heading",

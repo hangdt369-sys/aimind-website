@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 const HIEU_TAM_LY = [
-  { icon: "🌊", title: "Vô thức", desc: "95% quyết định của bạn đến từ vô thức — không phải lý trí.", href: "/tam/hieu-tam-ly/vo-thuc" },
+  { icon: "🌊", title: "Phản ứng tự động", desc: "Nhiều diễn giải và phản ứng có thể xuất hiện trước khi bạn kịp suy nghĩ có chủ đích.", href: "/tam/hieu-tam-ly/vo-thuc" },
   { icon: "🧱", title: "Niềm tin", desc: "Những niềm tin cốt lõi hình thành từ thời thơ ấu và vẫn đang điều khiển bạn.", href: "/tam/hieu-tam-ly/niem-tin" },
   { icon: "🏗️", title: "Schema", desc: "18 khuôn mẫu niềm tin ăn sâu — schema therapy của Jeffrey Young.", href: "/tam/hieu-tam-ly/schema" },
   { icon: "🔗", title: "Attachment", desc: "Cách bạn gắn bó với người thân — và tại sao bạn yêu theo cách đó.", href: "/tam/hieu-tam-ly/attachment" },
   { icon: "🪞", title: "Identity", desc: "Bạn là ai — và bản sắc đó được xây dựng như thế nào?", href: "/tam/hieu-tam-ly/identity" },
   { icon: "🌡️", title: "Cảm xúc", desc: "Cảm xúc là thông tin, không phải kẻ thù — học cách đọc và điều tiết.", href: "/tam/hieu-tam-ly/cam-xuc" },
-  { icon: "🛡️", title: "Defense mechanisms", desc: "Các cơ chế tự bảo vệ vô thức bạn dùng mà không biết.", href: "/tam/hieu-tam-ly/defense-mechanisms" },
-  { icon: "🔄", title: "Habit", desc: "Tại sao thói quen cứng đầu như vậy — và cách thay đổi từ bên trong.", href: "/tam/hieu-tam-ly/habit" },
+  { icon: "🛡️", title: "Cách tự bảo vệ", desc: "Những cách bạn có thể phản ứng để tự bảo vệ khi cảm thấy không an toàn.", href: "/tam/hieu-tam-ly/defense-mechanisms" },
+  { icon: "🔄", title: "Thói quen", desc: "Tại sao một số thói quen khó thay đổi — và cách bắt đầu bằng những bước nhỏ.", href: "/tam/hieu-tam-ly/habit" },
 ];
 
 const HIEU_HANH_VI = [
@@ -29,7 +29,7 @@ const HIEU_HANH_VI = [
 
 const THUC_HANH_TAM = [
   { icon: "👁️", title: "Tự quan sát", desc: "Kỹ năng nhìn chính mình với đôi mắt trung lập, không phán xét.", href: "/tam/thuc-hanh#tu-quan-sat" },
-  { icon: "📔", title: "Journaling", desc: "Viết nhật ký có cấu trúc để khai thác vô thức.", href: "/tam/thuc-hanh#journaling" },
+  { icon: "📔", title: "Viết phản tư", desc: "Viết có cấu trúc để quan sát suy nghĩ, cảm xúc và những điều thường lặp lại.", href: "/tam/thuc-hanh#journaling" },
   { icon: "🔀", title: "Reframing", desc: "Đặt lại khung nhìn — thay đổi câu chuyện bạn kể về chính mình.", href: "/tam/thuc-hanh#reframing" },
   { icon: "🪄", title: "Identity work", desc: "Thiết kế lại bản sắc thay vì cố thay đổi hành vi bề mặt.", href: "/tam/thuc-hanh#identity" },
   { icon: "🌱", title: "Behavior change", desc: "Phương pháp thay đổi hành vi có bằng chứng khoa học.", href: "/tam/thuc-hanh#behavior-change" },
