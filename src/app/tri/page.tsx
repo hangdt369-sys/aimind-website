@@ -82,9 +82,8 @@ export default function TriPage() {
             {TU_DUY.map((item) => (
               <Link key={item.title} href={item.href} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-lift-card"
                   style={{ backgroundColor: "#F8F4EE", borderRadius: "14px", padding: "1.75rem", border: "1px solid #E8E3F0", transition: "transform 0.2s, box-shadow 0.2s" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(28,26,62,0.08)"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
                 >
                   <span style={{ fontSize: "2rem", display: "block", marginBottom: "1rem" }}>{item.icon}</span>
                   <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>{item.title}</h3>
@@ -112,9 +111,8 @@ export default function TriPage() {
             {THIEN_KIEN.map((item) => (
               <Link key={item.name} href={`/tri/thien-kien-nhan-thuc#${item.name.toLowerCase().replace(/ /g, "-")}`} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-brighten-panel"
                   style={{ backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "14px", padding: "1.25rem 1.75rem", display: "flex", alignItems: "center", gap: "1rem", transition: "background 0.2s" }}
-                  onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.09)"}
-                  onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.05)"}
                 >
                   <div style={{ width: "10px", height: "10px", borderRadius: "50%", backgroundColor: item.color, flexShrink: 0 }} />
                   <div>
@@ -147,9 +145,8 @@ export default function TriPage() {
             {KHOA_HOC.map((item) => (
               <Link key={item.title} href={item.href} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-lift-card"
                   style={{ backgroundColor: "white", borderRadius: "14px", padding: "1.75rem", border: "1px solid #E8E3F0", transition: "transform 0.2s, box-shadow 0.2s" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(28,26,62,0.08)"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
                 >
                   <span style={{ fontSize: "2rem", display: "block", marginBottom: "1rem" }}>{item.icon}</span>
                   <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>{item.title}</h3>

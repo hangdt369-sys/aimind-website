@@ -121,17 +121,10 @@ export default function TamPage() {
             {HIEU_TAM_LY.map((item) => (
               <Link key={item.title} href={item.href} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-lift-card"
                   style={{
                     backgroundColor: "white", borderRadius: "14px", padding: "1.75rem",
                     border: "1px solid #E8E3F0", transition: "transform 0.2s, box-shadow 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
-                    (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(28,26,62,0.08)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
                   }}
                 >
                   <span style={{ fontSize: "2rem", display: "block", marginBottom: "1rem" }}>{item.icon}</span>
@@ -157,18 +150,11 @@ export default function TamPage() {
             {HIEU_HANH_VI.map((item, i) => (
               <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-slide-purple"
                   style={{
                     border: "1px solid #E8E3F0", borderRadius: "14px", padding: "1.5rem 2rem",
                     display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem",
                     transition: "border-color 0.2s, transform 0.15s",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#7C6FF7";
-                    (e.currentTarget as HTMLElement).style.transform = "translateX(4px)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#E8E3F0";
-                    (e.currentTarget as HTMLElement).style.transform = "translateX(0)";
                   }}
                 >
                   <div>
@@ -196,17 +182,10 @@ export default function TamPage() {
             {THUC_HANH_TAM.map((item) => (
               <Link key={item.title} href={item.href} style={{ textDecoration: "none" }}>
                 <div
+                  className="hover-lift-teal"
                   style={{
                     backgroundColor: "white", borderRadius: "14px", padding: "1.75rem",
                     border: "1px solid #E8E3F0", transition: "border-color 0.2s, transform 0.15s",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#18B5B0";
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#E8E3F0";
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                   }}
                 >
                   <span style={{ fontSize: "2rem", display: "block", marginBottom: "1rem" }}>{item.icon}</span>

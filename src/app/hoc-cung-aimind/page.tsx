@@ -45,10 +45,7 @@ export default function HocCungAIMINDPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1.5rem" }}>
             {LO_TRINH.map((item) => (
               <Link key={item.label} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "2rem", borderTop: `3px solid ${item.color}`, transition: "transform 0.2s, box-shadow 0.2s" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(28,26,62,0.1)"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
-                >
+                <div className="hover-lift-card-high" style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "2rem", borderTop: `3px solid ${item.color}`, transition: "transform 0.2s, box-shadow 0.2s" }}>
                   <span style={{ backgroundColor: `${item.color}15`, color: item.color, fontSize: "12px", fontWeight: 700, padding: "4px 10px", borderRadius: "999px", display: "inline-block", marginBottom: "1rem" }}>{item.duration}</span>
                   <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontWeight: 700, fontSize: "1.1rem", marginBottom: "0.75rem" }}>{item.label}</h3>
                   <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.65 }}>{item.desc}</p>
