@@ -3,7 +3,8 @@
 
 export default function LienHePage() {
   return (
-    <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
+    <>
+      <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
         <section style={{ padding: "5rem 0", textAlign: "center" }}>
           <div className="container-main" style={{ maxWidth: "560px" }}>
             <h1
@@ -128,6 +129,7 @@ export default function LienHePage() {
             </div>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }

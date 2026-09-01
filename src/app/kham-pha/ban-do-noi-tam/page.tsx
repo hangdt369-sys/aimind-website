@@ -92,23 +92,14 @@ export default function TestPage() {
   }
 
   if (step === "intro") {
-    return (
-      <>
-        <IntroScreen onStart={() => setStep("testing")} />
-      </>
-    );
+    return <IntroScreen onStart={() => setStep("testing")} />;
   }
 
   if (step === "submitting") {
-    return (
-      <>
-        <LoadingScreen />
-      </>
-    );
+    return <LoadingScreen />;
   }
 
   return (
-    <>
       <div
         style={{
           minHeight: "calc(100vh - 64px)",
@@ -293,7 +284,6 @@ export default function TestPage() {
           🔒 Câu trả lời của bạn hoàn toàn riêng tư và không được chia sẻ với bên thứ ba.
         </p>
       </div>
-    </>
   );
 }
 
@@ -355,7 +345,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
             marginBottom: "2rem",
           }}
         >
-          20 câu hỏi giúp bạn quan sát những xu hướng phản ứng có thể đang lặp lại — trong tình yêu, công việc và những quyết định hằng ngày.
+          20 câu hỏi gợi ý những xu hướng phản ứng có thể đang lặp lại trong tình yêu, công việc và các quyết định hằng ngày. Kết quả là điểm khởi đầu để tự quan sát, không phải chẩn đoán hay nhãn cố định về bạn.
         </p>
 
         {/* How to */}
@@ -472,10 +462,10 @@ function LoadingScreen() {
           marginBottom: "0.75rem",
         }}
       >
-        Đang phân tích bản đồ của bạn...
+        Đang tổng hợp câu trả lời của bạn...
       </h2>
       <p style={{ color: "#9B96C0", fontSize: "15px" }}>
-        Chúng tôi đang tổng hợp 20 câu trả lời để nhận diện những xu hướng đang nổi bật ở thời điểm hiện tại.
+        Chúng tôi đang tổng hợp 20 câu trả lời để gợi ý những xu hướng nổi bật tại thời điểm làm bài.
       </p>
 
       <style>{`

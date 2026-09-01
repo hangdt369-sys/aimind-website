@@ -57,7 +57,8 @@ AIMIND không chịu trách nhiệm cho:
 
 export default function DieuKhoanPage() {
   return (
-    <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
+    <>
+      <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
         {/* Header */}
         <section
           style={{
@@ -152,6 +153,7 @@ export default function DieuKhoanPage() {
             </div>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }

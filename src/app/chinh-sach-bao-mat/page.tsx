@@ -4,18 +4,19 @@ const sections = [
     title: "1. Thông tin chúng tôi thu thập",
     content: `Khi bạn sử dụng website AIMIND, chúng tôi có thể thu thập các thông tin sau:
 
-• Thông tin bạn chủ động cung cấp: họ tên, địa chỉ email khi đăng ký hoặc liên hệ.
-• Kết quả bài test Bản Đồ Nội Tâm: archetype, câu trả lời và nhóm mô thức của bạn.
-• Thông tin kỹ thuật: loại thiết bị, trình duyệt, địa chỉ IP và hành vi sử dụng website (qua Google Analytics hoặc công cụ tương tự).`,
+• Thông tin bạn chủ động cung cấp: địa chỉ email, số điện thoại tùy chọn khi yêu cầu nhận kết quả hoặc khi liên hệ.
+• Mô thức nổi bật được gửi cùng yêu cầu nhận kết quả. Câu trả lời và điểm chi tiết của bài test được giữ trong phiên của trình duyệt và không được gửi qua API email.
+• Thông tin kỹ thuật tối thiểu có thể được nhà cung cấp hosting xử lý để vận hành và bảo vệ website.`,
   },
   {
     title: "2. Mục đích sử dụng thông tin",
     content: `Thông tin thu thập được sử dụng để:
 
-• Cung cấp và cải thiện dịch vụ tốt hơn cho bạn.
-• Gửi nội dung insight hàng tuần nếu bạn đã đăng ký (có thể hủy bất kỳ lúc nào).
-• Thông báo về các khóa học, sự kiện hoặc chương trình coaching mới.
-• Phân tích cách người dùng tương tác với website để cải thiện trải nghiệm.`,
+• Gửi kết quả và gợi ý thực hành khi bạn chủ động yêu cầu.
+• Phản hồi yêu cầu hỗ trợ hoặc liên hệ của bạn.
+• Vận hành, bảo vệ và khắc phục sự cố của website.
+
+AIMIND chỉ gửi nội dung tiếp thị khi có sự đồng ý riêng của bạn.`,
   },
   {
     title: "3. Chia sẻ thông tin",
@@ -27,9 +28,9 @@ Chúng tôi chỉ chia sẻ thông tin trong các trường hợp:
   },
   {
     title: "4. Bảo mật dữ liệu",
-    content: `Chúng tôi áp dụng các biện pháp bảo mật tiêu chuẩn để bảo vệ thông tin của bạn, bao gồm mã hóa HTTPS và kiểm soát truy cập nghiêm ngặt.
+    content: `Chúng tôi áp dụng các biện pháp bảo mật phù hợp để bảo vệ thông tin của bạn, bao gồm kết nối HTTPS và giới hạn quyền truy cập.
 
-Tuy nhiên, không có hệ thống nào hoàn toàn an toàn. Nếu phát hiện sự cố bảo mật ảnh hưởng đến dữ liệu của bạn, chúng tôi sẽ thông báo trong vòng 72 giờ.`,
+Tuy nhiên, không có hệ thống nào hoàn toàn an toàn. Nếu phát hiện sự cố ảnh hưởng đến dữ liệu cá nhân, AIMIND sẽ xử lý và thông báo theo quy định áp dụng.`,
   },
   {
     title: "5. Quyền của bạn",
@@ -37,14 +38,14 @@ Tuy nhiên, không có hệ thống nào hoàn toàn an toàn. Nếu phát hiệ
 
 • Yêu cầu xem thông tin chúng tôi đang lưu trữ về bạn.
 • Yêu cầu chỉnh sửa hoặc xóa thông tin của bạn.
-• Hủy đăng ký nhận email bất kỳ lúc nào bằng cách nhấn link "Hủy đăng ký" trong mỗi email.
+• Yêu cầu ngừng nhận nội dung không thiết yếu bất kỳ lúc nào bằng cách liên hệ với AIMIND.
 • Khiếu nại nếu bạn cho rằng quyền riêng tư của mình bị xâm phạm.
 
 Để thực hiện các quyền này, liên hệ: aimind.hcm@gmail.com`,
   },
   {
     title: "6. Cookie",
-    content: `Website sử dụng cookie để cải thiện trải nghiệm và phân tích lưu lượng truy cập. Bạn có thể tắt cookie trong cài đặt trình duyệt, tuy nhiên một số tính năng có thể không hoạt động đúng.`,
+    content: `Flow bài test hiện sử dụng sessionStorage của trình duyệt để giữ kết quả hợp lệ trong phiên. AIMIND hiện không cài cookie quảng cáo hoặc cookie phân tích trong code website.`,
   },
   {
     title: "7. Thay đổi chính sách",
@@ -54,7 +55,8 @@ Tuy nhiên, không có hệ thống nào hoàn toàn an toàn. Nếu phát hiệ
 
 export default function ChinhSachBaoMatPage() {
   return (
-    <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
+    <>
+      <main style={{ flex: 1, backgroundColor: "#F8F4EE", minHeight: "calc(100vh - 64px)" }}>
         {/* Header */}
         <section
           style={{
@@ -76,7 +78,7 @@ export default function ChinhSachBaoMatPage() {
               Chính sách Bảo mật
             </h1>
             <p style={{ color: "#9B96C0", fontSize: "14px" }}>
-              Cập nhật lần cuối: Tháng 1, 2026
+              Cập nhật lần cuối: Tháng 8, 2026
             </p>
           </div>
         </section>
@@ -143,12 +145,13 @@ export default function ChinhSachBaoMatPage() {
               >
                 <p style={{ color: "#6B678F", fontSize: "13px", lineHeight: 1.75 }}>
                   <strong style={{ color: "#1C1A3E" }}>Liên hệ:</strong> Mọi thắc mắc về chính sách bảo mật,
-                  vui lòng gửi email đến <strong>aimind.hcm@gmail.com</strong> hoặc nhắn tin qua Zalo <strong>0848270829</strong>.
+                  vui lòng gửi email đến <strong>aimind.hcm@gmail.com</strong> hoặc nhắn tin qua Zalo <strong>0848270819</strong>.
                 </p>
               </div>
             </div>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }

@@ -60,7 +60,8 @@ const steps = [
 
 export default function PhuongPhapPage() {
   return (
-    <main style={{ flex: 1 }}>
+    <>
+      <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -360,6 +361,7 @@ export default function PhuongPhapPage() {
             </Link>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }

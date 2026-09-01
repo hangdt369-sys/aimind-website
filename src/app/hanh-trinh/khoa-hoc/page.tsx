@@ -1,5 +1,3 @@
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 
 const modules = [
@@ -25,7 +23,6 @@ const includes = [
 export default function KhoaHocPage() {
   return (
     <>
-      <Navbar />
       <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
@@ -305,7 +302,6 @@ export default function KhoaHocPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -4,9 +4,12 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "https://aimind-website.vercel.app",
+  ),
   title: "AIMIND — Nhìn thấy mình rõ hơn. Sống tự do hơn.",
   description:
-    "AIMIND giúp bạn nhận diện những vòng lặp trong cách diễn giải, cảm xúc và hành vi — như một điểm khởi đầu để hiểu mình rõ hơn.",
+    "AIMIND là nền tảng khám phá và phát triển bản thân, giúp bạn quan sát những xu hướng hành vi và vòng lặp cảm xúc trong trải nghiệm hiện tại.",
   keywords: [
     "bản đồ nội tâm",
     "phát triển bản thân",
@@ -18,13 +21,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIMIND — Nhìn thấy mình rõ hơn. Sống tự do hơn.",
     description:
-      "Nền tảng khám phá bản thân. Bài test Bản Đồ Nội Tâm miễn phí giúp bạn quan sát những xu hướng phản ứng đang nổi bật ở hiện tại.",
+      "Bài test Bản đồ Nội Tâm miễn phí — gợi ý những xu hướng nổi bật trong câu trả lời để bạn tiếp tục tự quan sát.",
     locale: "vi_VN",
     type: "website",
     siteName: "AIMIND",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "AIMIND — Awareness Intelligence Mind",
     description: "Nền tảng khám phá bản thân dành cho người Việt. Hiểu mình. Sống tự do.",
   },

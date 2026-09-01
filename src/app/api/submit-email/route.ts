@@ -10,41 +10,44 @@ import nodemailer from "nodemailer";
 const ARCHETYPE_LABELS: Record<string, { name: string; desc: string; gift: string; challenge: string }> = {
   "lo-au": {
     name: "Lo Âu",
-    desc: "Bạn luôn sẵn sàng cho điều tệ nhất — não bạn đang hoạt động ở chế độ bảo vệ liên tục.",
-    gift: "Cẩn thận, chu đáo, nhạy bén với rủi ro. Bạn thường là người phát hiện vấn đề trước khi nó xảy ra.",
-    challenge: "Khó tận hưởng hiện tại vì luôn lo về tương lai. Cần học cách phân biệt mối lo có thực và mối lo do não tự tạo ra.",
+    desc: "Câu trả lời hiện tại gợi ý rằng bạn có thể nhạy cảm với dấu hiệu xa cách, điều chưa chắc chắn hoặc khả năng một mối quan hệ không còn an toàn như trước.",
+    gift: "Bạn có thể chú ý sớm đến những thay đổi trong mối quan hệ và chủ động tìm kiếm kết nối khi cảm thấy bất an.",
+    challenge: "Hãy quan sát lúc nhu cầu được trấn an xuất hiện và thử phân biệt điều đang xảy ra với kịch bản bạn đang lo lắng.",
   },
   "ne-tranh": {
     name: "Né Tránh",
-    desc: "Bạn ưu tiên hòa khí và tránh đối đầu — thường hi sinh nhu cầu mình để giữ không khí bình yên.",
-    gift: "Khả năng thấu cảm, không phán xét, tạo không gian an toàn cho người khác.",
-    challenge: "Nhu cầu và cảm xúc thật của bạn bị chôn vùi theo thời gian. Xung đột né tránh không biến mất — nó tích lũy.",
+    desc: "Câu trả lời hiện tại gợi ý rằng bạn có thể coi trọng không gian cá nhân và có xu hướng tạo khoảng cách hoặc tự xử lý khi cảm thấy áp lực.",
+    gift: "Bạn có thể tự chủ, tập trung vào giải pháp và nhận biết khá rõ nhu cầu về không gian riêng.",
+    challenge: "Hãy quan sát lúc bạn muốn lùi lại để phân biệt mình đang cần không gian, sự rõ ràng hay một cách kết nối an toàn hơn.",
   },
   "kiem-soat": {
     name: "Kiểm Soát",
-    desc: "Bạn cần mọi thứ trong tầm kiểm soát — không chắc chắn tạo ra lo lắng sâu.",
-    gift: "Có tổ chức, đáng tin cậy, khả năng lập kế hoạch và thực thi xuất sắc.",
-    challenge: "Kiểm soát thái quá có thể gây stress cho bạn và người xung quanh. Gốc rễ thường là nỗi sợ mất an toàn.",
+    desc: "Câu trả lời hiện tại gợi ý rằng bạn có thể coi trọng sự rõ ràng, kế hoạch và khả năng dự đoán điều sẽ xảy ra.",
+    gift: "Bạn có thể lập kế hoạch kỹ, chú ý đến rủi ro và tập trung vào giải pháp khi gặp khó khăn.",
+    challenge: "Hãy quan sát khi nào việc chuẩn bị đang hỗ trợ bạn và khi nào nhu cầu chắc chắn khiến bạn khó linh hoạt trước thay đổi.",
   },
   "hy-sinh": {
     name: "Hy Sinh",
-    desc: "Bạn đặt người khác lên trước — cảm giác có lỗi khi nghĩ đến nhu cầu của chính mình.",
-    gift: "Hào phóng, quan tâm sâu sắc, tạo ra giá trị thật cho người xung quanh.",
-    challenge: "Cho đi liên tục mà không nhận lại dẫn đến kiệt sức và oán trách ngầm.",
+    desc: "Câu trả lời hiện tại gợi ý rằng bạn có thể thường chú ý đến nhu cầu của người khác và đôi khi thấy khó nói không hoặc ưu tiên bản thân.",
+    gift: "Bạn sẵn sàng quan tâm, hỗ trợ người khác và coi trọng sự gắn kết trong các mối quan hệ.",
+    challenge: "Hãy quan sát khi nào bạn giúp vì thật sự muốn và khi nào bạn đồng ý vì cảm thấy có lỗi hoặc lo người khác thất vọng.",
   },
   "tu-huy": {
     name: "Tự Hủy",
-    desc: "Bạn có xu hướng tự phá hoại những điều tốt đẹp khi chúng gần đến tay.",
-    gift: "Tự nhận thức cao, trung thực với bản thân, nhạy cảm với sự giả dối.",
-    challenge: "Vô thức tin rằng mình không xứng đáng — cần nhận diện cơ chế này trước khi nó vận hành.",
+    desc: "Câu trả lời hiện tại gợi ý rằng bạn có thể trì hoãn, mất đà hoặc làm gián đoạn tiến trình khi điều mình muốn trở nên quan trọng.",
+    gift: "Bạn có thể bắt đầu bằng việc nhận ra những thời điểm mình mất đà và nhìn thẳng vào điều mình muốn thay đổi.",
+    challenge: "Nguyên nhân có thể khác nhau. Hãy xem những cảm xúc hoặc suy nghĩ xuất hiện trước lúc trì hoãn như giả thuyết để quan sát, không phải kết luận đã được chứng minh.",
   },
   "can-bang": {
     name: "Cân Bằng",
-    desc: "Bạn đang trong quá trình tích hợp — đã nhận ra mô thức của mình và đang tìm cách thay đổi.",
-    gift: "Khả năng tự quan sát và điều chỉnh. Đây là điểm khởi đầu của chuyển hóa thật.",
-    challenge: "Duy trì hành trình khi không có áp lực bên ngoài. Thay đổi cần nhất quán hơn cần cường độ.",
+    desc: "Câu trả lời hiện tại cho thấy bạn đã chọn nhiều cách phản ứng tương đối linh hoạt hoặc phù hợp với hoàn cảnh.",
+    gift: "Bạn có thể cân nhắc phản hồi, điều chỉnh mục tiêu hoặc giao tiếp rõ ràng trong nhiều tình huống.",
+    challenge: "Điểm Cân Bằng không có nghĩa bạn không có xu hướng khác. Hãy tiếp tục quan sát những bối cảnh khiến một phản ứng cụ thể trở nên rõ hơn.",
   },
 };
+
+const noStoreHeaders = { "Cache-Control": "no-store" };
+const MAX_REQUEST_BYTES = 10_000;
 
 function createHannaEmail(
   email: string,
@@ -70,7 +73,7 @@ function createHannaEmail(
   </table>
 
   <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:16px;margin-bottom:16px">
-    <p style="margin:0;font-size:14px;color:#166534">✅ Hành động tiếp theo: Nhắn Zalo/email cho khách, gửi tài liệu thực hành và offer coaching nếu phù hợp.</p>
+    <p style="margin:0;font-size:14px;color:#166534">✅ Chỉ liên hệ để hỗ trợ nội dung khách đã yêu cầu. Không gửi nội dung tiếp thị nếu chưa có sự đồng ý riêng.</p>
   </div>
 
   <p style="color:#9B96C0;font-size:12px;text-align:center">AIMIND · aimind.hcm@gmail.com</p>
@@ -79,7 +82,8 @@ function createHannaEmail(
 
 function createCustomerEmail(
   archetypeKey: string,
-  archetypeName: string
+  archetypeName: string,
+  appUrl: string,
 ): string {
   const a = ARCHETYPE_LABELS[archetypeKey];
   const name = a?.name || archetypeName || archetypeKey;
@@ -87,8 +91,12 @@ function createCustomerEmail(
 <div style="font-family:sans-serif;max-width:560px;margin:0 auto;padding:24px">
   <div style="background:linear-gradient(135deg,#2D2A5E,#1C1A3E);border-radius:16px;padding:32px;color:white;text-align:center;margin-bottom:28px">
     <p style="color:#B8B3FA;font-size:12px;margin:0 0 12px;text-transform:uppercase;letter-spacing:0.1em">Kết quả Bản Đồ Nội Tâm</p>
-    <h1 style="margin:0;font-size:26px;font-weight:800">Mô thức của bạn:</h1>
+    <h1 style="margin:0;font-size:26px;font-weight:800">Mô thức nổi bật trong câu trả lời:</h1>
     <h2 style="margin:8px 0 0;font-size:32px;font-weight:900;color:#B8B3FA">${name}</h2>
+  </div>
+
+  <div style="background:#F8F4EE;border:1px solid #E8E3F0;border-radius:12px;padding:16px;margin-bottom:24px">
+    <p style="color:#6B678F;font-size:13px;line-height:1.7;margin:0">Bản đồ này không phải chẩn đoán tâm lý. Kết quả phản ánh những xu hướng nổi bật trong câu trả lời của bạn tại thời điểm làm bài. Hãy xem chúng như những giả thuyết để tự quan sát, không phải một nhãn cố định về con người bạn.</p>
   </div>
 
   ${a ? `
@@ -97,12 +105,12 @@ function createCustomerEmail(
   </div>
 
   <div style="border:1px solid #E8E3F0;border-radius:12px;padding:20px;margin-bottom:16px">
-    <p style="color:#7C6FF7;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Điểm mạnh của bạn</p>
+    <p style="color:#7C6FF7;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Nguồn lực có thể đi cùng xu hướng này</p>
     <p style="color:#1C1A3E;font-size:15px;line-height:1.75;margin:0">${a.gift}</p>
   </div>
 
   <div style="border:1px solid #E8E3F0;border-radius:12px;padding:20px;margin-bottom:28px">
-    <p style="color:#E85A71;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Thách thức cần nhận diện</p>
+    <p style="color:#E85A71;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px">Điều bạn có thể quan sát tiếp</p>
     <p style="color:#1C1A3E;font-size:15px;line-height:1.75;margin:0">${a.challenge}</p>
   </div>
   ` : ""}
@@ -110,7 +118,7 @@ function createCustomerEmail(
   <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:12px;padding:20px;margin-bottom:20px">
     <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#166534">🎁 Công cụ thực hành miễn phí dành cho bạn</p>
     <p style="margin:0 0 14px;font-size:13px;color:#1C4A48;line-height:1.6">Nhật ký quan sát mô thức ${name} — 3 buổi/ngày, câu hỏi được thiết kế riêng cho mô thức của bạn. Dùng miễn phí, không cần đăng ký.</p>
-    <a href="https://aimind-website.vercel.app/thuc-hanh?mo-thuc=${archetypeKey}" style="display:inline-block;background:#166534;color:white;padding:10px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px">Mở công cụ thực hành →</a>
+    <a href="${appUrl}/thuc-hanh?mo-thuc=${archetypeKey}" style="display:inline-block;background:#166534;color:white;padding:10px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px">Mở công cụ thực hành →</a>
   </div>
 
   <div style="background:#1C1A3E;border-radius:12px;padding:20px;margin-bottom:16px">
@@ -134,6 +142,21 @@ function createCustomerEmail(
 
 export async function POST(request: NextRequest) {
   try {
+    if (!request.headers.get("content-type")?.toLowerCase().startsWith("application/json")) {
+      return NextResponse.json(
+        { error: "Unsupported media type" },
+        { status: 415, headers: noStoreHeaders },
+      );
+    }
+
+    const contentLength = Number(request.headers.get("content-length") ?? "0");
+    if (Number.isFinite(contentLength) && contentLength > MAX_REQUEST_BYTES) {
+      return NextResponse.json(
+        { error: "Request too large" },
+        { status: 413, headers: noStoreHeaders },
+      );
+    }
+
     const body = await request.json() as {
       email: string;
       phone?: string;
@@ -156,7 +179,10 @@ export async function POST(request: NextRequest) {
       !normalizedPhone || /^[0-9 +\-]{9,12}$/.test(normalizedPhone);
 
     if (!validEmail || !validPhone || !hasKnownArchetype) {
-      return NextResponse.json({ error: "Thông tin không hợp lệ" }, { status: 400 });
+      return NextResponse.json(
+        { error: "Thông tin không hợp lệ" },
+        { status: 400, headers: noStoreHeaders },
+      );
     }
 
     const gmailUser = process.env.GMAIL_USER;
@@ -164,7 +190,10 @@ export async function POST(request: NextRequest) {
 
     if (!gmailUser || !gmailPass) {
       console.warn("GMAIL_USER / GMAIL_PASS chưa được cấu hình trong Vercel");
-      return NextResponse.json({ error: "Email service unavailable" }, { status: 503 });
+      return NextResponse.json(
+        { error: "Email service unavailable" },
+        { status: 503, headers: noStoreHeaders },
+      );
     }
 
     const transporter = nodemailer.createTransport({
@@ -175,12 +204,17 @@ export async function POST(request: NextRequest) {
         user: gmailUser,
         pass: gmailPass.replace(/\s/g, ""), // bỏ dấu cách nếu có
       },
+      connectionTimeout: 10_000,
+      greetingTimeout: 10_000,
+      socketTimeout: 20_000,
     });
 
     // Verify connection trước khi gửi
     await transporter.verify();
 
     const timestamp = new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" });
+    const configuredAppUrl = process.env.NEXT_PUBLIC_APP_URL?.trim().replace(/\/$/, "");
+    const appUrl = configuredAppUrl || request.nextUrl.origin;
 
     // 1. Thông báo cho Hanna
     await transporter.sendMail({
@@ -196,12 +230,22 @@ export async function POST(request: NextRequest) {
       to: normalizedEmail,
       replyTo: gmailUser,
       subject: `Kết quả Bản Đồ Nội Tâm: ${ARCHETYPE_LABELS[archetypeKey].name}`,
-      html: createCustomerEmail(archetypeKey, archetypeName),
+      html: createCustomerEmail(archetypeKey, archetypeName, appUrl),
     });
 
-    return NextResponse.json({ success: true });
-  } catch {
+    return NextResponse.json({ success: true }, { headers: noStoreHeaders });
+  } catch (error) {
+    if (error instanceof SyntaxError) {
+      return NextResponse.json(
+        { error: "Thông tin không hợp lệ" },
+        { status: 400, headers: noStoreHeaders },
+      );
+    }
+
     console.error("Email send failed");
-    return NextResponse.json({ error: "Lỗi gửi email" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Lỗi gửi email" },
+      { status: 500, headers: noStoreHeaders },
+    );
   }
 }

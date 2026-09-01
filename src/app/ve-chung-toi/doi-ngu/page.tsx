@@ -19,7 +19,8 @@ const expertise = [
 
 export default function DoiNguPage() {
   return (
-    <main style={{ flex: 1 }}>
+    <>
+      <main style={{ flex: 1 }}>
 
         {/* ── Hero ─────────────────────────────────────────────── */}
         <section
@@ -162,9 +163,9 @@ export default function DoiNguPage() {
             </h2>
             <div style={{ color: "#4A4570", fontSize: "16px", lineHeight: 1.95 }}>
               <p style={{ marginBottom: "1.5rem" }}>
-                <em style={{ color: "#1C1A3E", fontWeight: 600 }}>"Tại sao mình luôn lặp lại những điều mình không muốn?"</em>
-                {" "}<em style={{ color: "#1C1A3E", fontWeight: 600 }}>"Điều gì thực sự đang dẫn dắt các quyết định của mình?"</em>
-                {" "}<em style={{ color: "#1C1A3E", fontWeight: 600 }}>"Làm thế nào để sống đúng với chính mình hơn?"</em>
+                <em style={{ color: "#1C1A3E", fontWeight: 600 }}>&ldquo;Tại sao mình luôn lặp lại những điều mình không muốn?&rdquo;</em>
+                {" "}<em style={{ color: "#1C1A3E", fontWeight: 600 }}>&ldquo;Điều gì thực sự đang dẫn dắt các quyết định của mình?&rdquo;</em>
+                {" "}<em style={{ color: "#1C1A3E", fontWeight: 600 }}>&ldquo;Làm thế nào để sống đúng với chính mình hơn?&rdquo;</em>
               </p>
               <p style={{ marginBottom: "1.5rem" }}>
                 Đó là những câu hỏi Hanna bắt đầu đặt ra — không phải trong sách vở mà từ cuộc sống của chính mình. Cô không tìm kiếm lý thuyết. Cô đang cố hiểu tại sao mình làm những điều mình làm, cảm những điều mình cảm, và lặp đi lặp lại những vòng tròn mà dù cố thoát cũng không ra.
@@ -558,6 +559,7 @@ export default function DoiNguPage() {
           </div>
         </section>
 
-    </main>
+      </main>
+    </>
   );
 }

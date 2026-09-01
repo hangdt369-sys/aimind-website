@@ -1,16 +1,68 @@
 "use client";
 
 import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import { archetypes, archetypeOrder } from "@/data/archetypes";
-import { getStoredTestResult, isValidEmail } from "@/lib/utils";
+import { MAX_SCORE_BY_ARCHETYPE } from "@/data/test-config";
+import {
+  getDominantArchetype,
+  getSecondaryArchetype,
+  getStoredTestResult,
+  isValidEmail,
+} from "@/lib/utils";
 import { articles } from "@/lib/articles";
 import type { ArchetypeKey, TestResult } from "@/types";
 
 // ─── Results Page ─────────────────────────────────────────────────────────────
+
+const scoreDisplayLabels: Record<ArchetypeKey, string> = {
+  "lo-au": "Xu hướng Lo Âu",
+  "ne-tranh": "Xu hướng Né Tránh",
+  "kiem-soat": "Xu hướng Kiểm Soát",
+  "hy-sinh": "Xu hướng Hy Sinh",
+  "tu-huy": "Xu hướng Tự Hủy",
+  "can-bang": "Xu hướng Cân Bằng",
+};
+
+function isValidCompletedTestResult(value: unknown): value is TestResult {
+  if (!value || typeof value !== "object") return false;
+
+  const candidate = value as Partial<TestResult>;
+  if (!archetypeOrder.includes(candidate.dominant as ArchetypeKey)) return false;
+  if (!candidate.scores || typeof candidate.scores !== "object") return false;
+  if (typeof candidate.answeredAt !== "string" || Number.isNaN(Date.parse(candidate.answeredAt))) {
+    return false;
+  }
+
+  const scoreKeys = Object.keys(candidate.scores);
+  if (
+    scoreKeys.length !== archetypeOrder.length ||
+    !scoreKeys.every((key) => archetypeOrder.includes(key as ArchetypeKey))
+  ) {
+    return false;
+  }
+
+  const scoresAreValid = archetypeOrder.every((key) => {
+    const score = candidate.scores?.[key];
+    return (
+      typeof score === "number" &&
+      Number.isInteger(score) &&
+      score >= 0 &&
+      score <= MAX_SCORE_BY_ARCHETYPE[key]
+    );
+  });
+  if (!scoresAreValid) return false;
+
+  const scores = candidate.scores as Record<ArchetypeKey, number>;
+  if (Object.values(scores).every((score) => score === 0)) return false;
+
+  const dominant = getDominantArchetype(scores) as ArchetypeKey;
+  if (candidate.dominant !== dominant) return false;
+
+  const secondary = getSecondaryArchetype(scores, dominant) as ArchetypeKey | undefined;
+  return candidate.secondary === secondary;
+}
 
 export default function ResultsPage() {
   return (
@@ -21,9 +73,9 @@ export default function ResultsPage() {
 }
 
 function ResultsContent() {
-  const searchParams = useSearchParams();
-  const patternParam = searchParams.get("pattern") as ArchetypeKey | null;
+  const router = useRouter();
   const [result, setResult] = useState<TestResult | null>(null);
+  const [sessionChecked, setSessionChecked] = useState(false);
   const [showEmailCapture, setShowEmailCapture] = useState(false);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [email, setEmail] = useState("");
@@ -33,21 +85,25 @@ function ResultsContent() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    const stored = getStoredTestResult<TestResult>();
-    if (stored) {
-      setResult(stored);
+    const stored = getStoredTestResult<unknown>();
+    if (!isValidCompletedTestResult(stored)) {
+      router.replace("/kham-pha/ban-do-noi-tam");
+      return;
     }
-    // Show email capture after 2 seconds
-    const timer = setTimeout(() => setShowEmailCapture(true), 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
-  const dominantKey =
-    result?.dominant ?? patternParam ?? "can-bang";
-  const archetype = archetypes[dominantKey] ?? archetypes["can-bang"];
-  const secondaryKey = result?.secondary;
+    setResult(stored);
+    setSessionChecked(true);
+  }, [router]);
+
+  if (!sessionChecked || !result) {
+    return <LoadingState />;
+  }
+
+  const dominantKey = result.dominant;
+  const archetype = archetypes[dominantKey];
+  const secondaryKey = result.secondary;
   const secondaryArchetype = secondaryKey ? archetypes[secondaryKey] : null;
-  const scores = result?.scores;
+  const scores = result.scores;
 
   // Bài viết liên quan theo mô thức
   const relatedSlugs: Record<string, string[]> = {
@@ -83,6 +139,9 @@ function ResultsContent() {
     if (hasError) return;
     setSubmitting(true);
 
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), 20_000);
+
     try {
       // Gửi qua API route Next.js → Gmail SMTP
       const response = await fetch("/api/submit-email", {
@@ -94,6 +153,7 @@ function ResultsContent() {
           archetypeKey: dominantKey,
           archetypeName: archetype.name,
         }),
+        signal: controller.signal,
       });
 
       if (!response.ok) {
@@ -104,13 +164,13 @@ function ResultsContent() {
     } catch {
       setEmailError("Chưa thể gửi email. Vui lòng thử lại sau.");
     } finally {
+      window.clearTimeout(timeoutId);
       setSubmitting(false);
     }
   }
 
   return (
     <>
-      <Navbar />
       <main style={{ flex: 1, backgroundColor: "#F8F4EE" }}>
         {/* Hero result */}
         <section
@@ -182,7 +242,7 @@ function ResultsContent() {
                 marginBottom: "1.5rem",
               }}
             >
-              "{archetype.tagline}"
+              &ldquo;{archetype.tagline}&rdquo;
             </p>
 
             {secondaryArchetype && (
@@ -208,104 +268,36 @@ function ResultsContent() {
               style={{
                 color: "#9B96C0",
                 fontSize: "13px",
-                lineHeight: 1.65,
-                maxWidth: "620px",
-                margin: "1.25rem auto 0",
+                lineHeight: 1.7,
+                maxWidth: "680px",
+                margin: secondaryArchetype ? "1.25rem auto 0" : "0 auto",
               }}
             >
-              Mô thức là xu hướng phản ứng, không phải con người bạn. Kết quả này
-              phản ánh những câu trả lời ở thời điểm hiện tại và là điểm khởi đầu
-              để bạn quan sát bản thân.
+              Bản đồ này không phải chẩn đoán tâm lý. Kết quả phản ánh những xu hướng nổi bật trong câu trả lời của bạn tại thời điểm làm bài. Hãy xem chúng như những giả thuyết để tự quan sát, không phải một nhãn cố định về con người bạn.
             </p>
           </div>
         </section>
 
         {/* Main content */}
         <div className="container-main" style={{ paddingTop: "3rem", paddingBottom: "4rem" }}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: "1.5rem",
-              marginBottom: "2rem",
-            }}
-          >
-            {/* Description */}
-            <div className="card-base" style={{ padding: "2rem" }}>
-              <h2
-                style={{
-                  color: "#1C1A3E",
-                  fontFamily: "'Be Vietnam Pro', sans-serif",
-                  fontSize: "1.1rem",
-                  fontWeight: 700,
-                  marginBottom: "1rem",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
-                <span style={{ color: archetype.color }}>●</span> Kết quả hiện tại gợi ý
-              </h2>
-              <p style={{ color: "#3B3772", lineHeight: 1.8, fontSize: "15px" }}>
-                {archetype.description}
-              </p>
-            </div>
-
-            {/* Core wound */}
-            <div className="card-base" style={{ padding: "2rem" }}>
-              <h2
-                style={{
-                  color: "#1C1A3E",
-                  fontFamily: "'Be Vietnam Pro', sans-serif",
-                  fontSize: "1.1rem",
-                  fontWeight: 700,
-                  marginBottom: "1rem",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
-                <span style={{ color: "#E67E74" }}>●</span> Điều có thể liên quan
-              </h2>
-              <p style={{ color: "#3B3772", lineHeight: 1.8, fontSize: "15px" }}>
-                {archetype.coreWound}
-              </p>
-            </div>
-          </div>
-
-          {/* Hidden fear */}
-          <div
-            className="card-base"
-            style={{
-              padding: "2rem",
-              marginBottom: "1.5rem",
-              borderLeft: `4px solid ${archetype.color}`,
-              backgroundColor: `${archetype.color}08`,
-            }}
-          >
+          {/* Self-recognition */}
+          <div className="card-base" style={{ padding: "2rem", marginBottom: "1.5rem" }}>
             <h2
               style={{
                 color: "#1C1A3E",
                 fontFamily: "'Be Vietnam Pro', sans-serif",
-                fontSize: "12px",
+                fontSize: "1.1rem",
                 fontWeight: 700,
-                marginBottom: "0.75rem",
-                textTransform: "uppercase" as const,
-                letterSpacing: "0.06em",
+                marginBottom: "1rem",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
               }}
             >
-              Nỗi lo có thể xuất hiện
+              <span style={{ color: archetype.color }}>●</span> Kết quả hiện tại gợi ý
             </h2>
-            <p
-              style={{
-                color: "#3B3772",
-                fontSize: "1rem",
-                lineHeight: 1.7,
-                fontStyle: "italic",
-                fontWeight: 500,
-              }}
-            >
-              "{archetype.hiddenFear}"
+            <p style={{ color: "#3B3772", lineHeight: 1.8, fontSize: "15px" }}>
+              {archetype.description}
             </p>
           </div>
 
@@ -342,52 +334,77 @@ function ResultsContent() {
             </div>
           </div>
 
-          {/* Strengths + Growth edge */}
+          {/* Understanding */}
           <div
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "1.5rem",
-              marginBottom: "2rem",
+              marginBottom: "1.5rem",
             }}
           >
-            <div className="card-base" style={{ padding: "2rem", backgroundColor: "#E4F8F7" }}>
+            <div className="card-base" style={{ padding: "2rem" }}>
               <h3
                 style={{
-                  color: "#0A7B78",
+                  color: "#1C1A3E",
                   fontFamily: "'Be Vietnam Pro', sans-serif",
                   fontSize: "1rem",
                   fontWeight: 700,
                   marginBottom: "1rem",
                 }}
               >
-                💪 Điểm mạnh có thể đi cùng xu hướng này
+                ● Một cách để hiểu xu hướng này
               </h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                {archetype.strengths.map((s) => (
-                  <div key={s} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
-                    <span style={{ color: "#18B5B0", fontWeight: 700, flexShrink: 0 }}>✓</span>
-                    <span style={{ color: "#1C4A48", fontSize: "14px" }}>{s}</span>
-                  </div>
-                ))}
-              </div>
+              <p style={{ color: "#3B3772", lineHeight: 1.8, fontSize: "15px" }}>
+                {archetype.coreWound}
+              </p>
             </div>
 
-            <div className="card-base" style={{ padding: "2rem", backgroundColor: "#EAE8FE" }}>
+            <div
+              className="card-base"
+              style={{
+                padding: "2rem",
+                borderLeft: `4px solid ${archetype.color}`,
+                backgroundColor: `${archetype.color}08`,
+              }}
+            >
               <h3
                 style={{
-                  color: "#5B4FD4",
+                  color: "#1C1A3E",
                   fontFamily: "'Be Vietnam Pro', sans-serif",
                   fontSize: "1rem",
                   fontWeight: 700,
                   marginBottom: "1rem",
                 }}
               >
-                🌱 Vùng phát triển
+                ● Điều có thể xuất hiện
               </h3>
-              <p style={{ color: "#3B3772", fontSize: "14px", lineHeight: 1.7 }}>
-                {archetype.growthEdge}
+              <p style={{ color: "#3B3772", fontSize: "15px", lineHeight: 1.8 }}>
+                {archetype.hiddenFear}
               </p>
+            </div>
+          </div>
+
+          {/* Strengths */}
+          <div className="card-base" style={{ padding: "2rem", marginBottom: "2rem", backgroundColor: "#E4F8F7" }}>
+            <h3
+              style={{
+                color: "#0A7B78",
+                fontFamily: "'Be Vietnam Pro', sans-serif",
+                fontSize: "1rem",
+                fontWeight: 700,
+                marginBottom: "1rem",
+              }}
+            >
+              💪 Nguồn lực có thể đi cùng xu hướng này
+            </h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              {archetype.strengths.map((strength) => (
+                <div key={strength} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                  <span style={{ color: "#18B5B0", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                  <span style={{ color: "#1C4A48", fontSize: "14px" }}>{strength}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -403,14 +420,27 @@ function ResultsContent() {
                   marginBottom: "1.5rem",
                 }}
               >
-                📊 Các xu hướng trong câu trả lời của bạn
+                📊 Mức độ biểu hiện trong bài trả lời
               </h3>
+              <p
+                style={{
+                  color: "#6B678F",
+                  fontSize: "13px",
+                  lineHeight: 1.6,
+                  marginTop: "-0.75rem",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                Đây là tỷ lệ điểm bạn đạt được so với mức điểm tối đa của từng xu hướng trong bài test. Con số này không phải xác suất, tỷ lệ bạn &ldquo;là&rdquo; một mô thức hay kết luận chẩn đoán.
+              </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {archetypeOrder.map((key) => {
                   const arch = archetypes[key];
                   const score = scores[key] ?? 0;
-                  const maxPossible = 20;
-                  const pct = Math.min(100, Math.round((score / maxPossible) * 100));
+                  const maxPossibleScore = MAX_SCORE_BY_ARCHETYPE[key];
+                  const pct = maxPossibleScore > 0
+                    ? Math.round((score / maxPossibleScore) * 100)
+                    : 0;
                   const isDominant = key === dominantKey;
 
                   return (
@@ -429,7 +459,7 @@ function ResultsContent() {
                             fontWeight: isDominant ? 700 : 400,
                           }}
                         >
-                          {arch.icon} {arch.name}
+                          {arch.icon} {scoreDisplayLabels[key]}
                           {isDominant && (
                             <span
                               style={{
@@ -473,6 +503,24 @@ function ResultsContent() {
             </div>
           )}
 
+          {/* Observation */}
+          <div className="card-base" style={{ padding: "2rem", marginBottom: "2rem", backgroundColor: "#EAE8FE" }}>
+            <h3
+              style={{
+                color: "#5B4FD4",
+                fontFamily: "'Be Vietnam Pro', sans-serif",
+                fontSize: "1rem",
+                fontWeight: 700,
+                marginBottom: "1rem",
+              }}
+            >
+              🌱 Điều bạn có thể quan sát tiếp
+            </h3>
+            <p style={{ color: "#3B3772", fontSize: "14px", lineHeight: 1.7 }}>
+              {archetype.growthEdge}
+            </p>
+          </div>
+
           {/* Related articles */}
           {relatedArticles.length > 0 && (
             <div className="card-base" style={{ padding: "2rem", marginBottom: "1.5rem" }}>
@@ -488,7 +536,7 @@ function ResultsContent() {
                 📚 Bài viết liên quan đến {archetype.name}
               </h3>
               <p style={{ color: "#9B96C0", fontSize: "13px", marginBottom: "1.5rem" }}>
-                Đọc như một cách để quan sát xu hướng này có thể xuất hiện trong cuộc sống của bạn.
+                Đọc như một cách để tiếp tục quan sát xu hướng này trong những bối cảnh đời sống cụ thể.
               </p>
               <div style={{ display: "flex", flexDirection: "column" as const, gap: "0.75rem" }}>
                 {relatedArticles.map((article) => article && (
@@ -549,7 +597,7 @@ function ResultsContent() {
             </div>
           )}
 
-          {/* Hành trình tiếp theo */}
+          {/* Tìm hiểu thêm khi phù hợp */}
           <div
             style={{
               background: "linear-gradient(135deg, #1C1A3E 0%, #2D2A5E 100%)",
@@ -560,7 +608,7 @@ function ResultsContent() {
             }}
           >
             <p style={{ color: "#B8B3FA", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" as const, marginBottom: "0.75rem" }}>
-              Hành trình tiếp theo
+              Tìm hiểu thêm khi phù hợp
             </p>
             <h3
               style={{
@@ -571,24 +619,35 @@ function ResultsContent() {
                 marginBottom: "0.5rem",
               }}
             >
-              Bạn vừa nhận diện một xu hướng — giờ là lúc quan sát kỹ hơn
+              Bạn có thể lưu kết quả hoặc đi sâu hơn khi sẵn sàng
             </h3>
             <p style={{ color: "#9B96C0", fontSize: "14px", marginBottom: "2rem" }}>
               {archetype.nextStep}
             </p>
 
+            <button
+              type="button"
+              onClick={() => setShowEmailCapture(true)}
+              style={{
+                width: "100%",
+                background: "linear-gradient(135deg, #7C6FF7 0%, #5B4FD4 100%)",
+                color: "white",
+                padding: "12px 20px",
+                borderRadius: "12px",
+                border: "none",
+                fontSize: "14px",
+                fontWeight: 700,
+                cursor: "pointer",
+                marginBottom: "1.5rem",
+              }}
+            >
+              📬 Nhận kết quả và nội dung quan sát qua email
+            </button>
+
             <div style={{ display: "flex", flexDirection: "column" as const, gap: "1rem", marginBottom: "2rem" }}>
               {[
                 {
                   step: "01",
-                  title: "Đọc bài viết liên quan",
-                  desc: "Tìm hiểu thêm về cách xu hướng này có thể hình thành và xuất hiện — miễn phí.",
-                  href: "/kien-thuc/bai-viet",
-                  label: "Đọc bài viết →",
-                  color: "#18B5B0",
-                },
-                {
-                  step: "02",
                   title: "Học khóa Bản Đồ Nội Tâm Chuyên Sâu",
                   desc: "Từ nhận diện đến thực hành — 6 module giúp bạn quan sát và thử những lựa chọn mới.",
                   href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau",
@@ -596,9 +655,9 @@ function ResultsContent() {
                   color: "#7C6FF7",
                 },
                 {
-                  step: "03",
+                  step: "02",
                   title: "Đồng hành 1-1 cùng Hanna",
-                  desc: "Cùng quan sát xu hướng của riêng bạn trong bối cảnh đời sống thực tế.",
+                  desc: "Cùng quan sát xu hướng của bạn trong bối cảnh đời sống thực tế.",
                   href: "/dong-hanh",
                   label: "Đăng ký đồng hành →",
                   color: "#E67E74",
@@ -741,13 +800,13 @@ function ResultsContent() {
                 fontSize: "1rem",
               }}
             >
-              Nhận nội dung phân tích thêm về {archetype.name}
+              Nhận kết quả và nội dung quan sát về {archetype.name}
             </h4>
             <p style={{ color: "#6B678F", fontSize: "13px", marginBottom: "1rem", lineHeight: 1.6 }}>
-              Điền email + số điện thoại để nhận kết quả chi tiết và ứng dụng thực hành cá nhân.
+              Điền email + số điện thoại để nhận lại kết quả và gợi ý thực hành phù hợp.
             </p>
 
-            <form onSubmit={handleEmailSubmit}>
+            <form onSubmit={handleEmailSubmit} noValidate>
               <input
                 type="email"
                 value={email}
@@ -814,7 +873,7 @@ function ResultsContent() {
               </button>
             </form>
             <p style={{ color: "#C4C0E0", fontSize: "11px", marginTop: "8px", textAlign: "center" as const }}>
-              Không spam. Có thể hủy bất kỳ lúc nào.
+              Thông tin chỉ dùng để gửi kết quả và hỗ trợ nội dung bạn yêu cầu.
             </p>
           </div>
         )}
@@ -845,7 +904,6 @@ function ResultsContent() {
           </div>
         )}
       </main>
-      <Footer />
     </>
   );
 }

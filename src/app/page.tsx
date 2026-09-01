@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AIMIND — Bài Test Bản Đồ Nội Tâm Miễn Phí",
-  description: "Làm bài test miễn phí để nhận diện khuôn mẫu hành vi đang chi phối cuộc sống của bạn. 20 câu hỏi · 15 phút · Kết quả chi tiết.",
+  description: "Làm bài test miễn phí để quan sát những xu hướng phản ứng đang nổi bật trong câu trả lời của bạn. 20 câu hỏi · 15 phút · Không cần đăng ký.",
   openGraph: {
     title: "AIMIND — Bài Test Bản Đồ Nội Tâm Miễn Phí",
-    description: "Nhận diện khuôn mẫu hành vi của bạn. 20 câu · 15 phút · Miễn phí.",
+    description: "Quan sát những xu hướng phản ứng đang nổi bật trong câu trả lời của bạn. 20 câu · 15 phút · Miễn phí.",
   },
 };
 
@@ -15,11 +15,10 @@ export default function HomePage() {
   return (
     <main style={{ flex: 1 }}>
         <HeroSection />
-        <AboutAimindSection />
         <RecognitionSection />
-        <TestPreviewSection />
-        <JourneySection />
         <WhatYouGetSection />
+        <TestPreviewSection />
+        <AboutAimindSection />
         <TestimonialsSection />
         <CtaSection />
       </main>
@@ -108,9 +107,9 @@ function HeroSection() {
         </div>
         <div style={{ marginTop: "3rem", display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" as const }}>
           {[
-            { icon: "🧬", label: "Dựa trên khoa học thần kinh" },
-            { icon: "🗺️", label: "Hệ thống nhận diện bản thân" },
-            { icon: "🔬", label: "Tâm lý học & Khoa học thần kinh" },
+            { icon: "🧭", label: "Quan sát xu hướng hiện tại" },
+            { icon: "🗺️", label: "Không gán nhãn con người" },
+            { icon: "🔎", label: "Không phải công cụ chẩn đoán" },
           ].map((item) => (
             <div key={item.label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <span style={{ fontSize: "16px" }}>{item.icon}</span>
@@ -156,13 +155,13 @@ function AboutAimindSection() {
             AIMIND làm được gì cho bạn?
           </p>
           <p style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "1.1rem", lineHeight: 1.85, maxWidth: "680px", marginBottom: "1.5rem" }}>
-            Giúp bạn nhìn ra những khuôn mẫu bạn cứ lặp đi lặp lại mà không hiểu tại sao — kiểu như luôn chọn sai người, luôn né tránh xung đột, hay luôn làm quá sức dù đã kiệt sức. Những khuôn mẫu đó không nhất thiết là tính cách cố định. Chúng có thể liên quan đến những cách phản ứng đã được học qua trải nghiệm; khi nhận ra chúng, bạn có thêm cơ hội thử một cách đáp ứng khác.
+            Giúp bạn nhìn ra những khuôn mẫu bạn cứ lặp đi lặp lại mà không hiểu tại sao — như né tránh xung đột, làm quá sức dù đã kiệt sức hoặc tiếp tục một lựa chọn không còn phù hợp. Những khuôn mẫu đó không nhất thiết là tính cách cố định. Chúng có thể liên quan đến những cách phản ứng đã được học qua trải nghiệm; khi nhận ra chúng, bạn có thêm cơ hội thử một cách đáp ứng khác.
           </p>
           <p style={{ color: "#B8B3FA", fontSize: "11px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" as const, marginBottom: "0.5rem" }}>
             Trong AIMIND, cách tiếp cận này được gọi là &ldquo;Identity Intelligence&rdquo; — Trí tuệ Nhận diện Bản thân:
           </p>
           <p style={{ color: "#C4C0E0", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "0.9rem", lineHeight: 1.75, fontStyle: "italic" as const, maxWidth: "680px", marginBottom: "1.25rem" }}>
-            &ldquo;Khả năng nhận diện và hiểu sâu các khuôn mẫu vận hành nội tâm của bản thân — bao gồm cơ chế bảo vệ, hệ thống niềm tin, phản ứng tự động, và cách chúng hình thành từ kinh nghiệm và thần kinh học — để từ đó có thể lựa chọn có chủ đích thay vì phản ứng tự động.&rdquo;
+            &ldquo;Khả năng nhận diện và hiểu các khuôn mẫu vận hành nội tâm — gồm cách diễn giải, phản ứng tự động và cơ chế tự bảo vệ — để có thêm lựa chọn có chủ đích trong từng tình huống.&rdquo;
           </p>
           <p style={{ color: "#9B96C0", fontSize: "13px" }}>— Cách tiếp cận của AIMIND</p>
         </div>
@@ -173,10 +172,10 @@ function AboutAimindSection() {
             Framework được xây dựng như thế nào?
           </h3>
           <p style={{ color: "#6B678F", fontSize: "15px", textAlign: "center", marginBottom: "2.5rem", lineHeight: 1.75 }}>
-            AIMIND được tổng hợp từ 4 nền tảng nghiên cứu đã được kiểm chứng lâm sàng và khoa học
+            AIMIND tham khảo các khung lý thuyết và nghiên cứu về gắn bó, schema, não bộ và hành vi để xây dựng một cách quan sát dễ hiểu.
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "1.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 380px), 1fr))", gap: "1.5rem" }}>
             {/* Attachment Theory */}
             <div style={{ border: "1px solid #E8E3F0", borderRadius: "16px", padding: "1.75rem", borderLeft: "4px solid #E85A71" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "1rem" }}>
@@ -187,13 +186,13 @@ function AboutAimindSection() {
                 </div>
               </div>
               <p style={{ color: "#E85A71", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
-                Nói đơn giản: Cách bạn yêu thương, gần gũi hay xa cách với người khác — được định hình từ mối quan hệ đầu tiên trong cuộc đời bạn (cha mẹ hoặc người nuôi dưỡng).
+                Nói đơn giản: Những trải nghiệm gắn bó trước đây có thể là một trong nhiều yếu tố liên quan đến cách bạn tìm kiếm sự gần gũi hoặc khoảng cách.
               </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
-                Phát triển bởi John Bowlby và Mary Ainsworth, lý thuyết này cho thấy cách mối quan hệ đầu đời hình thành hệ thống niềm tin về bản thân và người khác — và cách chúng tiếp tục vận hành trong người lớn qua các kiểu gắn bó: an toàn, lo lắng, né tránh, và lưỡng lự.
+                Lý thuyết Gắn bó cung cấp một ngôn ngữ để quan sát nhu cầu an toàn, sự gần gũi và cách con người phản ứng trong quan hệ. Đây là nguồn tham khảo, không phải kết luận về lịch sử cá nhân của người làm test.
               </p>
               <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
-                AIMIND ứng dụng: Khám phá xu hướng gắn bó và cách bạn thường tự bảo vệ mình trong quan hệ.
+                AIMIND tham khảo: Quan sát xu hướng gắn bó và cách một người có thể tự bảo vệ mình trong quan hệ.
               </p>
             </div>
 
@@ -207,13 +206,13 @@ function AboutAimindSection() {
                 </div>
               </div>
               <p style={{ color: "#6B5B95", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
-                Nói đơn giản: Não bộ có thể thay đổi — những gì bạn lặp lại nhiều lần sẽ trở thành &ldquo;đường mòn&rdquo; quen thuộc. AIMIND giúp bạn tạo đường mòn mới theo hướng mình muốn.
+                Nói đơn giản: Khả năng thích nghi của não bộ gợi ý rằng những phản ứng quen thuộc không nhất thiết là cố định.
               </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
-                Dựa trên nghiên cứu về neuroplasticity, hệ thần kinh tự chủ (polyvagal theory của Stephen Porges), và cơ chế phản ứng stress của amygdala. Não không phải cấu trúc cố định — nó thay đổi theo trải nghiệm và hành vi lặp lại. AIMIND xây dựng lộ trình can thiệp dựa trên nguyên lý này.
+                AIMIND tham khảo các khái niệm về học tập, phản ứng stress và sự lặp lại để giải thích vì sao một phản ứng có thể trở nên quen thuộc. Điều này không biến bài test thành một đánh giá thần kinh học hoặc công cụ điều trị.
               </p>
               <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
-                AIMIND ứng dụng: Giải thích cơ chế thần kinh đằng sau mô thức — để can thiệp đúng chỗ.
+                AIMIND tham khảo: Giúp người dùng có thêm một cách quan sát phản ứng tự động và khả năng thực hành lựa chọn khác.
               </p>
             </div>
 
@@ -227,13 +226,13 @@ function AboutAimindSection() {
                 </div>
               </div>
               <p style={{ color: "#E8925A", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
-                Nói đơn giản: Những niềm tin ăn sâu vào người bạn như &ldquo;mình không đủ tốt&rdquo;, &ldquo;mình dễ bị bỏ rơi&rdquo; — hình thành từ thời thơ ấu và âm thầm quyết định mọi lựa chọn của bạn.
+                Nói đơn giản: Một số niềm tin như &ldquo;mình không đủ tốt&rdquo; có thể ảnh hưởng đến cách chúng ta diễn giải và phản ứng trong một số tình huống.
               </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
-                Phát triển bởi Jeffrey Young, schema therapy xác định 18 early maladaptive schemas — niềm tin lõi hình thành từ thời thơ ấu khi nhu cầu tâm lý cơ bản không được đáp ứng. Các schema này vô thức điều hướng cách một người chọn đối tác, phản ứng với xung đột, tự phá hoại khi thành công gần kề.
+                Schema Therapy cung cấp một khung để quan sát những niềm tin và cách ứng phó lặp lại. Nhiều yếu tố có thể liên quan đến quá trình hình thành; một bài test ngắn không xác định được nguyên nhân cá nhân.
               </p>
               <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
-                AIMIND ứng dụng: Nhận diện schema đang hoạt động và thiết kế can thiệp có mục tiêu.
+                AIMIND tham khảo: Gợi ý những niềm tin hoặc cách ứng phó người dùng có thể tiếp tục quan sát.
               </p>
             </div>
 
@@ -247,16 +246,19 @@ function AboutAimindSection() {
                 </div>
               </div>
               <p style={{ color: "#18B5B0", fontSize: "13px", fontStyle: "italic" as const, marginBottom: "0.75rem", lineHeight: 1.6, fontWeight: 500 }}>
-                Nói đơn giản: Chín kiểu người — mỗi kiểu có nỗi sợ riêng và cách tự bảo vệ riêng. Kết hợp khoa học hành vi để giúp bạn thiết kế thói quen mới từ bên trong.
+                Nói đơn giản: Các bản đồ mô thức có thể cung cấp ngôn ngữ để mô tả những xu hướng hành vi, nhưng không định nghĩa toàn bộ con người.
               </p>
               <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.8, marginBottom: "1rem" }}>
-                Enneagram không chỉ là bài test tính cách — khi hiểu đúng, đây là hệ thống mô tả chín cấu trúc nhân cách với động lực cốt lõi, nỗi sợ ẩn, và cơ chế phòng thủ đặc trưng. Kết hợp với khoa học hành vi (habit loops, cognitive behavioral patterns), AIMIND tạo ra ngôn ngữ thực hành để thay đổi mô thức.
+                AIMIND sử dụng ngôn ngữ mô thức cùng một số khái niệm từ khoa học hành vi để giúp người dùng quan sát vòng lặp. Các nguồn tham khảo này có mức bằng chứng khác nhau và không được dùng như chẩn đoán.
               </p>
               <p style={{ color: "#9B96C0", fontSize: "13px", fontStyle: "italic" as const }}>
-                AIMIND ứng dụng: Bản đồ hoá mô thức và thiết kế vòng phản hồi hành vi mới.
+                AIMIND tham khảo: Bản đồ hóa xu hướng và tạo ngôn ngữ dễ dùng cho việc tự quan sát.
               </p>
             </div>
           </div>
+          <p style={{ color: "#6B678F", fontSize: "13px", textAlign: "center", marginTop: "1.5rem", lineHeight: 1.75 }}>
+            Bằng chứng hỗ trợ từng framework không tự động chứng minh bài test AIMIND đã được kiểm chứng lâm sàng. Bài test này là công cụ tự quan sát, không phải công cụ chẩn đoán.
+          </p>
         </div>
 
         {/* What makes AIMIND different */}
@@ -266,7 +268,7 @@ function AboutAimindSection() {
             Không gán nhãn. Không phân loại. Không phán xét.
           </h3>
           <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.85, maxWidth: "620px", margin: "0 auto 1.5rem" }}>
-            Mục tiêu của AIMIND không phải cho bạn biết bạn là &ldquo;Type 4&rdquo; hay &ldquo;INFJ&rdquo;. Mục tiêu là giúp bạn hiểu tại sao bạn làm những điều bạn làm — và có lựa chọn thật sự để làm khác đi nếu muốn.
+            Mục tiêu của AIMIND không phải cho bạn biết bạn là &ldquo;Type 4&rdquo; hay &ldquo;INFJ&rdquo;. Mục tiêu là giúp bạn quan sát cách mình thường phản ứng và nhận ra nơi mình có thể thử một lựa chọn khác.
           </p>
           <Link
             href="/ve-chung-toi/phuong-phap"
@@ -301,7 +303,7 @@ function RecognitionSection() {
             Nghe cái nào quen không?
           </h2>
           <p style={{ color: "#6B678F", fontSize: "15px", lineHeight: 1.75, maxWidth: "500px", margin: "0.75rem auto 0" }}>
-            Đây không phải &ldquo;tính cách xấu&rdquo; của bạn — đây là những cách bạn đã học để đối phó từ hồi còn nhỏ. Và vì học được, thì có thể thay đổi.
+            Đây không phải &ldquo;tính cách xấu&rdquo; hay kết luận về con người bạn. Đó có thể là những xu hướng phản ứng đáng để quan sát trong từng hoàn cảnh.
           </p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
@@ -320,12 +322,12 @@ function RecognitionSection() {
 
 function TestPreviewSection() {
   const archetypes = [
-    { key: "lo-au", name: "Xu hướng Lo Âu", color: "#7C6FF7", desc: "Luôn sẵn sàng cho điều tệ nhất" },
-    { key: "ne-tranh", name: "Xu hướng Né Tránh", color: "#18B5B0", desc: "Tránh xung đột bằng mọi giá" },
-    { key: "kiem-soat", name: "Xu hướng Kiểm Soát", color: "#5B4FD4", desc: "Cần chắc chắn mọi thứ" },
-    { key: "hy-sinh", name: "Xu hướng Hy Sinh", color: "#B8B3FA", desc: "Đặt người khác lên trước" },
-    { key: "tu-huy", name: "Xu hướng Tự Hủy", color: "#FF6B6B", desc: "Phá hoại những điều tốt đẹp" },
-    { key: "can-bang", name: "Xu hướng Cân Bằng", color: "#4CAF50", desc: "Đang trên hành trình tích hợp" },
+    { key: "lo-au", name: "Xu hướng Lo Âu", color: "#7C6FF7", desc: "Nhạy cảm với điều chưa chắc chắn" },
+    { key: "ne-tranh", name: "Xu hướng Né Tránh", color: "#18B5B0", desc: "Cần khoảng cách khi áp lực tăng" },
+    { key: "kiem-soat", name: "Xu hướng Kiểm Soát", color: "#5B4FD4", desc: "Tìm sự chắc chắn qua kế hoạch" },
+    { key: "hy-sinh", name: "Xu hướng Hy Sinh", color: "#B8B3FA", desc: "Ưu tiên nhu cầu của người khác" },
+    { key: "tu-huy", name: "Xu hướng Tự Hủy", color: "#FF6B6B", desc: "Dễ mất đà trước điều quan trọng" },
+    { key: "can-bang", name: "Xu hướng Cân Bằng", color: "#4CAF50", desc: "Nhiều xu hướng xuất hiện cân bằng" },
   ];
   return (
     <section style={{ padding: "5rem 0", background: "linear-gradient(180deg, #1C1A3E 0%, #2D2A5E 100%)" }}>
@@ -335,7 +337,7 @@ function TestPreviewSection() {
           Bản Đồ Nội Tâm — 6 nhóm xu hướng phản ứng
         </h2>
         <p style={{ color: "#C4C0E0", maxWidth: "500px", margin: "0 auto 3rem", lineHeight: 1.75 }}>
-          20 câu hỏi. 15 phút. Kết quả là điểm khởi đầu để bạn quan sát những xu hướng phản ứng đang nổi bật ở hiện tại.
+          20 câu hỏi. 15 phút. Kết quả là điểm khởi đầu để bạn quan sát những xu hướng đang nổi bật trong câu trả lời hiện tại — không phải chẩn đoán hay nhãn cố định.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "1rem", maxWidth: "720px", margin: "0 auto 3rem" }}>
           {archetypes.map((a) => (
@@ -356,37 +358,6 @@ function TestPreviewSection() {
   );
 }
 
-function JourneySection() {
-  const steps = [
-    { number: "01", title: "Khám phá mô thức", desc: "Làm bài test Bản Đồ Nội Tâm. Nhận gợi ý miễn phí về những xu hướng nổi bật trong câu trả lời của bạn.", cta: "Làm bài test", href: "/kham-pha/ban-do-noi-tam", color: "#7C6FF7" },
-    { number: "02", title: "Đi sâu vào hiểu", desc: "Khóa học Bản Đồ Nội Tâm Chuyên Sâu — tìm hiểu mô thức có thể hình thành thế nào và thực hành những lựa chọn mới.", cta: "Xem khóa học", href: "/hanh-trinh/ban-do-noi-tam-chuyen-sau", color: "#18B5B0" },
-    { number: "03", title: "Đồng hành chuyển hóa", desc: "Đồng hành 1-1 với Hanna — không phải chỉ tư vấn, mà là cùng bạn đi qua từng bước thay đổi thật sự.", cta: "Tìm hiểu thêm", href: "/lien-he", color: "#5B4FD4" },
-  ];
-  return (
-    <section style={{ padding: "5rem 0", backgroundColor: "#F8F4EE" }}>
-      <div className="container-main">
-        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <p style={{ color: "#7C6FF7", fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Hành trình chuyển hóa</p>
-          <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.4rem)", fontWeight: 800, maxWidth: "560px", margin: "0 auto", lineHeight: 1.3 }}>
-            Không phải một bài test. Đây là bắt đầu của một hành trình.
-          </h2>
-        </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
-          {steps.map((step) => (
-            <div key={step.number} style={{ backgroundColor: "white", borderRadius: "16px", padding: "2rem", border: "1px solid #E8E3F0" }}>
-              <div style={{ fontSize: "3rem", fontWeight: 900, color: step.color, opacity: 0.15, fontFamily: "'Be Vietnam Pro', sans-serif", lineHeight: 1, marginBottom: "1rem" }}>{step.number}</div>
-              <h3 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontWeight: 700, fontSize: "1.1rem", marginBottom: "0.75rem" }}>{step.title}</h3>
-              <p style={{ color: "#6B678F", fontSize: "14px", lineHeight: 1.7, marginBottom: "1.5rem" }}>{step.desc}</p>
-              <Link href={step.href} style={{ color: step.color, fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>{step.cta} &rarr;</Link>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-
 function WhatYouGetSection() {
   return (
     <section style={{ padding: "5rem 0", background: "linear-gradient(180deg, #F8F4EE 0%, white 100%)" }}>
@@ -398,10 +369,10 @@ function WhatYouGetSection() {
             Bạn sẽ nhận được gì
           </p>
           <h2 style={{ color: "#1C1A3E", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.3rem)", fontWeight: 800, lineHeight: 1.3, marginBottom: "1rem" }}>
-            Trước và sau — nhìn từ góc độ người đã đi qua
+            Từ chưa gọi tên được đến có một cách để quan sát
           </h2>
           <p style={{ color: "#6B678F", fontSize: "16px", lineHeight: 1.8, maxWidth: "580px", margin: "0 auto" }}>
-            Không phải danh sách tính năng. Đây là những điều người dùng thật sự mô tả sau khi hoàn thành bài test và khóa học.
+            Bài test không kết luận nguyên nhân hay định nghĩa con người bạn. Giá trị đầu tiên là giúp bạn có ngôn ngữ để quan sát những phản ứng đang lặp lại.
           </p>
         </div>
 
@@ -421,22 +392,22 @@ function WhatYouGetSection() {
             {[
               {
                 before: "Tôi biết mình có vấn đề, nhưng không biết vấn đề là gì",
-                after: "Tôi có tên gọi cho điều mình đang làm — và biết nó đến từ đâu",
+                after: "Tôi có một cách gọi để quan sát điều mình thường làm",
                 icon: "🏷️"
               },
               {
                 before: "Tôi cứ tưởng mình như vậy là do tính cách, không thể khác",
-                after: "Tôi hiểu đây là mô thức học được — không phải con người thật của mình",
+                after: "Tôi hiểu đây là một xu hướng phản ứng — không phải toàn bộ con người mình",
                 icon: "🔓"
               },
               {
                 before: "Tôi phán xét bản thân rất nặng vì những phản ứng mình không kiểm soát được",
-                after: "Tôi thấy mình phản ứng theo một logic — và logic đó có lý do để tồn tại",
+                after: "Tôi bắt đầu nhận ra hoàn cảnh nào thường kích hoạt phản ứng đó",
                 icon: "🤝"
               },
               {
                 before: "Tôi cô đơn với những gì mình đang trải qua — nghĩ chỉ có mình như vậy",
-                after: "Tôi nhận ra mô thức này phổ biến hơn tôi nghĩ — và có cách hiểu nó",
+                after: "Tôi có ngôn ngữ để nói về trải nghiệm của mình mà không tự gán nhãn",
                 icon: "🌐"
               },
             ].map((item, i) => (
@@ -474,23 +445,23 @@ function WhatYouGetSection() {
           </div>
 
           {/* Big transformations - 2 column */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "1rem", marginBottom: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 380px), 1fr))", gap: "1rem", marginBottom: "1rem" }}>
             {[
               {
                 title: "Tôi biết mô thức của mình vận hành như thế nào",
-                desc: "Không chỉ biết tên — tôi hiểu cơ chế. Tại sao nó được kích hoạt. Trong hoàn cảnh nào. Với ai. Và điều gì ở bên dưới nó.",
+                desc: "Không chỉ biết tên — tôi quan sát được hoàn cảnh, cảm xúc và cách phản ứng thường đi cùng nhau.",
                 icon: "🔬",
                 color: "#7C6FF7"
               },
               {
                 title: "Tôi nhận ra khi nào cơ chế cũ đang hoạt động",
-                desc: "Giữa một cuộc xung đột, tôi dừng lại được — và hỏi: đây là phản ứng thật của tôi, hay cơ chế bảo vệ đang chạy? Cái khoảng dừng đó thay đổi mọi thứ.",
+                desc: "Giữa một tình huống khó, tôi có thể dừng lại và hỏi mình đang diễn giải điều gì trước khi phản ứng.",
                 icon: "⏸️",
                 color: "#18B5B0"
               },
               {
-                title: "Tôi hiểu vết thương cốt lõi và không còn xấu hổ về nó",
-                desc: "Tôi biết nhu cầu nào của mình chưa được đáp ứng từ nhỏ — và tại sao mô thức hiện tại là nỗ lực tốt nhất của đứa trẻ trong tôi để đối phó với điều đó.",
+                title: "Tôi bớt xem phản ứng này là bản chất cố định",
+                desc: "Tôi có thể xem những trải nghiệm trước đây như một trong nhiều yếu tố liên quan, thay vì một nguyên nhân duy nhất.",
                 icon: "🌱",
                 color: "#5B8A3C"
               },
@@ -518,7 +489,7 @@ function WhatYouGetSection() {
           <div>
             <p style={{ color: "#B8B3FA", fontWeight: 700, fontSize: "14px", marginBottom: "0.5rem" }}>Cần nói thẳng</p>
             <p style={{ color: "#9B96C0", fontSize: "14px", lineHeight: 1.8 }}>
-              AIMIND không hứa hẹn thay đổi sau một bài test hay một khóa học. Thay đổi thật cần thời gian, lặp đi lặp lại, và đôi khi cần đồng hành. Điều mà AIMIND cung cấp là <strong style={{ color: "white" }}>nền tảng nhận thức</strong> — bạn hiểu mình đủ rõ để biết cần thay đổi điều gì, bắt đầu từ đâu, và tại sao những cách cũ không hiệu quả.
+              AIMIND không hứa hẹn thay đổi sau một bài test hay một khóa học. Thay đổi cần thời gian, thực hành và đôi khi cần sự đồng hành phù hợp. AIMIND cung cấp một <strong style={{ color: "white" }}>điểm khởi đầu để quan sát</strong> — giúp bạn nhận ra điều gì thường xảy ra và nơi mình có thể thử một lựa chọn khác.
             </p>
           </div>
         </div>
@@ -530,16 +501,16 @@ function WhatYouGetSection() {
 
 function TestimonialsSection() {
   const testimonials = [
-    { quote: "Tôi đã đọc nhiều sách tâm lý nhưng không có gì giúp tôi nhìn thấy bản thân rõ như bài test này.", name: "Minh Trang", role: "Quản lý marketing, 32 tuổi", archetype: "Mô thức: Né Tránh", color: "#18B5B0" },
-    { quote: "Kết quả không chỉ mô tả tôi — nó giải thích tại sao tôi lại như vậy. Phần vết thương cốt lõi khiến tôi bật khóc.", name: "Hoàng Nam", role: "Giám đốc điều hành, 38 tuổi", archetype: "Mô thức: Kiểm Soát", color: "#5B4FD4" },
-    { quote: "Sau 3 tháng coaching với Hanna, tôi không còn tự phá hoại những điều tốt đẹp trong cuộc sống nữa.", name: "Thu Hà", role: "Chuyên gia tư vấn, 35 tuổi", archetype: "Mô thức: Tự Hủy", color: "#FF6B6B" },
+    { quote: "Bài test cho tôi một cách gọi tên những phản ứng mình thường thấy nhưng trước đây khó diễn đạt.", name: "Minh Trang", role: "Quản lý marketing, 32 tuổi", archetype: "Xu hướng: Né Tránh", color: "#18B5B0" },
+    { quote: "Phần kết quả giúp tôi nhận ra mình thường làm gì khi cảm thấy áp lực, mà không khiến tôi thấy bị phán xét.", name: "Hoàng Nam", role: "Giám đốc điều hành, 38 tuổi", archetype: "Xu hướng: Kiểm Soát", color: "#5B4FD4" },
+    { quote: "Sau thời gian đồng hành, tôi nhận ra sớm hơn những lúc mình bắt đầu mất đà và có thêm lựa chọn để dừng lại.", name: "Thu Hà", role: "Chuyên gia tư vấn, 35 tuổi", archetype: "Xu hướng: Tự Hủy", color: "#FF6B6B" },
   ];
   return (
     <section style={{ padding: "5rem 0", backgroundColor: "#1C1A3E" }}>
       <div className="container-main">
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.6rem, 4vw, 2.2rem)", fontWeight: 800, lineHeight: 1.3 }}>
-            Họ đã nhìn thấy điều mình chưa từng thấy
+            Điều người dùng cho biết họ đã quan sát được
           </h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
@@ -567,10 +538,10 @@ function CtaSection() {
     <section style={{ padding: "6rem 0", background: "linear-gradient(135deg, #2D2A5E 0%, #1C1A3E 100%)", textAlign: "center" }}>
       <div className="container-main">
         <h2 style={{ color: "white", fontFamily: "'Be Vietnam Pro', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 800, marginBottom: "1rem", lineHeight: 1.25 }}>
-          Xu hướng nào đang lặp lại trong cuộc sống của bạn?
+          Xu hướng nào đang nổi bật trong câu trả lời của bạn?
         </h2>
         <p style={{ color: "#C4C0E0", marginBottom: "2.5rem", fontSize: "16px", lineHeight: 1.75 }}>
-          Bài test miễn phí. 15 phút. Kết quả thay đổi cách bạn nhìn chính mình.
+          Bài test miễn phí trong 15 phút — một điểm khởi đầu để quan sát cách bạn thường phản ứng.
         </p>
         <Link
           href="/kham-pha/ban-do-noi-tam"
@@ -578,6 +549,9 @@ function CtaSection() {
         >
           Làm bài test ngay — Miễn phí
         </Link>
+        <p style={{ color: "#9B96C0", fontSize: "13px", lineHeight: 1.7, margin: "1.5rem auto 0", maxWidth: "620px" }}>
+          Sau bài test, bạn có thể chọn đọc thêm, học chuyên sâu hoặc tìm sự đồng hành khi thấy phù hợp.
+        </p>
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "Khám phá hệ thần kinh, stress, giấc ngủ, vận động và các thực hành chăm sóc cơ thể khoa học. Hiểu THÂN là bước đầu tiên để hiểu mình.",
   keywords: ["hệ thần kinh", "stress", "giấc ngủ", "vận động", "chăm sóc cơ thể", "mobility", "AIMIND"],
+  robots: { index: false, follow: false },
 };
 
 const HIEU_CO_THE = [
@@ -72,7 +73,7 @@ export default function ThanPage() {
               lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem",
             }}
           >
-            Căng thẳng, mất ngủ hay đau vai gáy có thể liên quan đến nhiều yếu tố. Việc quan sát cơ thể là một điểm khởi đầu để hiểu trạng thái và nhu cầu phục hồi của bạn.
+            Căng thẳng, mất ngủ, đau vai gáy — không phải ngẫu nhiên. Cơ thể đang phản ánh chính xác trạng thái nội tâm của bạn.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
             <Link
@@ -112,7 +113,7 @@ export default function ThanPage() {
               THÂN trong hệ thống AIMIND
             </h2>
             <p style={{ color: "#6B678F", fontSize: "16px", lineHeight: 1.8, maxWidth: "600px", margin: "1rem auto 0" }}>
-              Không phải chỉ tập gym hay ăn sạch. THÂN trong AIMIND là một cách nhìn cơ thể từ góc độ thần kinh học và tâm lý — để bạn nhận diện tín hiệu và thử những thay đổi phù hợp hơn.
+              Không phải chỉ tập gym hay ăn sạch. THÂN trong AIMIND là hiểu cơ thể từ góc độ thần kinh học và tâm lý — để thay đổi từ gốc rễ.
             </p>
           </div>
 

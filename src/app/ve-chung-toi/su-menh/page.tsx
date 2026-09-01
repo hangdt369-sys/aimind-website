@@ -40,7 +40,8 @@ const milestones = [
 
 export default function SuMenhPage() {
   return (
-    <main style={{ flex: 1 }}>
+    <>
+      <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -321,6 +322,7 @@ export default function SuMenhPage() {
             </Link>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }
