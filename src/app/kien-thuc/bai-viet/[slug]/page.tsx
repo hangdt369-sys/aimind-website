@@ -12,7 +12,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   const related = getRelatedArticles(params.slug, article.tag, 3);
 
   return (
-    <main style={{ flex: 1, backgroundColor: "#F8F4EE" }}>
+    <>
+      <main style={{ flex: 1, backgroundColor: "#F8F4EE" }}>
         {/* Hero */}
         <section
           style={{
@@ -373,6 +374,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }

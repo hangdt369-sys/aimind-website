@@ -20,7 +20,8 @@ export default function BaiVietPage() {
   const filtered = activeTag === "Tất cả" ? articles : articles.filter((a): a is NonNullable<typeof a> => !!a && a.tag === activeTag);
 
   return (
-    <main style={{ flex: 1 }}>
+    <>
+      <main style={{ flex: 1 }}>
         {/* Hero */}
         <section
           style={{
@@ -160,7 +161,7 @@ export default function BaiVietPage() {
                       Đọc tiếp →
                     </div>
                   </Link>
-                ))}
+                ))})
               </div>
             )}
           </div>
@@ -211,6 +212,7 @@ export default function BaiVietPage() {
             </a>
           </div>
         </section>
-    </main>
+      </main>
+    </>
   );
 }

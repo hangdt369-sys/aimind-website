@@ -3,56 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 
-// ─── Các mục điều hướng đang có nội dung ───────────────────────────────────
+// ─── Chỉ hiển thị các route đã sẵn sàng cho production ──────────────────────
 const NAV_ITEMS = [
   { label: "Trang Chủ", href: "/" },
-  {
-    label: "Thân",
-    href: "/than",
-    children: [
-      { label: "Hiểu cơ thể", href: "/than/hieu-co-the" },
-      { label: "Hệ thần kinh", href: "/than/hieu-co-the/he-than-kinh" },
-      { label: "Stress & Phục hồi", href: "/than/hieu-co-the/stress" },
-      { label: "Giấc ngủ", href: "/than/hieu-co-the/giac-ngu" },
-      { label: "Thực hành", href: "/than/thuc-hanh" },
-      { label: "Cửa hàng", href: "/than/cua-hang" },
-    ],
-  },
-  {
-    label: "Tâm",
-    href: "/tam",
-    children: [
-      { label: "Hiểu tâm lý", href: "/tam/hieu-tam-ly" },
-      { label: "Vô thức & Schema", href: "/tam/hieu-tam-ly/schema" },
-      { label: "Attachment", href: "/tam/hieu-tam-ly/attachment" },
-      { label: "Cảm xúc", href: "/tam/hieu-tam-ly/cam-xuc" },
-      { label: "Hiểu hành vi", href: "/tam/hieu-hanh-vi" },
-      { label: "Thực hành", href: "/tam/thuc-hanh" },
-    ],
-  },
-  {
-    label: "Trí",
-    href: "/tri",
-    children: [
-      { label: "Tư duy phản biện", href: "/tri/tu-duy-phan-bien" },
-      { label: "Thiên kiến nhận thức", href: "/tri/thien-kien-nhan-thuc" },
-      { label: "Khoa học về con người", href: "/tri/khoa-hoc-con-nguoi" },
-      { label: "Lớp học thứ 7", href: "/tri/lop-hoc" },
-    ],
-  },
-  {
-    label: "Thư Viện",
-    href: "/thu-vien",
-    children: [
-      { label: "Psychology", href: "/thu-vien/psychology" },
-      { label: "Neuroscience", href: "/thu-vien/neuroscience" },
-      { label: "Biology", href: "/thu-vien/biology" },
-      { label: "Behavioral Science", href: "/thu-vien/behavioral-science" },
-      { label: "Critical Thinking", href: "/thu-vien/critical-thinking" },
-      { label: "AI & Human", href: "/thu-vien/ai-and-human" },
-    ],
-  },
-  { label: "Học Cùng AIMIND", href: "/hoc-cung-aimind" },
+  { label: "Bản Đồ Nội Tâm", href: "/kham-pha/ban-do-noi-tam" },
+  { label: "Bài Viết", href: "/kien-thuc/bai-viet" },
   { label: "Chuyên Gia", href: "/chuyen-gia" },
   { label: "Coaching", href: "/coaching" },
   {
@@ -67,7 +22,7 @@ const NAV_ITEMS = [
 ];
 
 // ─── Nhóm menu desktop (rút gọn để không quá chật) ─────────────────────────
-const DESKTOP_PRIMARY = ["Thân", "Tâm", "Trí", "Thư Viện", "Học Cùng AIMIND", "Về AIMIND"];
+const DESKTOP_PRIMARY = ["Bài Viết", "Về AIMIND"];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

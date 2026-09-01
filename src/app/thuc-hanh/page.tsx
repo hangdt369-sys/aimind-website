@@ -2,8 +2,6 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 import Link from "next/link";
 
 const practices: Record<string, {
@@ -17,13 +15,13 @@ const practices: Record<string, {
   reminder: string;
 }> = {
   "lo-au": {
-    name: "Lo Âu Gắn Bó",
+    name: "Xu hướng Lo Âu",
     color: "#7C6FF7",
     icon: "🌊",
     tagline: "Học cách cảm thấy an toàn từ bên trong",
     morning: [
       { prompt: "Sáng nay tôi đang mang theo lo lắng nào?", subtext: "Viết ra — không phán xét, chỉ quan sát." },
-      { prompt: "Niềm lo này có dựa trên điều đang thực sự xảy ra, hay não tôi đang tự tạo ra kịch bản?", subtext: "Phân biệt: lo có thật vs lo do mô thức." },
+      { prompt: "Niềm lo này dựa trên điều đang thực sự xảy ra, hay trên cách tôi đang diễn giải tình huống?", subtext: "Phân biệt dữ kiện hiện tại với điều mình đang dự đoán." },
       { prompt: "Hôm nay tôi cần gì từ chính mình?", subtext: "Không phải từ người khác — từ chính mình." },
     ],
     pattern: [
@@ -36,10 +34,10 @@ const practices: Record<string, {
       { prompt: "Điều tôi tự hào về bản thân hôm nay là gì?", subtext: "Ít nhất một điều." },
       { prompt: "Ngày mai, tôi muốn thử điều gì khác đi?", subtext: "Một hành động nhỏ, cụ thể." },
     ],
-    reminder: "Bạn không cần ai xác nhận để biết mình có giá trị. Sự an toàn đó đang được xây từ bên trong — mỗi ngày một chút.",
+    reminder: "Khi cần được trấn an, hãy thử quan sát cả điều đang xảy ra và điều bạn đang dự đoán trước khi phản ứng.",
   },
   "ne-tranh": {
-    name: "Né Tránh",
+    name: "Xu hướng Né Tránh",
     color: "#18B5B0",
     icon: "🏔️",
     tagline: "Học cách kết nối mà không mất đi chính mình",
@@ -61,7 +59,7 @@ const practices: Record<string, {
     reminder: "Kết nối không có nghĩa là mất đi chính mình. Bạn có thể ở bên người khác và vẫn là bạn.",
   },
   "kiem-soat": {
-    name: "Kiểm Soát",
+    name: "Xu hướng Kiểm Soát",
     color: "#5B4FD4",
     icon: "⚡",
     tagline: "Học cách tin tưởng — vào người khác và vào bản thân",
@@ -80,10 +78,10 @@ const practices: Record<string, {
       { prompt: "Tôi đã tự khen mình chưa — dù nhỏ?", subtext: "Nếu chưa, làm ngay bây giờ." },
       { prompt: "Ngày mai, tôi muốn tin tưởng điều gì?", subtext: "Một người, một tình huống, hay chính mình." },
     ],
-    reminder: "Kiểm soát sinh ra từ sợ hãi. Khi bạn đủ an toàn bên trong, bạn sẽ cần ít kiểm soát hơn ở bên ngoài.",
+    reminder: "Lập kế hoạch có thể hữu ích. Hãy quan sát khi nào sự chuẩn bị đang hỗ trợ bạn và khi nào nó khiến bạn khó linh hoạt.",
   },
   "hy-sinh": {
-    name: "Hy Sinh",
+    name: "Xu hướng Hy Sinh",
     color: "#E67E74",
     icon: "🫶",
     tagline: "Học cách cho — và học cách nhận",
@@ -105,40 +103,40 @@ const practices: Record<string, {
     reminder: "Bạn không thể tiếp tục rót từ một cái cốc rỗng. Chăm sóc bản thân không phải ích kỷ — đó là điều kiện để bạn có thể tiếp tục yêu thương người khác.",
   },
   "tu-huy": {
-    name: "Tự Hủy",
+    name: "Xu hướng Tự Hủy",
     color: "#9B59B6",
     icon: "🔮",
-    tagline: "Học cách đón nhận những điều tốt đẹp",
+    tagline: "Quan sát những lúc bạn trì hoãn, mất đà hoặc làm gián đoạn tiến trình",
     morning: [
       { prompt: "Hôm nay có điều tốt nào đang đến gần mà tôi cảm thấy khó đón nhận?", subtext: "Quan sát sự kháng cự — không phán xét." },
       { prompt: "Tôi tin mình xứng đáng có điều gì hôm nay?", subtext: "Dù nhỏ — ghi ra." },
-      { prompt: "Có kịch bản tự phá hoại nào tôi đang chuẩn bị chạy không?", subtext: "Nhận ra sớm là bước đầu." },
+      { prompt: "Có việc quan trọng nào tôi đang trì hoãn hoặc làm gián đoạn không?", subtext: "Chỉ ghi nhận hành vi đang xảy ra, chưa cần kết luận nguyên nhân." },
     ],
     pattern: [
-      { prompt: "Khi có điều tốt xảy ra, phản ứng đầu tiên của tôi là gì?", subtext: "Đón nhận, nghi ngờ, hay tìm cách phá?" },
+      { prompt: "Khi có điều tích cực xảy ra, phản ứng đầu tiên của tôi là gì?", subtext: "Đón nhận, nghi ngờ, chững lại hay đổi hướng?" },
       { prompt: "Hôm nay tôi có tự làm khó mình ở đâu không?", subtext: "Hành vi cụ thể." },
-      { prompt: "Điều gì khiến tôi tin rằng mình không xứng đáng?", subtext: "Câu nói, ký ức, hay ai đó?" },
+      { prompt: "Tôi có đang nghĩ rằng mình chưa đủ tốt hoặc không xứng đáng không?", subtext: "Ghi lại suy nghĩ như một điều để quan sát, không phải sự thật." },
     ],
     evening: [
-      { prompt: "Điều tốt nào hôm nay tôi đã để vào — không phá đi?", subtext: "Dù nhỏ — đây là bằng chứng quan trọng." },
+      { prompt: "Điều tích cực nào hôm nay tôi đã cho phép mình tiếp nhận?", subtext: "Dù nhỏ — chỉ cần ghi nhận." },
       { prompt: "Tôi đã đối xử với mình hôm nay như một người bạn hay như kẻ thù?", subtext: "Trung thực — không tự trách thêm." },
       { prompt: "Ngày mai, tôi muốn để một điều tốt nào đi vào?", subtext: "Đặt ý định cụ thể." },
     ],
-    reminder: "Tự phá hoại không phải tính cách — đó là cơ chế bảo vệ khỏi thất vọng. Khi bạn nhận ra nó, bạn đã bắt đầu thoát ra.",
+    reminder: "Trì hoãn hoặc mất đà có thể xuất phát từ nhiều nguyên nhân. Hãy bắt đầu bằng việc quan sát điều xảy ra ngay trước thời điểm tiến trình bị gián đoạn.",
   },
   "can-bang": {
-    name: "Cân Bằng",
+    name: "Xu hướng Cân Bằng",
     color: "#27AE60",
     icon: "🌿",
-    tagline: "Tiếp tục hành trình — nhất quán hơn cường độ",
+    tagline: "Quan sát khi nào bạn phản ứng linh hoạt và khi nào một xu hướng khác nổi bật",
     morning: [
-      { prompt: "Hôm nay tôi đang ở đâu trên hành trình của mình?", subtext: "Không đánh giá — chỉ quan sát." },
+      { prompt: "Hôm nay phản ứng nào của tôi phù hợp với hoàn cảnh?", subtext: "Không đánh giá — chỉ quan sát." },
       { prompt: "Mô thức nào tôi cảm thấy đang hoạt động nhiều nhất gần đây?", subtext: "Lo âu, né tránh, kiểm soát, hy sinh, tự hủy?" },
       { prompt: "Điều gì đang giúp tôi ổn định nhất lúc này?", subtext: "Thói quen, người, môi trường?" },
     ],
     pattern: [
       { prompt: "Hôm nay tôi đã phản ứng tự động ở đâu — và có bắt được không?", subtext: "Khoảng dừng giữa kích hoạt và phản ứng." },
-      { prompt: "Có khoảnh khắc nào tôi chọn khác đi so với mô thức cũ?", subtext: "Ghi lại — đây là bằng chứng thay đổi." },
+      { prompt: "Có khoảnh khắc nào hôm nay tôi cân nhắc trước khi phản ứng?", subtext: "Ghi lại tình huống và lựa chọn của bạn." },
       { prompt: "Tôi có đang tự ép mình thay đổi quá nhanh không?", subtext: "Thay đổi cần nhất quán, không cần cường độ." },
     ],
     evening: [
@@ -146,7 +144,7 @@ const practices: Record<string, {
       { prompt: "Tôi đã tử tế với mình hôm nay chưa?", subtext: "Không phải hoàn hảo — tử tế." },
       { prompt: "Ngày mai, tôi muốn tiếp tục điều gì?", subtext: "Nhất quán quan trọng hơn hoàn hảo." },
     ],
-    reminder: "Bạn đang trên đường. Không cần đi nhanh — chỉ cần tiếp tục.",
+    reminder: "Điểm Cân Bằng không có nghĩa mọi phản ứng đều cân bằng. Hãy tiếp tục quan sát sự khác nhau giữa từng bối cảnh.",
   },
 };
 
@@ -170,7 +168,6 @@ function PracticeContent() {
 
   return (
     <>
-      <Navbar />
       <main style={{ flex: 1, backgroundColor: "#F8F4EE" }}>
 
         {/* Hero */}
@@ -205,7 +202,7 @@ function PracticeContent() {
             <p style={{ color: "#B8B3FA", fontSize: "15px", marginBottom: "0.5rem", fontWeight: 600 }}>
               Mô thức: {practice.name}
             </p>
-            <p style={{ color: "#9B96C0", fontSize: "14px", fontStyle: "italic" }}>"{practice.tagline}"</p>
+            <p style={{ color: "#9B96C0", fontSize: "14px", fontStyle: "italic" }}>&ldquo;{practice.tagline}&rdquo;</p>
 
             <button
               onClick={() => setShowGuide(!showGuide)}
@@ -356,7 +353,7 @@ function PracticeContent() {
                 Nhắc nhở
               </p>
               <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.8, fontStyle: "italic" }}>
-                "{practice.reminder}"
+                &ldquo;{practice.reminder}&rdquo;
               </p>
             </div>
 
@@ -403,7 +400,6 @@ function PracticeContent() {
         </section>
 
       </main>
-      <Footer />
     </>
   );
 }

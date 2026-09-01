@@ -6,30 +6,30 @@ import type { ArchetypeProfile, ArchetypeKey } from "@/types";
 export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "lo-au": {
     key: "lo-au",
-    name: "Xu hướng Lo Âu Gắn Bó",
-    tagline: "Bạn yêu sâu sắc — nhưng luôn sợ bị bỏ lại",
+    name: "Xu hướng Lo Âu",
+    tagline: "Bạn gắn kết sâu sắc và có thể nhạy cảm với dấu hiệu xa cách",
     description:
-      "Kết quả hiện tại cho thấy bạn có thể trân trọng sự gắn kết sâu sắc, đồng thời dễ lo lắng khi cảm nhận khoảng cách hoặc sự không chắc chắn. Bạn có thể thường xuyên kiểm tra, cần được trấn an hoặc nghĩ đến những kịch bản không mong muốn.",
+      "Kết quả hiện tại gợi ý rằng bạn có thể coi trọng sự gắn kết và nhạy cảm với những thay đổi trong mối quan hệ. Khi chưa nhận được phản hồi hoặc cảm thấy khoảng cách, bạn có thể cần thêm sự xác nhận để cảm thấy yên tâm.",
     coreWound:
-      "Một cách để khám phá xu hướng này là quan sát những trải nghiệm từng khiến sự gần gũi trở nên không chắc chắn, và cách bạn đã học để tìm kiếm cảm giác an toàn.",
+      "Một cách để quan sát xu hướng này là chú ý những tình huống khiến bạn nhanh chóng diễn giải sự im lặng hoặc khoảng cách như dấu hiệu mình sắp bị bỏ lại.",
     hiddenFear:
-      "Trong một số tình huống, bạn có thể lo rằng mình không đủ quan trọng hoặc người khác sẽ không ở lại.",
+      "Trong một số tình huống, bạn có thể lo rằng mình chưa đủ quan trọng hoặc mối quan hệ không còn an toàn như trước.",
     behaviorPattern: [
       "Hay kiểm tra tin nhắn, cần phản hồi nhanh để cảm thấy an toàn",
       "Khi bị phớt lờ — dù một chút — cảm giác lo âu bùng lên ngay",
-      "Trong mối quan hệ, bạn thường cho nhiều hơn nhận",
+      "Có thể tìm thêm sự xác nhận khi cảm thấy mối quan hệ không ổn",
       "Hay tưởng tượng kịch bản tệ nhất khi có dấu hiệu bất ổn",
-      "Khó buông bỏ ngay cả khi mối quan hệ không còn tốt",
+      "Có thể muốn giải quyết ngay khi xuất hiện khoảng cách hoặc xung đột",
     ],
     strengths: [
-      "Sự nhạy cảm và đồng cảm sâu sắc",
-      "Khả năng yêu thương chân thành và trung thành",
-      "Hiểu được cảm xúc người khác tốt hơn hầu hết",
+      "Khả năng chú ý sớm đến những thay đổi trong mối quan hệ",
+      "Sẵn sàng tìm kiếm kết nối khi cảm thấy bất an",
+      "Có thể diễn đạt rõ nhu cầu được phản hồi và trấn an",
     ],
     growthEdge:
-      "Học cách cảm thấy an toàn từ bên trong — không phụ thuộc vào sự có mặt của người khác để biết mình có giá trị.",
+      "Quan sát lúc nhu cầu được trấn an xuất hiện và thử phân biệt điều đang xảy ra với kịch bản bạn đang lo lắng.",
     nextStep:
-      "Khóa học 'Bản đồ Nội Tâm Chuyên Sâu' sẽ giúp bạn hiểu nguồn gốc của mô thức này và bắt đầu xây dựng sự an toàn từ bên trong.",
+      "Bạn có thể đọc thêm hoặc học chuyên sâu để quan sát cách xu hướng này xuất hiện trong từng bối cảnh cụ thể.",
     color: "#7C6FF7",
     icon: "🌊",
   },
@@ -37,29 +37,29 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "ne-tranh": {
     key: "ne-tranh",
     name: "Xu hướng Né Tránh",
-    tagline: "Bạn cần không gian — nhưng thật ra là cần an toàn",
+    tagline: "Nhu cầu về không gian có thể giúp bạn giữ cảm giác an toàn và tự chủ",
     description:
-      "Kết quả hiện tại cho thấy bạn có thể trân trọng sự độc lập và không gian cá nhân. Khi cảm thấy áp lực hoặc quá gần, bạn có xu hướng lùi lại để tự bảo vệ, ngay cả khi vẫn mong muốn kết nối.",
+      "Kết quả hiện tại gợi ý rằng bạn có thể trân trọng sự độc lập và không gian cá nhân. Khi cảm thấy áp lực hoặc quá gần, bạn có xu hướng lùi lại để tự bảo vệ, ngay cả khi vẫn mong muốn kết nối.",
     coreWound:
-      "Một cách để khám phá xu hướng này là quan sát khi nào việc dựa vào người khác gợi lên cảm giác không chắc chắn, và vì sao tự chủ trở thành lựa chọn quen thuộc.",
+      "Một cách để quan sát xu hướng này là chú ý khi nào việc dựa vào người khác gợi lên cảm giác không chắc chắn và khi nào tự chủ trở thành lựa chọn quen thuộc.",
     hiddenFear:
-      "Trong một số tình huống, bạn có thể lo rằng sự gần gũi sẽ làm mất không gian riêng hoặc khiến mình dễ bị tổn thương.",
+      "Trong một số tình huống, bạn có thể lo rằng sự gần gũi sẽ làm giảm không gian riêng hoặc khiến mình dễ bị tổn thương.",
     behaviorPattern: [
       "Khi cảm xúc leo thang, bạn rút lui về không gian riêng",
       "Khó nói 'tôi cần bạn' — ngay cả khi đó là sự thật",
-      "Hay bận rộn với công việc để không phải đối mặt với cảm xúc",
-      "Trong mối quan hệ, bạn thường cần 'break' để tái nạp",
-      "Cảm thấy mình bị hiểu lầm là 'lạnh lùng' hay 'không quan tâm'",
+      "Có thể tiếp tục làm việc và để cảm xúc xử lý sau",
+      "Trong mối quan hệ, bạn có thể cần khoảng lùi để tự xử lý",
+      "Có xu hướng tự giải quyết khó khăn trước khi tìm đến người khác",
     ],
     strengths: [
       "Tự chủ và khả năng giải quyết vấn đề độc lập",
-      "Bình tĩnh trong khủng hoảng — ít bị cuốn vào cảm xúc",
-      "Rất đáng tin cậy khi đã cam kết với điều gì",
+      "Có thể tập trung vào giải pháp khi gặp khó khăn",
+      "Nhận biết khá rõ nhu cầu về không gian cá nhân",
     ],
     growthEdge:
-      "Học cách để người khác đến gần mà không cảm thấy đang mất đi chính mình.",
+      "Quan sát lúc bạn muốn lùi lại và thử nhận biết mình đang cần không gian, sự rõ ràng hay một cách kết nối an toàn hơn.",
     nextStep:
-      "Khóa học 'Bản đồ Nội Tâm Chuyên Sâu' sẽ giúp bạn hiểu cơ chế phòng vệ và tìm cách kết nối mà không cần hy sinh sự tự do.",
+      "Bạn có thể đọc thêm hoặc học chuyên sâu để quan sát nhu cầu về khoảng cách và kết nối trong đời sống thực tế.",
     color: "#18B5B0",
     icon: "🏔️",
   },
@@ -67,29 +67,29 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "kiem-soat": {
     key: "kiem-soat",
     name: "Xu hướng Kiểm Soát",
-    tagline: "Bạn làm mọi thứ hoàn hảo — vì sai sót cảm thấy nguy hiểm",
+    tagline: "Sự chuẩn bị kỹ có thể giúp bạn cảm thấy vững vàng trước điều chưa chắc chắn",
     description:
-      "Kết quả hiện tại cho thấy bạn có thể đặt tiêu chuẩn cao và chuẩn bị kỹ. Khi thiếu chắc chắn, bạn có xu hướng lên kế hoạch hoặc kiểm soát nhiều hơn để cảm thấy an toàn.",
+      "Kết quả hiện tại gợi ý rằng bạn có thể đặt tiêu chuẩn cao, coi trọng kế hoạch và muốn hạn chế rủi ro. Khi mọi việc không rõ ràng hoặc lệch khỏi dự kiến, bạn có thể thấy khó thư giãn.",
     coreWound:
-      "Một cách để khám phá xu hướng này là quan sát những tình huống thiếu chắc chắn và cách việc kiểm soát giúp bạn tạm thời cảm thấy an toàn hơn.",
+      "Một cách để quan sát xu hướng này là chú ý khi nào việc lập kế hoạch hỗ trợ bạn và khi nào nhu cầu chắc chắn khiến bạn khó thích nghi với thay đổi.",
     hiddenFear:
-      "Trong một số tình huống, bạn có thể lo mình không ứng phó được nếu kế hoạch thay đổi, hoặc giá trị bản thân bị ảnh hưởng khi mắc sai sót.",
+      "Trong một số tình huống, bạn có thể lo mình sẽ không xử lý tốt nếu kế hoạch thay đổi hoặc kết quả không đạt tiêu chuẩn mong muốn.",
     behaviorPattern: [
-      "Khó giao việc cho người khác vì sợ không đạt tiêu chuẩn",
+      "Có thể lập kế hoạch kỹ để giảm bớt điều chưa chắc chắn",
       "Hay lo lắng về tương lai, lên kế hoạch cho mọi kịch bản",
       "Phê phán bản thân rất nặng khi mắc sai lầm",
       "Khó buông bỏ khi mọi thứ không đi theo dự kiến",
-      "Hay cảm thấy gánh nặng vì phải 'gánh' quá nhiều",
+      "Có thể tiếp tục tập trung vào công việc và để cảm xúc xử lý sau",
     ],
     strengths: [
-      "Kỷ luật và khả năng tổ chức xuất sắc",
-      "Đáng tin cậy — luôn hoàn thành những gì đã cam kết",
-      "Khả năng nhìn xa và chuẩn bị kỹ càng",
+      "Khả năng lập kế hoạch và chuẩn bị kỹ",
+      "Chú ý đến rủi ro và những chi tiết có thể ảnh hưởng kết quả",
+      "Có xu hướng tập trung vào giải pháp khi gặp khó khăn",
     ],
     growthEdge:
-      "Học cách tin tưởng — tin vào người khác, tin vào quá trình, và tin rằng bạn ổn ngay cả khi không hoàn hảo.",
+      "Quan sát lúc nhu cầu kiểm soát tăng lên và thử phân biệt điều thực sự cần chuẩn bị với điều có thể để linh hoạt.",
     nextStep:
-      "Khóa học 'Bản đồ Nội Tâm Chuyên Sâu' giúp bạn hiểu nguồn gốc của nhu cầu kiểm soát và tìm cách sống nhẹ hơn.",
+      "Bạn có thể đọc thêm hoặc học chuyên sâu để quan sát cách mình phản ứng trước sai sót, thay đổi và điều chưa chắc chắn.",
     color: "#5B4FD4",
     icon: "⚡",
   },
@@ -97,29 +97,29 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "hy-sinh": {
     key: "hy-sinh",
     name: "Xu hướng Hy Sinh",
-    tagline: "Bạn chăm lo cho mọi người — và quên mất chính mình",
+    tagline: "Bạn quan tâm đến người khác và đôi khi để nhu cầu của mình lại phía sau",
     description:
-      "Kết quả hiện tại cho thấy bạn có thể rất quan tâm và sẵn sàng giúp đỡ người khác. Trong một số tình huống, bạn có xu hướng đặt nhu cầu của họ lên trước và thấy khó nói 'không'.",
+      "Kết quả hiện tại gợi ý rằng bạn có thể quan tâm sâu sắc đến nhu cầu của người khác và sẵn sàng giúp đỡ. Trong một số tình huống, việc nói 'không' hoặc ưu tiên bản thân có thể khiến bạn không thoải mái.",
     coreWound:
-      "Một cách để khám phá xu hướng này là quan sát khi nào việc trở nên hữu ích hoặc không gây phiền giúp bạn cảm thấy được chấp nhận.",
+      "Một cách để quan sát xu hướng này là chú ý khi nào bạn đồng ý vì thật sự muốn giúp và khi nào bạn đồng ý vì lo người khác thất vọng.",
     hiddenFear:
-      "Trong một số tình huống, bạn có thể lo rằng mình sẽ ít được trân trọng hơn nếu không tiếp tục cho đi hoặc đáp ứng kỳ vọng.",
+      "Trong một số tình huống, bạn có thể lo rằng việc từ chối hoặc bộc lộ nhu cầu riêng sẽ ảnh hưởng đến sự gắn kết với người khác.",
     behaviorPattern: [
       "Rất khó nói 'không' — dù trong lòng đang mệt mỏi",
       "Hay cảm thấy tội lỗi khi nghĩ đến nhu cầu của bản thân",
       "Thường biết người khác cần gì trước khi biết mình cần gì",
       "Hay cảm thấy kiệt sức nhưng vẫn tiếp tục cho đi",
-      "Đôi khi tích tụ oán giận vì cảm thấy không được nhận lại",
+      "Có thể đồng ý giúp dù trong lòng không thật sự muốn",
     ],
     strengths: [
-      "Khả năng đồng cảm và chăm sóc thật sự",
-      "Tạo ra sự ấm áp và gắn kết trong mối quan hệ",
-      "Trực giác nhạy bén về cảm xúc người xung quanh",
+      "Sẵn sàng quan tâm và hỗ trợ người khác",
+      "Chú ý đến nhu cầu của những người xung quanh",
+      "Coi trọng sự gắn kết trong các mối quan hệ",
     ],
     growthEdge:
-      "Học cách nhận — nhận tình yêu, nhận sự giúp đỡ, và nhận ra rằng bạn có giá trị ngay cả khi không làm gì cho ai.",
+      "Quan sát lúc bạn bỏ qua nhu cầu của mình và thử dành cho bản thân cùng sự quan tâm mà bạn thường dành cho người khác.",
     nextStep:
-      "Khóa học 'Bản đồ Nội Tâm Chuyên Sâu' giúp bạn tìm lại chính mình và học cách yêu thương bản thân mà không cảm thấy ích kỷ.",
+      "Bạn có thể đọc thêm hoặc học chuyên sâu để quan sát ranh giới, nhu cầu và cách cho đi phù hợp với hoàn cảnh.",
     color: "#E67E74",
     icon: "🌸",
   },
@@ -127,13 +127,13 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "tu-huy": {
     key: "tu-huy",
     name: "Xu hướng Tự Hủy",
-    tagline: "Bạn tiến gần đến thành công — rồi tự phá vỡ nó",
+    tagline: "Bạn có thể chững lại hoặc đổi hướng khi điều mình muốn trở nên quan trọng",
     description:
-      "Kết quả hiện tại cho thấy bạn có thể trì hoãn, đổi hướng hoặc làm gián đoạn điều tốt ngay khi nó trở nên quan trọng. Đây có thể là một cách tự bảo vệ trước áp lực, rủi ro hoặc cảm giác bị nhìn thấy.",
+      "Kết quả hiện tại gợi ý rằng bạn có thể trì hoãn, mất đà, khó duy trì điều mình muốn hoặc làm gián đoạn tiến trình khi nó trở nên quan trọng. Nguyên nhân có thể khác nhau và cần được xem như một giả thuyết để tiếp tục quan sát.",
     coreWound:
-      "Một cách để khám phá xu hướng này là quan sát cảm xúc xuất hiện khi bạn tiến gần đến thành công, sự ổn định hoặc sự công nhận.",
+      "Một cách để quan sát xu hướng này là chú ý điều gì thường xuất hiện ngay trước lúc bạn trì hoãn, mất đà hoặc khó tiếp nhận một kết quả tích cực.",
     hiddenFear:
-      "Trong một số tình huống, bạn có thể lo mình không xứng đáng với kết quả tốt hoặc những thay đổi đi cùng thành công.",
+      "Trong một số tình huống, cảm giác mình chưa đủ tốt hoặc không xứng đáng có thể xuất hiện. Đây là một khả năng để quan sát, không phải nguyên nhân đã được bài test xác định.",
     behaviorPattern: [
       "Trì hoãn ngay trước deadline quan trọng",
       "Chọn những mối quan hệ không phù hợp dù biết rõ",
@@ -142,14 +142,14 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
       "Hay phá vỡ điều tốt khi nó bắt đầu đi đúng hướng",
     ],
     strengths: [
-      "Sự sáng tạo và khả năng nhìn ra nhiều khả năng",
-      "Sự nhạy cảm sâu sắc và khả năng tư duy độc đáo",
-      "Khi tìm được niềm tin — có thể đạt được rất nhiều",
+      "Khả năng nhận ra những lúc mình đang trì hoãn hoặc mất đà",
+      "Sự thành thật khi nhìn vào điều mình muốn thay đổi",
+      "Có thể quan sát rõ hơn các thời điểm tiến trình bị gián đoạn",
     ],
     growthEdge:
-      "Học cách để mình được thành công và hạnh phúc — và nhận ra rằng bạn xứng đáng với những điều tốt đẹp.",
+      "Quan sát thời điểm bạn bắt đầu chững lại và thử chia bước tiếp theo thành một lựa chọn nhỏ, cụ thể hơn.",
     nextStep:
-      "Khóa học 'Bản đồ Nội Tâm Chuyên Sâu' giúp bạn nhìn thấy cơ chế tự phá hoại và bắt đầu tháo gỡ từng lớp.",
+      "Bạn có thể đọc thêm hoặc học chuyên sâu để quan sát điều gì thường xuất hiện ngay trước lúc mình mất đà.",
     color: "#3B3772",
     icon: "🔥",
   },
@@ -157,27 +157,27 @@ export const archetypes: Record<ArchetypeKey, ArchetypeProfile> = {
   "can-bang": {
     key: "can-bang",
     name: "Xu hướng Cân Bằng",
-    tagline: "Bạn đang trong hành trình tích hợp bản thân",
+    tagline: "Câu trả lời hiện tại cho thấy nhiều phản ứng tương đối linh hoạt hoặc thích nghi",
     description:
-      "Kết quả hiện tại chưa cho thấy một xu hướng nào nổi bật vượt trội. Điều này có thể phản ánh sự linh hoạt, bối cảnh trả lời đa dạng hoặc một giai đoạn đang thay đổi.",
+      "Kết quả hiện tại gợi ý rằng bạn đã chọn nhiều cách phản ứng tương đối linh hoạt hoặc phù hợp với hoàn cảnh. Điều này không có nghĩa bạn không có những xu hướng khác; chúng vẫn có thể xuất hiện rõ hơn trong từng bối cảnh cụ thể.",
     coreWound:
-      "Một điểm khởi đầu là quan sát những tình huống vẫn tạo phản ứng mạnh, thay vì giả định rằng mọi điều trong quá khứ đều đã được giải quyết.",
+      "Một cách để quan sát kết quả này là chú ý những bối cảnh bạn có thể cân nhắc, điều chỉnh hoặc giao tiếp rõ ràng, đồng thời nhận ra những tình huống vẫn tạo phản ứng mạnh.",
     hiddenFear:
-      "Trong một số trường hợp, các xu hướng có thể xuất hiện khác nhau tùy bối cảnh và chưa thể hiện rõ trong một bài test ngắn.",
+      "Một xu hướng cụ thể vẫn có thể trở nên rõ hơn tùy tình huống. Điểm Cân Bằng không khẳng định rằng mọi phản ứng của bạn đều cân bằng như nhau.",
     behaviorPattern: [
-      "Có thể thích nghi tốt trong nhiều tình huống khác nhau",
-      "Đôi khi không chắc mình thật sự muốn gì",
-      "Có thể thấy mình ở những nơi khác nhau tùy hoàn cảnh",
+      "Có thể cân nhắc phản hồi trước khi quyết định điều chỉnh",
+      "Có thể đặt mục tiêu linh hoạt và thay đổi theo hoàn cảnh",
+      "Có thể trình bày quan điểm đồng thời lắng nghe phía bên kia",
     ],
     strengths: [
-      "Linh hoạt và khả năng thích nghi",
-      "Nhìn được nhiều góc độ của một vấn đề",
-      "Không bị cứng nhắc trong một khuôn mẫu duy nhất",
+      "Khả năng cân nhắc dựa trên hoàn cảnh cụ thể",
+      "Có thể điều chỉnh mục tiêu hoặc phản ứng khi cần",
+      "Có thể tiếp nhận phản hồi mà không phải phản ứng ngay",
     ],
     growthEdge:
-      "Khám phá sâu hơn để nhìn thấy những mô thức tinh tế hơn đang vận hành bên dưới.",
+      "Quan sát sự khác biệt giữa các bối cảnh để nhận ra lúc nào một xu hướng cụ thể trở nên rõ hơn.",
     nextStep:
-      "Khóa học 'Bản đồ Nội Tâm Chuyên Sâu' sẽ giúp bạn nhìn thấy những tầng sâu hơn của bản thân mà bài test tổng quát chưa chạm đến.",
+      "Bạn có thể đọc thêm hoặc học chuyên sâu để tiếp tục quan sát những thay đổi theo từng bối cảnh đời sống.",
     color: "#18B5B0",
     icon: "🧭",
   },

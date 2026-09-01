@@ -4,8 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "TRÍ — Tư duy phản biện & Khoa học con người | AIMIND",
   description:
-    "Tư duy phản biện, thiên kiến nhận thức và khoa học về con người — TRÍ giúp bạn kiểm tra cách mình diễn giải thông tin và hiểu hành vi từ nhiều góc độ.",
+    "Tư duy phản biện, thiên kiến nhận thức, não bộ, hormone, neuroscience — TRÍ giúp bạn không bị chính mình lừa và hiểu con người từ gốc rễ khoa học.",
   keywords: ["tư duy phản biện", "thiên kiến nhận thức", "não bộ", "neuroscience", "critical thinking", "cognitive bias", "AIMIND"],
+  robots: { index: false, follow: false },
 };
 
 const TU_DUY = [

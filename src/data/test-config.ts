@@ -1,4 +1,4 @@
-import type { TestQuestion } from "@/types";
+import type { ArchetypeKey, TestQuestion } from "@/types";
 
 // ─── AIMIND Bài Test Bản Đồ Nội Tâm ────────────────────────────────────────
 // 20 câu — đánh giá 6 mô thức hành vi
@@ -538,7 +538,27 @@ export const testQuestions: TestQuestion[] = [
   },
 ];
 
-// Max possible score per archetype (for percentage calculation)
-export const MAX_SCORE_PER_ARCHETYPE = 20;
+// Maximum attainable score for each archetype, derived from the current questions.
+export const MAX_SCORE_BY_ARCHETYPE = testQuestions.reduce<Record<ArchetypeKey, number>>(
+  (totals, question) => {
+    (Object.keys(totals) as ArchetypeKey[]).forEach((key) => {
+      const questionMax = Math.max(
+        0,
+        ...question.options.map((option) => option.archetypeScores[key] ?? 0)
+      );
+      totals[key] += questionMax;
+    });
+
+    return totals;
+  },
+  {
+    "lo-au": 0,
+    "ne-tranh": 0,
+    "kiem-soat": 0,
+    "hy-sinh": 0,
+    "tu-huy": 0,
+    "can-bang": 0,
+  }
+);
 
 export const TOTAL_QUESTIONS = testQuestions.length;
