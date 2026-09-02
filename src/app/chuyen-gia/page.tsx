@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Đội ngũ Chuyên gia | AIMIND',
   description:
-    'Gặp gỡ đội ngũ chuyên gia đứng sau AIMIND — những người tâm huyết với hành trình phát triển tư duy và sức khỏe tinh thần.',
+    'Kết nối đội ngũ chuyên gia cùng AIMIND — những người tâm huyết với hành trình phát triển tư duy và sức khỏe tinh thần.',
 };
 
 const experts = [
   {
     name: 'Hanna Dang',
     title: 'Founder, Coach & Psychologist',
-    desc: 'Hanna mang hơn 10 năm kinh nghiệm trong lĩnh vực tâm lý học ứng dụng và phát triển tư duy. Người tạo ra phương pháp Mind Map độc đáo của AIMIND.',
+    desc: 'Hanna với kinh nghiệm thực chiến trong lĩnh vực tâm lý học ứng dụng và phát triển tư duy. Người tạo ra phương pháp Mind Map độc đáo của AIMIND.',
     gradient: 'linear-gradient(135deg, #7C6FF7, #5a4fe0)',
     tag: 'Founder',
   },
