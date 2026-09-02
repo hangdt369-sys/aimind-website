@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Bản Đồ Nội Tâm Chuyên Sâu — Khóa Học AIMIND",
-  description: "Khóa học 17 bài video giúp bạn hiểu sâu khuôn mẫu hành vi và bắt đầu thay đổi từ gốc rễ. Ưu đãi ra mắt 499.000đ.",
+  description: "Khóa học giúp bạn hiểu sâu khuôn mẫu hành vi và bắt đầu thay đổi từ gốc rễ. Ưu đãi ra mắt 499.000đ.",
   openGraph: {
     title: "Bản Đồ Nội Tâm Chuyên Sâu — Khóa Học AIMIND",
-    description: "499.000đ · Truy cập trọn đời. Hiểu mình để sống khác đi.",
+    description: "499.000đ · App thực hành riêng truy cập trọn đời. Hiểu mình để sống khác đi.",
   },
 };
 
