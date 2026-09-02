@@ -119,7 +119,7 @@ export default function Navbar() {
                 {item.children && activeDropdown === item.label && (
                   <div
                     style={{
-                      position: "absolute", top: "calc(100% + 4px)", left: "50%",
+                      position: "absolute", top: "100%", left: "50%",
                       transform: "translateX(-50%)",
                       backgroundColor: "white", borderRadius: "12px",
                       border: "1px solid #E8E3F0",
