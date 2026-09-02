@@ -44,7 +44,14 @@ const NAV_ITEMS = [
 ];
 
 // ─── Nhóm menu desktop (rút gọn để không quá chật) ─────────────────────────
-const DESKTOP_PRIMARY = ["Bài Viết", "Thư Viện", "Học Cùng AIMIND", "Về AIMIND"];
+const DESKTOP_PRIMARY = [
+  "Bài Viết",
+  "Thư Viện",
+  "Học Cùng AIMIND",
+  "Chuyên Gia",
+  "Coaching",
+  "Về AIMIND",
+];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
