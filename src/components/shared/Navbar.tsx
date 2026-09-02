@@ -7,7 +7,16 @@ import { useState } from "react";
 const NAV_ITEMS = [
   { label: "Trang Chủ", href: "/" },
   { label: "Bản Đồ Nội Tâm", href: "/kham-pha/ban-do-noi-tam" },
-  { label: "Bài Viết", href: "/kien-thuc/bai-viet" },
+  {
+    label: "Bài Viết",
+    href: "/kien-thuc/bai-viet",
+    children: [
+      { label: "Tất cả bài viết", href: "/kien-thuc/bai-viet" },
+      { label: "Thân", href: "/than" },
+      { label: "Tâm", href: "/tam" },
+      { label: "Trí", href: "/tri" },
+    ],
+  },
   { label: "Chuyên Gia", href: "/chuyen-gia" },
   { label: "Coaching", href: "/coaching" },
   {
