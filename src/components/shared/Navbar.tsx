@@ -17,6 +17,19 @@ const NAV_ITEMS = [
       { label: "Trí", href: "/tri" },
     ],
   },
+  {
+    label: "Thư Viện",
+    href: "/thu-vien",
+    children: [
+      { label: "Psychology", href: "/thu-vien/psychology" },
+      { label: "Neuroscience", href: "/thu-vien/neuroscience" },
+      { label: "Biology", href: "/thu-vien/biology" },
+      { label: "Behavioral Science", href: "/thu-vien/behavioral-science" },
+      { label: "Critical Thinking", href: "/thu-vien/critical-thinking" },
+      { label: "AI & Human", href: "/thu-vien/ai-and-human" },
+    ],
+  },
+  { label: "Học Cùng AIMIND", href: "/hoc-cung-aimind" },
   { label: "Chuyên Gia", href: "/chuyen-gia" },
   { label: "Coaching", href: "/coaching" },
   {
@@ -31,7 +44,7 @@ const NAV_ITEMS = [
 ];
 
 // ─── Nhóm menu desktop (rút gọn để không quá chật) ─────────────────────────
-const DESKTOP_PRIMARY = ["Bài Viết", "Về AIMIND"];
+const DESKTOP_PRIMARY = ["Bài Viết", "Thư Viện", "Học Cùng AIMIND", "Về AIMIND"];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
