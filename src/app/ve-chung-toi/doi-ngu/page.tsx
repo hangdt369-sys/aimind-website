@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Hanna Dang — Người sáng lập AIMIND",
-  description: "Hanna Dang là người sáng lập AIMIND. Hơn 7 năm quan sát, nghiên cứu và đi qua hành trình khám phá chính mình — không phải từ sách vở mà từ cuộc đời thật.",
+  description: "Hanna Dang là người sáng lập AIMIND. Với việc nghiên cứu đa ngành, nhiều năm quan sát và đi qua thực nghiệm, hành trình khám phá chính mình và những người xung quanh— không phải từ sách vở mà từ cuộc đời thật.",
 };
 
 const expertise = [
