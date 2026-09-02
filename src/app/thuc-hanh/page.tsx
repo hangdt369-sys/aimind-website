@@ -4,6 +4,25 @@ import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
+const PRACTICE_STORAGE_PREFIX = "aimind_practice_journal_v1";
+
+type StoredPractice = {
+  answers: Record<string, string>;
+  updatedAt: string;
+};
+
+function isStoredPractice(value: unknown): value is StoredPractice {
+  if (!value || typeof value !== "object") return false;
+
+  const candidate = value as Partial<StoredPractice>;
+  return Boolean(
+    candidate.answers &&
+      typeof candidate.answers === "object" &&
+      Object.values(candidate.answers).every((answer) => typeof answer === "string") &&
+      typeof candidate.updatedAt === "string",
+  );
+}
+
 const practices: Record<string, {
   name: string;
   color: string;
@@ -153,10 +172,15 @@ type Session = "morning" | "pattern" | "evening";
 function PracticeContent() {
   const searchParams = useSearchParams();
   const moThuc = searchParams.get("mo-thuc") ?? "can-bang";
-  const practice = practices[moThuc] ?? practices["can-bang"];
+  const practiceKey = practices[moThuc] ? moThuc : "can-bang";
+  const practice = practices[practiceKey];
+  const storageKey = `${PRACTICE_STORAGE_PREFIX}:${practiceKey}`;
   const [session, setSession] = useState<Session>("morning");
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showGuide, setShowGuide] = useState(false);
+  const [loadedStorageKey, setLoadedStorageKey] = useState<string | null>(null);
+  const [storageStatus, setStorageStatus] = useState("Đang kiểm tra dữ liệu đã lưu...");
+  const [actionStatus, setActionStatus] = useState("");
 
   const sessionData = {
     morning: { label: "Buổi Sáng", emoji: "🌅", prompts: practice.morning },
@@ -165,6 +189,100 @@ function PracticeContent() {
   };
 
   const currentSession = sessionData[session];
+  const hasAnswers = Object.values(answers).some((answer) => answer.trim().length > 0);
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem(storageKey);
+      if (!saved) {
+        setAnswers({});
+        setStorageStatus("Sẵn sàng tự động lưu trên thiết bị này.");
+      } else {
+        const parsed: unknown = JSON.parse(saved);
+        if (isStoredPractice(parsed)) {
+          setAnswers(parsed.answers);
+          setStorageStatus("Đã khôi phục nội dung được lưu trên thiết bị này.");
+        } else {
+          setAnswers({});
+          setStorageStatus("Sẵn sàng tự động lưu trên thiết bị này.");
+        }
+      }
+    } catch {
+      setAnswers({});
+      setStorageStatus("Không thể đọc dữ liệu đã lưu trên thiết bị này.");
+    } finally {
+      setLoadedStorageKey(storageKey);
+    }
+  }, [storageKey]);
+
+  useEffect(() => {
+    if (loadedStorageKey !== storageKey) return;
+
+    const hasContent = Object.values(answers).some((answer) => answer.trim().length > 0);
+
+    try {
+      if (hasContent) {
+        const storedPractice: StoredPractice = {
+          answers,
+          updatedAt: new Date().toISOString(),
+        };
+        window.localStorage.setItem(storageKey, JSON.stringify(storedPractice));
+        setStorageStatus("Đã tự động lưu trên thiết bị này.");
+      } else {
+        window.localStorage.removeItem(storageKey);
+        setStorageStatus("Sẵn sàng tự động lưu trên thiết bị này.");
+      }
+    } catch {
+      setStorageStatus("Không thể tự động lưu. Hãy sao chép hoặc tải nhật ký để giữ lại nội dung.");
+    }
+  }, [answers, loadedStorageKey, storageKey]);
+
+  function buildJournalText() {
+    const sections = (Object.entries(sessionData) as [Session, typeof sessionData[Session]][])
+      .map(([key, data]) => {
+        const prompts = data.prompts
+          .map((item, index) => {
+            const answer = answers[`${key}-${index}`]?.trim() || "— Chưa trả lời —";
+            return `${index + 1}. ${item.prompt}\n${answer}`;
+          })
+          .join("\n\n");
+
+        return `${data.emoji} ${data.label.toUpperCase()}\n\n${prompts}`;
+      })
+      .join("\n\n--------------------\n\n");
+
+    return [
+      "AIMIND — NHẬT KÝ QUAN SÁT MÔ THỨC",
+      `Mô thức: ${practice.name}`,
+      `Ngày xuất: ${new Date().toLocaleDateString("vi-VN")}`,
+      "",
+      sections,
+      "",
+      "Dữ liệu này được tạo trên thiết bị của bạn và không được gửi lên AIMIND.",
+    ].join("\n");
+  }
+
+  async function handleCopyJournal() {
+    try {
+      await navigator.clipboard.writeText(buildJournalText());
+      setActionStatus("Đã sao chép toàn bộ nhật ký.");
+    } catch {
+      setActionStatus("Chưa thể sao chép. Hãy dùng nút Tải file .txt.");
+    }
+  }
+
+  function handleExportJournal() {
+    const blob = new Blob([buildJournalText()], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `aimind-nhat-ky-${practiceKey}-${new Date().toISOString().slice(0, 10)}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1_000);
+    setActionStatus("Đã tạo file nhật ký .txt trên thiết bị.");
+  }
 
   return (
     <>
@@ -285,6 +403,17 @@ function PracticeContent() {
           </div>
         </div>
 
+        <div style={{ backgroundColor: "#EEF8F6", borderBottom: "1px solid #D5ECE7" }}>
+          <div className="container-main" style={{ maxWidth: "700px", paddingTop: "0.9rem", paddingBottom: "0.9rem" }}>
+            <p style={{ color: "#1C4A48", fontSize: "13px", fontWeight: 700, marginBottom: "0.25rem" }}>
+              🔒 {storageStatus}
+            </p>
+            <p style={{ color: "#52716E", fontSize: "12px", lineHeight: 1.6, margin: 0 }}>
+              Nội dung chỉ nằm trong trình duyệt trên thiết bị này và không được gửi lên AIMIND. Nếu đổi thiết bị, dùng chế độ riêng tư hoặc xóa dữ liệu trình duyệt, nhật ký có thể không còn.
+            </p>
+          </div>
+        </div>
+
         {/* Practice prompts */}
         <section style={{ padding: "2.5rem 0 5rem" }}>
           <div className="container-main" style={{ maxWidth: "700px" }}>
@@ -325,7 +454,7 @@ function PracticeContent() {
                         padding: "12px 14px",
                         borderRadius: "10px",
                         border: "1px solid #E8E3F0",
-                        fontSize: "14px",
+                        fontSize: "16px",
                         color: "#1C1A3E",
                         backgroundColor: "#F8F4EE",
                         resize: "vertical" as const,
@@ -355,6 +484,63 @@ function PracticeContent() {
               <p style={{ color: "#4A4570", fontSize: "15px", lineHeight: 1.8, fontStyle: "italic" }}>
                 &ldquo;{practice.reminder}&rdquo;
               </p>
+            </div>
+
+            <div style={{
+              marginTop: "1.5rem",
+              backgroundColor: "white",
+              border: "1px solid #E8E3F0",
+              borderRadius: "14px",
+              padding: "1.5rem",
+              textAlign: "center" as const,
+            }}>
+              <p style={{ color: "#1C1A3E", fontSize: "15px", fontWeight: 700, marginBottom: "0.35rem" }}>
+                Giữ lại nhật ký của bạn
+              </p>
+              <p style={{ color: "#6B678F", fontSize: "12px", lineHeight: 1.6, marginBottom: "1rem" }}>
+                Sao chép để lưu vào Ghi chú hoặc tải file về thiết bị. Cả hai thao tác đều không gửi nội dung lên AIMIND.
+              </p>
+              <div style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" as const }}>
+                <button
+                  type="button"
+                  onClick={handleCopyJournal}
+                  disabled={!hasAnswers}
+                  style={{
+                    border: "none",
+                    borderRadius: "999px",
+                    padding: "11px 20px",
+                    backgroundColor: hasAnswers ? practice.color : "#D8D5E2",
+                    color: "white",
+                    fontSize: "13px",
+                    fontWeight: 700,
+                    cursor: hasAnswers ? "pointer" : "not-allowed",
+                  }}
+                >
+                  📋 Sao chép toàn bộ
+                </button>
+                <button
+                  type="button"
+                  onClick={handleExportJournal}
+                  disabled={!hasAnswers}
+                  style={{
+                    border: "1px solid #D8D5E2",
+                    borderRadius: "999px",
+                    padding: "11px 20px",
+                    backgroundColor: "white",
+                    color: hasAnswers ? "#1C1A3E" : "#AAA6BA",
+                    fontSize: "13px",
+                    fontWeight: 700,
+                    cursor: hasAnswers ? "pointer" : "not-allowed",
+                  }}
+                >
+                  ⬇️ Tải file .txt
+                </button>
+              </div>
+              {actionStatus && (
+                <p aria-live="polite" style={{ color: practice.color, fontSize: "12px", fontWeight: 600, marginTop: "0.85rem", marginBottom: 0 }}>
+                  {actionStatus}
+                </p>
+              )}
             </div>
 
             {/* CTA */}
