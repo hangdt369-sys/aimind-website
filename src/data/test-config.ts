@@ -8,7 +8,7 @@ export const testQuestions: TestQuestion[] = [
   // ── Nhóm 1: Cảm xúc trong mối quan hệ ──
   {
     id: "q1",
-    text: "Khi người thân không trả lời tin nhắn của bạn trong vài giờ, bạn thường...",
+    text: "Khi người thân/người yêu không trả lời tin nhắn của bạn trong vài giờ, bạn thường...",
     options: [
       {
         value: 1,
@@ -168,7 +168,7 @@ export const testQuestions: TestQuestion[] = [
   // ── Nhóm 3: Cảm xúc và cơ thể ──
   {
     id: "q7",
-    text: "Khi bạn cảm thấy overwhelmed (quá tải), bạn thường làm gì?",
+    text: "Khi bạn cảm thấy quá tải, bạn thường làm gì?",
     options: [
       {
         value: 1,
