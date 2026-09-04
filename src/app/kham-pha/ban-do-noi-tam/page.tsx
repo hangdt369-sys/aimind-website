@@ -87,6 +87,9 @@ export default function TestPage() {
 
     storeTestResult(result);
 
+    // Chỉ tự mở form nhận kết quả ở lần chuyển trang ngay sau khi hoàn thành bài test.
+    sessionStorage.setItem("aimind_open_email_capture", "true");
+
     // Navigate to results
     router.push(`/kham-pha/ket-qua?pattern=${dominant}`);
   }

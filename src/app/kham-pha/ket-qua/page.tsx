@@ -93,6 +93,11 @@ function ResultsContent() {
 
     setResult(stored);
     setSessionChecked(true);
+
+    if (sessionStorage.getItem("aimind_open_email_capture") === "true") {
+      sessionStorage.removeItem("aimind_open_email_capture");
+      setShowEmailCapture(true);
+    }
   }, [router]);
 
   if (!sessionChecked || !result) {
