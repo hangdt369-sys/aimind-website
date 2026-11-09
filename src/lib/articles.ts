@@ -127,26 +127,58 @@ export const articles: Article[] = [
     slug: "y-chi-khong-du-thay-doi-hanh-vi",
     tag: "Khoa học thần kinh",
     tagColor: "#18B5B0",
-    title: "Tại sao ý chí không đủ: Khoa học đằng sau thay đổi hành vi",
-    excerpt: "Chúng ta được dạy rằng thay đổi cần ý chí. Nhưng khoa học thần kinh cho thấy điều ngược lại — ý chí là nguồn tài nguyên có hạn và dễ cạn kiệt.",
+    title: "Tại sao ý chí không đủ thay đổi Hành Vi : Khoa học về Thói quen và Tâm Lý ",
+    excerpt: "Vì sao bạn quyết tâm thay đổi nhưng vẫn quay lại thói quen cũ? Khám phá tâm lý hành vi, cách thay đổi từ môi trường, động lực đến niềm tin về bản thân",
     readTime: "6 phút",
     publishDate: "Tháng 1, 2026",
     sections: [
       {
         type: "paragraph",
-        content: "Bạn từng thức khuya lập kế hoạch thay đổi cuộc sống. Bạn viết xuống, bạn quyết tâm, bạn bắt đầu mạnh mẽ. Rồi tuần thứ hai, mọi thứ dần tan biến."
+        content: "Bạn từng thức khuya lập kế hoạch thay đổi cuộc sống. Bạn viết xuống, bạn quyết tâm, bạn bắt đầu mạnh mẽ. Bạn đã bao nhiêu lần tự hứa sẽ thay đổi?."
       },
       {
         type: "paragraph",
-        content: "Bạn tự trách mình thiếu kỷ luật. Thiếu ý chí. Không đủ mạnh mẽ."
+        content: "Bạn thực sự muốn thay đổi. Bạn hiểu điều gì tốt cho mình. Thậm chí, bạn đã đọc rất nhiều sách, học nhiều phương pháp và lập ra những kế hoạch khá hoàn chỉnh. Nhưng rồi cuộc sống diễn ra. Công việc trở nên bận rộn. Cơ thể mệt mỏi. Một chuyện không như ý xảy ra. Bạn lại thức khuya, trì hoãn, phản ứng theo cách cũ hoặc đưa ra một lựa chọn mà trước đó mình đã quyết định sẽ không lặp lại.",
       },
       {
         type: "paragraph",
-        content: "Nhưng khoa học thần kinh nói điều khác hoàn toàn."
+        content: "Và bạn bắt đầu tự hỏi: Nếu mình thực sự muốn thay đổi, tại sao mình vẫn không làm được? Bạn tự trách mình thiếu kỷ luật, hiếu ý chí, hông đủ mạnh mẽ, là người trĩ hoãn, có đúng không?.",
+      },
+      {
+         type: "paragraph",
+        content: "Vấn đề có thể nằm ở chỗ bạn đang cố thay đổi hành vi bằng quyết tâm, trong khi hành vi còn chịu ảnh hưởng của nhiều yếu tố khác: năng lực, môi trường, động lực, cảm xúc, thói quen và cách bạn nhìn nhận chính mình.Muốn thay đổi bền vững, chúng ta cần hiểu điều gì đang duy trì hành vi hiện tại, thay vì chỉ yêu cầu bản thân cố gắng nhiều hơn.",
       },
       {
         type: "heading",
-        content: "Ý chí là cơ bắp — và nó mệt mỏi"
+        content: "1. Vì sao chúng ta biết điều nên làm nhưng vẫn không làm? -Đây là góc nhìn của khoa học thần kinh.",
+      },
+      {
+         type: "paragraph",
+        content: " Một trong những nghịch lý phổ biến nhất của con người là khoảng cách giữa điều mình dự định làm và điều mình thực sự thực hiện. Bạn biết ngủ đủ giấc có lợi cho sức khỏe, nhưng vẫn cầm điện thoại đến khuya. Bạn biết cần hoàn thành công việc quan trọng, nhưng lại kiểm tra tin nhắn, email hoặc làm những việc nhỏ dễ hoàn thành hơn. Bạn biết mình cần đặt ranh giới trong một mối quan hệ, nhưng khi người kia tỏ ra thất vọng, bạn lại đồng ý với điều mà bản thân không muốn.Trong những tình huống này, kiến thức không nhất thiết là thứ còn thiếu. Điều còn thiếu có thể là một điều kiện giúp kiến thức chuyển thành hành động. Nhà nghiên cứu Susan Michie và cộng sự đã đề xuất mô hình COM-B để giải thích hành vi. Theo mô hình này, hành vi chịu ảnh hưởng của ba nhóm điều kiện:",
+      },
+      {
+        type: "paragraph",
+        content: "Năng lực (Capability): Bạn có đủ kiến thức, kỹ năng và khả năng thể chất hoặc tâm lý để thực hiện hành vi không?",
+      },
+      {
+        type: "paragraph",
+        content: "Cơ hội (Opportunity): Môi trường, thời gian, nguồn lực và những người xung quanh có tạo điều kiện cho hành vi đó không?",
+      },
+      {
+        type: "paragraph",
+        content: "Động lực (Motivation): Bạn có những mong muốn, cảm xúc, thói quen và quá trình đánh giá nào thúc đẩy hoặc cản trở hành động?",
+      },
+      {
+        type: "paragraph",
+        content: "Ba yếu tố này tương tác với nhau. Chỉ muốn làm một việc không có nghĩa là bạn đã có đủ điều kiện để làm việc đó. Hãy tưởng tượng một người muốn tập thể dục nhưng thường xuyên ngủ muộn, phải đi làm từ sáng sớm, chưa biết bắt đầu với bài tập nào và không có lịch cố định.Nếu người đó chỉ tự nhắc mình phải có kỷ luật hơn, họ đang giải quyết vấn đề bằng cách tăng áp lực lên bản thân, trong khi những trở ngại thực tế vẫn còn nguyên.Thay đổi hành vi vì thế không chỉ là câu chuyện của ý chí. Nó còn là câu chuyện của một hệ thống điều kiện đang hỗ trợ hoặc cản trở hành động.",
+      },
+      {
+        type: "heading",
+        content: "2. Ý chí có thực sự là nguồn lực hữu hạn?"
+      },
+      {
+        type: "paragraph",
+        content: "Trong tâm lý học, một giả thuyết nổi tiếng về khả năng tự kiểm soát được gọi là ego depletion, thường được dịch là sự cạn kiệt khả năng tự kiểm soát.",
       },
       {
         type: "paragraph",
@@ -159,6 +191,86 @@ export const articles: Article[] = [
       {
         type: "quote",
         content: "Ý chí không phải đặc điểm tính cách. Nó là nguồn tài nguyên có hạn, bị tiêu hao theo thời gian trong ngày — giống như năng lượng thể chất."
+      },
+      {
+         type: "paragraph",
+        content: "Nghiên cứu này góp phần tạo nên cách diễn giải quen thuộc rằng con người có một nguồn lực tự kiểm soát hữu hạn và việc sử dụng nó sẽ khiến chúng ta khó tiếp tục kiềm chế bản thân.",
+      },
+      {
+         type: "paragraph",
+        content: "Tuy nhiên, những nghiên cứu sau đó cho thấy kết quả về hiệu ứng cạn kiệt ý chí không hoàn toàn nhất quán. Vì vậy, chưa nên xem giả thuyết này là lời giải thích đã được xác nhận cho mọi trường hợp con người mất khả năng tự kiểm soát.",
+      },
+      {
+        type: "paragraph",
+        content: "Điều quan trọng hơn là một nhận định thực tế: Khả năng thực hiện điều mình dự định có thể thay đổi theo hoàn cảnh. Khi thiếu ngủ, chịu áp lực, phải xử lý nhiều vấn đề hoặc liên tục đưa ra quyết định, việc duy trì một kế hoạch đòi hỏi nhiều nỗ lực có thể trở nên khó khăn hơn.Những câu hỏi này giúp chuyển trọng tâm từ việc phán xét bản thân sang việc tìm nguyên nhân có thể kiểm tra và điều chỉnh.",
+      },
+      {
+        type: "heading",
+        content: "3. Thói quen khiến chúng ta lặp lại hành vi cũ như thế nào?"
+      },
+      {
+         type: "paragraph",
+        content: "Một hành vi có thể bắt đầu từ quyết định có ý thức, nhưng khi được lặp lại trong những hoàn cảnh tương tự, nó có thể dần trở nên quen thuộc và ít cần suy nghĩ hơn.",
+      },
+      {
+        type: "paragraph",
+        content: "Chẳng hạn, bạn cảm thấy căng thẳng sau giờ làm. Bạn mở điện thoại để giải trí. Việc xem nội dung trên điện thoại giúp bạn tạm thời chuyển sự chú ý khỏi công việc và cảm giác khó chịu. Ngày hôm sau, khi căng thẳng xuất hiện, bạn lại mở điện thoại. Sau nhiều lần lặp lại, chuỗi phản ứng này có thể trở thành một lựa chọn quen thuộc. Bạn không nhất thiết phải cân nhắc từ đầu mỗi lần. Chỉ cần gặp đúng hoàn cảnh, bạn đã có xu hướng thực hiện hành vi đó.",
+      },
+      {
+       type: "paragraph",
+        content: "Một chuỗi hành vi có thể được mô tả như sau: Tình huống → phản ứng quen thuộc → kết quả tức thời → khả năng lặp lại. Điều đáng chú ý là kết quả tức thời đôi khi khác với lợi ích dài hạn.Bạn trì hoãn công việc và cảm thấy nhẹ nhõm trong chốc lát. Nhưng sau đó, công việc vẫn còn, thời gian ít đi và áp lực tăng lên.Bạn im lặng để tránh một cuộc tranh luận. Nhưng vấn đề chưa được giải quyết, nhu cầu của bạn vẫn chưa được nói ra và sự khó chịu có thể tích tụ. Bạn tìm đến một hoạt động gây xao nhãng để không phải đối diện với cảm xúc khó chịu. Hoạt động đó có thể đem lại sự dễ chịu tạm thời, nhưng không nhất thiết giải quyết được điều đã tạo ra cảm xúc ấy.Đây là một điểm quan trọng khi nghiên cứu hành vi: một hành vi có thể tiếp tục tồn tại vì nó đem lại một kết quả nào đó trong ngắn hạn, ngay cả khi về lâu dài nó tạo ra những bất lợi. Vì vậy, nếu chỉ cố loại bỏ hành vi mà không hiểu nó đang đáp ứng điều gì, bạn có thể gặp khó khăn khi tìm một cách thay thế phù hợp.",
+      },
+      { 
+        type: "heading",
+        content: "4. Môi trường có thể khiến một hành vi dễ xảy ra hơn"
+      },
+      {
+         type: "paragraph",
+        content: "Hãy so sánh hai tình huống. Trong tình huống thứ nhất, bạn muốn đọc sách mỗi tối nhưng điện thoại luôn nằm ngay cạnh giường. Mỗi lần định đọc, bạn lại thấy thông báo hoặc nhớ đến một nội dung chưa xem. Trong tình huống thứ hai, bạn đặt sẵn sách trên bàn, để điện thoại ở phòng khác và dành mười phút đọc trước khi đi ngủ. Mục tiêu không thay đổi. Mong muốn cũng có thể không thay đổi. Nhưng điều kiện thực hiện đã khác.Đó là lý do thiết kế môi trường có thể hữu ích trong việc thay đổi hành vi.Thay vì liên tục yêu cầu bản thân chống lại một lựa chọn hấp dẫn, bạn có thể điều chỉnh hoàn cảnh để hành vi mong muốn dễ bắt đầu hơn. Một vài cách áp dụng:",
+      },
+      {
+        type: "paragraph",
+        content: "Nếu muốn tập thể dục: Chuẩn bị quần áo từ tối hôm trước, chọn địa điểm thuận tiện và xác định thời gian cụ thể.",
+      },
+      {
+        type: "paragraph",
+        content: "Nếu muốn tập trung làm việc: Tắt những thông báo không cần thiết, đóng các tab gây xao nhãng và chuẩn bị trước tài liệu sẽ sử dụng.",
+      },
+      {
+         type: "paragraph",
+        content: "Nếu muốn ăn uống có kế hoạch: Chuẩn bị sẵn những lựa chọn phù hợp và hạn chế để những món thường khiến bạn ăn ngoài dự định xuất hiện ngay trước mắt.",
+      },
+      {
+         type: "paragraph",
+        content: "Nếu muốn ăn uống có kế hoạch: Chuẩn bị sẵn những lựa chọn phù hợp và hạn chế để những món thường khiến bạn ăn ngoài dự định xuất hiện ngay trước mắt.",
+      },
+      {
+        type: "paragraph",
+        content: "Điều này không có nghĩa môi trường quyết định hoàn toàn hành vi. Con người vẫn có khả năng lựa chọn, điều chỉnh và học cách ứng phó. Tuy nhiên, khi có thể thay đổi môi trường để giảm những trở ngại không cần thiết, bạn không phải dựa hoàn toàn vào việc tự nhắc nhở mình mỗi ngày.",
+      },
+      { 
+        type: "heading",
+        content: "5. Khi hành vi lặp lại, hãy xem xét cả niềm tin và cách bạn nhìn nhận bản thân"
+      },
+      {
+        type: "paragraph",
+        content: "Đến đây, chúng ta đã thấy hành vi chịu ảnh hưởng của kỹ năng, hoàn cảnh, động lực và thói quen.",
+      },
+      {
+        type: "paragraph",
+        content: "Nhưng trong một số trường hợp, việc thay đổi còn liên quan đến những điều con người tin về bản thân và thế giới.Hãy xem xét ba tình huống sau:",
+      },
+      {
+        type: "paragraph",
+        content: "TH1: Một người muốn từ chối yêu cầu ngoài khả năng nhưng luôn lo người khác sẽ thất vọng, TH2: Một người muốn bắt đầu dự án cá nhân nhưng thường trì hoãn khi công việc sắp được đưa ra công chúng. TH3: Một người muốn xây dựng mối quan hệ bình đẳng nhưng thường xuyên bỏ qua nhu cầu của mình để giữ hòa khí.Chúng ta không thể chỉ nhìn vào hành vi rồi kết luận ngay rằng cả ba người đều có cùng một nỗi sợ hoặc cùng một vấn đề tâm lý.Tuy nhiên, có thể đặt ra những câu hỏi để khám phá điều đang diễn ra:",       
+      },
+      {
+        type: "paragraph",
+        content: "Người đó dự đoán điều gì sẽ xảy ra nếu hành động khác đi? Họ đang cố bảo vệ điều gì? Họ tin điều gì về bản thân khi người khác không hài lòng? Họ có đang đánh đồng một hành động cụ thể với giá trị của chính mình không?",
+      },
+      {
+         type: "paragraph",
+        content: "Ví dụ, một người có thể tin rằng từ chối người khác đồng nghĩa với ích kỷ. Khi đó, mỗi lần muốn nói “không”, họ không chỉ phải lựa chọn giữa đồng ý và từ chối. Họ còn phải đối diện với ý nghĩa mà họ gán cho lựa chọn đó. Nếu họ cho rằng một lời từ chối khiến mình trở thành người xấu, việc đặt ranh giới có thể tạo ra cảm giác khó chịu, ngay cả khi họ biết mình đang cần nghỉ ngơi hoặc có những ưu tiên khác.Trong trường hợp này, thay đổi hành vi có thể cần thêm một bước: xem xét liệu cách diễn giải đó có chính xác, có đầy đủ và có còn phù hợp với hoàn cảnh hiện tại hay không.Một cách tiếp cận thận trọng hơn là xem niềm tin như một giả thuyết để tự quan sát, rồi kiểm tra bằng trải nghiệm thực tế.Bạn có thể thử nói “không” với một yêu cầu nhỏ, quan sát phản ứng của người kia và ghi lại điều thực sự xảy ra. Kết quả đó có thể giúp bạn phân biệt giữa điều mình dự đoán và điều đã diễn ra.Đôi khi, sự thay đổi bắt đầu từ một hành động nhỏ. Đôi khi, nó cần cả việc điều chỉnh cách chúng ta hiểu về bản thân.",
       },
       {
         type: "heading",
