@@ -45,6 +45,17 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
+        content: "Hình dung dẽ hiểu: Mô thức (Paradigm) chính là một hệ điều hành (Operating System) được cài đặt cố định trong bộ não của ta, giống hệt như hệ điều hành iOS hay Windows. Mô thức là một tập hợp của vô số những thói quen, những niềm tin sâu rễ, những định kiến mà ta đã vô thức tích lũy từ khi sinh ra. Nó là một tệp lệnh định sẵn quy định cách mình phản ứng trước áp lực, cách nhìn nhận về tiền bạc và quan trọng nhất, nó quy định giới hạn của những gì chúng ta tin rằng mình xứng đáng nhận được. Nguy hiểm chưa? 
+      },
+      {
+         type: "paragraph",
+        content: "Hãy hình dung tưởng tượng xíu nha:Bạn đang sở hữu một chiếc máy tính sản xuất từ 20 năm trước chạy hệ điều hành mang tên khan hiếm, lo âu và giới hạn. Một ngày nọ, bạn hào hứng mua một phần mềm đồ họa 3D tối tân đại diện cho những mục tiêu to lớn từ ý thức. Khi bấm nút cài đặt, ứng dụng ngay lập tức bị đẩy văng ra ngoài. Nó bị đẩy ra không phải vì phần mềm không tốt, mà vì nó không hề tương thích với cái hệ điều hành cũ kỹ đang chạy ngầm bên dưới. Khi bạn dùng ý chí (5%) để ép bản thân kiếm nhiều tiền hơn, nhưng mô thức bên trong tiềm thức (95%) lại đang chạy dòng mã lệnh như tiền bạc làm con người thay đổi, tiền bạc xấu xa, có tiền phải đánh đổi, mình không đủ xuất sắc để lãnh đạo hay sự an toàn quan trọng hơn sự bứt phá thì một cuộc nội chiến tâm lý sẽ nổ ra. Và trong cuộc chiến giữa 5% và 95%, tiềm thức luôn luôn giành chiến thắng. Không thể thay đổi một kết quả vĩnh viễn chỉ bằng cách thay đổi hành động bề mặt; chừng nào hệ điều hành chưa được nâng cấp, mọi nỗ lực tải phần mềm mới đều trở nên vô dụng.
+     },
+      {
+          type: "paragraph",
+        content: "Mô thức được cài đặt từ đâu? Đối với người trưởng thành khi tỉnh táo, não bộ hoạt động chủ yếu ở sóng Beta - nơi ý thức đóng vai trò người lính gác nghiêm ngặt. Tuy nhiên, từ khi nằm trong bụng mẹ đến khoảng 7 tuổi, bộ não trẻ em hoạt động ở dải tần số sóng Theta. Sóng Theta là trạng thái siêu thư giãn, có tính thu nhận và ám thị cực kỳ cao. Ở giai đoạn này, người lính gác cổng hoàn toàn chưa hình thành, tâm trí đứa trẻ mở toang để tiếp nhận mọi thông tin từ môi trường xung quanh đi thẳng vào tiềm thức.    
+         
+          type: "paragraph",
         content: "Đứa trẻ nào cũng phải trả lời ba câu hỏi sinh tồn: Mình có đáng được yêu không? Mình có an toàn không? Mình có đủ năng lực để tồn tại không? Cách não bộ non nớt trả lời ba câu hỏi đó — dựa trên trải nghiệm thực tế với cha mẹ và môi trường — chính là mầm mống của mô thức."
       },
       {
