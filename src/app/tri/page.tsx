@@ -10,21 +10,21 @@ export const metadata: Metadata = {
 };
 
 const TU_DUY = [
-  { icon: "👁️", title: "Quan sát vs Diễn giải", desc: "Phân biệt được cái bạn thấy và cái bạn đang thêm vào.", href: "/tri/tu-duy-phan-bien#quan-sat" },
-  { icon: "⚖️", title: "Fact vs Opinion", desc: "Rất nhiều 'sự thật' trong đầu bạn thực ra là ý kiến.", href: "/tri/tu-duy-phan-bien#fact-opinion" },
+  { icon: "👁️", title: "Quan sát vs Diễn giải", desc: "Phân biệt được cái bạn thấy là dữ kiện và cái bạn đang thêm vào diễn giải cho sự kiện.", href: "/tri/tu-duy-phan-bien#quan-sat" },
+  { icon: "⚖️", title: "Fact vs Opinion", desc: "Rất nhiều 'sự thật' trong đầu bạn thực ra thiên kiến nhận thức.", href: "/tri/tu-duy-phan-bien#fact-opinion" },
   { icon: "🧮", title: "Logic", desc: "Cách lập luận hợp lệ — và những lỗi logic phổ biến nhất.", href: "/tri/tu-duy-phan-bien#logic" },
-  { icon: "🔗", title: "Causal Reasoning", desc: "Tư duy nhân quả — nguyên nhân thật sự là gì?", href: "/tri/tu-duy-phan-bien#causal" },
+  { icon: "🔗", title: "Causal Reasoning", desc: "Tư duy nhân quả — nguyên nhân thật sự là gì? Mối quan hệ của chúng đối với thế giới xung quanh", href: "/tri/tu-duy-phan-bien#causal" },
   { icon: "📊", title: "Correlation vs Causation", desc: "Hai thứ xảy ra cùng nhau không có nghĩa là cái này gây ra cái kia.", href: "/tri/tu-duy-phan-bien#correlation" },
-  { icon: "🔬", title: "Evidence", desc: "Bằng chứng tốt trông như thế nào — và làm sao đánh giá nguồn tin.", href: "/tri/tu-duy-phan-bien#evidence" },
-  { icon: "🚫", title: "Falsification", desc: "Một lý thuyết tốt phải có khả năng bị chứng minh sai.", href: "/tri/tu-duy-phan-bien#falsification" },
+  { icon: "🔬", title: "Evidence", desc: "Bằng chứng THẬT trông như thế nào — và làm sao đánh giá nguồn tin, phân biệt giả định sai và ngụy biện.", href: "/tri/tu-duy-phan-bien#evidence" },
+  { icon: "🚫", title: "Falsification", desc: "Một lý thuyết tốt phải có khả năng bị chứng minh sai, hay còn gọi là thuyết khả sai.", href: "/tri/tu-duy-phan-bien#falsification" },
 ];
 
 const THIEN_KIEN = [
-  { name: "Confirmation bias", desc: "Chỉ tìm kiếm thông tin xác nhận điều mình đã tin", color: "#E85A71" },
-  { name: "Availability bias", desc: "Đánh giá xác suất dựa trên ví dụ dễ nhớ nhất", color: "#E8925A" },
+  { name: "Confirmation bias", desc: "Chỉ tìm kiếm thông tin xác nhận điều mình đã tin, được trích xuất từ hệ thống niềm tin lõi", color: "#E85A71" },
+  { name: "Availability bias", desc: "Đánh giá xác suất dựa trên ví dụ dễ nhớ nhất, lối tắt của bộ não nguyên thủy", color: "#E8925A" },
   { name: "Anchoring", desc: "Bị ảnh hưởng bởi con số đầu tiên nghe được", color: "#7C6FF7" },
   { name: "Survivorship bias", desc: "Chỉ nhìn thấy người thành công, không thấy người thất bại", color: "#18B5B0" },
-  { name: "Fundamental attribution error", desc: "Đổ lỗi tính cách của người khác, đổ lỗi hoàn cảnh của mình", color: "#4CAF50" },
+  { name: "Fundamental attribution error", desc: "Đổ lỗi tính cách của người khác, đổ lỗi hoàn cảnh của mình, tâm lý nạn nhân", color: "#4CAF50" },
 ];
 
 const KHOA_HOC = [
