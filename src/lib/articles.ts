@@ -22,14 +22,14 @@ export const articles: Article[] = [
     slug: "mo-thuc-noi-tam-co-ban",
     tag: "Mô thức",
     tagColor: "#7C6FF7",
-    title: "9 mô thức nội tâm cơ bản và cách nhận diện mô thức của bạn",
+    title: "9 mô thức nội tâm cơ bản và cách nhận diện, khám phá mô thức của chính bạn",
     excerpt: "Mỗi người trong chúng ta đều vận hành theo một mô thức cốt lõi — một cách nhìn thế giới và phản ứng với nó được hình thành từ rất sớm trong cuộc đời.",
     readTime: "8 phút",
     publishDate: "Tháng 1, 2026",
     sections: [
       {
         type: "paragraph",
-        content: "Bạn có bao giờ tự hỏi: Tại sao mình cứ lặp lại cùng một kiểu phản ứng? Cùng một kiểu xung đột? Cùng một kiểu cảm giác trong những tình huống khác nhau — dù bạn đã cố thay đổi rất nhiều lần?"
+        content: "Bạn có bao giờ tự hỏi: Tại sao mình cứ lặp lại cùng một kiểu phản ứng? Cùng một kiểu xung đột? Cùng một kiểu cảm giác trong những tình huống khác nhau — dù bạn đã cố thay đổi rất nhiều lần không?"
       },
       {
         type: "paragraph",
@@ -41,7 +41,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Mô thức nội tâm là một hệ thống niềm tin cốt lõi — về bản thân, về người khác, về thế giới — được hình thành trong những năm đầu đời khi não bộ còn đang học cách tồn tại an toàn."
+        content: "Mô thức nội tâm là một hệ thống niềm tin cốt lõi — về bản thân, về người khác, về thế giới — được hình thành trong những năm đầu đời khi não bộ còn đang học cách tồn tại an toàn. Vậy bản chất của mô thức là gì? tâm trí con người được chia làm hai nửa hoạt động song song nhưng lại sở hữu những quyền lực vô cùng bất đối xứng: Ý thức (Conscious Mind) và Tiềm thức (Subconscious Mind). Ý thức là phần tâm trí mà bạn đang sử dụng ngay lúc này để lắng nghe, phân tích và cảm nhận câu chuyện. Ý thức là nơi chứa đựng trí tuệ logic, khả năng tư duy phản biện và đặc biệt nó là nơi khởi nguồn của mọi ước mơ. Khi bạn đọc một cuốn sách hay và đưa ra quyết định từ ngày mai mình sẽ thức dậy lúc 5h sáng hay đầu tư xanh - chín để tự do tài chính, quyết định đó được đưa ra bởi ý thức. Ý thức giống như vị thuyền trưởng đứng trên boong tàu, tay cầm ống nhòm phóng tầm mắt ra xa và chọn một điểm đến. Tuy nhiên, về mặt khoa học thần kinh, vị thuyền trưởng ý thức này lại chỉ nắm quyền kiểm soát vỏn vẹn khoảng 5% mọi hành động trong cuộc đời bạn. Tiềm thức lại chiếm 95% quyền lực khổng lồ còn lại chìm khuất ẩn sâu bên trong mỗi người. Nếu ý thức là vị thuyền trưởng thì tiềm thức chính là hệ thống động cơ khổng lồ, là bánh lái và toàn bộ thủy thủ đoàn đang hoạt động không ngừng nghỉ dưới khoang tàu. Tiềm thức không có khả năng suy luận logic, không biết tranh luận đúng sai, không phân biệt được hiện tại và tương lai. Chức năng duy nhất của nó là tiếp nhận mọi mệnh lệnh, mọi thói quen đã được lập trình sẵn và thực thi chúng một cách hoàn toàn tự động.Và ẩn sâu trong trung tâm điều khiển của tiềm thức có một người nhạc trưởng thầm lặng giật dây toàn bộ cuộc đời ta -nó là Paradigm (Mô thức)"
       },
       {
         type: "paragraph",
