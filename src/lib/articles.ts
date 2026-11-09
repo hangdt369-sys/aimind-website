@@ -33,7 +33,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Câu trả lời không nằm ở ý chí hay sự cố gắng. Nó nằm sâu hơn — ở mô thức nội tâm."
+        content: "Câu trả lời không nằm ở ý chí hay sự cố gắng. Nó nằm sâu hơn — ở mô thức nội tâm của mỗi người."
       },
       {
         type: "heading",
@@ -52,6 +52,10 @@ export const articles: Article[] = [
         content: "Hãy hình dung tưởng tượng xíu nha: Bạn đang sở hữu một chiếc máy tính sản xuất từ 20 năm trước chạy hệ điều hành mang tên khan hiếm, lo âu và giới hạn. Một ngày nọ, bạn hào hứng mua một phần mềm đồ họa 3D tối tân đại diện cho những mục tiêu to lớn từ ý thức. Khi bấm nút cài đặt, ứng dụng ngay lập tức bị đẩy văng ra ngoài. Nó bị đẩy ra không phải vì phần mềm không tốt, mà vì nó không hề tương thích với cái hệ điều hành cũ kỹ đang chạy ngầm bên dưới. Khi bạn dùng ý chí (5%) để ép bản thân kiếm nhiều tiền hơn, nhưng mô thức bên trong tiềm thức (95%) lại đang chạy dòng mã lệnh như tiền bạc làm con người thay đổi, tiền bạc xấu xa, có tiền phải đánh đổi, mình không đủ xuất sắc để lãnh đạo hay sự an toàn quan trọng hơn sự bứt phá thì một cuộc nội chiến tâm lý sẽ nổ ra. Và trong cuộc chiến giữa 5% và 95%, tiềm thức luôn luôn giành chiến thắng. Không thể thay đổi một kết quả vĩnh viễn chỉ bằng cách thay đổi hành động bề mặt; chừng nào hệ điều hành chưa được nâng cấp, mọi nỗ lực tải phần mềm mới đều trở nên vô dụng", 
       },
       {
+         type: "paragraph",
+        content:"Mô thức được cài đặt từ đâu? Đối với người trưởng thành khi tỉnh táo, não bộ hoạt động chủ yếu ở sóng Beta - nơi ý thức đóng vai trò người lính gác nghiêm ngặt. Tuy nhiên, từ khi nằm trong bụng mẹ đến khoảng 7 tuổi, bộ não trẻ em hoạt động ở dải tần số sóng Theta. Sóng Theta là trạng thái siêu thư giãn, có tính thu nhận và ám thị cực kỳ cao. Ở giai đoạn này, người lính gác cổng hoàn toàn chưa hình thành, tâm trí đứa trẻ mở toang để tiếp nhận mọi thông tin từ môi trường xung quanh đi thẳng vào tiềm thức",
+      },
+      {
           type: "paragraph",
         content: "Đứa trẻ nào cũng phải trả lời ba câu hỏi sinh tồn: Mình có đáng được yêu không? Mình có an toàn không? Mình có đủ năng lực để tồn tại không? Cách não bộ non nớt trả lời ba câu hỏi đó — dựa trên trải nghiệm thực tế với cha mẹ và môi trường — chính là mầm mống của mô thức.",
       },
@@ -65,12 +69,12 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Dựa trên hệ thống Enneagram và nghiên cứu tâm lý học phát triển, có 9 mô thức nội tâm cơ bản mà con người thường vận hành theo:"
+        content: "Dựa trên hệ thống Enneagram (mô tả con người thông qua kiểu xu hướng tính cách) và nghiên cứu tâm lý học phát triển, có 9 mô thức nội tâm cơ bản mà con người thường vận hành theo:"
       },
       {
         type: "list",
         items: [
-          "Mô thức Hoàn Hảo — Nỗi sợ sai và niềm tin rằng mình chỉ có giá trị khi làm đúng. Luôn có một tiếng phán xét nhỏ bên trong: 'Cái này chưa đủ tốt.'",
+          "Mô thức Hoàn Hảo — Nỗi sợ sai và niềm tin rằng mình chỉ có giá trị khi làm đúng. Luôn có một tiếng phán xét nhỏ bên trong: 'chưa đủ tốt.'",
           "Mô thức Cho Đi — Cho đi để được yêu. Khó nhận, khó từ chối. Cảm thấy tội lỗi khi đặt nhu cầu bản thân lên trên.",
           "Mô thức Thành Tích — Giá trị bản thân gắn với kết quả. Dừng lại = lo lắng. Cần thành công liên tục để cảm thấy ổn.",
           "Mô thức Độc Đáo — Luôn cảm thấy mình khác biệt, thiếu thứ gì đó mà người khác có. Sống nhiều trong cảm xúc và kéo dài đau thương.",
@@ -96,14 +100,14 @@ export const articles: Article[] = [
       {
         type: "list",
         items: [
-          "Khi mọi thứ đi sai, nỗi sợ đầu tiên xuất hiện trong đầu là gì?",
+          "Khi mọi thứ đi lệch hướng, nỗi sợ đầu tiên xuất hiện trong đầu mình là gì?",
           "Điều gì khiến mình phản ứng mạnh nhất — dù người khác xem là bình thường?",
           "Mình đang cố bảo vệ điều gì trong mỗi mối quan hệ?"
         ]
       },
       {
         type: "paragraph",
-        content: "Mô thức không phải điểm yếu cần xóa bỏ. Nó là hệ thống bảo vệ từng giúp bạn sống sót qua giai đoạn khó khăn nhất. Vấn đề là nó đang hoạt động ở những tình huống không còn cần nó nữa."
+        content: "Mô thức không phải điểm yếu cần xóa bỏ. Nó là hệ thống bảo vệ từng giúp bạn sống sót qua giai đoạn khó khăn nhất. Vấn đề là nó đang hoạt động ở những tình huống không còn cần nó nữa, giống như một người lính chiến đấu nơi chiến trường, khi trở về gia đình anh ta vẫn còn mang ký ức của chiến tranh lúc nào cũng phòng thủ và căng thẳng thần kinh."
       },
       {
         type: "quote",
