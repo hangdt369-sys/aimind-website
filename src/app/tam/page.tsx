@@ -21,17 +21,17 @@ const HIEU_TAM_LY = [
 ];
 
 const HIEU_HANH_VI = [
-  { q: "Tại sao tôi lặp lại?", desc: "Bạn cứ vào cùng một kiểu mối quan hệ, cùng một kiểu vấn đề...", href: "/tam/hieu-hanh-vi#lap-lai" },
-  { q: "Tại sao tôi biết nhưng vẫn làm?", desc: "Biết điều đúng nhưng vẫn làm điều sai — đây là vấn đề thần kinh, không phải ý chí.", href: "/tam/hieu-hanh-vi#biet-nhung-lam" },
-  { q: "Tại sao tôi chọn sai người?", desc: "Sức hút kỳ lạ với những người không tốt cho bạn — có lý do sâu hơn.", href: "/tam/hieu-hanh-vi#chon-sai-nguoi" },
-  { q: "Tại sao tôi trì hoãn?", desc: "Procrastination không phải lười — đây là cơ chế tự bảo vệ.", href: "/tam/hieu-hanh-vi#tri-hoan" },
-  { q: "Tại sao tôi tự phá hoại?", desc: "Khi mọi thứ suýt tốt thì lại có gì đó xảy ra — self-sabotage.", href: "/tam/hieu-hanh-vi#tu-pha-hoai" },
+  { q: "Tại sao tôi lặp lại?", desc: "Bạn cứ vào cùng một kiểu mối quan hệ không lành mạnh, cùng một kiểu vấn đề...", href: "/tam/hieu-hanh-vi#lap-lai" },
+  { q: "Tại sao tôi biết nhưng vẫn làm?", desc: "Biết điều đúng nhưng vẫn làm điều sai — đây là vấn đề của hệ thần kinh, không phải ý chí.", href: "/tam/hieu-hanh-vi#biet-nhung-lam" },
+  { q: "Tại sao tôi chọn sai người?", desc: "Sức hút kỳ lạ với những người không tốt chop hệ thần kinh của bạn — đằng sau nó có một lý do sâu hơn.", href: "/tam/hieu-hanh-vi#chon-sai-nguoi" },
+  { q: "Tại sao tôi trì hoãn?", desc: "Procrastination - trì hoãn không phải lười — đây là cơ chế tự bảo vệ.", href: "/tam/hieu-hanh-vi#tri-hoan" },
+  { q: "Tại sao tôi tự phá hoại?", desc: "Khi mọi thứ sắp thành thì lại có gì đó xảy ra — self-sabotage.", href: "/tam/hieu-hanh-vi#tu-pha-hoai" },
 ];
 
 const THUC_HANH_TAM = [
   { icon: "👁️", title: "Tự quan sát", desc: "Kỹ năng nhìn chính mình với đôi mắt trung lập, không phán xét.", href: "/tam/thuc-hanh#tu-quan-sat" },
   { icon: "📔", title: "Journaling", desc: "Viết nhật ký có cấu trúc để khai thác vô thức.", href: "/tam/thuc-hanh#journaling" },
-  { icon: "🔀", title: "Reframing", desc: "Đặt lại khung nhìn — thay đổi câu chuyện bạn kể về chính mình.", href: "/tam/thuc-hanh#reframing" },
+  { icon: "🔀", title: "Reframing", desc: "Đặt lại khung nhìn — thay đổi câu chuyện bạn kể về chính mình, cách mà bạn diễn giải thế giới hiện tại.", href: "/tam/thuc-hanh#reframing" },
   { icon: "🪄", title: "Identity work", desc: "Thiết kế lại bản sắc thay vì cố thay đổi hành vi bề mặt.", href: "/tam/thuc-hanh#identity" },
   { icon: "🌱", title: "Behavior change", desc: "Phương pháp thay đổi hành vi có bằng chứng khoa học.", href: "/tam/thuc-hanh#behavior-change" },
 ];
