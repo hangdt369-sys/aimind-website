@@ -21,11 +21,11 @@ const HIEU_TAM_LY = [
 ];
 
 const HIEU_HANH_VI = [
-  { q: "Tại sao tôi lặp lại?", desc: "Bạn cứ vào cùng một kiểu mối quan hệ không lành mạnh, cùng một kiểu vấn đề...", href: "/tam/hieu-hanh-vi#lap-lai" },
+  { q: "Tại sao tôi lặp lại?", desc: "Bạn cứ lặp đi lặp lại cùng một kiểu mối quan hệ không lành mạnh, cùng một kiểu vấn đề...", href: "/tam/hieu-hanh-vi#lap-lai" },
   { q: "Tại sao tôi biết nhưng vẫn làm?", desc: "Biết điều đúng nhưng vẫn làm điều sai — đây là vấn đề của hệ thần kinh, không phải ý chí.", href: "/tam/hieu-hanh-vi#biet-nhung-lam" },
-  { q: "Tại sao tôi chọn sai người?", desc: "Sức hút kỳ lạ với những người không tốt chop hệ thần kinh của bạn — đằng sau nó có một lý do sâu hơn.", href: "/tam/hieu-hanh-vi#chon-sai-nguoi" },
+  { q: "Tại sao tôi chọn sai người?", desc: "Sức hút kỳ lạ với những người không tốt cho hệ thần kinh của bạn — đằng sau nó có một lý do sâu hơn.", href: "/tam/hieu-hanh-vi#chon-sai-nguoi" },
   { q: "Tại sao tôi trì hoãn?", desc: "Procrastination - trì hoãn không phải lười — đây là cơ chế tự bảo vệ.", href: "/tam/hieu-hanh-vi#tri-hoan" },
-  { q: "Tại sao tôi tự phá hoại?", desc: "Khi mọi thứ sắp thành thì lại có gì đó xảy ra — self-sabotage.", href: "/tam/hieu-hanh-vi#tu-pha-hoai" },
+  { q: "Tại sao tôi tự phá hoại?", desc: "Khi mọi thứ sắp thành thì lại có gì đó xảy ra cản trở, một cách ngẫu nhiên?— self-sabotage.", href: "/tam/hieu-hanh-vi#tu-pha-hoai" },
 ];
 
 const THUC_HANH_TAM = [
