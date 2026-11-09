@@ -53,9 +53,6 @@ export const articles: Article[] = [
       },
       {
           type: "paragraph",
-        content: "Mô thức được cài đặt từ đâu? Đối với người trưởng thành khi tỉnh táo, não bộ hoạt động chủ yếu ở sóng Beta - nơi ý thức đóng vai trò người lính gác nghiêm ngặt. Tuy nhiên, từ khi nằm trong bụng mẹ đến khoảng 7 tuổi, bộ não trẻ em hoạt động ở dải tần số sóng Theta. Sóng Theta là trạng thái siêu thư giãn, có tính thu nhận và ám thị cực kỳ cao. Ở giai đoạn này, người lính gác cổng hoàn toàn chưa hình thành, tâm trí đứa trẻ mở toang để tiếp nhận mọi thông tin từ môi trường xung quanh đi thẳng vào tiềm thức. ,    
-         
-          type: "paragraph",
         content: "Đứa trẻ nào cũng phải trả lời ba câu hỏi sinh tồn: Mình có đáng được yêu không? Mình có an toàn không? Mình có đủ năng lực để tồn tại không? Cách não bộ non nớt trả lời ba câu hỏi đó — dựa trên trải nghiệm thực tế với cha mẹ và môi trường — chính là mầm mống của mô thức."
       },
       {
