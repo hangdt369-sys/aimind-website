@@ -13,7 +13,7 @@ const HIEU_TAM_LY = [
   { icon: "🌊", title: "Vô thức", desc: "95% quyết định của bạn đến từ vô thức — không phải lý trí.", href: "/tam/hieu-tam-ly/vo-thuc" },
   { icon: "🧱", title: "Niềm tin", desc: "Những niềm tin cốt lõi hình thành từ thời thơ ấu và vẫn đang điều khiển bạn.", href: "/tam/hieu-tam-ly/niem-tin" },
   { icon: "🏗️", title: "Schema", desc: "18 khuôn mẫu niềm tin ăn sâu — schema therapy của Jeffrey Young.", href: "/tam/hieu-tam-ly/schema" },
-  { icon: "🔗", title: "Attachment", desc: "Cách bạn gắn bó với người thân — và tại sao bạn yêu theo cách đó.", href: "/tam/hieu-tam-ly/attachment" },
+  { icon: "🔗", title: "Attachment", desc: "Cách bạn gắn bó với các mối quan hệ — và lý giải tại sao bạn yêu và gắn bó theo cách đó.", href: "/tam/hieu-tam-ly/attachment" },
   { icon: "🪞", title: "Identity", desc: "Bạn là ai — và bản sắc đó được xây dựng như thế nào?", href: "/tam/hieu-tam-ly/identity" },
   { icon: "🌡️", title: "Cảm xúc", desc: "Cảm xúc là thông tin, không phải kẻ thù — học cách đọc và điều tiết.", href: "/tam/hieu-tam-ly/cam-xuc" },
   { icon: "🛡️", title: "Defense mechanisms", desc: "Các cơ chế tự bảo vệ vô thức bạn dùng mà không biết.", href: "/tam/hieu-tam-ly/defense-mechanisms" },
