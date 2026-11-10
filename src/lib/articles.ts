@@ -127,7 +127,7 @@ export const articles: Article[] = [
     slug: "y-chi-khong-du-thay-doi-hanh-vi",
     tag: "Khoa học thần kinh",
     tagColor: "#18B5B0",
-    title: "Tại sao ý chí không đủ thay đổi Hành Vi : Khoa học về Thói quen và Tâm Lý ",
+    title: "Tại sao ý chí không đủ thay đổi Hành Vi : Khoa học về Thói quen ",
     excerpt: "Vì sao bạn quyết tâm thay đổi nhưng vẫn quay lại thói quen cũ? Khám phá tâm lý hành vi, cách thay đổi từ môi trường, động lực đến niềm tin về bản thân",
     readTime: "6 phút",
     publishDate: "Tháng 1, 2026",
@@ -146,7 +146,7 @@ export const articles: Article[] = [
       },
       {
          type: "paragraph",
-        content: "Vấn đề có thể nằm ở chỗ bạn đang cố thay đổi hành vi bằng quyết tâm, trong khi hành vi còn chịu ảnh hưởng của nhiều yếu tố khác: năng lực, môi trường, động lực, cảm xúc, thói quen và cách bạn nhìn nhận chính mình.Muốn thay đổi bền vững, chúng ta cần hiểu điều gì đang duy trì hành vi hiện tại, thay vì chỉ yêu cầu bản thân cố gắng nhiều hơn.",
+        content: "Vấn đề có thể nằm ở chỗ bạn đang cố thay đổi hành vi bằng quyết tâm, trong khi hành vi còn chịu ảnh hưởng của nhiều yếu tố khác: năng lực, môi trường, động lực, cảm xúc, thói quen và cách bạn nhìn nhận chính mình. Muốn thay đổi bền vững, chúng ta cần hiểu điều gì đang duy trì hành vi hiện tại, thay vì chỉ yêu cầu bản thân cố gắng nhiều hơn.",
       },
       {
         type: "heading",
@@ -154,7 +154,7 @@ export const articles: Article[] = [
       },
       {
          type: "paragraph",
-        content: " Một trong những nghịch lý phổ biến nhất của con người là khoảng cách giữa điều mình dự định làm và điều mình thực sự thực hiện. Bạn biết ngủ đủ giấc có lợi cho sức khỏe, nhưng vẫn cầm điện thoại đến khuya. Bạn biết cần hoàn thành công việc quan trọng, nhưng lại kiểm tra tin nhắn, email hoặc làm những việc nhỏ dễ hoàn thành hơn. Bạn biết mình cần đặt ranh giới trong một mối quan hệ, nhưng khi người kia tỏ ra thất vọng, bạn lại đồng ý với điều mà bản thân không muốn.Trong những tình huống này, kiến thức không nhất thiết là thứ còn thiếu. Điều còn thiếu có thể là một điều kiện giúp kiến thức chuyển thành hành động. Nhà nghiên cứu Susan Michie và cộng sự đã đề xuất mô hình COM-B để giải thích hành vi. Theo mô hình này, hành vi chịu ảnh hưởng của ba nhóm điều kiện:",
+        content: " Một trong những nghịch lý phổ biến nhất của con người là khoảng cách giữa điều mình dự định làm và điều mình thực hiện. Bạn biết ngủ đủ giấc có lợi cho sức khỏe, nhưng vẫn cầm điện thoại đến khuya lướt tiktok tới khuya. Bạn biết cần hoàn thành công việc quan trọng, nhưng lại chọn làm những việc nhỏ dễ hoàn thành hơn, thậm chí xao nhãng. Bạn biết mình cần đặt ranh giới trong một mối quan hệ, nhưng khi người kia tỏ ra thất vọng, bạn lại đồng ý với điều mà bản thân không muốn. Trong những tình huống này, kiến thức không thiếu. Mà có thể thiếu một điều kiện giúp kiến thức chuyển thành hành động. Nhà nghiên cứu Susan Michie và cộng sự đã đề xuất mô hình COM-B để giải thích hành vi. Theo mô hình này, hành vi chịu ảnh hưởng của ba nhóm điều kiện:",
       },
       {
         type: "paragraph",
@@ -170,7 +170,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Ba yếu tố này tương tác với nhau. Chỉ muốn làm một việc không có nghĩa là bạn đã có đủ điều kiện để làm việc đó. Hãy tưởng tượng một người muốn tập thể dục nhưng thường xuyên ngủ muộn, phải đi làm từ sáng sớm, chưa biết bắt đầu với bài tập nào và không có lịch cố định.Nếu người đó chỉ tự nhắc mình phải có kỷ luật hơn, họ đang giải quyết vấn đề bằng cách tăng áp lực lên bản thân, trong khi những trở ngại thực tế vẫn còn nguyên.Thay đổi hành vi vì thế không chỉ là câu chuyện của ý chí. Nó còn là câu chuyện của một hệ thống điều kiện đang hỗ trợ hoặc cản trở hành động.",
+        content: "Ba yếu tố này tương tác với nhau. Chỉ muốn làm một việc không có nghĩa là bạn đã có đủ điều kiện để làm việc đó. Hãy tưởng tượng một người muốn tập thể dục nhưng thường xuyên ngủ muộn, phải đi làm từ sáng sớm, chưa biết bắt đầu với bài tập nào và không có lịch cố định. Nếu người đó chỉ tự nhắc mình phải có kỷ luật hơn, họ đang giải quyết vấn đề bằng cách tăng áp lực lên bản thân, trong khi những trở ngại thực tế vẫn còn nguyên. Thay đổi hành vi vì thế không chỉ là câu chuyện của ý chí. Nó còn là câu chuyện của một hệ thống điều kiện đang hỗ trợ hoặc cản trở hành động.",
       },
       {
         type: "heading",
@@ -178,11 +178,11 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Trong tâm lý học, một giả thuyết nổi tiếng về khả năng tự kiểm soát được gọi là ego depletion, thường được dịch là sự cạn kiệt khả năng tự kiểm soát.",
+        content: "Trong tâm lý học, một giả thuyết nổi tiếng về khả năng tự kiểm soát được gọi là ego depletion thường được dịch là sự cạn kiệt khả năng tự kiểm soát.",
       },
       {
         type: "paragraph",
-        content: "Năm 1998, nhà tâm lý học Roy Baumeister thực hiện một thí nghiệm nổi tiếng. Ông cho hai nhóm người vào phòng có bánh quy socola thơm nức và củ cải. Nhóm một được ăn bánh. Nhóm hai phải nhịn bánh và ăn củ cải — tức là họ phải dùng ý chí để kháng cự."
+        content: "Năm 1998, nhà tâm lý học Roy Baumeister thực hiện một thí nghiệm nổi tiếng. Ông cho hai nhóm người vào phòng có bánh quy socola thơm nức và củ cải. Nhóm một được ăn bánh. Nhóm hai phải nhịn ăn bánh và chỉ được ăn củ cải — tức là họ phải dùng ý chí để kháng cự."
       },
       {
         type: "paragraph",
@@ -258,11 +258,11 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Nhưng trong một số trường hợp, việc thay đổi còn liên quan đến những điều con người tin về bản thân và thế giới.Hãy xem xét ba tình huống sau:",
+        content: "Nhưng trong một số trường hợp, việc thay đổi còn liên quan đến những điều con người tin về bản thân và thế giới. Hãy xem xét ba tình huống sau:",
       },
       {
         type: "paragraph",
-        content: "TH1: Một người muốn từ chối yêu cầu ngoài khả năng nhưng luôn lo người khác sẽ thất vọng, TH2: Một người muốn bắt đầu dự án cá nhân nhưng thường trì hoãn khi công việc sắp được đưa ra công chúng. TH3: Một người muốn xây dựng mối quan hệ bình đẳng nhưng thường xuyên bỏ qua nhu cầu của mình để giữ hòa khí.Chúng ta không thể chỉ nhìn vào hành vi rồi kết luận ngay rằng cả ba người đều có cùng một nỗi sợ hoặc cùng một vấn đề tâm lý.Tuy nhiên, có thể đặt ra những câu hỏi để khám phá điều đang diễn ra:",       
+        content: "TH1: Một người muốn từ chối yêu cầu ngoài khả năng nhưng luôn lo người khác sẽ thất vọng, TH2: Một người muốn bắt đầu dự án cá nhân nhưng thường trì hoãn khi công việc sắp được tung ra. TH3: Một người muốn xây dựng mối quan hệ bình đẳng nhưng thường xuyên bỏ qua nhu cầu của mình để giữ hòa khí. Chúng ta không thể chỉ nhìn vào hành vi rồi kết luận ngay rằng cả ba người đều có cùng một nỗi sợ hoặc cùng một vấn đề tâm lý. Tuy nhiên, có thể đặt ra những câu hỏi để khám phá điều đang diễn ra:",       
       },
       {
         type: "paragraph",
@@ -270,7 +270,7 @@ export const articles: Article[] = [
       },
       {
          type: "paragraph",
-        content: "Ví dụ, một người có thể tin rằng từ chối người khác đồng nghĩa với ích kỷ. Khi đó, mỗi lần muốn nói “không”, họ không chỉ phải lựa chọn giữa đồng ý và từ chối. Họ còn phải đối diện với ý nghĩa mà họ gán cho lựa chọn đó. Nếu họ cho rằng một lời từ chối khiến mình trở thành người xấu, việc đặt ranh giới có thể tạo ra cảm giác khó chịu, ngay cả khi họ biết mình đang cần nghỉ ngơi hoặc có những ưu tiên khác.Trong trường hợp này, thay đổi hành vi có thể cần thêm một bước: xem xét liệu cách diễn giải đó có chính xác, có đầy đủ và có còn phù hợp với hoàn cảnh hiện tại hay không.Một cách tiếp cận thận trọng hơn là xem niềm tin như một giả thuyết để tự quan sát, rồi kiểm tra bằng trải nghiệm thực tế.Bạn có thể thử nói “không” với một yêu cầu nhỏ, quan sát phản ứng của người kia và ghi lại điều thực sự xảy ra. Kết quả đó có thể giúp bạn phân biệt giữa điều mình dự đoán và điều đã diễn ra.Đôi khi, sự thay đổi bắt đầu từ một hành động nhỏ. Đôi khi, nó cần cả việc điều chỉnh cách chúng ta hiểu về bản thân.",
+        content: "Ví dụ, một người có thể tin rằng từ chối người khác đồng nghĩa với ích kỷ. Khi đó, mỗi lần muốn nói “không”, họ không chỉ phải lựa chọn giữa đồng ý và từ chối. Họ còn phải đối diện với ý nghĩa mà họ gán cho lựa chọn đó. Nếu họ cho rằng một lời từ chối khiến mình trở thành người xấu, việc đặt ranh giới có thể tạo ra cảm giác khó chịu, ngay cả khi họ biết mình đang cần nghỉ ngơi hoặc có những ưu tiên khác. Trong trường hợp này, thay đổi hành vi có thể cần thêm một bước: xem xét liệu cách diễn giải đó có chính xác, có đầy đủ và có còn phù hợp với hoàn cảnh hiện tại hay không. Một cách tiếp cận thận trọng hơn là xem niềm tin như một giả thuyết để tự quan sát, rồi kiểm tra bằng trải nghiệm thực tế. Bạn có thể thử nói “không” với một yêu cầu nhỏ, quan sát phản ứng của người kia và ghi lại điều thực sự xảy ra. Kết quả đó có thể giúp bạn phân biệt giữa điều mình dự đoán và điều đã diễn ra. Đôi khi, sự thay đổi bắt đầu từ một hành động nhỏ. Đôi khi, nó cần cả việc điều chỉnh cách chúng ta hiểu về bản thân.",
       },
       {
         type: "heading",
@@ -299,10 +299,10 @@ export const articles: Article[] = [
       {
         type: "list",
         items: [
-          "Thiết kế môi trường: Người ta không ăn rau vì họ có ý chí hơn bạn. Họ để rau ở tầm mắt trong tủ lạnh và giấu bánh đi. Não bộ đi theo đường mòn ít kháng cự nhất.",
+          "Thiết kế môi trường: Người ta không ăn rau vì họ có ý chí hơn bạn. Họ để rau ở tầm mắt trong tủ lạnh và không mua đồ ăn vặt, cất bánh ngọt vào tủ nơi khó lấy. Não bộ đi theo đường mòn ít kháng cự nhất.",
           "Dùng identity, không dùng outcome: 'Mình đang trở thành người chạy bộ' mạnh hơn 'Mình phải chạy bộ 5km mỗi ngày'. Hành vi theo sau bản sắc, không phải ngược lại.",
           "Tận dụng thời điểm có ý chí cao: Buổi sáng sau khi ngủ đủ giấc, não bộ phục hồi đầy đủ. Làm việc quan trọng nhất lúc đó — đừng dùng buổi sáng để check email.",
-          "Làm nhỏ hành vi đến mức không thể thất bại: Muốn thiền mỗi ngày? Bắt đầu với 2 phút. Não không cảm thấy đe dọa với thứ nhỏ bé."
+          "Làm nhỏ hành vi đến mức không thể thất bại: Muốn thiền mỗi ngày? Bắt đầu với 2 phút. Não không cảm thấy đe dọa với thứ nhỏ bé, ngồi được 2p có thể ngồi thêm 15p, 30p mà không cần quá nhiều nỗ lực."
         ]
       },
       {
@@ -315,7 +315,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Một người tin rằng 'mình không xứng đáng với sức khỏe tốt' sẽ tự sabotage mọi kế hoạch tập luyện — dù họ biết đầy đủ kỹ thuật. Một người tin rằng 'mình luôn thất bại' sẽ vô thức tạo ra hoàn cảnh để xác nhận điều đó."
+        content: "Một người tin rằng 'mình không xứng đáng với sức khỏe tốt' sẽ tự trì hoãn mọi kế hoạch tập luyện — dù họ biết đầy đủ kỹ thuật. Một người tin rằng 'mình luôn thất bại' sẽ vô thức tạo ra hoàn cảnh để xác nhận điều đó."
       },
       {
         type: "quote",
@@ -334,7 +334,7 @@ export const articles: Article[] = [
     sections: [
       {
         type: "paragraph",
-        content: "Người bạn yêu thứ nhất làm bạn cảm thấy không đủ tốt. Người thứ hai cũng vậy. Người thứ ba — bạn thề là hoàn toàn khác — nhưng rồi cũng vậy."
+        content: "Người bạn yêu đầu tiên làm bạn cảm thấy không đủ tốt. Người thứ hai cũng vậy. Người thứ ba — bạn thề là hoàn toàn khác — nhưng rồi cũng vậy."
       },
       {
         type: "paragraph",
@@ -354,7 +354,7 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Nếu bạn lớn lên với một người cha lạnh lùng, cảm giác 'phải cố gắng để được chú ý' là cảm giác quen thuộc — tức là cảm giác an toàn theo nghĩa não bộ. Khi bạn gặp một người cũng lạnh lùng và xa cách, não nhận ra: 'À, mình biết chỗ này.' Và bạn cảm thấy hấp dẫn — dù không biết tại sao."
+        content: "Nếu bạn lớn lên với một người cha lạnh lùng, cảm giác 'phải cố gắng để được chú ý' là cảm giác quen thuộc — tức là cảm giác an toàn theo nghĩa của não bộ. Khi bạn gặp một người cũng lạnh lùng và xa cách, não nhận ra: 'À, mình biết người này, cảm giác này thật quen thuộc.' Và bạn cảm thấy hấp dẫn — dù không biết tại sao."
       },
       {
         type: "quote",
@@ -373,7 +373,7 @@ export const articles: Article[] = [
         items: [
           "Gắn bó an toàn (secure): Người chăm sóc nhất quán và đáp ứng. Lớn lên, bạn thoải mái với gần gũi và tin tưởng trong quan hệ.",
           "Gắn bó lo lắng (anxious): Người chăm sóc không nhất quán — có lúc gần, có lúc xa. Lớn lên, bạn sợ bị bỏ rơi, cần liên tục được trấn an, dễ cảm thấy không đủ tốt.",
-          "Gắn bó né tránh (avoidant): Người chăm sóc lạnh lùng hoặc vắng mặt cảm xúc. Lớn lên, bạn sợ gần gũi, đề cao sự độc lập, khó để người khác thật sự vào.",
+          "Gắn bó né tránh (avoidant): Người chăm sóc lạnh lùng hoặc vắng mặt cảm xúc. Lớn lên, bạn sợ gần gũi, đề cao sự độc lập, khó dựa vào người khác.",
           "Gắn bó hỗn loạn (disorganized): Người chăm sóc vừa là nguồn an toàn vừa là nguồn nguy hiểm. Lớn lên, quan hệ vừa hút vừa đẩy."
         ]
       },
@@ -387,11 +387,11 @@ export const articles: Article[] = [
       },
       {
         type: "paragraph",
-        content: "Bạn đã thử. Ai đó ổn định, tốt bụng, rõ ràng yêu bạn. Nhưng bạn cảm thấy... nhạt. Không có 'chemistry'. Không có sức hút."
+        content: "Chắc chắn bạn đã thử. Khi ai đó đó ổn định, tốt bụng, rõ ràng yêu bạn xuất hiện. Nhưng bạn cảm thấy... nhạt. Không có 'chemistry'. Không có sức hút."
       },
       {
         type: "paragraph",
-        content: "Một khả năng là sự ổn định cảm thấy ít quen thuộc hơn những gì bạn từng trải qua. Khi đó, bạn có thể diễn giải sự bình yên thành sự nhạt nhẽo."
+        content: "Một khả năng là sự ổn định cảm thấy ít quen thuộc hơn những gì bạn từng trải qua, trong ký ức thủa bé của mình hình ảnh người cha xa cách, người mẹ không chú tâm đã in hằn vào hệ thần kinh và não đọc nó là sự quen thuộc, cha mẹ được mặc định là người thân người không bao giờ rời bỏ mình, nên sau này lớn khi bắt gặp người cho ta cảm giác đó trong vô thức ta cho đó là sự an toàn. Khi đó, bạn có thể diễn giải sự bình yên thành sự nhạt nhẽo của những người chân thành, tốt bụng, an toàn và luôn hướng về ta."
       },
       {
         type: "paragraph",
