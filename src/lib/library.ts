@@ -18,7 +18,7 @@ export const LIBRARY_CATEGORIES: LibraryCategory[] = [
     vi: "Tâm lý học",
     icon: "🧠",
     color: "#E85A71",
-    description: "Tâm lý học ứng dụng, mô thức nội tâm, gắn bó, cảm xúc và các mối quan hệ.",
+    description: "Tâm lý học ứng dụng, mô thức nội tâm, thuyết gắn bó, hiểu về cảm xúc và các mối quan hệ.",
     tags: ["Mô thức", "Gắn bó", "Quan hệ", "Gia đình", "Ranh giới", "Cảm xúc", "Tự nhận thức", "Phân biệt mô thức"],
   },
   {
