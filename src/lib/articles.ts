@@ -241,10 +241,6 @@ export const articles: Article[] = [
         content: "Nếu muốn ăn uống có kế hoạch: Chuẩn bị sẵn những lựa chọn phù hợp và hạn chế để những món thường khiến bạn ăn ngoài dự định xuất hiện ngay trước mắt.",
       },
       {
-         type: "paragraph",
-        content: "Nếu muốn ăn uống có kế hoạch: Chuẩn bị sẵn những lựa chọn phù hợp và hạn chế để những món thường khiến bạn ăn ngoài dự định xuất hiện ngay trước mắt.",
-      },
-      {
         type: "paragraph",
         content: "Điều này không có nghĩa môi trường quyết định hoàn toàn hành vi. Con người vẫn có khả năng lựa chọn, điều chỉnh và học cách ứng phó. Tuy nhiên, khi có thể thay đổi môi trường để giảm những trở ngại không cần thiết, bạn không phải dựa hoàn toàn vào việc tự nhắc nhở mình mỗi ngày.",
       },
